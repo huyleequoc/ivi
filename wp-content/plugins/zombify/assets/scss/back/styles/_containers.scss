@@ -1,0 +1,52 @@
+/**
+ * 10.0 - Containers
+ */
+
+#zombify-main-section {
+  clear: both;
+  padding-bottom: 30px;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 400;
+  font-family: $base-font-family;
+
+  .zf-container {
+    @extend .clearfix;
+    clear: both;
+    width: 100%;
+  }
+
+  #zf-main {
+    float: left;
+    width: $main;
+    opacity: 0;
+  }
+
+  #zf-options-section {
+    float: right;
+    width: $sidebar;
+    opacity: 0;
+  }
+  #zf-options-section {
+    margin-bottom: 25px;
+  }
+  &.zf-screen-lg {
+    #zf-main,
+    #zf-options-section {
+      opacity: 1;
+    }
+  }
+  &.zf-screen-md,
+  &.zf-screen-sm,
+  &.zf-screen-xs {
+    #zf-main,
+    #zf-options-section {
+      float: none;
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+
+

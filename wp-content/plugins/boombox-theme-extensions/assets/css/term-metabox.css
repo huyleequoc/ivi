@@ -1,0 +1,53 @@
+.bb-term-advanced-fields .boombox-form-row-image .upload-wrapper {
+    max-width: 240px;
+}
+.bb-term-advanced-fields .boombox-form-row-image .upload-wrapper .image-wrapper .placeholder {
+    text-align: center;
+    border: 1px dashed #b4b9be;
+    box-sizing: border-box;
+    padding: 9px 0;
+    line-height: 20px;
+    cursor: pointer;
+}
+.bb-term-advanced-fields .boombox-form-row-image .upload-wrapper .image-wrapper {
+    margin-bottom: 1em;
+}
+.bb-term-advanced-fields .boombox-form-row-image .upload-wrapper.has-image .placeholder {
+    display: none;
+}
+.bb-term-advanced-fields .boombox-form-row-image .upload-wrapper .image-holder {
+    background: #f1f1f1;
+    margin-top: 5px;
+    padding: 4px;
+    line-height: 0;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.055);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.055);
+    box-shadow: 0 1px 3px rgba(0,0,0,.055);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    display: none;
+}
+.bb-term-advanced-fields .boombox-form-row-image .upload-wrapper.has-image .image-holder {
+    display: block;
+}
+.bb-term-advanced-fields .boombox-form-row-image .upload-wrapper.has-image .image-holder img {
+    width: 100%;
+    height: auto;
+}
+
+.bb-term-advanced-fields .boombox-form-row-image .upload-wrapper .button-remove {
+    display: none;
+}
+.bb-term-advanced-fields .boombox-form-row-image .upload-wrapper.has-image .button-remove {
+    display: inline-block;
+}
+
+.bb-term-advanced-fields .boombox-form-row-color .wp-picker-container {
+    display: inline-block;
+}

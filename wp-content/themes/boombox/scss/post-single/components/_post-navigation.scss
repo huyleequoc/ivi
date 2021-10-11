@@ -1,0 +1,51 @@
+/* *** Post Navigation *** */
+
+.bb-post-nav {
+  clear: both;
+  margin-bottom: 20px;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .next-page {
+    float: right;
+  }
+  .pg-item {
+    margin: 0 0 15px;
+    padding: 20px 0;
+    min-height: 115px;
+    display: table;
+    width: 100%;
+    border-bottom: 2px solid #ececec;
+    border-top: 2px solid #ececec;
+  }
+  .pg-col {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .pg-thumb {
+    max-width: 150px;
+    img {
+      width: 100%;
+    }
+  }
+  .pg-thumb-col {
+    width: 27%;
+    padding-right: 5%;
+  }
+  .pg-content-col {
+    padding: 5px 0 0 0;
+  }
+  .meta-nav {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .post-title {
+    margin-bottom: 10px;
+  }
+}

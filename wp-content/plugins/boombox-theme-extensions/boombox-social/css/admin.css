@@ -1,0 +1,41 @@
+.boombox-social-items .boombox-social {
+    max-width: 700px;
+}
+.boombox-social-items .boombox-social li{
+    margin: 15px 0;
+}
+.boombox-social-items .boombox-social li a {
+    display: inline-block;
+    width: 85px;
+    font-size: 20px;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+}
+.boombox-social-items .boombox-social li a span{
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    margin-top: 2px;
+}
+.boombox-social-items .boombox-social .boombox-social-title{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+.boombox-social-items .boombox-social .boombox-social-url{
+    display: inline-block;
+    width: 65%;
+}
+.boombox-social-items .boombox-social .boombox-social-title input,
+.boombox-social-items .boombox-social .boombox-social-url input{
+    width: 100%;
+}
+.boombox-social-items .boombox-social .ui-state-highlight { 
+    height: 1.5em; 
+    line-height: 1.2em; 
+}
+.boombox-social-items .boombox-social .boombox-social-url input.error{
+    border: 1px solid #e01313;
+}

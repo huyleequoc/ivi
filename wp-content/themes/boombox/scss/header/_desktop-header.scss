@@ -1,0 +1,80 @@
+/* *** Desktop Header *** */
+
+.bb-header.header-desktop {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    display: table; //fallback
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    //justify-content: center;
+
+
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: stretch;
+
+    >* {
+      display: table-cell;//fallback
+      vertical-align: middle;
+    }
+
+    .l-1,
+    .r-1 {
+      >* {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .m-1,
+    .m-2 {
+      &:not(.logo) {
+
+        text-align: center;
+        flex-grow: 1;
+      }
+    }
+    .h-component {
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .top-header {
+    position: relative;
+    .container {
+      position: relative;
+      z-index: 3;
+    }
+  }
+  .bottom-header {
+    position: relative;
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+
+

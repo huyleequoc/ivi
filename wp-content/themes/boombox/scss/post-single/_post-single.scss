@@ -1,0 +1,211 @@
+/* *** BB Post Single *** */
+
+// *** Variables ***
+$s-post-mb: 20px;
+
+.bb-post-single {
+  // *** General ***
+  .s-post-header {
+    margin-bottom: $mb-xs;
+  }
+  .s-post-featured-media, .s-post-meta-block, .bb-post-share-box.top, .s-mb-md, .single-row1 {
+    margin-bottom: $s-post-mb;
+  }
+  .s-post-share-box.bottom {
+    margin-bottom: $mb-lg;
+  }
+
+  // *** Post Featured Media ***
+  .s-post-featured-media {
+    text-shadow: $overlay-txt-shadow;
+    .featured-media-el {
+      position: relative;
+      overflow: hidden;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-color: $sec-bg-clr;
+    }
+    .s-post-media-top {
+      min-height: 70px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 15px;
+      width: 100%;
+      @extend .bg-gradient-top;
+    }
+    .s-post-media-caption {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      padding: 20px 15px;
+      @extend .bg-gradient-btm;
+    }
+    .s-post-header {
+      margin: 0;
+    }
+    &, .s-post-title, .s-post-affiliate .current-price {
+      color: $overlay-txt-clr;
+    }
+    .s-post-summary, .s-post-cat-links, .s-post-breadcrumb, .s-post-breadcrumb a, .s-post-affiliate .old-price {
+      color: $overlay-sec-txt-clr-light;
+    }
+    .s-post-affiliate .item-url, .s-post-summary .bb-reading-time {
+      text-shadow: none;
+      box-shadow: $badge-box-shadow;
+    }
+  }
+
+  // *** Post Header ***
+  .s-post-badge-list {
+    display: inline-block;
+  }
+  .s-post-header {
+    .s-post-title {
+      margin: 0 0 5px;
+    }
+    .s-post-summary {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.3;
+      margin: 0 0 15px 0;
+    }
+    &+.s-post-thumbnail, &+.s-post-content {
+      margin-top: $s-post-mb;
+    }
+    .s-post-header-sep {
+      margin-top: $mb-xs;
+    }
+  }
+
+  // *** Post Meta ***
+  .s-post-meta-block {
+    .col-l {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // *** Post Share Box ***
+  .s-post-share-box {
+    .content {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  // *** Post Thumbnail ***
+  .s-post-thumbnail {
+    margin-bottom: $mb-md;
+  }
+
+  // *** Post Content ***
+  .s-post-content {
+    margin-bottom: $mb-lg;
+    >:first-child {
+      margin-top: 0;
+    }
+    >:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // *** Post Types ***
+  // Post Style2
+  &.style2 {
+    .s-post-inner {
+      padding: 0 10px;
+    }
+  }
+  &.style5 .site-main,
+  &.style6 .single-main-container .container-inner {
+    position: relative;
+    margin-top: -200px;
+    padding: 10px;
+  }
+  &.style4, &.style6 {
+    .s-post-media-img {
+      img {
+        border-radius: 0;
+      }
+    }
+  }
+
+  // *** Media Queries ***
+  @media screen and (min-width: $screen-sm-min) {
+    .s-post-badge-list {
+      min-width: 100px;
+    }
+    .s-post-meta-block {
+      .col-l {
+        margin-bottom: 0;
+      }
+    }
+
+    // Post Style2
+    &.style2 {
+      .s-post-inner {
+        padding: 0 30px;
+      }
+    }
+
+    .s-post-featured-media {
+      .s-post-media-caption {
+        padding: 40px 35px;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-mb-boxed) and (max-width: $screen-tablet-custom-max) {
+    &.style5 .site-main {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: $screen-tablet-custom) {
+    &.style5 .site-main,
+    &.style6 .single-main-container .container-inner {
+      padding: 12px 30px 0 30px;
+    }
+    .s-post-featured-media {
+      .featured-media-el {
+        height: 500px;
+      }
+    }
+    .s-post-header {
+      .s-post-summary {
+        font-size: 20px;
+      }
+    }
+  }
+
+}
+
+/* Post Single options for no-sidebar */
+.no-sidebar {
+  .bb-post-single {
+    // no-sidebar small element
+    @media screen and (min-width: $screen-lg-min) {
+      .s-post-small-el {
+        width: $container-inner;
+        @include mx-auto();
+      }
+    }
+    @media screen and (min-width: $screen-tablet-custom) {
+      &.style5 {
+        .site-main {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* Post Single Container Margin */
+.single-container.s-mt-sm {
+  margin-top: 15px;
+}

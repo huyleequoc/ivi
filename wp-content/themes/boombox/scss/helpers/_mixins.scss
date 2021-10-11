@@ -1,0 +1,212 @@
+// Clearfix
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  & {
+    *zoom: 1;
+  }
+}
+
+// Vendor Prefixes
+@mixin vendorize($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	#{$property}: $value;
+}
+
+// Backface Visibility
+@mixin backface-visibility ($arguments) {
+  -webkit-backface-visibility: $arguments;
+  -moz-backface-visibility: $arguments;
+  backface-visibility: $arguments;
+}
+
+// Border Radius
+@mixin border-radius ($arguments) {
+  -webkit-border-radius: $arguments;
+  -moz-border-radius: $arguments;
+  border-radius: $arguments;
+}
+@mixin clear-left-border-radius() {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+@mixin clear-right-border-radius() {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@mixin clear-top-border-radius() {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+@mixin clear-btm-border-radius() {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+// BOX SHADOW
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}
+// BOX SHADOW NONE
+@mixin box-shadow-none($none) {
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none;
+}
+
+// TRANSPARENCY
+@mixin opacity($value: .5, $important: null) {
+	opacity: $value $important;
+	filter: alpha(opacity=$value * 100) $important;
+	zoom: 1;
+}
+
+// TRANSITION MULTIPLE
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	transition: $args;
+}
+
+// TRANSFORM MULTIPLE
+@mixin transform($args...) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  transform: $args;
+}
+
+// TRANSFORM ORIGIN MULTIPLE
+@mixin transform-origin($args...) {
+  -webkit-transform-origin: $args;
+  -moz-transform-origin: $args;
+  transform-origin: $args;
+}
+
+// CALC
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+// FORCE HARDWARE ACC
+@mixin hardware-acc {
+	@include vendorize(transform, translate3d(0, 0, 0));
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+// Grayscale Filter
+@mixin grayscale {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter: gray;
+	-webkit-backface-visibility: hidden;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+}
+
+// None Grayscale Filter
+@mixin non-grayscale {
+	filter: none;
+	-webkit-backface-visibility: hidden;
+	-webkit-filter: none;
+	-moz-filter: none;
+}
+
+// Clear Margin - Padding
+@mixin clear {
+	margin: 0;
+	padding: 0;
+}
+
+// Clear LIist Styles
+@mixin clear_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Fill Space
+@mixin fill {
+	height: 100%;
+	width: 100%;
+}
+
+// Background Cover
+@mixin cover {
+	@include hardware-acc;
+	@include vendorize(background-size, cover);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+// Bg Retina
+@mixin background-image-retina($file, $type, $width, $height) {
+	background-image: url($file + '.' + $type);
+	@media only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (-moz-min-device-pixel-ratio: 2),
+		only screen and (min-device-pixel-ratio: 2),
+		only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx) {
+		& {
+			background-image: url($file + '@2x.' + $type);
+			-webkit-background-size: $width $height;
+			-moz-background-size: $width $height;
+			background-size: $width $height;
+		}
+	}
+}
+
+// Responsiveness
+@mixin respond-to($media) {
+  @if $media == mobileportrait {
+    @media only screen and (max-width: $screen-xs) { @content; }
+  }
+  @else if $media == mobile {
+    @media only screen and (max-width: $screen-sm - 1) { @content; }
+  }
+  @else if $media == tabetportrait {
+    @media only screen and (min-width: $screen-sm) and (max-width: $screen-md - 1) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (max-width: $screen-md) { @content; }
+  }
+  @else if $media == tabletlandscape {
+    @media only screen and (max-width: $screen-lg - 1) { @content; }
+  }
+  @else if $media == desktops {
+    @media only screen and (min-width: $screen-lg) { @content; }
+  }
+}
+
+// Centering
+@mixin mx-auto() {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: none;
+}
+
+// Visibility
+@mixin mf-hide() {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+// Box Shadow
+@mixin badge-box-shadow() {
+  box-shadow: 1px 2px 2px rgba(0,0,0,.18);
+}

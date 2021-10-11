@@ -1,0 +1,243 @@
+/* *** NSFW Posts *** */
+
+.bb-fixed-pagination,
+.bb-post-nav,
+.post-thumbnail {
+  .bb-media-placeholder .nsfw-post,
+  .gif-video-wrapper + .nsfw-post,
+  .video-wrapper + .nsfw-post,
+  .hy_plyr + .nsfw-post,
+  .boombox-featured-embed + .nsfw-post,
+  noscript + .nsfw-post,
+  img + .nsfw-post {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+    .nsfw-content {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      @include transform(translate(0, -50%));
+    }
+  }
+  .nsfw-post {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #000000;
+
+    .nsfw-content {
+      color: #ffffff;
+    }
+
+    .bb-icon {
+      font-size: 70px;
+      line-height: 1em;
+      opacity: 0.7;
+    }
+    img {
+      width: auto;
+      max-width: 80%;
+    }
+    h3 {
+      margin: 25px 0 5px;
+      font-size: 25px;
+      color: $primary-color;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 16px;
+      text-decoration: underline;
+    }
+  }
+}
+
+.widget_recent_entries {
+  .post-thumbnail {
+    .nsfw-post {
+      padding: 15px 0;
+      .bb-icon {
+        font-size: 30px
+      }
+      h3, p {
+        display: none
+      }
+    }
+  }
+}
+
+.bb-post-nav {
+  .bb-media-placeholder {
+
+    .nsfw-content {
+      padding: 5px 0
+    }
+    .bb-icon {
+      font-size: 24px;
+    }
+    h3, p {
+      display: none
+    }
+  }
+}
+
+.widget_trending_entries {
+  .post-thumbnail {
+    .nsfw-post {
+      padding: 15px 0;
+      .bb-icon {
+        font-size: 50px
+      }
+      h3 {
+        margin: 15px 0 5px;
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.post-list.list {
+  .post-thumbnail {
+    .nsfw-post {
+      padding: 20px 0;
+      .bb-icon {
+        font-size: 38px
+      }
+      h3 {
+        margin: 10px 0 5px;
+        font-size: 15px;
+      }
+      p {
+        display: none
+      }
+    }
+  }
+}
+
+.post-list.standard {
+  .bb-nsfw-post {
+    .bb-media-placeholder {
+      padding-bottom: 56.25% !important;
+    }
+    .video-wrapper,.boombox-featured-embed {
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+  }
+}
+
+.bb-other-posts.post-grid,
+.post-list.list.big-item {
+  .post-thumbnail {
+    .nsfw-post {
+      padding: 30px 0;
+      .bb-icon {
+        font-size: 50px
+      }
+      h3 {
+        margin: 10px 0 5px;
+        font-size: 20px;
+      }
+      p {
+        display: block
+      }
+    }
+  }
+}
+
+
+.bb-fixed-pagination {
+  .pg-thumb {
+    .nsfw-post {
+      .bb-icon {
+        font-size: 24px;
+      }
+      h3, p {
+        display: none
+      }
+    }
+  }
+}
+
+.bb-post-single .s-post-thumbnail {
+  .nsfw-post,
+  .entry-nsfw {
+    position: relative;
+    height: 350px;
+  }
+  .nsfw-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    @include transform(translate(0, -50%));
+  }
+  .nsfw-post {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #000000;
+
+    .bb-icon {
+      font-size: 70px;
+      opacity: 0.7;
+    }
+    h3 {
+      margin: 28px 0 5px;
+      font-size: 25px;
+      color: $primary-color;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 16px;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-mb-full-w-max) {
+  .post-list.list {
+    .post-thumbnail {
+      .nsfw-post {
+        padding: 20px 0;
+        .bb-icon {
+          font-size: 70px
+        }
+        h3 {
+          margin: 28px 0 5px;
+          font-size: 25px;
+        }
+        p {
+          display: block
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-ss-max) {
+  .post-list.list .post-thumbnail,
+  .post-thumbnail {
+    .nsfw-post {
+      .bb-icon {
+        font-size: 60px;
+      }
+      h3 {
+        margin: 22px 0 5px;
+        font-size: 22px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

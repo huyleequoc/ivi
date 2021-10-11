@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* HYENA V2.1 CSS Document */
+
+/*********************
+COMPONENTS RESET
+*********************/
+div.hy_plyr, div.hy_plyr * {
+	/* BASIC */
+	vertical-align:baseline; margin:0; font-size:100%; padding:0; line-height:100%; border:0; outline:none;
+	cursor:inherit; box-sizing:border-box; overflow:hidden; text-align:left; word-wrap:break-word; background:none;
+	/* AVOID OPENING MOBILE CONTEXT MENU ON TAPHOLD */
+	-webkit-touch-callout:none; -moz-touch-callout:none; -ms-touch-callout:none; -o-touch-callout:none; touch-callout:none; 
+	/* AVOID HIGHLIGHTING ON TAP */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); tap-highlight-color: rgba(0,0,0,0); 
+	/* AVOID CHANGING TEXT SIZE ON ORIENTATION CHANGE */
+	-webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none; -o-text-size-adjust:none; text-size-adjust:none; 
+	/* AVOID SELECTING TEXT AND IMAGES */
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; -o-user-select:none; user-select:none; -ms-touch-select:none;}
+/* FORCE GPU */
+div.hy_plyr, .hyena_canvas, .hyena_frame, .hy_btn{
+	-moz-transform:translate3d(0,0,0);	
+    -webkit-transform:translate3d(0,0,0);	
+    -o-transform:translate3d(0,0,0);	
+    -ms-transform:translate3d(0,0,0);		
+	transform:translate3d(0,0,0);
+	-ms-interpolation-mode: bicubic;}
+	
+/************************
+GENERAL COMPONENT STYLING 
+************************/
+.hyena_canvas, .hyena_frame, img.hyena, .hy_bt_wr, .hyena_slate {width:100%; height:100%;}
+.hy_plyr { width:100%; visibility:hidden; overflow:hidden; } 			/* PLAYER */
+.hyena_frame { height:100%; }		  									/* MATTE */
+.hyena_canvas { height:100%; }		  									/* CANVAS ELEMENT */
+img.hyena { display:block; height:100%; visibility:hidden; } 			/* ANIMATED GIF AND STILL STAND-IN */
+.hyena_slate { position:absolute; z-index:99;}
+div.hy_bt_wr { overflow:visible; position:absolute; padding:0; margin:0; } 	/* CONTROL BUTTON */
+img.hy_btn { position:absolute; padding:0; cursor:pointer; display:inline; z-index:999; }
+
+
+/****************************
+  PLAYER STYLE 1 
+****************************/
+div.hy_plyr_1 { border:0; border-radius:0; padding:0; } 			
+div.hy_fr_1, div.hy_fr_1 canvas.hyena_canvas, div.hy_fr_1 img { border:0; }
+div.hy_plyr_1 img.hy_btn { width:20%; opacity:1; left:50%; top:48%; }
+
+/****************************
+  PLAYER STYLE 2 
+****************************/
+div.hy_plyr_2 { border:2px solid rgba(137,137,150,0.15); border-radius:3px; padding:10px; 
+	background: #f5f5f5; 
+	background: -moz-linear-gradient(top, #f5f5f5 0%, #e6e6e7 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#e6e6e7));
+	background: -webkit-linear-gradient(top, #f5f5f5 0%,#e6e6e7 100%);
+	background: -o-linear-gradient(top, #f5f5f5 0%,#e6e6e7 100%); 
+	background: -ms-linear-gradient(top, #f5f5f5 0%,#e6e6e7 100%); 
+	background: linear-gradient(to bottom, #f5f5f5 0%,#e6e6e7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e6e6e7',GradientType=0 ); } 			
+div.hy_fr_2, div.hy_fr_2 canvas.hyena_canvas, div.hy_fr_2 img { background:#ebebed; border-radius:3px; box-shadow:0px 0px 3px 3px rgba(0,0,0,0.17); } 	
+div.hy_plyr_2 div.hyena_slate { background:#ebebed url('controls/tiles/bg_15.png') repeat; border-radius:3px; padding:20px;}													
+div.hy_plyr_2 div.hy_bt_wr {margin-left:-10px; margin-top:-10px;}	
+div.hy_plyr_2 img.hy_btn { transform:scale(1,1); transition:transform 0.5s ease; width:20%; opacity:1; left:50%; top:48%; }
+div.hy_plyr_2 img.hy_btn:hover { transform:scale(1.1,1.1); transition:transform 0.5s ease; }
+
+
+/****************************
+  PLAYER STYLE 3 
+****************************/
+div.hy_plyr_3 { border:6px solid #04d37d; 
+	background: #04d37d; 
+	background: -moz-linear-gradient(top, #04d37d 0%, #02ba76 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#04d37d), color-stop(100%,#02ba76)); 
+	background: -webkit-linear-gradient(top, #04d37d 0%,#02ba76 100%);
+	background: -o-linear-gradient(top, #04d37d 0%,#02ba76 100%); 
+	background: -ms-linear-gradient(top, #04d37d 0%,#02ba76 100%); 
+	background: linear-gradient(to bottom, #04d37d 0%,#02ba76 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04d37d', endColorstr='#02ba76',GradientType=0 ); } 
+div.hy_fr_3, div.hy_fr_3 canvas.hyena_canvas, div.hy_fr_3 img { background:#333d4c; padding:10px; box-shadow:0px 0px 3px 3px rgba(0,0,0,0.17); } 	
+div.hy_plyr_3 img.hy_btn { transform:scale(1,1); transition:transform 0.5s ease; width:20%; left:50%; top:48%; }
+div.hy_plyr_3 img.hy_btn:hover { transform:scale(1.1,1.1); transition:transform 0.5s ease; width:20%; left:50%; top:48%; }
+
+
+/****************************
+  PLAYER STYLE 4 
+****************************/
+div.hy_plyr_4 { border:6px solid #2f2f2f; border-radius:10px; background:#6a6a6a; box-shadow:1px 1px 3px 3px rgba(0,0,0,0.17); } 
+div.hy_fr_4, div.hy_fr_4 canvas.hyena_canvas, div.hy_fr_4 img { background:#2f2f2f; padding:2px; box-shadow:0px 0px 3px 3px rgba(0,0,0,0.17); } 	
+div.hy_plyr_4 div.hyena_slate { background:#2f2f2f; }		
+div.hy_plyr_4 img.hy_btn { transform:scale(1,1); transition:transform 0.5s ease; width:20%; left:50%; top:48%; }
+div.hy_plyr_4 img.hy_btn:hover { transform:scale(1.1,1.1); transition:transform 0.5s ease; width:20%; left:50%; top:48%; }
+
+
+/****************************
+  PLAYER STYLE 5 
+****************************/
+div.hy_plyr_5 { border:2px solid #f1f1f1; background:#f1f1f1; } 
+div.hy_fr_5, div.hy_fr_5 canvas.hyena_canvas, div.hy_fr_5 img { background:#f1f1f1; } 	
+div.hy_plyr_5 div.hyena_slate { background:#FFFFFF; }
+div.hy_plyr_5 img.hy_btn { transform:scale(1,1); transition:transform 0.5s ease; width:20%; left:50%; top:48%; }
+div.hy_plyr_5 img.hy_btn:hover { transform:scale(1.1,1.1); transition:transform 0.5s ease; width:20%; left:50%; top:48%; }
+
+
+/****************************
+	PLAYER STYLE 6 
+ ****************************/
+div.hy_plyr_6 {
+	background: #7d7e7d; 
+	background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e));
+	background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%);
+	background: -o-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); 
+	background: -ms-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%);
+	background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
+	border:4px solid #f1f1f1; padding:8px;}
+div.hy_fr_6 { background:#f1f1f1; }
+div.hy_plyr_6 div.hyena_slate { 
+	background: #7d7e7d; 
+	background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e));
+	background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%);
+	background: -o-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); 
+	background: -ms-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%);
+	background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );}
+div.hy_plyr_6 img.hy_btn { width:20%; left:50%; top:50%; }

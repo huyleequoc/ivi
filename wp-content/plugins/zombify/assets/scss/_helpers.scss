@@ -1,0 +1,30 @@
+//clearfix
+.zf-clearfix {
+  @extend .clearfix;
+}
+//text align left
+.zf-text-left {
+  text-align: left;
+}
+//text align right
+.zf-text-right {
+  text-align: right;
+}
+//element float left
+.zf-float-left {
+  float: left;
+}
+//element float right
+.zf-float-right {
+  float: right;
+}
+//hide element
+.zf-hidden {
+  display: none;
+}
+//clear element
+.zf-clear {clear: both}
+//element float right
+.zf-hide {
+  display: none;
+}

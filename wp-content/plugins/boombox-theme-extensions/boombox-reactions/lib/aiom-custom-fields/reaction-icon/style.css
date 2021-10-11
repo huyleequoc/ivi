@@ -1,0 +1,20 @@
+.reaction-thumb {
+    background-color: #ffe400;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.18);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+}
+.reaction-thumb img{
+    max-width: 100%;
+    height: auto;
+}
+
+.bbte-custom-reaction-icon #reaction_icon_file_name {
+    margin-right: 15px;
+}

@@ -1,0 +1,14 @@
+/* *** Effects *** */
+
+/* Hover Box Shadow */
+.hvr-box-shadow {
+  &:hover {
+    box-shadow: $btn-hover-shadow;
+  }
+}
+
+.hvr-link-underline a, a.hvr-link-underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}

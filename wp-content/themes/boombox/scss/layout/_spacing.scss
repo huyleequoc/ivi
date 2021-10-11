@@ -1,0 +1,42 @@
+/* *** Spacing *** */
+
+#main > .container {
+  margin-bottom: $mb-md;
+}
+
+.mb-xs, #main > .container.mb-xs {
+  margin-bottom: $mb-xs;
+}
+.mb-sm, #main > .container.mb-sm {
+  margin-bottom: $mb-sm;
+}
+.mb-md, #main > .container.mb-md {
+  margin-bottom: $mb-md;
+}
+.mb-lg, #main > .container.mb-lg {
+  margin-bottom: $mb-lg;
+}
+.mb-xl, #main > .container.mb-xl {
+  margin-bottom: $mb-xl;
+}
+
+//#main *:last-child {
+//  margin-bottom: 0;
+//}
+
+#page-wrapper .clear-last-m *:last-child {
+  margin: 0;
+}
+
+#page-wrapper .clear-last-mb *:last-child,
+#page-wrapper .clear-f-level-last-mb > *:last-child,
+#main .container:last-child,
+#main .bb-col:last-child,
+#main .bb-row:last-child,
+#main .site-main:last-child,
+#page-wrapper .bb-mb-el:last-child {
+  margin-bottom: 0;
+}
+//#main div:last-child, #main article:last-child, #main section:last-child, #main header:last-child, #main nav:last-child, #main aside:last-child {
+//  margin-bottom: 0;
+//}

@@ -1,0 +1,72 @@
+/* *** Post Grid System *** */
+
+.bb-post-collection {
+  .post-item ,
+  &.post-list.list.big-item .post-item,
+  &.post-list.list .post-item,
+  &.post-list.standard .post-item,
+  &.post-mixed .post-item {
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .post-items {//ul
+    margin: 0 -15px $mb-md -15px;
+    display: block;
+    list-style: none;
+    @include clearfix();
+
+    .post-item {//li
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: $mb-md;
+      list-style: none;
+    }
+
+    .post-item {
+      .bb-badge-list {
+        position: absolute;
+        z-index: 5;
+      }
+      .content {
+        @extend .clear-last-mb;
+      }
+      .post-thumbnail {
+        @include  clearfix();
+
+        .post-meta {
+          display: inline-block;
+          position: absolute;
+          bottom: 12px;
+          right: 12px;
+          z-index: 5;
+        }
+      }
+      .post-author-meta {
+        display: block;
+        padding-top: 10px;
+        border-top: 1px solid #ececec;
+      }
+      .widget_mc4wp_form_widget.horizontal {
+        margin: 0;
+      }
+    }
+  }
+
+  // This is a temporary solution. This needs to be changed to margin bottom mechanism
+  .bb-post-share-box .content {
+    padding: 10px;
+  }
+  @media screen and (min-width: $screen-mb-boxed) {
+    .bb-post-share-box .content {
+      padding: 10px $container-padding;
+    }
+  }
+}
+
+@import "grid";
+@import "list";
+@import "masonry";
+
+

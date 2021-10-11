@@ -1,0 +1,680 @@
+# Copyright (C) 2021 gamify
+# This file is distributed under the same license as the gamify package.
+msgid ""
+msgstr ""
+"Project-Id-Version: gamify\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gamify/core/admin/classes/class-admin-notifier.php:93
+msgid "Late to setup admin notifications."
+msgstr ""
+
+#: gamify/core/classes/class-actions-helper.php:171, gamify/core/classes/class-actions-helper.php:154
+msgid "Congratulations!"
+msgstr ""
+
+#: gamify/core/classes/class-actions-helper.php:172
+msgid "You've promoted a rank!"
+msgstr ""
+
+#: gamify/core/classes/class-actions-helper.php:173
+msgid "I've promoted a rank!"
+msgstr ""
+
+#: gamify/core/classes/class-actions-helper.php:155
+msgid "You've earned a badge!"
+msgstr ""
+
+#: gamify/core/classes/class-actions-helper.php:156
+msgid "I've earned a \"badge\"!"
+msgstr ""
+
+#: gamify/core/classes/shortcodes/class-shortcode-leaderboard.php:219, gamify/modules/buddypress-leaderboard/bp-component/classes/class-bp-leaderboard-component-template.php:137, gamify/modules/buddypress-leaderboard/bp-component/classes/class-bp-leaderboard-component-template.php:176, gamify/modules/buddypress-leaderboard/bp-component/classes/class-bp-leaderboard-component-template.php:216
+msgid "Leaderboard is empty"
+msgstr ""
+
+#: gamify/core/classes/shortcodes/class-shortcode-leaderboard.php:251, gamify/core/classes/widgets/class-leaderboard-widget.php:160, gamify/core/classes/widgets/class-leaderboard-widget.php:410, gamify/core/classes/widgets/class-leaderboard-widget.php:435
+msgid "All Time"
+msgstr ""
+
+#: gamify/core/classes/shortcodes/class-shortcode-leaderboard.php:262, gamify/core/classes/widgets/class-leaderboard-widget.php:161, gamify/core/classes/widgets/class-leaderboard-widget.php:411, gamify/core/classes/widgets/class-leaderboard-widget.php:439, gamify/modules/buddypress-history/bp-component/classes/class-bp-history-component.php:81, gamify/modules/buddypress-leaderboard/bp-component/classes/class-bp-leaderboard-component.php:81
+msgid "Today"
+msgstr ""
+
+#: gamify/core/classes/shortcodes/class-shortcode-leaderboard.php:267, gamify/core/classes/widgets/class-leaderboard-widget.php:162, gamify/core/classes/widgets/class-leaderboard-widget.php:443, gamify/core/hooks/class-hook-bonuses-for-publishing.php:221
+msgid "Week"
+msgstr ""
+
+#: gamify/core/classes/shortcodes/class-shortcode-leaderboard.php:272, gamify/core/classes/widgets/class-leaderboard-widget.php:163, gamify/core/classes/widgets/class-leaderboard-widget.php:447, gamify/core/hooks/class-hook-bonuses-for-publishing.php:222
+msgid "Month"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:18
+msgid "Displays chosen user as a featured | Gamify"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:21
+msgid "Featured author | Gamify"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:40, gamify/core/classes/widgets/class-featured-author-widget.php:230
+msgid "Featured Author"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:106
+msgid "Total %s"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:116
+msgid "Total Posts"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:247, gamify/core/classes/widgets/class-leaderboard-widget.php:268
+msgid "Title"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:256
+msgid "User"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:268, gamify/core/classes/widgets/class-leaderboard-widget.php:279
+msgid "Point Type"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:278
+msgid "Disable Cover Image"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:286
+msgid "Disable Name"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:294
+msgid "Disable User Avatar"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:302
+msgid "Disable Rank Logo"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:310
+msgid "Disable Biography"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:318
+msgid "Disable Earned Badges"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:323
+msgid "Max Badges Count"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:331
+msgid "Disable Total Points"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:339
+msgid "Disable Total Posts"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:347
+msgid "Disable Total Reads"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-featured-author-widget.php:355
+msgid "Disable Social Icons"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:18
+msgid "Leaderboard based on instances or balances. | Gamify"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:21
+msgid "Leaderboard | Gamify"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:35, gamify/core/classes/widgets/class-leaderboard-widget.php:241, gamify/modules/buddypress-leaderboard/bp-component/classes/class-bp-leaderboard-component-helper.php:34
+msgid "Leaderboard"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:219
+msgid "Position"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:220, gamify/core/templates/shortcodes/leaderboard.php:91, gamify/core/templates/shortcodes/leaderboard.php:65, gamify/modules/buddypress-leaderboard/bp-component/templates/month.php:34, gamify/modules/buddypress-leaderboard/bp-component/templates/month.php:50, gamify/modules/buddypress-leaderboard/bp-component/templates/today.php:34, gamify/modules/buddypress-leaderboard/bp-component/templates/today.php:50, gamify/modules/buddypress-leaderboard/bp-component/templates/week.php:34, gamify/modules/buddypress-leaderboard/bp-component/templates/week.php:50
+msgid "Avatar"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:221
+msgid "Name"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:222
+msgid "Creds Count"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:226, gamify/core/templates/shortcodes/leaderboard.php:93, gamify/core/templates/shortcodes/leaderboard.php:67, gamify/modules/buddypress-leaderboard/bp-component/templates/month.php:36, gamify/modules/buddypress-leaderboard/bp-component/templates/month.php:52, gamify/modules/buddypress-leaderboard/bp-component/templates/today.php:36, gamify/modules/buddypress-leaderboard/bp-component/templates/today.php:52, gamify/modules/buddypress-leaderboard/bp-component/templates/week.php:36, gamify/modules/buddypress-leaderboard/bp-component/templates/week.php:52
+msgid "Rank"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:289
+msgid "Based On"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:296
+msgid "Use \"balance\" to base the leaderboard on your users current balances or use a specific reference."
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:298
+msgid "Reference Guide"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:309
+msgid "Visible to non-members"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:315
+msgid "Number of users"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:324
+msgid "Row Components"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:344
+msgid "Offset"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:352
+msgid "Optional offset of order. Use zero to return the first in the list."
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:357
+msgid "Order"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:365
+msgid "Ascending"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:366
+msgid "Descending"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:385
+msgid "Append current users position"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:388
+msgid "If the current user is not in this leaderboard, you can select to append them at the end with their current position."
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:396
+msgid "Timeframe"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:412, gamify/modules/buddypress-history/bp-component/classes/class-bp-history-component.php:90, gamify/modules/buddypress-leaderboard/bp-component/classes/class-bp-leaderboard-component.php:90
+msgid "This Week"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:413, gamify/modules/buddypress-history/bp-component/classes/class-bp-history-component.php:99, gamify/modules/buddypress-leaderboard/bp-component/classes/class-bp-leaderboard-component.php:99
+msgid "This Month"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:414
+msgid "Custom"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:421
+msgid "Start Date"
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:428
+msgid "Option to limit the leaderboard based on a specific timeframe."
+msgstr ""
+
+#: gamify/core/classes/widgets/class-leaderboard-widget.php:432
+msgid "Timeframe Tabs"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-bonuses-for-publishing.php:63
+msgid "Publish in time intervals"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-bonuses-for-publishing.php:88
+msgid "Interval"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-bonuses-for-publishing.php:123
+msgid "Published posts count"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-bonuses-for-publishing.php:141, gamify/core/hooks/class-hook-publishing-firstly-in-category.php:121, gamify/core/hooks/class-hook-publishing-in-category.php:136, gamify/modules/post-ranking-system/hooks/class-hook-featured-on-frontpage-post-in-category.php:135, gamify/modules/post-ranking-system/hooks/class-hook-featured-on-frontpage-post.php:92, gamify/modules/post-ranking-system/hooks/class-hook-featured-post-in-category.php:137, gamify/modules/post-ranking-system/hooks/class-hook-featured-post.php:92, gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views-in-category.php:154, gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views.php:111, gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-votes.php:111, gamify/modules/post-ranking-system/hooks/class-hook-single-post-views-milestones.php:124, gamify/modules/post-ranking-system/hooks/class-hook-trending-post.php:137, gamify/modules/post-ranking-system/hooks/class-hook-view-up.php:93, gamify/modules/post-ranking-system/hooks/class-hook-vote-up-down.php:104, gamify/modules/post-ranking-system/hooks/class-hook-vote-up-down.php:146, gamify/modules/zombify/hooks/class-hook-publishing-firstly-in-format.php:121, gamify/modules/zombify/hooks/class-hook-publishing-in-format.php:137
+msgid "Log template"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-bonuses-for-publishing.php:163, gamify/core/hooks/class-hook-publishing-in-category.php:158, gamify/modules/post-ranking-system/hooks/class-hook-featured-on-frontpage-post-in-category.php:157, gamify/modules/post-ranking-system/hooks/class-hook-featured-post-in-category.php:159, gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views-in-category.php:176, gamify/modules/post-ranking-system/hooks/class-hook-single-post-views-milestones.php:146, gamify/modules/zombify/hooks/class-hook-publishing-in-format.php:159
+msgid "Add row"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-bonuses-for-publishing.php:177, gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views-in-category.php:190, gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views.php:141, gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-votes.php:141
+msgid "selected count"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-bonuses-for-publishing.php:178
+msgid "selected interval"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-bonuses-for-publishing.php:220
+msgid "Day"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-bonuses-for-publishing.php:223
+msgid "Year"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-bonuses-for-publishing.php:361
+msgid "Points for publishing in time intervals | Gamify"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-bonuses-for-publishing.php:362
+msgid "Conditional hook to award %_plural% for publishing posts in specific time intervals."
+msgstr ""
+
+#: gamify/core/hooks/class-hook-publishing-firstly-in-category.php:59
+msgid "Publish first time in category"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-publishing-firstly-in-category.php:98
+msgid "Categories"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-publishing-firstly-in-category.php:151, gamify/core/hooks/class-hook-publishing-in-category.php:172, gamify/modules/post-ranking-system/hooks/class-hook-featured-on-frontpage-post-in-category.php:171, gamify/modules/post-ranking-system/hooks/class-hook-featured-post-in-category.php:173, gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views-in-category.php:191
+msgid "selected category"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-publishing-firstly-in-category.php:261
+msgid "Points for publishing 1st post in categories | Gamify"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-publishing-firstly-in-category.php:262
+msgid "Award %_plural% to authors for publishing their 1st post in one of chosen categories."
+msgstr ""
+
+#: gamify/core/hooks/class-hook-publishing-in-category.php:116, gamify/modules/post-ranking-system/hooks/class-hook-featured-on-frontpage-post-in-category.php:115, gamify/modules/post-ranking-system/hooks/class-hook-featured-post-in-category.php:117, gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views-in-category.php:134
+msgid "Category"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-publishing-in-category.php:196
+msgid "Publish in \"%s\" category"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-publishing-in-category.php:305
+msgid "Points for publishing in categories | Gamify"
+msgstr ""
+
+#: gamify/core/hooks/class-hook-publishing-in-category.php:306
+msgid "Conditional hook to award %_plural% to authors when they publish posts in chosen categories."
+msgstr ""
+
+#: gamify/core/templates/notifications-popup.php:52
+msgid "Share on Facebook"
+msgstr ""
+
+#: gamify/core/templates/notifications-popup.php:56
+msgid "Share on Twitter"
+msgstr ""
+
+#: gamify/core/templates/shortcodes/leaderboard.php:11, gamify/core/templates/shortcodes/leaderboard.php:94, gamify/modules/buddypress-leaderboard/bp-component/templates/month.php:14, gamify/modules/buddypress-leaderboard/bp-component/templates/today.php:14, gamify/modules/buddypress-leaderboard/bp-component/templates/week.php:14
+msgid "Points"
+msgstr ""
+
+#: gamify/core/templates/shortcodes/leaderboard.php:14, gamify/modules/buddypress-leaderboard/bp-component/templates/month.php:17, gamify/modules/buddypress-leaderboard/bp-component/templates/today.php:17, gamify/modules/buddypress-leaderboard/bp-component/templates/week.php:17
+msgid "Total / Current"
+msgstr ""
+
+#: gamify/core/templates/shortcodes/leaderboard.php:92, gamify/core/templates/shortcodes/leaderboard.php:66, gamify/modules/buddypress-leaderboard/bp-component/templates/month.php:35, gamify/modules/buddypress-leaderboard/bp-component/templates/month.php:51, gamify/modules/buddypress-leaderboard/bp-component/templates/today.php:35, gamify/modules/buddypress-leaderboard/bp-component/templates/today.php:51, gamify/modules/buddypress-leaderboard/bp-component/templates/week.php:35, gamify/modules/buddypress-leaderboard/bp-component/templates/week.php:51
+msgid "Username"
+msgstr ""
+
+#: gamify/gamify.php:169
+msgid "%s requires <a href=\"https://wordpress.org/plugins/mycred/\" target=\"_blank\" rel=\"noopener\">myCRED</a> to be activated"
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/achievements.php:82, gamify/modules/buddypress-achievements/achievements.php:97, gamify/modules/buddypress-achievements/bp-component/classes/class-bp-achievements-component-helper.php:31, gamify/modules/buddypress-achievements/templates/bp_member_profile.php:16
+msgid "Achievements"
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/achievements.php:84
+msgid "Here's where all your unlocked badges are displayed for everyone to see!"
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/achievements.php:128, gamify/modules/buddypress-ranks/ranks.php:51
+msgid "Gamify"
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/achievements.php:143
+msgid "Badge Description"
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/bp-component/classes/class-bp-achievements-component-helper.php:40
+msgid "Show all, earned & unearned badges ( myCRED )."
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/bp-component/classes/class-bp-achievements-component-notification.php:105
+msgid "%d earned badge"
+msgid_plural "%d earned badges"
+msgstr[0] ""
+msgstr[1] ""
+
+#: gamify/modules/buddypress-achievements/bp-component/classes/class-bp-achievements-component-notification.php:117
+msgid "%s: Level %d"
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/bp-component/classes/class-bp-achievements-component-notification.php:121
+msgid "You have earned a new badge - %s"
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/bp-component/classes/class-bp-achievements-component-notification.php:108
+msgid "You have earned %d badges."
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/bp-component/classes/class-bp-achievements-component.php:76
+msgid "All"
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/bp-component/classes/class-bp-achievements-component.php:84
+msgid "Earned"
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/bp-component/classes/class-bp-achievements-component.php:92
+msgid "Unearned"
+msgstr ""
+
+#: gamify/modules/buddypress-achievements/bp-component/templates/badge-item-earned.php:24, gamify/modules/buddypress-achievements/bp-component/templates/badge-item-unearned.php:39, gamify/modules/buddypress-achievements/bp-component/templates/badge-item-unearned.php:35
+msgid "Level %d"
+msgstr ""
+
+#: gamify/modules/buddypress-history/bp-component/classes/class-bp-history-component-helper.php:34
+msgid "Points History"
+msgstr ""
+
+#: gamify/modules/buddypress-history/bp-component/classes/class-bp-history-component-helper.php:43
+msgid "Show points history ( myCRED )."
+msgstr ""
+
+#: gamify/modules/buddypress-history/bp-component/templates/filter.php:16, gamify/modules/buddypress-leaderboard/bp-component/templates/filter.php:16
+msgid "Show"
+msgstr ""
+
+#: gamify/modules/buddypress-leaderboard/bp-component/classes/class-bp-leaderboard-component-helper.php:43
+msgid "Show users leaderboard ( myCRED )."
+msgstr ""
+
+#: gamify/modules/buddypress-ranks/bp-component/classes/class-bp-ranks-component-helper.php:31
+msgid "Ranks"
+msgstr ""
+
+#: gamify/modules/buddypress-ranks/bp-component/classes/class-bp-ranks-component-helper.php:40
+msgid "Extends ranks functionality ( myCRED )."
+msgstr ""
+
+#: gamify/modules/buddypress-ranks/bp-component/classes/class-bp-ranks-component-notification.php:80
+msgid "Your were demoted by %d rank"
+msgid_plural "Your were demoted by %d ranks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: gamify/modules/buddypress-ranks/bp-component/classes/class-bp-ranks-component-notification.php:93
+msgid "You were demoted to new rank - %s"
+msgstr ""
+
+#: gamify/modules/buddypress-ranks/bp-component/classes/class-bp-ranks-component-notification.php:85
+msgid "You were demoted by %d ranks."
+msgstr ""
+
+#: gamify/modules/buddypress-ranks/bp-component/classes/class-bp-ranks-component-notification.php:103
+msgid "Your were promoted by %d rank"
+msgid_plural "Your were promoted by %d ranks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: gamify/modules/buddypress-ranks/bp-component/classes/class-bp-ranks-component-notification.php:116
+msgid "You were promoted to new rank - %s"
+msgstr ""
+
+#: gamify/modules/buddypress-ranks/bp-component/classes/class-bp-ranks-component-notification.php:108
+msgid "You were promoted by %d ranks."
+msgstr ""
+
+#: gamify/modules/buddypress-ranks/ranks.php:66
+msgid "Rank Description"
+msgstr ""
+
+#: gamify/modules/buddypress-ranks/templates/bp_member_header.php:33
+msgid "Rank: %s"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-on-frontpage-post-in-category.php:195
+msgid "Have featured post on front page in \"%s\" category"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-on-frontpage-post-in-category.php:307
+msgid "Points for featured post on front page in category | Gamify"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-on-frontpage-post-in-category.php:308
+msgid "Award %_plural% to authors when post from chosen categories becomes featured on front page ."
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-on-frontpage-post.php:59
+msgid "Have featured post on front page"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-on-frontpage-post.php:185
+msgid "Points for making featured post on front page | Gamify"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-on-frontpage-post.php:186
+msgid "Award %_plural% to authors when post becomes featured on front page."
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-post-in-category.php:197
+msgid "Have featured post in \"%s\" category"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-post-in-category.php:309
+msgid "Points for featured post in categories | Gamify"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-post-in-category.php:310
+msgid "Award %_plural% to authors when post from chosen categories becomes featured."
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-post.php:59
+msgid "Have featured post"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-post.php:186
+msgid "Points for making featured post | Gamify"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-featured-post.php:187
+msgid "Award %_plural% to authors when post becomes featured."
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views-in-category.php:98, gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views.php:75
+msgid "Views amount"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views-in-category.php:215
+msgid "Count X views in \"%s\" category"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views-in-category.php:331
+msgid "Points for every X views in categories | Gamify"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views-in-category.php:332
+msgid "Award %_plural% to author for every X views through all their posts in chosen categories."
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views.php:59
+msgid "Count X views"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views.php:242
+msgid "Points for every X views | Gamify"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-views.php:243
+msgid "Award %_plural% to author for every X views through all their posts."
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-votes.php:59
+msgid "Count X votes"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-votes.php:75
+msgid "Votes amount"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-votes.php:267
+msgid "Points for every X votes | Gamify"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-recurrent-post-votes.php:268
+msgid "Award %_plural% to authenticated user for every X votes through other users posts."
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-single-post-views-milestones.php:87
+msgid "Milestone #{N}"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-single-post-views-milestones.php:160
+msgid "selected milestone"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-single-post-views-milestones.php:184
+msgid "Reaching single post milestone: %d views"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-single-post-views-milestones.php:270
+msgid "Points for reaching views milestones on single post | Gamify"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-single-post-views-milestones.php:271
+msgid "Conditional hook to award %_plural% to authors when their post views reach chosen counts."
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-trending-post.php:105
+msgid "There are no active trending conditions"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-trending-post.php:175
+msgid "Have %s post"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-trending-post.php:187
+msgid "Trending post (top in last 24 hours)"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-trending-post.php:190
+msgid "Hot post (top in last 7 days)"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-trending-post.php:193
+msgid "Popular post (top in last 30 days)"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-trending-post.php:211, gamify/modules/post-ranking-system/hooks/class-hook-trending-post.php:214, gamify/modules/post-ranking-system/hooks/class-hook-trending-post.php:217
+msgid "Notice: points will be awarded every 24 hours, when new list is generated."
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-trending-post.php:338
+msgid "Points for trending post | Gamify"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-trending-post.php:339
+msgid "Award %_plural% to authors for trending post (once a day)."
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-view-up.php:59
+msgid "View up"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-view-up.php:164
+msgid "Points for post single view up | Gamify"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-view-up.php:165
+msgid "Award %_plural% to authors for viewing their posts."
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-vote-up-down.php:67
+msgid "Points for upvote"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-vote-up-down.php:68
+msgid "Points for downvote"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-vote-up-down.php:81
+msgid "Upvote"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-vote-up-down.php:124
+msgid "Downvote"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-vote-up-down.php:233
+msgid "Points for upvote / downvote | Gamify"
+msgstr ""
+
+#: gamify/modules/post-ranking-system/hooks/class-hook-vote-up-down.php:234
+msgid "Award %_plural% to authors for upvote / downvote on their posts."
+msgstr ""
+
+#: gamify/modules/zombify/hooks/class-hook-publishing-firstly-in-format.php:59
+msgid "Publish first time in formats"
+msgstr ""
+
+#: gamify/modules/zombify/hooks/class-hook-publishing-firstly-in-format.php:96
+msgid "Post Formats"
+msgstr ""
+
+#: gamify/modules/zombify/hooks/class-hook-publishing-firstly-in-format.php:151, gamify/modules/zombify/hooks/class-hook-publishing-in-format.php:173
+msgid "selected format"
+msgstr ""
+
+#: gamify/modules/zombify/hooks/class-hook-publishing-firstly-in-format.php:272
+msgid "Points for publishing 1st post in formats | Gamify"
+msgstr ""
+
+#: gamify/modules/zombify/hooks/class-hook-publishing-firstly-in-format.php:273
+msgid "Award %_plural% to authors for publishing their 1st post with \"Zombify\" plugin in one of chosen formats."
+msgstr ""
+
+#: gamify/modules/zombify/hooks/class-hook-publishing-in-format.php:118
+msgid "Format"
+msgstr ""
+
+#: gamify/modules/zombify/hooks/class-hook-publishing-in-format.php:197
+msgid "Publish \"%s\" format"
+msgstr ""
+
+#: gamify/modules/zombify/hooks/class-hook-publishing-in-format.php:324
+msgid "Points for publishing in post formats | Gamify"
+msgstr ""
+
+#: gamify/modules/zombify/hooks/class-hook-publishing-in-format.php:325
+msgid "Conditional hook to award %_plural% to authors when they publish posts with \"Zombify\" plugin in chosen post formats."
+msgstr ""

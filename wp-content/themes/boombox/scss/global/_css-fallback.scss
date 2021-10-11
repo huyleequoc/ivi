@@ -1,0 +1,66 @@
+/* *** Css fallback *** */
+
+.no-svg {
+  .header, .footer {
+    .pattern {
+      display: none !important;
+    }
+  }
+
+  .footer.top-bg {
+    margin-top: 0;
+  }
+}
+
+.no-csscolumns {
+  .widget_nav_menu,
+  .widget_categories,
+  .widget_archive,
+  .widget_pages,
+  .widget_meta {
+    > ul, .menu {
+      overflow: hidden;
+      li {
+        width: 50%;
+        float: left;
+      }
+    }
+  }
+  .more-menu .section-navigation {
+    ul {
+      overflow: hidden;
+
+      li {
+        width: 25%;
+        float: left;
+      }
+    }
+  }
+  .bb-mobile-navigation .more-menu .section-navigation {
+    ul {
+      overflow: hidden;
+      li {
+        width: 50%;
+        float: left;
+      }
+    }
+  }
+}
+
+.no-video {
+  video {
+    display: none
+  }
+}
+
+.no-audio {
+  audio {
+    display: none
+  }
+}
+
+.captcha-container.loading {
+  .form-captcha {
+    visibility: hidden;
+  }
+}

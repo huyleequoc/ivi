@@ -1,0 +1,179 @@
+/* *** Post List *** */
+
+.post-list {
+  &.list {
+    .post-item {
+      margin-bottom: 20px;
+      @include clearfix();
+
+      .post {
+        @include clearfix();
+      }
+      .post-thumbnail {
+        .bb-badge-list {
+          .bb-badge {
+            float: left;
+
+            &:nth-child(3) {
+              display: none;
+            }
+          }
+        }
+      }
+      .avatar {
+        width: 33px;
+      }
+    }
+    &.small-item {
+      .post-thumbnail {
+        float: left;
+        width: 20%;
+        width: calc(150px);
+      }
+      .content {
+        padding: 0 0 0 20px;
+        float: left;
+        width: 80%;
+        width: calc(100% - 150px);
+      }
+      .entry-header h2 {
+        font-size: 18px;
+      }
+    }
+    &.big-item {
+      .widget_mc4wp_form_widget.horizontal,
+      .post-item {
+        margin-bottom: 30px;
+      }
+      .post-thumbnail {
+        float: left;
+        width: 48%;
+      }
+      .content {
+        float: left;
+        padding: 0 0 0 20px;
+        width: 52%;
+
+        .entry-title {
+          font-size: 26px;
+          line-height: 1.1em;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $screen-mb-full-w-max) {
+  .post-list {
+    &.list.small-item {
+      .entry-sub-title,
+      .post-author-meta {
+        display: none;
+      }
+    }
+    &.list.big-item {
+      .post {
+        .post-thumbnail,
+        .content {
+          float: none;
+          width: 100%;
+        }
+        .content {
+          padding: 12px 0 0;
+          .entry-header h2 {
+            margin: 0 0 5px;
+            font-size: 23px;
+            line-height: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.post-list.standard {
+
+  .post-item {
+    padding-bottom: 20px;
+
+    .content {
+      padding-top: 16px;
+    }
+    .post-author-meta {
+      border-top: none;
+    }
+    .avatar {
+      display: inline-block;
+      width: 40px;
+      margin-right: 12px;
+      padding-top: 0;
+      border-radius: 50%;
+    }
+
+    .bb-cat-links {
+      font-size: 12px;
+    }
+    &.newsletter-box,
+    &.bb-advertisement {
+      border-bottom: none;
+    }
+
+    .post-stream {
+
+      .entry-title {
+        font-size: 32px;
+        margin-bottom: 18px;
+      }
+      .entry-sub-title {
+        margin-top: 0;
+        font-weight: 400;
+      }
+
+    }
+  }
+  .entry-sub-title {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
+  .post .byline {
+
+    .url {
+      font-size: 18px;
+      line-height: 1em;
+    }
+  }
+
+  footer {
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  @media screen and (min-width: $screen-mb-boxed) {
+    .entry-header {
+      margin-bottom: 10px;
+      h2 {
+        font-size: 30px;
+        line-height: 1em;
+        margin-bottom: 10px;
+      }
+    }
+    .type-product .entry-header h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .fixed-height {
+    .boombox-featured-video {
+      height: 0;
+      padding-bottom: 56.25%;
+
+      video {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+      }
+    }
+  }
+}
+

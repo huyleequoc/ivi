@@ -1,0 +1,88 @@
+/* *** Stretched View *** */
+
+// Stretch option
+.bb-stretched-full {
+  border-radius: 0;
+  width: 100%;
+  &.no-gutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Full width style in mobile view */
+@media screen and (max-width: $screen-mb-full-w-max) {
+  // Home Archive Pages
+  .home, .archive {
+    .bb-post-collection.bb-thumbnail-stretched .post-item .post-thumbnail,
+    .bb-post-collection .post-item.bb-thumbnail-stretched .post-thumbnail {
+      margin-left: -$container-pad-mobile;
+      margin-right: -$container-pad-mobile;
+      width: auto;
+    }
+    .bb-post-collection.bb-thumbnail-stretched .post-item,
+    .bb-post-collection .post-item.bb-thumbnail-stretched {
+      .post-thumbnail {
+        &,.video-wrapper, video,canvas,img,.bb-media-placeholder,.nsfw-post {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  .bb-post-single .s-post-thumbnail,
+  .bb-featured-area .featured-area-wrapper {
+    margin-left: -$container-pad-mobile;
+    margin-right: -$container-pad-mobile;
+    width: auto;
+  }
+  .bb-post-single.style2 .s-post-thumbnail {
+    margin-left: - ($container-pad-mobile + 10px);
+    margin-right: - ($container-pad-mobile + 10px);
+  }
+  .bb-featured-area .featured-area-wrapper .featured-media,
+  .bb-featured-area .featured-area-wrapper .featured-item,
+  .bb-featured-area .featured-area-wrapper .featured-header,
+  .bb-featured-area .widget_mc4wp_form_widget:after,
+  .light-modal .modal-body,
+  .bb-page-header.boxed.has-bg .container-bg.rmv-b-r-mobile,
+  .bb-post-single .s-post-thumbnail,
+  .bb-post-single .s-post-thumbnail img,
+  .bb-post-single .s-post-thumbnail .bb-media-placeholder,
+  .bb-post-single .s-post-thumbnail video,
+  .bb-post-single .s-post-thumbnail .video-wrapper,
+  .bb-post-single .s-post-thumbnail .hy_plyr canvas,
+  .bb-post-single .s-post-thumbnail .nsfw-post,
+  .bb-post-single .s-post-featured-media.boxed .featured-media-el {
+    border-radius: 0;
+  }
+
+  .bb-post-single .s-post-featured-media.boxed {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+   // Stretch option
+  .bb-stretched-mobile {
+    width: 100%;
+    border-radius: 0;
+    &.no-gutters {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+}
+
+/* Full width style in desktop view */
+@media screen and (min-width: $screen-mb-boxed) {
+  // Stretch option
+  .bb-stretched-desktop {
+    width: 100%;
+    border-radius: 0;
+    &.no-gutters {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

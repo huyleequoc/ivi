@@ -1,0 +1,68 @@
+/* *** Post Embed Functionality *** */
+
+/* Embeds in thumbnail */
+.post-thumbnail {
+  .boombox-featured-embed {
+
+    &.bb-embed-dailymotion,
+    &.bb-embed-vine,
+    &.bb-embed-vimeo,
+    &.bb-embed-ok,
+    &.bb-embed-twitch,
+    &.bb-embed-coub,
+    &.bb-embed-youtube {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &.bb-embed-vine {
+      padding-bottom: 100%;
+    }
+  }
+
+  iframe.instagram-media {
+    float: none !important;
+  }
+}
+
+/* Embeds in content for youtube, vimeo, vine */
+.boombox-responsive-embed {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+
+  &.vine-embed {
+    padding-bottom: 100%;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+/* Embeds centralizing */
+iframe.instagram-media {
+  margin: 0 auto !important;
+}
+.twitter-tweet {
+  margin-right: auto;
+  margin-left: auto;
+}

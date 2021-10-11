@@ -1,0 +1,156 @@
+/**
+ * 1.0 - Option Panel
+ */
+
+#zf-options-section {
+  background-color: #f9faf8;
+
+  .zf-head {
+    position: relative;
+    padding: 30px 70px 25px 30px;
+    font-size: 18px;
+    color: #121212;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e7;
+
+    .zf-icon {
+      position: absolute;
+      top:25px;
+      right: 30px;
+      font-size: 38px;
+      font-weight: 400;
+      color: $primary-color;
+    }
+  }
+  .zf-body {
+    padding: 20px 30px;
+  }
+  .zf-featured-image {
+    margin-bottom: 20px;
+  }
+  .zf-option-item {
+    clear: both;
+    margin-bottom: 20px;
+  }
+
+  .zf-tags-limit {
+    font-size: 12px;
+    color: #998e99;
+  }
+
+  .tag-editor {
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    color: inherit;
+    border: 1px solid #e4e0e4;
+    background-color: #fff;
+    font-weight: 400;
+    border-radius: 3px;
+
+    .tag-editor-spacer {
+      line-height: 10px;
+    }
+
+    input {
+      border: none;
+      height: 20px;
+      padding: 0;
+      color: #000000;
+      line-height: 20px;
+      width: auto;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .tag-editor-delete {
+      background-color: #f9faf8;
+      color: #353535;
+    }
+    .tag-editor-tag {
+      color: #353535;
+      background-color: #f9faf8;
+    }
+  }
+  .zf-post-schedule {
+    position: relative;
+    color: #121212;
+
+    .zf-timestamp-wrap {
+      display: flex;
+      vertical-align: top;
+      margin-bottom: 5px;
+
+      >* {
+        vertical-align: top;
+      }
+    }
+
+    .zf-cancel-timestamp,
+    .zf-edit-timestamp {
+      padding: 0 5px;
+      text-decoration: underline;
+      text-transform: lowercase;
+    }
+    .zf-cancel-timestamp {
+      display: none;
+    }
+    .zf-save-timestamp {
+      padding: 2px 9px;
+      font-size: 13px;
+      text-transform: uppercase;
+
+      &:hover {
+        box-shadow: 0 0 5px rgba(158,158,158,.75);
+      }
+    }
+    #timestamp {
+      i {
+        text-transform: lowercase;
+      }
+    }
+  }
+  #zf-timestampdiv {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 12px 10px;
+    list-style: none;
+    max-height: 300px;
+    overflow: auto;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #e4e0e4;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+
+    label {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+    select,input {
+      display: inline-block;
+      padding: 5px 5px;
+      height: 30px;
+      line-height: 13px;
+      font-size: 13px;
+      width: 2.3em;
+    }
+    #mm {
+      width: 6em;
+    }
+    #aa {
+      width: 3.2em;
+    }
+  }
+}
+

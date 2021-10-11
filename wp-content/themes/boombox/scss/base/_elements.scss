@@ -1,0 +1,541 @@
+/* *** Elements *** */
+/* General */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus, img, a {
+  outline: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+// Add any style from this list if any bug appears
+//html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+//  border: 0;
+//  font-family: inherit;
+//  font-size: 100%;
+//  font-style: inherit;
+//  font-weight: inherit;
+//  margin: 0;
+//  outline: 0;
+//  padding: 0;
+//  vertical-align: baseline;
+//}
+
+/* Root Containers */
+html {
+  font-size: $mobile-font-size;
+  line-height: $mobile-line-height;
+}
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+body,html {
+  margin: 0;
+  font-weight: 500;
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  border-radius: 0 !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+// This is needed for using css sticky
+// However, when we hide overflow only on html, in ios unnecessary horizontal scroll appears
+// Needs to be reviewed later
+//html {
+//  overflow-x: hidden;
+//  overflow-y: auto;
+//}
+@media screen and (min-width: $screen-sm-min) {
+  html {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+  }
+}
+
+/* Media */
+img {
+  border: 0;
+  height: auto;
+  vertical-align: middle;
+}
+img,iframe,video,audio, embed, object ,canvas {
+  max-width: 100%;
+}
+figure {
+  margin: 0;
+}
+
+/* Form */
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0; // Remove the margin in Firefox and Safari
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+/* Paragraph */
+p {
+  margin: 0 0 $mb-par 0;
+}
+
+/* Links */
+a {
+  cursor: pointer;
+  color: $link-color;
+  text-decoration: none;
+  -ms-word-break: break-all;
+  word-break: normal;
+  word-wrap: break-word;
+  text-decoration: none;
+  @include  transition(all 0.15s ease-out);
+}
+a:hover {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1.07;
+  color: $heading-color;
+  font-weight: 600;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 1.875rem;
+  margin-bottom: $mb-par;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+  margin-top: 0.9375rem;
+  margin-bottom: 10px;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+.h1, h1 {
+  font-size: $h1-font-size;
+}
+.h2, h2 {
+  font-size: $h2-font-size;
+}
+.h3, h3 {
+  font-size: $h3-font-size;
+}
+.h4, h4 {
+  font-size: $h4-font-size;
+}
+.h5, h5 {
+  font-size: $h5-font-size;
+}
+.h6, h6 {
+  font-size: $h6-font-size;
+}
+
+/* Line Types */
+hr {
+  background-color: #ececec;
+  border: 0;
+  height: 2px;
+  clear: both;
+  margin: 25px 0 25px;
+  &.primary-color {
+    background-color: $primary-color;
+  }
+  &.bb-line-dotted {
+    border: none;
+    border-top: 1px dotted $gray;
+  }
+  &.bb-line-dashed  {
+    border: none;
+    border-top: 1px dashed $gray;
+  }
+  &.bb-line-dotted,&.bb-line-dashed {
+    &.primary-color {
+      background-color: transparent;
+      border-top-color: $primary-color;
+    }
+  }
+}
+
+/* Blockquotes */
+blockquote, .fr-view blockquote {
+  padding-left: 3.75rem;
+  margin: 2.5rem 0;
+}
+blockquote {
+  position: relative;
+  font-family: Cabin,sans-serif;
+  line-height: 1.3;
+  font-size: 1.5rem;
+  text-align: left;
+
+  &:before {
+    font-family: $icon-font-family;
+    content: "\f10d";
+    position: absolute;
+    left: 0;
+    top: - (40px - (1.5 * $mobile-font-size * 1.3)) / 2;
+    font-style: inherit;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    font-size: 16px;
+    vertical-align: middle;
+    text-align: center;
+    @include badge-box-shadow();
+  }
+
+  cite,small,footer {
+    display: block;
+    padding-top: 10px;
+    color: #a6a6a6;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+  }
+}
+@media screen and (min-width: $screen-sm-min) {
+  blockquote, .fr-view blockquote {
+    margin: 3.125rem 6.25rem 3.125rem 4.375rem;
+    &:before {
+      top: - (40px - (1.5 * $base-font-size * 1.3)) / 2;
+    }
+  }
+}
+// Froala rich text editor specific styles
+.fr-view blockquote {
+  border: none;
+  color: inherit;
+}
+
+/* Lists */
+// 30px is set especially for ol for having correct view in case of double-digit numbers
+ul, ol {
+  margin: 0 0 $mb-sm 1.875em;
+  padding: 0;
+  ul,ol {
+    margin-bottom: 0;
+  }
+}
+ol.bb-ol-inside {
+  list-style-position: inside;
+  margin: 0 0 $mb-sm 1.25em;
+}
+
+/* Definition Lists */
+dl {
+  margin-top: 0;
+  margin-bottom: $mb-par;
+}
+dt {
+  font-weight: 600;
+}
+dd, dt {
+  line-height: 1.42857143;
+}
+dd {
+  margin: 0;
+}
+@media (min-width: $screen-sm) {
+  .bb-dl-horizontal {
+    dt {
+      float: left;
+      width: 10rem;
+      overflow: hidden;
+      clear: left;
+      text-align: right;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    dd {
+      @include clearfix;
+      margin-left: 11.25rem;
+    }
+  }
+}
+
+/* Tables */
+table, .bb-table-scroll {
+  margin: 0 0 $mb-sm 0;
+}
+.bb-table-scroll {
+  table {
+    margin: 0;
+  }
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: none;
+  border-width: 0;
+  table-layout: fixed;
+  width: 100%;
+
+  thead, tfoot {
+    th {
+      text-transform: uppercase;
+      color: #000000;
+      font-size: 12px;
+      line-height: 26px;
+    }
+  }
+
+  tbody tr:nth-child(2n+1) {
+    th,td {
+      background-color: #f7f7f7;
+    }
+  }
+  th, td {
+    padding: 9px 20px;
+    vertical-align: middle;
+  }
+  caption, th, td {
+    font-weight: normal;
+    text-align: left;
+  }
+  th {
+    font-weight: 600;
+  }
+  td {
+    font-size: 16px;
+    line-height: 20px;
+    color: inherit;
+    font-weight: 400;
+  }
+
+}
+
+.bb-table-scroll {
+  overflow-x: auto;
+  table {
+    min-width: 500px;
+  }
+}
+
+@media screen and (max-width: $screen-mb-full-w-max) {
+  .bb-table-responsive {
+    tr, td, th {
+      display: block;
+      width: 100%;
+    }
+    thead, tfoot {
+      display: none;
+    }
+  }
+}
+
+/* Other HTML Tags */
+.small, small {
+  font-size: 85%;
+  line-height: 1;
+  color: $gray;
+}
+.bold,strong, b {
+  font-weight: bold;
+}
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  bottom: 1ex;
+}
+sub {
+  top: .5ex;
+}
+small {
+  font-size: 75%;
+}
+big {
+  font-size: 125%;
+}
+dfn,cite,em,i,var {
+  font-style: italic;
+}
+s, strike, del {
+  text-decoration: line-through;
+}
+u, ins {
+  text-decoration: underline;
+}
+.mark,mark {
+  padding: .1em .3em;
+  background: #ff0;
+  color: $text-color;
+}
+abbr[data-original-title], abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #777;
+}
+address {
+  margin-bottom: $mb-par;
+  font-style: normal;
+  line-height: 1.42857143;
+}
+kbd {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+}
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+
+  &.pre-scrollable {
+    max-height: 340px;
+    overflow-y: scroll;
+  }
+}
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+code, kbd, pre, samp {
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+/* ** Boombox Custom Elements ** */
+/* Highlights */
+.bb-text-highlight {
+  color: #ffffff;
+  background-color: $gray;
+
+  &.primary-color {
+    background-color: $primary-color;
+  }
+}
+
+/* Dropcap */
+.bb-text-dropcap {
+  float: left;
+  display: block;
+  margin: 0 8px 0px 0;
+  font-size: 3rem;
+  line-height: 1em;
+
+  &.primary-color {
+    color: $primary-color;
+  }
+}
+
+/* Image Placeholder */
+.bb-media-placeholder {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  z-index: 2;
+
+  &.no-padding {
+    padding: 0;
+    height: auto;
+  }
+  /* Image Placeholder  Animation */
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ececec;
+    -webkit-animation: 4s linear  infinite  image-loading;
+    animation: 4s linear infinite  image-loading;
+  }
+
+  img {
+    display: block;
+  }
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@-webkit-keyframes image-loading { 0% { opacity: 0 } 50% { opacity:1 }  100%{opacity:0}}
+@keyframes image-loading {0% { opacity: 0 } 50% { opacity:1 }  100%{opacity:0}}
+
+

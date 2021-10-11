@@ -1,0 +1,118 @@
+/* *** Alerts *** */
+
+/* Alert Boxes */
+.bb-alert,
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-cart .cart-empty {
+  clear: both;
+  display: block;
+  position: relative;
+  font-style: italic;
+  padding: 10px 35px 10px 45px !important;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: lighten($warning-color, 30%);
+  border: 1px solid lighten($warning-color, 20%);
+  color: $warning-color;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  &:before, a {
+    font-style: normal;
+  }
+  &:before {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-family: $icon-font-family;
+    content: "\f05a";
+    color: $warning-color;
+  }
+  .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    line-height: 20px;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+
+    &:hover, &:focus {
+      color: #000000;
+      text-decoration: none;
+      cursor: pointer;
+      opacity: 0.4;
+      filter: alpha(opacity=40);
+    }
+  }
+
+  a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
+
+.bb-alert.alert-error,
+.woocommerce-error {
+  background-color: lighten($danger-color, 40%);
+  border: 1px solid lighten($danger-color, 30%);
+  color: $danger-color;
+  &:before {
+    content: "\f071";
+    color: $danger-color;
+  }
+}
+
+.bb-alert.alert-success,
+.woocommerce-message {
+  background-color: lighten($success-color, 40%);
+  border: 1px solid lighten($success-color, 30%);
+  color: $success-color;
+  &:before {
+    content: "\f058";
+    color: $success-color;
+  }
+}
+
+.bb-alert.alert-info,
+.woocommerce-info,
+.woocommerce-cart .cart-empty {
+  background-color: lighten($info-color, 30%);
+  border: 1px solid lighten($info-color, 20%);
+  color: $info-color;
+  &:before {
+    content: "\e95d";
+    color: $info-color;
+  }
+}
+
+/* Text Messages */
+.bb-txt-msg {
+  margin-bottom: 5px;
+  &.msg-error {
+    color: $danger-color;
+  }
+  &.msg-success {
+    color: $success-color;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Media */
+@media only screen and (min-width: 900px) {
+  .no-sidebar {
+    .bb-alert, .woocommerce-error, .woocommerce-info, .woocommerce-message {
+      width: 50%;
+    }
+  }
+}

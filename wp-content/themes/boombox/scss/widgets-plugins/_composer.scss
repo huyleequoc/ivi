@@ -1,0 +1,23 @@
+/* *** Visual Composer Support *** */
+
+
+//All this must be deleted after icon class rename bb-icon
+.wpb-js-composer {
+  i.icon {
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    vertical-align: middle;
+    margin-left: 0;
+  }
+
+  .spinner-pulse,
+  .woocommerce .blockUI.blockOverlay:before,
+  .woocommerce .loader:before {
+    width: 22px !important;
+    height: 22px !important;
+  }
+  .bb-badge .circle i, .bb-badge.badge-sm .circle i {
+    line-height: 40px;
+  }
+}

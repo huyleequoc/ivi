@@ -1,0 +1,277 @@
+/* *** Cards View for Post Listings *** */
+
+.bb-cards-view {
+
+
+  //** post listings border radius **//
+
+  //Grid, masonry,standard,mixed classic
+  .bb-post-collection {
+    &.masonry-grid,
+    &.post-grid,
+    &.post-list.standard,
+    &.mixed-list .post-item-classic {
+
+      .bb-card-item {
+        .post-thumbnail {
+          img, video, .video-wrapper, .hy_plyr canvas,.bb-media-placeholder,.nsfw-post {
+            @include clear-btm-border-radius();
+          }
+        }
+      }
+    }
+    // list , mixed list
+    &.post-list.list,
+    &.mixed-list .post-item-list {
+      .bb-card-item {
+        .post-thumbnail {
+          img, video, .video-wrapper, .hy_plyr canvas,.bb-media-placeholder,.nsfw-post {
+            @include clear-right-border-radius();
+          }
+        }
+      }
+    }
+  }
+  // Stream
+  .bb-stream {
+    .bb-post-collection {
+      &.post-list.standard {
+        .bb-card-item {
+          .post-thumbnail {
+            img, video, .video-wrapper, .hy_plyr canvas,.bb-media-placeholder,.nsfw-post {
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //** post listings paddings **//
+
+  .bb-post-collection {
+
+    .bb-card-item {
+      padding: 0;
+    }
+
+    //masonry, grid 2
+    &.masonry-grid,
+    &.post-grid.col-2 {
+
+      .bb-card-item {
+        .content {
+          padding-left: $card-big-pad;
+          padding-right: $card-big-pad;
+          padding-bottom: $card-small-pad;
+        }
+      }
+    }
+
+    // grid 3,4
+    &.post-grid.col-3,
+    &.post-grid.col-4 {
+
+      .bb-card-item {
+        .content {
+          padding-left: $card-small-pad;
+          padding-right: $card-small-pad;
+          padding-bottom: $card-small-pad;
+        }
+      }
+    }
+
+    // standard
+    &.post-list.standard {
+
+      .post-item {
+        padding-bottom: 0;
+      }
+
+      .bb-card-item {
+
+        > .content,
+        .product-affiliate,
+        .bb-affiliate-content,
+        .entry-footer {
+          padding-left: $card-big-pad;
+          padding-right: $card-big-pad;
+          padding-bottom: 0;
+        }
+        padding-bottom: $card-medium-pad;
+
+        footer {
+          border-bottom: none;
+        }
+
+        &.post-stream {
+          .entry-title {
+            padding-top: $card-big-pad;
+            padding-left: $card-big-pad;
+            padding-right: $card-big-pad;
+          }
+          .entry-sub-title {
+            padding-left: $card-big-pad;
+            padding-right: $card-big-pad;
+          }
+        }
+      }
+    }
+
+    // list
+    &.post-list.list {
+
+      .post-item {
+        padding-bottom: 0;
+      }
+
+      .bb-card-item {
+
+        .content {
+          padding-top: $card-small-pad;
+          padding-bottom: $card-small-pad;
+          padding-left: $card-big-pad;
+          padding-right: $card-big-pad;
+        }
+      }
+    }
+
+    // mixed
+    &.mixed-list {
+      .post-item-list {
+        padding-bottom: 0;
+
+        .bb-card-item {
+
+          .content {
+            padding-top: $card-small-pad;
+            padding-bottom: $card-small-pad;
+            padding-left: $card-big-pad;
+            padding-right: $card-big-pad;
+          }
+        }
+      }
+      .post-item-classic {
+        padding-bottom: 0;
+
+        .bb-card-item {
+
+          > .content,
+          .product-affiliate,
+          .bb-affiliate-content,
+          .entry-footer {
+            padding-left: $card-big-pad;
+            padding-right: $card-big-pad;
+            padding-bottom: 0;
+          }
+          padding-bottom: $card-medium-pad;
+
+          footer {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+
+  @media screen and (max-width: $screen-mb-full-w-max) {
+
+    //** border radius 0 for all list types**//
+
+    .bb-post-collection {
+      .bb-card-item  {
+        margin-left: -$container-pad-mobile;
+        margin-right: -$container-pad-mobile;
+        border-radius: 0;
+        width: auto;
+
+        .post-thumbnail {
+          margin-left: 0;
+          margin-right: 0;
+
+          img, video, .video-wrapper, .hy_plyr canvas,.bb-media-placeholder,.nsfw-post {
+            border-radius: 0 !important;
+          }
+        }
+      }
+
+      //** post listings paddings **//
+
+      // masonry, grid 2
+      &.masonry-grid,
+      &.post-grid.col-2 {
+
+        .bb-card-item {
+          .content {
+            padding-left: $card-small-pad;
+            padding-right: $card-small-pad;
+          }
+        }
+      }
+
+      // standard
+      &.post-list.standard {
+        .bb-card-item {
+
+          > .content,
+          .product-affiliate,
+          .bb-affiliate-content,
+          .entry-footer {
+            padding-left: $card-small-pad;
+            padding-right: $card-small-pad;
+          }
+          &.post-stream {
+            .entry-title {
+              padding-top: $card-medium-pad;
+              padding-left: $card-small-pad;
+              padding-right: $card-small-pad;
+            }
+            .entry-sub-title {
+              padding-left: $card-small-pad;
+              padding-right: $card-small-pad;
+            }
+          }
+        }
+      }
+
+      // list
+      &.post-list.list {
+
+        .bb-card-item {
+
+          .content {
+            padding-left: $card-small-pad;
+            padding-right: $card-small-pad;
+          }
+        }
+      }
+
+      // mixed
+      &.mixed-list {
+        .post-item-list {
+          .bb-card-item {
+            .content {
+              padding-left: $card-small-pad;
+              padding-right: $card-small-pad;
+            }
+          }
+        }
+        .post-item-classic {
+
+          .bb-card-item {
+
+            > .content,
+            .product-affiliate,
+            .bb-affiliate-content,
+            .entry-footer {
+              padding-left: $card-small-pad;
+              padding-right: $card-small-pad;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

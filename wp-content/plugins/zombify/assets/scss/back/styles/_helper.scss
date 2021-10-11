@@ -1,0 +1,33 @@
+/**
+ * 5.0 - Helper classes
+ */
+#zombify-main-section,
+#zombify-main-section-front {
+  .zf-hidden {
+    display: none;
+  }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+  .clearfix {
+    *zoom: 1;
+  }
+  .clear {clear: both}
+
+  .zf-hide {
+    display: none;
+  }
+
+}
+.zf-pull-left {
+  float: left;
+}
+.zf-pull-right {
+  float: right;
+}
+
+

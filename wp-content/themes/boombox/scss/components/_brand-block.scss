@@ -1,0 +1,49 @@
+/* *** Brand Block *** */
+
+.bb-brand-block {
+  .brand-content {
+    position: relative;
+    padding-bottom: 10px;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 8px;
+      border-radius: 20px;
+      background: $gray;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  .brand-content-col {
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 13px;
+    p {
+      margin: 0;
+    }
+    &.logo-col {
+      padding-right: 20px;
+    }
+    &.desc-col {
+      font-size: 14px;
+    }
+  }
+  .brand-logo {
+    max-width: 120px;
+    height: auto;
+  }
+  @media screen and (min-width: $screen-sm-min) {
+    .brand-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .brand-content-col {
+      &.byline-col {
+        white-space: nowrap;
+      }
+    }
+  }
+}

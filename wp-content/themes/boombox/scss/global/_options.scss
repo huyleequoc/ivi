@@ -1,0 +1,115 @@
+/* *** Options *** */
+
+/* Badge Position */
+.badges-outside-left {
+  .post-thumbnail {
+    .bb-badge-list {
+      top: -11px;
+      left: 12px;
+    }
+  }
+  .bb-featured-area .featured-badge-list {
+    top: -11px;
+    left: 12px;
+  }
+  .post-number {
+    left: 10px;
+    top: -9px;
+  }
+}
+
+.badges-outside-right {
+  .post-thumbnail {
+    .bb-badge-list {
+      top: -11px;
+      right: 12px;
+    }
+  }
+  .bb-featured-area .featured-badge-list {
+    top: -11px;
+    right: 12px;
+  }
+  .post-number {
+    right: 10px;
+    top: -9px;
+  }
+}
+
+.badges-inside-left {
+  .post-thumbnail {
+    .bb-badge-list {
+      top: 12px;
+      left: 12px;
+    }
+  }
+  .bb-featured-area .featured-badge-list {
+    top: 12px;
+    left: 12px;
+  }
+  .post-number {
+    top: 12px;
+  }
+}
+
+.badges-inside-right {
+  .post-thumbnail {
+    .bb-badge-list {
+      top: 12px;
+      right: 12px;
+    }
+  }
+  .bb-featured-area .featured-badge-list {
+    top: 12px;
+    right: 12px;
+  }
+  .post-number {
+    top: 12px;
+    right: 12px;
+  }
+}
+
+.badges-inside-left,
+.badges-inside-right {
+  .post-thumbnail,
+  .bb-featured-area {
+    .bb-badge-list {
+      .badge .circle {
+        box-shadow: none;
+      }
+    }
+  }
+  .post-number {
+    box-shadow: none;
+  }
+  .no-thumbnail {
+    .post-thumbnail {
+      .bb-badge-list {
+        top: -5px;
+      }
+    }
+    .post-number {
+      top: -5px;
+    }
+  }
+}
+
+/* * Colors * */
+
+/* Primary Colors */
+.bb-bg-primary {
+  background-color: $primary-color;
+}
+
+/* Message Colors */
+.bb-clr-danger {
+  color: $danger-color;
+}
+.bb-clr-success {
+  color: $success-color;
+}
+.bb-clr-warning {
+  color: $warning-color;
+}
+.bb-clr-info {
+  color: $info-color;
+}

@@ -1,0 +1,70 @@
+
+---Downloaded files---
+The import files for: Another GAG were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/boombox
+Data file = G:\web\Xampp\htdocs\boombox/wp-content/uploads/2021/09/demo-content-import-file_2021-09-05__14-15-40.xml
+Widget file = G:\web\Xampp\htdocs\boombox/wp-content/uploads/2021/09/demo-widgets-import-file_2021-09-05__14-15-40.json
+Customizer file = G:\web\Xampp\htdocs\boombox/wp-content/uploads/2021/09/demo-customizer-import-file_2021-09-05__14-15-40.dat
+Redux files:
+not defined!
+
+---ocdi/before_content_import---
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---ocdi/before_widgets_import---
+
+
+---Importing widgets---
+Default : 
+
+Văn bản - No Title - Imported
+Boombox Trending Posts - Trending - Imported
+Văn bản - Find Us on Facebook - Imported
+Boombox Sticky Sidebar - No Title - Imported
+Văn bản - No Title - Imported
+Boombox Sidebar Footer - No Title - Imported
+
+Page 1 : 
+
+Văn bản - No Title - Imported
+Văn bản - No Title - Imported
+Văn bản - No Title - Imported
+
+Page 2 : 
+
+Văn bản - No Title - Imported
+
+Secondary : 
+
+Boombox Sticky Sidebar - No Title - Imported
+Boombox Sidebar Navigation - No Title - Imported
+
+Footer Left : 
+
+Boombox Trending Posts - Trending - Imported
+
+Footer Middle : 
+
+Menu - No Title - Imported
+
+Footer Right : 
+
+Văn bản - Disclaimer - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

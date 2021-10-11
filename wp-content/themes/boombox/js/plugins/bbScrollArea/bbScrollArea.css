@@ -1,0 +1,94 @@
+.bb-scroll-area {
+    position: relative;
+    clear: both;
+    display: block;
+    overflow-x: hidden;
+}
+.bb-scroll-area ul {
+    list-style: none;
+    margin: 0;
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+}
+.bb-scroll-area ul li {
+    display: inline-block;
+    white-space: normal;
+}
+.bb-scroll-area .bb-nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    z-index: 20;
+    font-size: 1px;
+    text-indent: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.bb-scroll-area .bb-nav:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+    left: 0;
+    width: 100%;
+    font-size: 22px;
+    line-height: 1em;
+    text-align: center;
+    text-indent: 0;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'icomoon';
+}
+.bb-scroll-area .bb-nav.bb-arrow-next {
+    right: 0;
+}
+.bb-scroll-area .bb-nav.bb-arrow-next:before {
+    content: '\f105';
+}
+.bb-scroll-area .bb-nav.bb-arrow-prev {
+    left: 0;
+}
+.bb-scroll-area .bb-nav.bb-arrow-prev:before {
+    content: '\f104';
+}
+.bb-scroll-area.bb-scroll-start .bb-nav.bb-arrow-prev {
+    display: none;
+}
+.bb-scroll-area.bb-scroll-end .bb-nav.bb-arrow-next {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .bb-scroll-area .bb-nav {
+        display: none !important;
+    }
+}
+.mobile .bb-scroll-area .bb-nav {
+    display: none !important;
+}
+/*Scroll styles*/
+.bb-scroll-area ::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #ececec;
+}
+.bb-scroll-area ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #ececec;
+}
+.bb-scroll-area ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #c3c3c3;
+}
+.bb-scroll-area ::-webkit-scrollbar-track, .bb-scroll-area ::-webkit-scrollbar-thumb, .bb-scroll-area ::-webkit-scrollbar {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+.bb-scroll-area:hover ::-webkit-scrollbar-thumb, .bb-scroll-area:hover ::-webkit-scrollbar-track, .bb-scroll-area:hover ::-webkit-scrollbar {
+    opacity: 1;
+    visibility: visible;
+}

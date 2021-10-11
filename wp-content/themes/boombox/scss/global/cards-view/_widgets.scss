@@ -1,0 +1,22 @@
+/* *** Cards View for Widgets *** */
+
+.bb-cards-view {
+
+  .widget_create_post:after,
+  .widget_mc4wp_form_widget:after {
+    border: none;
+  }
+
+  @media screen and (max-width: $screen-mb-full-w-max) {
+
+    .widget_create_post,
+    .widget_mc4wp_form_widget {
+      margin-left: -$container-pad-mobile;
+      margin-right: -$container-pad-mobile;
+      border-radius: 0;
+      &:after {
+        border-radius: 0;
+      }
+    }
+  }
+}

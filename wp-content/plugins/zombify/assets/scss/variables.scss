@@ -1,0 +1,96 @@
+/// Global Variables
+
+
+
+// Grid System
+$grid-columns: 4 !default;
+$grid-gutter-width: 30px !default;
+
+// Media queries breakpoints
+$screen-ss: 320px !default;
+$screen-ss-min: $screen-ss !default;
+$screen-s-phone: $screen-ss-min !default;
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+$screen-phone: $screen-xs-min !default;
+$screen-sm: 600px !default;
+$screen-sm-min: $screen-sm !default;
+$screen-tablet: $screen-sm-min !default;
+$screen-md: 767px !default;
+$screen-md-min: $screen-md !default;
+$screen-desktop: $screen-md-min !default;
+$screen-lg: 900px !default;
+$screen-lg-min: $screen-lg !default;
+$screen-lg-desktop: $screen-lg-min !default;
+$screen-ss-max: ($screen-xs-min - 1) !default;
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+
+// Containers sizes
+$container : 1200px;
+$container-padding: 20px;
+
+$main : 65%;
+$sidebar: 32%;
+
+
+// Base Params
+$base-font-size : 16px;
+$base-line-height : 1.5;
+$base-font-family : 'Cabin', sans-serif;
+$heading-font-family : 'Cabin', sans-serif;
+$subtext-font-family:  'Open Sans', sans-serif;
+
+$open-sans: 'Open Sans', sans-serif;
+//$icon-font:
+$icon-font:'zf-icomoon';
+
+
+
+
+// Fonts
+$heading : $heading-font-family;
+$sub-heading: $base-font-family;
+$text-font:  $base-font-family;
+
+
+// Colors
+
+// primary color
+$primary-color : #49c793;
+
+// Secondary color
+$secondary-color : #7f6f7f;
+
+// Secondary light color
+$secondary-light-color : #e4e0e4;
+
+// border color
+$border-color : #ebebeb;
+
+// heading color
+$heading-color : #000000; // h1,h2 ...
+
+// text color
+$text-color:  #1f1f1f; // base site color (body)
+
+// alerts (buttons) colors
+$success-color : #5cb85c;
+$info-color : #5bc0de;
+$warning-color : #f0ad4e;
+$danger-color : #d9534f;
+
+// link color
+$link-color: $primary-color;
+
+// btn color
+$btn-color: #ffffff; // btn`s color
+
+// extra color (using for components,secondary texts)
+$gray : #828282; // components default color (btn,hr,line types), small, city,placeholder
+
+
+
+$border-radius: 6px;

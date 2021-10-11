@@ -1,0 +1,27 @@
+/* *** Cards View *** */
+
+$card-big-pad : 32px;
+$card-medium-pad : 24px;
+$card-small-pad : 16px;
+$card-shadow: 0px 1px 2px 0 rgba(42,42,42,.15);
+
+
+.bb-cards-view {
+  // This containers goes transparent
+  // & theirs bg-color (for ex. #fff) goes to cart item bg-color
+  .page-wrapper,
+  #main {
+    background-color: transparent !important;
+  }
+
+  //global add padding for card items
+  .bb-card-item {
+      padding: $card-big-pad;
+  }
+
+  // Add space for page content if it have content
+  .bb-card-item.page {
+    margin-bottom: $mb-md;
+  }
+}
+

@@ -1,0 +1,62 @@
+/**
+ * 1.0 - Poll
+ */
+
+#zombify-main-section-front {
+  .zf-story {
+    clear: both;
+
+    ul.zf-structure-list {
+      list-style: disc;
+      /* margin: 0 0 20px 5%;
+      padding: 0 0 0 2%; */
+      margin: 0 0 20px 0;
+      padding: 0;
+
+      /* li {
+        margin-bottom: 10px;
+      } */
+    }
+
+    ol.zf-structure-list {
+      list-style: decimal;
+      /* margin: 0 0 20px 5%;
+      padding: 0 0 0 2%; */
+      margin: 0 0 20px 0;
+      padding: 0;
+
+      /* li {
+        margin-bottom: 10px;
+      } */
+    }
+
+    .zf-story_item {
+      margin-bottom: 20px;
+
+      .zf_title {
+        margin-bottom: 20px;
+      }
+
+      .zf-embed {
+        margin-bottom: 10px;
+      }
+      &.zf-link {
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding: 5% 5%;
+        border: 1px solid #e2e2e2;
+      }
+    }
+  }
+}
+
+.zombify-main-section-front .zf-author,
+.zombify-main-section-front .zf-posted-on,
+.zombify-main-section-front .zf-author_info,
+.zombify-main-section-front .zf-author_name,
+.zombify-main-section-front .zf-author_avatar {
+  display: block;
+}
+

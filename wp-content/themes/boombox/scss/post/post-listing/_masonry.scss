@@ -1,0 +1,221 @@
+/* *** Masonry *** */
+
+.masonry-grid {
+
+  .post-item {
+    width: 100%;
+    clear: none;
+
+    .content {
+      padding-top: 12px;
+    }
+  }
+
+  @media screen and (min-width: $screen-mb-boxed) {
+    .post-item {
+      float: left;
+    }
+  }
+
+  .post-thumbnail {
+
+  }
+  &.no-gap {
+    .post-item {
+      padding-right: 1px;
+      padding-left: 1px;
+      margin-bottom: 2px;
+
+      img {
+        @include border-radius(0);
+      }
+    }
+  }
+}
+
+// Masonry without Sidebar
+.no-sidebar {
+
+  .masonry-grid {
+    @media screen and (min-width: $screen-mb-boxed) {
+      .post-item {
+        width: 50%;
+      }
+    }
+    @media screen and (min-width: $screen-md-min) {
+      .post-item {
+        width: 33.33%;
+      }
+    }
+    @media screen and (min-width: $screen-lg-min) {
+      .post-item {
+        width: 25%;
+      }
+    }
+  }
+}
+
+// Masonry with 1 Sidebar
+.one-sidebar {
+
+  &.sidebar-1_3 { // Masonry with Sidebar 1/3
+
+    .masonry-grid {
+      @media screen and (min-width: $screen-mb-boxed) {
+        .post-item {
+          width: 50%;
+        }
+      }
+    }
+  }
+  &.sidebar-1_4 { // Masonry with Sidebar 1/4
+
+    .masonry-grid {
+      @media screen and (min-width: $screen-mb-boxed) {
+        .post-item {
+          width: 50%;
+        }
+      }
+      @media screen and (min-width: $screen-md-min) {
+        .post-item {
+          width: 33.33%;
+        }
+      }
+    }
+  }
+}
+
+// Masonry with Two Sidebar
+.two-sidebar {
+
+  .masonry-grid {
+    @media screen and (min-width: $screen-mb-boxed) {
+      .post-item {
+        width: 50%;
+      }
+    }
+  }
+}
+
+// Masonry bb-stretched-full without sidebar
+@media screen and (min-width: $screen-lg-min) {
+  .no-sidebar {
+    .bb-stretched-full {
+      .masonry-grid {
+
+        .post-item {
+          width: 25%;
+        }
+
+      }
+    }
+  }
+}
+@media screen and (min-width: 1399px) {
+  .no-sidebar {
+    .bb-stretched-full {
+      .masonry-grid {
+
+        .post-item {
+          width: 20%;
+        }
+
+      }
+    }
+  }
+}
+
+// Masonry bb-stretched-full with 1 Sidebar
+@media screen and (min-width: $screen-lg-min) {
+  .one-sidebar {
+
+    .bb-stretched-full {
+
+      .masonry-grid {
+        .post-item {
+          width: 33.33%;
+        }
+
+      }
+    }
+
+    &.bb-boxed-view {
+      .bb-stretched-full {
+        .masonry-grid {
+          .post-item {
+            width: 50%;
+          }
+
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1399px) {
+  .one-sidebar {
+
+    .bb-stretched-full {
+
+      .masonry-grid {
+        .post-item {
+          width: 25%;
+        }
+
+      }
+    }
+  }
+}
+
+// Masonry bb-stretched-full with 2 Sidebar
+@media screen and (min-width: $screen-lg-min) {
+  .two-sidebar {
+
+    .bb-stretched-full {
+
+      .masonry-grid {
+        .post-item {
+          width: 50%;
+        }
+
+      }
+    }
+    &.bb-boxed-view {
+      .bb-stretched-full {
+        .masonry-grid {
+          .post-item {
+            width: 50%;
+          }
+
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1399px) { //custom breakpoint
+  .two-sidebar {
+
+    .bb-stretched-full {
+
+      .masonry-grid {
+        .post-item {
+          width: 33.333%;
+        }
+
+      }
+    }
+  }
+}
+@media screen and (min-width: $screen-exra-lg) {
+  .two-sidebar {
+
+    .bb-stretched-full {
+
+      .masonry-grid {
+        .post-item {
+          width: 25%;
+        }
+
+      }
+    }
+  }
+}

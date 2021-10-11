@@ -1,0 +1,433 @@
+/**
+ * 1.0 - Comments
+ */
+
+#zombify-main-section-front {
+  .zf-comments {
+    clear: both;
+
+    .zf-comment-notes,
+    .logged-in-as {
+      margin-bottom: 5px;
+      color: #c9c9c9;
+      font-size: 13px;
+
+      a {
+        color: inherit;
+      }
+    }
+    input[type='text'],
+    textarea {
+      padding: 0 20px;
+      height: 35px;
+      line-height: 33px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: 400;
+      color: #9a9a9a;
+      background-color: #ffffff;
+      border: 1px solid #e2e2e2;
+      border-radius: 3px;
+    }
+    textarea {
+      padding: 9px 20px;
+      resize: vertical;
+      line-height: 1.1em;
+    }
+    input[type='submit'] {
+      padding: 0 10px;
+      margin: auto;
+      width: 100%;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      height: 35px;
+      line-height: 35px;
+      min-width: inherit;
+      min-height: inherit;
+      background-color: #353432;
+      border-radius: 3px;
+      border: none;
+    }
+    .zf-comment-form {
+      position: relative;
+      @include clearfix();
+      padding: 15px;
+      background-color: #f7f7f7;
+      border-radius: 3px;
+
+      .zf-login-popup {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .zf-comment-form-author,
+    .zf-comment-form-email {
+      width: 49%;
+      margin-bottom: 10px;
+    }
+    .zf-comment-form-author {
+      float: left;
+    }
+    .zf-comment-form-email {
+      float: right;
+    }
+    .zf-comment-form-comment {
+      float: left;
+      width: 74%;
+    }
+    .form-submit {
+      float: right;
+      width: 25%;
+      margin-top: 0;
+    }
+
+    .comment-subscription-form {
+      clear: both;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .comment-form input,
+    .comment-form textarea {
+      text-align: left;
+      padding: 15px 30px;
+    }
+    .comment-form textarea {
+      padding: 23px 30px;
+      height: 130px;
+    }
+    .comments-title {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+
+      span {
+        display: inline-block;
+        margin-left: 10px;
+        font-weight: 400;
+      }
+    }
+    .comment-reply-title {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+
+      #cancel-comment-reply-link {
+        display: block;
+        font-size: 11px;
+        line-height: 14px;
+      }
+    }
+    .comment-notes {
+      margin-bottom: 30px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .comment-list {
+      display: block;
+      list-style: none;
+      margin: 0 0 70px;
+      border-bottom: 1px solid #f4f3f3;
+
+    }
+    .comment {
+      position: relative;
+      display: block;
+      list-style: none;
+
+      &:first-child {
+        > .comment-body {
+          border-top: none;
+        }
+      }
+      .zf-comment-form {
+        margin-bottom: 10px;
+      }
+      .comment-meta {
+        padding-top: 10px;
+      }
+      .comment-body {
+        position: relative;
+        display: block;
+        list-style: none;
+        line-height: 1em;
+        padding: 10px 5px 10px 60px;
+        border-top: 1px solid #f4f3f3;
+
+        .comment-author {
+          display: inline-block;
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 600;
+
+          .avatar {
+            position: absolute;
+            width: 40px;
+            top: 15px;
+            left: 0px;
+            border-radius:50%;
+          }
+
+          b {
+            font-weight: 500;
+          }
+        }
+        .comment-metadata {
+          display: inline-block;
+          margin-left: 10px;
+          font-size: 12px;
+          line-height: 18px;
+          color: #989898;
+
+          a {
+            color: inherit
+          }
+        }
+        .comment-content {
+          padding-top: 5px;
+          font-size: 14px;
+          line-height: 1.2em;
+          color: #989898;
+
+          p {
+            font-size: inherit;
+            line-height: inherit;
+            margin-bottom: 5px
+          }
+          small a {
+            color: #1f1f1f;
+          }
+        }
+        .reply {
+          display: inline-block;
+          vertical-align: top;
+          line-height: 1em;
+        }
+        .comment-reply-login {
+          font-size: 10px;
+          text-transform: uppercase;
+        }
+        .comment-reply-link {
+          display: inline-block;
+          padding: 1px 10px;
+          font-size: 10px;
+          line-height: 13px;
+          font-weight: 600;
+          color: #ffffff;
+          vertical-align: top;
+          text-transform: uppercase;
+          background-color: #cdcdcd;
+          border-radius: 9px;
+        }
+      }
+      .comment {
+        margin: 0;
+        padding-left: 60px;
+
+        .comment-meta {
+          padding-top: 7px;
+        }
+        .comment-body {
+          padding-left: 50px;
+          .comment-author {
+            .avatar {
+              width: 30px;
+            }
+          }
+        }
+
+        .comment {
+          padding-left: 50px;
+          .comment {
+            padding-left: 0
+          }
+        }
+      }
+    }
+    .zf-cancel-reply {
+      font-size: 11px;
+      line-height: 1em;
+      text-transform: lowercase;
+    }
+    .bypostauthor .vcard .fn {
+      a {
+        color: inherit;
+      }
+    }
+    .nav-links {
+      overflow: hidden;
+      margin-bottom: 30px;
+
+      .nav-previous {
+        float: left;
+      }
+      .nav-next {
+        float: right;
+      }
+      a {
+        background-color: #ffe400;
+        color: #000000;
+        padding: 0 3px;
+      }
+    }
+  }
+
+  .zombify-comments {
+    .zf-tabs-menu {
+      clear: both;
+      li {
+        margin: 0 15px -3px 0;
+        border: none;
+        border-bottom: 3px solid transparent;
+        background-color: transparent !important;
+        a {
+          padding: 5px 0;
+          font-size: 12px;
+          line-height: 1.1em;
+          font-weight: 600;
+        }
+
+        &.zf-active {
+          border-bottom-color: $primary-color;
+        }
+        .zf-count {
+          display: inline-block;
+          margin-left: 20px;
+        }
+      }
+    }
+    .zf-tabs-content {
+      padding: 20px 0;
+      border: none;
+      border-top: 3px solid #ececec;
+    }
+    .zf-comments-filter {
+      float: right;
+      margin-bottom: -15px;
+
+      select {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 3px 5px;
+      }
+    }
+  }
+  .zf-comment-vote {
+    display: inline-block;
+    margin-left: 20px;
+
+    a {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 1em;
+      vertical-align: top;
+      color: #989898;
+
+      .zf-icon {
+        display: inline-block;
+        transition: all 0.2s ease-out;
+      }
+
+      .zf-count {
+        display: inline-block;
+        margin-left: 3px;
+        font-size: 11px;
+        vertical-align: top;
+      }
+      &:first-child + a {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        .zf-icon {
+          transform: translate(0px, -3px);
+        }
+      }
+    }
+  }
+
+  &.zf-screen-xs {
+    .zf-comments  {
+      .form-submit,
+      .zf-comment-form-author,
+      .zf-comment-form-comment,
+      .zf-comment-form-email {
+        float: none;
+        width: 100%;
+      }
+      .zf-comment-form-comment {
+        margin-bottom: 20px;
+      }
+
+      .comment .comment {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .zombify-comments {
+      .zf-comments-filter {
+        float: none;
+        margin-bottom: 10px;
+      }
+      .zf-tabs-horizontal .zf-tabs-menu li {
+        float: none;
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    .zf-comments .comment  {
+      .comment .comment,
+      .comment {
+        padding-left: 0;
+      }
+    }
+  }
+  .zf-comments_load_more {
+    clear: both;
+    padding: 5px 0;
+    border-top: 1px solid #f4f3f3;
+
+    a {
+      display: inline-block;
+      font-size: 12px;
+      padding: 5px 0;
+      line-height: 1.1em;
+      color: #9a9a9a;
+      text-transform: uppercase;
+      vertical-align: top;
+
+    }
+    .zf-spinner-pulse {
+      display: none;
+      margin-left: 10px;
+    }
+    &.zf-loading {
+      .zf-spinner-pulse {
+        display: inline-block;
+      }
+    }
+    &.zf-hide {
+      display: none;
+    }
+  }
+  
+}

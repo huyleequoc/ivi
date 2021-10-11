@@ -1,0 +1,66 @@
+#zombify-main-section-front {
+  .zf-tabs {
+    margin-bottom: 25px;
+  }
+
+  .zf-tabs-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      border-style: solid;
+      border-color: transparent;
+      a {
+        color: inherit;
+        font-size: 14px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 20px;
+        display: block;
+      }
+    }
+  }
+
+  .zf-tab-content {
+    display: none;
+
+    &.zf-active {
+      display: block;
+    }
+  }
+
+  /* Tabs Horizontal */
+  .zf-tabs-horizontal {
+    .zf-tabs-menu {
+      @include clearfix();
+      li {
+        float: left;
+        border-width: 2px 2px 0 2px;
+        margin-right: 5px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        &.zf-active a {
+          bottom: -2px;
+        }
+
+      }
+    }
+    .zf-tabs-content {
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+  }
+
+  .zf-embed {
+    blockquote:before {
+      content: '';
+    }
+  }
+
+  .zf-remove-list-style {
+    list-style: none !important;
+  }
+}

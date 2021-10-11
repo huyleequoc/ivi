@@ -1,0 +1,34 @@
+
+/* *** Material Carads  *** */
+.bb-cards-view {
+
+  &.material-cards {
+
+    //add shadow for card items
+    .bb-card-item {
+      box-shadow: $card-shadow;
+    }
+
+    //add shadow for custom elements (widgets)
+    .widget_create_post:after,
+    .widget_mc4wp_form_widget:after {
+      box-shadow: $card-shadow;
+    }
+
+  //add shadow for custom elements (woocommerce products)
+    &.woocommerce {
+      .products {
+        .product {
+          box-shadow: $card-shadow;
+        }
+      }
+
+    //add shadow for custom elements (woocommerce single product)
+      &.single-product {
+        div.product {
+          box-shadow: $card-shadow;
+        }
+      }
+    }
+  }
+}

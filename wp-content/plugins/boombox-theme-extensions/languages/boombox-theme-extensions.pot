@@ -1,0 +1,700 @@
+# Copyright (C) 2021 boombox-theme-extensions
+# This file is distributed under the same license as the boombox-theme-extensions package.
+msgid ""
+msgstr ""
+"Project-Id-Version: boombox-theme-extensions\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: boombox-brands/lib/class-boombox-brands-metabox.php:78
+msgid "Boombox Brand Advanced Fields"
+msgstr ""
+
+#: boombox-brands/lib/class-boombox-brands-metabox.php:98, boombox-reactions/lib/class-boombox-reactions-metabox.php:195
+msgid "Global"
+msgstr ""
+
+#: boombox-brands/lib/class-boombox-brands-metabox.php:107
+msgid "Brand URL"
+msgstr ""
+
+#: boombox-brands/lib/class-boombox-brands-metabox.php:115
+msgid "Brand Logo"
+msgstr ""
+
+#: boombox-brands/lib/class-boombox-brands-metabox.php:122
+msgid "Brand Logo Width (px)"
+msgstr ""
+
+#: boombox-brands/lib/class-boombox-brands-metabox.php:133
+msgid "Brand Logo Height (px)"
+msgstr ""
+
+#: boombox-brands/lib/class-boombox-brands-metabox.php:144
+msgid "Brand Logo HDPI"
+msgstr ""
+
+#: boombox-brands/lib/class-boombox-brands-metabox.php:145
+msgid "An image for High DPI screen (like Retina) should be twice as big."
+msgstr ""
+
+#: boombox-brands/register-brands.php:71, boombox-brands/register-brands.php:87, boombox-brands/register-brands.php:247
+msgid "Brands"
+msgstr ""
+
+#: boombox-brands/register-brands.php:85
+msgctxt "Taxonomy General Name"
+msgid "Brands"
+msgstr ""
+
+#: boombox-brands/register-brands.php:86
+msgctxt "Taxonomy Singular Name"
+msgid "Brand"
+msgstr ""
+
+#: boombox-brands/register-brands.php:88
+msgid "All Brands"
+msgstr ""
+
+#: boombox-brands/register-brands.php:89
+msgid "Parent Brand"
+msgstr ""
+
+#: boombox-brands/register-brands.php:90
+msgid "Parent Brand:"
+msgstr ""
+
+#: boombox-brands/register-brands.php:91
+msgid "New Brand Name"
+msgstr ""
+
+#: boombox-brands/register-brands.php:92
+msgid "Add New Brand"
+msgstr ""
+
+#: boombox-brands/register-brands.php:93
+msgid "Edit Brand"
+msgstr ""
+
+#: boombox-brands/register-brands.php:94
+msgid "Update Brand"
+msgstr ""
+
+#: boombox-brands/register-brands.php:95
+msgid "View Brand"
+msgstr ""
+
+#: boombox-brands/register-brands.php:96
+msgid "Separate Brands with commas"
+msgstr ""
+
+#: boombox-brands/register-brands.php:97
+msgid "Add or Remove Brands"
+msgstr ""
+
+#: boombox-brands/register-brands.php:98, boombox-reactions/register-reactions.php:30
+msgid "Choose from the most used"
+msgstr ""
+
+#: boombox-brands/register-brands.php:99
+msgid "Popular Brands"
+msgstr ""
+
+#: boombox-brands/register-brands.php:100
+msgid "Search Brands"
+msgstr ""
+
+#: boombox-brands/register-brands.php:101, boombox-reactions/register-reactions.php:33
+msgid "Not Found"
+msgstr ""
+
+#: boombox-brands/register-brands.php:102
+msgid "No Brands"
+msgstr ""
+
+#: boombox-brands/register-brands.php:103
+msgid "Brands list"
+msgstr ""
+
+#: boombox-brands/register-brands.php:104
+msgid "Brands list navigation"
+msgstr ""
+
+#: boombox-brands/register-brands.php:134, boombox-brands/register-brands.php:179
+msgid "- None -"
+msgstr ""
+
+#: boombox-brands/register-brands.php:176
+msgid "Select Brand"
+msgstr ""
+
+#: boombox-brands/register-brands.php:224, boombox-brands/register-brands.php:254
+msgid "Associated Brand"
+msgstr ""
+
+#: boombox-gif-to-video/class-gif-to-video.php:216
+msgid "Error converting to %s"
+msgstr ""
+
+#: boombox-gif-to-video/class-gif-to-video.php:298
+msgid "Error inserting attachment"
+msgstr ""
+
+#: boombox-gif-to-video/class-gif-to-video.php:310
+msgid "Invalid Configuration"
+msgstr ""
+
+#: boombox-gif-to-video/class-gif-to-video.php:343
+msgid "Invalid storage"
+msgstr ""
+
+#: boombox-gif-to-video/class-gif-to-video.php:542
+msgid "Your browser does not support the video tag."
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-post-reactions-metabox.php:60, boombox-reactions/register-reactions.php:19
+msgid "Reactions"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-post-reactions-metabox.php:111
+msgid "This post has no reaction."
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:174
+msgid "Boombox Reaction Advanced Fields"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:205
+msgid "Disable Vote"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:213
+msgid "Reaction Icon"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:230
+msgid "Color Scheme"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:232
+msgid "Default"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:233
+msgid "Custom"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:244
+msgid "Icon Background Color"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:260
+msgid "Title Area"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:269
+msgid "Style"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:270, boombox-reactions/lib/class-boombox-reactions-metabox.php:279
+msgid "Inherit"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:278
+msgid "Container Type"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:287
+msgid "Text Color"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:295
+msgid "Background Color"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:303
+msgid "Gradient Color"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:311
+msgid "Gradient Direction"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:320
+msgid "Background Image"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:328
+msgid "Background Image Size"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:337
+msgid "Background Image Position"
+msgstr ""
+
+#: boombox-reactions/lib/class-boombox-reactions-metabox.php:346
+msgid "Background Image Repeat"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:17
+msgctxt "Taxonomy General Name"
+msgid "Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:18
+msgctxt "Taxonomy Singular Name"
+msgid "Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:20
+msgid "All Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:21
+msgid "Parent Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:22
+msgid "Parent Reaction:"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:23
+msgid "New Reaction Name"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:24
+msgid "Add New Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:25
+msgid "Edit Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:26
+msgid "Update Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:27
+msgid "View Reaction"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:28
+msgid "Separate Reactions with commas"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:29
+msgid "Add or Remove Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:31
+msgid "Popular Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:32
+msgid "Search Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:34
+msgid "No Reactions"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:35
+msgid "Reactions list"
+msgstr ""
+
+#: boombox-reactions/register-reactions.php:36
+msgid "Reactions list navigation"
+msgstr ""
+
+#: boombox-shortcodes/captcha.php:77
+msgid "Error in imagettfbbox function"
+msgstr ""
+
+#: boombox-shortcodes/captcha.php:80
+msgid "Error in imagettftext function"
+msgstr ""
+
+#: boombox-shortcodes/components.php:118, boombox-social/class-boombox-social.php:153
+msgid "Title"
+msgstr ""
+
+#: boombox-shortcodes/components.php:300
+msgid "Tooltip text"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:31
+msgid "Your message successfully submitted!"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:32
+msgid "Please fill all required fields!"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:33
+msgid "Something went wrong, please try again!"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:48
+msgid "Your Message"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:49
+msgid "Submit Your Message"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:63, boombox-shortcodes/contact-form.php:206
+msgid "Name"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:66, boombox-shortcodes/contact-form.php:207, boombox-social/class-boombox-social.php:255
+msgid "Email"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:91
+msgid "Enter captcha"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:136
+msgid "Please enter the name."
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:141
+msgid "Please enter valid email address."
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:146
+msgid "Please fill the comment."
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:159, boombox-shortcodes/contact-form.php:160
+msgid "the"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:159
+msgid "terms of use"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:160
+msgid "privacy policy"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:162
+msgid "and"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:170
+msgid "You must agree to %s before signing up"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:182, boombox-shortcodes/contact-form.php:192
+msgid "Invalid Captcha! Please, try again."
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:200
+msgid "Contact Form"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:208
+msgid "Message"
+msgstr ""
+
+#: boombox-shortcodes/contact-form.php:235
+msgid "Contact Form (shortcode)"
+msgstr ""
+
+#: boombox-shortcodes/download.php:105
+msgid "Download"
+msgstr ""
+
+#: boombox-shortcodes/download.php:136
+msgid "Download Page"
+msgstr ""
+
+#: boombox-shortcodes/download.php:147
+msgid "Delay before download (in seconds)"
+msgstr ""
+
+#: boombox-shortcodes/download.php:160
+msgid "Download Content Position"
+msgstr ""
+
+#: boombox-shortcodes/download.php:167
+msgid "Before Page Content"
+msgstr ""
+
+#: boombox-shortcodes/download.php:168
+msgid "After Page Content"
+msgstr ""
+
+#: boombox-shortcodes/download.php:174
+msgid "Counter"
+msgstr ""
+
+#: boombox-shortcodes/download.php:180
+msgid "On"
+msgstr ""
+
+#: boombox-shortcodes/download.php:181
+msgid "Off"
+msgstr ""
+
+#: boombox-shortcodes/download.php:187
+msgid "Download Count Style"
+msgstr ""
+
+#: boombox-shortcodes/download.php:194
+msgid "Rounded"
+msgstr ""
+
+#: boombox-shortcodes/download.php:195
+msgid "Full"
+msgstr ""
+
+#: boombox-shortcodes/download.php:208
+msgid "Fake Download Count"
+msgstr ""
+
+#: boombox-shortcodes/download.php:209
+msgid "Leave 0 to show real count"
+msgstr ""
+
+#: boombox-shortcodes/download.php:550
+msgid "Thanks! Your download is starting"
+msgstr ""
+
+#: boombox-shortcodes/download.php:554
+msgid "in"
+msgstr ""
+
+#: boombox-shortcodes/download.php:556
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: boombox-shortcodes/download.php:563
+msgid "If your download doesn't start automatically please"
+msgstr ""
+
+#: boombox-shortcodes/download.php:564
+msgid "click here"
+msgstr ""
+
+#: boombox-shortcodes/download.php:569
+msgid "Invalid request"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:71
+msgid "You have entered an invalid e-mail address."
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:127
+msgid "Boombox Social"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:129
+msgid "For reordering social items, please, drag and drop icons"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:187
+msgid "Link"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:188
+msgid "Email Address"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:192
+msgid "Facebook"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:199
+msgid "Google+"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:206
+msgid "Instagram"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:213
+msgid "Linkedin"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:220
+msgid "Pinterest"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:227
+msgid "Tumblr"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:234
+msgid "Twitter"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:241
+msgid "Vimeo"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:248
+msgid "Youtube"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:262
+msgid "Behance"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:269
+msgid "CodePen"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:276
+msgid "Delicious"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:283
+msgid "DeviantArt"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:290
+msgid "Digg"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:297
+msgid "Dribbble"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:304
+msgid "Flickr"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:311
+msgid "Foursquare"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:318
+msgid "GitHub"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:325
+msgid "JSFiddle"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:332
+msgid "Last.fm"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:339
+msgid "Reddit"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:346
+msgid "SlideShare"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:353
+msgid "Stack Overflow"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:360
+msgid "StumbleUpon"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:367
+msgid "Vine"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:374
+msgid "XING"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:381
+msgid "Yelp"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:388
+msgid "Vkontakte"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:395
+msgid "Odnoclassniki"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:402
+msgid "Twitch"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:409
+msgid "Website Link"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:416
+msgid "Snapchat"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:423
+msgid "Telegram"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:425
+msgid "http://telegram.me/TELEGRAM_USERNAME"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:430
+msgid "RSS"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:437
+msgid "SoundCould"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:444
+msgid "Mixcloud"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:451
+msgid "Quora"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:458
+msgid "WhatsApp"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:465
+msgid "Discord"
+msgstr ""
+
+#: boombox-social/class-boombox-social.php:472
+msgid "Tiktok"
+msgstr ""
+
+#: boombox-social/widget.php:22
+msgid "Boombox Social Widget"
+msgstr ""
+
+#: boombox-social/widget.php:23
+msgid "A Social Widget"
+msgstr ""
+
+#: boombox-social/widget.php:63
+msgid "Connect With Us"
+msgstr ""
+
+#: boombox-social/widget.php:67
+msgid "Title:"
+msgstr ""
+
+#: boombox-social/widget.php:74
+msgid "Exclude"
+msgstr ""
+
+#: boombox-social/widget.php:75
+msgid "(eg. tumblr, twitter, facebook) :"
+msgstr ""

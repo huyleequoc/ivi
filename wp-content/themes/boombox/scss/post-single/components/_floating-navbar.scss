@@ -1,0 +1,75 @@
+/* *** Post Single Floating Navbar *** */
+
+.bb-floating-navbar {
+  // Sticky
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  visibility: hidden;
+  .bb-sticky-el {
+    position: relative!important;
+    top: 0;
+    transform: translateY(-100%);
+    @include transition(all 0.3s ease-out);
+  }
+  &.affix {
+    visibility: visible;
+    .bb-sticky-el {
+      transform: translateY(0);
+    }
+  }
+  .floating-navbar-inner {
+    background-color: #fff;
+    @include box-shadow(0px, 0px, 6px, rgba(0, 0, 0, 0.2));
+  }
+
+  // General Styles
+  .navbar-content {
+    width: 100%;
+    display: table;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+  .navbar-col {
+    display: table-cell;
+    display: flex;
+    vertical-align: middle;
+  }
+  .navbar-col1 {
+    flex-grow: 100;
+  }
+  .navbar-col2 {
+    padding-left: 5px;
+  }
+  .f-n-post-title-block {
+    display: table;
+    height: 42px;
+  }
+  .f-n-post-title {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .f-n-next-prev-pg {
+    white-space: nowrap;
+    .pg-item {
+      margin-bottom: 0;
+    }
+    .page-link {
+      float: left;
+    }
+    .page-nav {
+      float: none;
+      display: inline-block;
+    }
+  }
+  .f-n-post-share-box {
+    width: 100%;
+    padding: 0 5px 0 0;
+  }
+}

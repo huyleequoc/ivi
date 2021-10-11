@@ -1,0 +1,69 @@
+{"rules":
+[
+  {"class": "IgnoreRule","selector": ".wp-audio-shortcode"},
+  {"class": "PassThroughRule","selector": "u"},
+  {"class": "PassThroughRule","selector": "s"},
+  {"class": "IgnoreRule","selector" : "ul > li > ul > li"},
+  {"class": "IgnoreRule","selector" : "ul > li > ul"},
+  {"class": "IgnoreRule","selector" : "ol > li > ol > li"},
+  {"class": "IgnoreRule","selector" : "ol > li > ol"},
+  {"class": "IgnoreRule","selector" : "hr"},
+  {"class": "ParagraphRule","selector" : "address"},
+  {"class": "ParagraphRule","selector" : "dd"},
+  {"class": "ParagraphRule","selector" : "dt"},
+  {"class": "PassThroughRule","selector" : "dl"},
+  {"class": "PassThroughRule","selector" : "abbr"},
+  {"class": "ItalicRule","selector" : "ins"},
+  {"class": "BoldRule","selector" : "code"},
+  {"class": "BoldRule","selector" : "kbd"},
+  {"class": "ParagraphRule","selector" : "pre"},
+  {"class": "PassThroughRule","selector" : "q"},
+  {"class": "PassThroughRule","selector" : "sub"},
+  {"class": "PassThroughRule","selector" : "sup"},
+  {"class": "PassThroughRule","selector" : "var"},
+  {"class": "ItalicRule","selector" : "time"},
+  {"class": "VideoRule","selector" : ".gif-video-wrapper",
+               "containsChild": "video",
+               "properties" : {
+                   "video.url" : {
+                      "type" : "string",
+                       "selector" : "source",
+                       "attribute": "src"
+                    }
+                }
+            },
+  {"class": "PassThroughRule","selector": ".boombox-responsive-embed"},
+  {"class": "PassThroughRule","selector": ".mejs-inner"},
+  {"class": "PassThroughRule","selector": ".mejs-mediaelement"},
+  {"class": "PassThroughRule","selector": ".bb-media-placeholder"},
+  {"class": "PassThroughRule","selector": ".bb-table-scroll"},
+  {
+                "class": "RelatedArticlesRule",
+                "selector" : "ul.op-related-articles",
+                "properties" : {
+                    "related.title" : {
+                        "type" : "string",
+                        "selector" : "ul.op-related-articles",
+                        "attribute": "title"
+                    }
+                }
+            },
+            {
+                "class": "RelatedItemRule",
+                "selector" : "li",
+                "properties" : {
+                    "related.sponsored" : {
+                        "type" : "exists",
+                        "selector" : "li",
+                        "attribute": "data-sponsored"
+                    },
+                    "related.url" : {
+                        "type" : "string",
+                        "selector" : "a",
+                        "attribute": "href"
+                    }
+                }
+            }
+  
+]
+}

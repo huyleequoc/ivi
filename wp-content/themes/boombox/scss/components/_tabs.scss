@@ -1,0 +1,155 @@
+/* *** Tabs *** */
+
+/* General */
+.bb-tabs {
+  margin-top: 1.25rem;
+  .tabs-menu {
+    .count {
+      height: 24px;
+      width: 24px;
+      display: inline-block;
+      text-align: center;
+      font-size: 13px;
+      line-height: 14px;
+      padding: 5px 0;
+      @include border-radius(50%);
+      font-weight: normal;
+      vertical-align: middle;
+      margin: 0 0 0 5px;
+    }
+  }
+  .tab-content {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  .tabs-content {
+    background-color: $sec-bg-clr;
+    padding: 35px 30px;
+  }
+  .tabs-menu.active:before {
+    background-color: $primary-color;
+  }
+}
+.bb-tabs .tabs-menu, .woocommerce div.product .woocommerce-tabs ul.tabs {
+  margin: 0 0 20px 0;
+  list-style: none;
+  text-align: center;
+  li {
+    display: block;
+    position: relative;
+    margin: 5px 15px 0 15px;
+    padding: 0;
+    a {
+      color: inherit;
+      text-decoration: none;
+      padding: 10px 0;
+      display: block;
+    }
+    h3, h2, .tab-title {
+      line-height: 25px;
+      font-weight: normal;
+    }
+    a, h3, h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+    &.active {
+      &:before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        left: 0;
+        bottom: -4px;
+        height: 4px;
+      }
+    }
+  }
+}
+
+/* Tabs Vertical and Horizontal */
+.bb-tabs {
+  &.tabs-vertical:after,
+  &.tabs-vertical:before,
+  &.tabs-horizontal .tabs-menu:after,
+  &.tabs-horizontal .tabs-menu:before {
+    content: " ";
+    display: table;
+  }
+  &.tabs-vertical:after,
+  &.tabs-horizontal .tabs-menu:after {
+    clear: both;
+  }
+  // Tabs Vertical
+  &.tabs-vertical {
+    width: 100%;
+    .tabs-menu {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tabs-content {
+      min-height: 180px;
+    }
+  }
+  // Tabs Horizontal
+  &.tabs-horizontal {
+    .tabs-menu {
+      @include clearfix();
+    }
+  }
+}
+
+/* Media */
+@media screen and (min-width: 481px) and (max-width: $screen-md-max) {
+  .bb-tabs.tabs-vertical {
+    .tabs-menu {
+      width: 50%;
+    }
+  }
+}
+@media screen and (min-width: 481px) {
+  .bb-tabs.tabs-horizontal .tabs-menu {
+    border-bottom: 4px solid $gray;
+  }
+  .bb-tabs.tabs-horizontal .tabs-menu,
+  .woocommerce div.product .woocommerce-tabs.tabs-horizontal ul.tabs  {
+    text-align: left;
+    li {
+      display: inline-block;
+      margin: 0;
+      a {
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: $screen-md-min) {
+  .bb-tabs {
+    &.tabs-vertical li {
+      margin: 10px 30px 10px 0;
+    }
+  }
+  
+  .bb-tabs.tabs-vertical {
+    display: table;
+    .tabs-menu, .tabs-content {
+      display: table-cell;
+      height: 100%;
+      vertical-align: top;
+    }
+    .tabs-menu {
+      width: 25%;
+      margin: 0;
+    }
+    .tabs-content {
+      width: 75%;
+    }
+    li {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

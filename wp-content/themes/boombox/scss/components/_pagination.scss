@@ -1,0 +1,412 @@
+/* *** Pagination *** */
+
+/* Numeric Pagination */
+.pagination.navigation svg // wp num. pagination
+{
+  display: none;
+}
+.pagination.navigation, // wp num. pagination
+.bb-wp-pagination // bb num. pagination
+{
+  margin-bottom: $mb-md;
+  font-size: 0; // This is for removing inline-block elements default margin. As after ajax call it disappears, we should remove margin and set it manually */
+  clear: both;
+  display: block;
+  text-align: center;
+  ul {
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+.pagination.navigation, // wp num. pagination
+.bb-wp-pagination, // bb num. pagination
+.woocommerce nav.woocommerce-pagination ul li // woocommerce num. pagination
+{
+  span {
+    text-decoration: none;
+    &.dots {
+      border: 0 none;
+      font-size: 30px;
+      line-height: 30px!important;
+    }
+  }
+  .prev,.next {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 0;
+    @extend .hvr-box-shadow;
+    &:before {
+      font-family: $icon-font-family;
+      position: absolute;
+      font-size: 14px;
+    }
+  }
+  .next {
+    &:before {
+      content: "\e961";
+      right: 15px;
+    }
+  }
+  .prev {
+    &:before {
+      content: "\e960";
+      left: 15px;
+    }
+  }
+}
+
+.pagination.navigation a, .pagination.navigation span, // wp num. pagination
+.bb-wp-pagination a, .bb-wp-pagination span, // bb num. pagination
+.woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span // woocommerce num. pagination
+{
+  min-width: 40px;
+  font-size: 14px;
+  margin: 3px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px !important;
+  vertical-align: middle;
+  text-align: center;
+  color: inherit;
+  font-weight: 600;
+}
+
+@media screen and (min-width: $screen-xs-min) {
+  .pagination.navigation, // wp num. pagination
+  .bb-wp-pagination, // bb num. pagination
+  .woocommerce nav.woocommerce-pagination ul li // woocommerce num. pagination
+  {
+    .next, .prev {
+      font-size: 14px;
+    }
+    .next {
+      padding: 0 50px 0 25px !important;
+      &:before {
+        right: 20px;
+      }
+    }
+    .prev {
+      padding: 0 25px 0 50px !important;
+      &:before {
+        left: 20px;
+      }
+    }
+  }
+}
+
+
+/* Next / Prev Pagination */
+.bb-next-prev-pagination {
+  /* General Styles */
+  @include clearfix;
+  font-weight: 600;
+  text-align: center;
+  .pg-list {
+    &, & li {
+      margin: 0;
+      padding: 0;
+    }
+    .pg-item {
+      list-style: none;
+      vertical-align: middle;
+    }
+    .text {
+      vertical-align: middle;
+    }
+    .pg-item {
+      margin-bottom: $mb-xs;
+    }
+    .pages {
+      padding: 0 15px;
+    }
+  }
+  .next-page {
+    float: right;
+  }
+  .prev-page {
+    float: left;
+  }
+
+  .pages {
+    display: none;
+    vertical-align: middle;
+  }
+
+  .page-link {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: $primary-color;
+    .bb-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      vertical-align: middle;
+    }
+    .big-text {
+      display: none;
+    }
+    @extend .hvr-box-shadow;
+  }
+  .next-page-link {
+    .bb-icon {
+      right: 15px;
+    }
+    .text {
+      margin-right: 5px;
+    }
+  }
+  .prev-page-link {
+    .bb-icon {
+      left: 15px;
+    }
+    .text {
+      margin-left: 5px;
+    }
+  }
+
+  /* Small Size Pagination */
+  &.pg-xs {
+    .pages {
+      line-height: 39px;
+      .cur-page {
+        font-size: 24px;
+      }
+      .all-page {
+        font-size: 18px;
+      }
+    }
+
+    .page-link {
+      min-height: 42px;
+      font-size: 14px;
+      line-height: 15px;
+      font-weight: 600;
+      .bb-icon {
+        font-size: 14px;
+      }
+    }
+
+    .page-link .small-text, .pages, .prev-page-link {
+      display: none;
+    }
+
+    .next-page-link {
+      padding: 13px 27px 13px 15px;
+    }
+    .prev-page-link {
+      padding: 13px 15px 13px 27px;
+    }
+  }
+
+  /* Large and Medium Size Pagination */
+  &.pg-lg, &.pg-md {
+    .pages {
+      line-height: 45px;
+      .cur-page {
+        font-size: 25px;
+      }
+      .all-page {
+        font-size: 20px;
+      }
+    }
+
+    .page-link {
+      min-height: 48px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      .bb-icon {
+        font-size: 21px;
+      }
+    }
+
+    .next-page-link {
+      padding: 14px 33px 14px 15px;
+    }
+    .prev-page-link {
+      padding: 14px 15px 14px 33px;
+      .small-text {
+        display: none;
+      }
+    }
+
+    .next-page {
+      min-width: 60%;
+    }
+  }
+
+  @media screen and (min-width: $screen-xs-min) and (max-width: $screen-mb-full-w-max) {
+    /* Large and Medium Size Pagination */
+    &.pg-lg, &.pg-md {
+      .prev-page, .next-page {
+        width: 200px;
+        min-width: inherit;
+        .prev-page-link, .next-page-link {
+          .small-text {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: $screen-mb-boxed) {
+    /* Small Size Pagination */
+    &.pg-xs {
+      .pages {
+        display: inline-block;
+      }
+      .page-link {
+        .big-text {
+          display: none;
+        }
+        .small-text {
+          display: inline;
+        }
+      }
+    }
+
+    /* Medium Size Pagination */
+    &.pg-md {
+      .pages {
+        display: inline-block;
+      }
+      .prev-page, .next-page {
+        min-width: 180px;
+      }
+      .page-link {
+        .big-text {
+          display: none;
+        }
+        .small-text {
+          display: inline;
+        }
+      }
+    }
+
+    /* Large Size Pagination */
+    &.pg-lg {
+      .pages {
+        display: inline-block;
+        line-height: 48px;
+        .cur-page {
+          font-size: 30px;
+        }
+        .all-page {
+          font-size: 25px;
+        }
+      }
+
+      .prev-page, .next-page {
+        min-width: 220px;
+      }
+
+      .page-link {
+        min-height: 52px;
+        .big-text {
+          display: inline;
+        }
+        .small-text {
+          display: none;
+        }
+      }
+
+      .next-page-link {
+        padding: 16px 33px 16px 15px;
+      }
+      .prev-page-link {
+        padding: 16px 15px 16px 33px;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-lg-min) {
+    /* Small Size Pagination */
+    &.pg-xs {
+      .page-link {
+        .big-text {
+          display: inline;
+        }
+        .small-text {
+          display: none;
+        }
+      }
+    }
+
+    /* Medium Size Pagination */
+    &.pg-md {
+      .prev-page, .next-page {
+        min-width: 200px;
+      }
+      .page-link {
+        .big-text {
+          display: inline;
+        }
+        .small-text {
+          display: none;
+        }
+      }
+    }
+
+    /* Large Size Pagination */
+    &.pg-lg {
+      .prev-page, .next-page {
+        min-width: 270px;
+      }
+    }
+  }
+}
+
+/* Next Pagination Version */
+.bb-next-pagination {
+  /* General Styles */
+  @include clearfix;
+  font-weight: 600;
+  text-align: center;
+  .pg-list {
+    &, & li {
+      margin: 0;
+      padding: 0;
+    }
+    .pg-item {
+      list-style: none;
+      vertical-align: middle;
+    }
+  }
+
+  .page-link {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    min-height: 52px;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: $primary-color;
+    .bb-icon {
+      font-size: 21px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      vertical-align: middle;
+    }
+    @extend .hvr-box-shadow;
+  }
+  .next-page-link {
+    padding: 16px 33px 16px 15px;
+    .bb-icon {
+      right: 15px;
+    }
+    .text {
+      margin-right: 5px;
+    }
+  }
+
+}

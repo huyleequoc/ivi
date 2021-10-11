@@ -1,0 +1,29 @@
+/* *** Admin Logged in View *** */
+
+// /* Variables */
+// Custom Breakpoint for WP Admin
+$screen-mb-admin: 783px;
+$screen-mb-admin-max: ($screen-mb-admin - 1);
+// Admin bar sizes
+$admin-bar-sm: 32px;
+$admin-bar-md: 46px;
+
+/* Admin bar styling improvement for fixed position */
+#wpadminbar {
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Fixed Header width admin bar  */
+.admin-bar {
+  @media screen and (min-width: $screen-mb-custom) and (max-width: $screen-mb-admin-max) {
+    .bb-floating-navbar .bb-sticky-el {
+      top: $admin-bar-md;
+    }
+  }
+  @media screen and (min-width: $screen-mb-admin) {
+    .bb-floating-navbar .bb-sticky-el {
+      top: $admin-bar-sm;
+    }
+  }
+}

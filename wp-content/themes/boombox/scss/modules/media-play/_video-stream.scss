@@ -1,0 +1,247 @@
+/* *** Youtube video stream *** */
+
+.video-stream {
+  clear: both;
+  padding: 15px 0 0;
+  background-color: #181718;
+
+  .video-stream_main {
+    float: left;
+    width: $main;
+  }
+  .video-stream_secondary {
+    float: right;
+    width: $sidebar;
+
+    ul {
+      display: block;
+      list-style: none;
+      margin: 0;
+
+      li {
+        display: block;
+        list-style: none;
+        @include clearfix();
+      }
+    }
+    .stream-item {
+      position: relative;
+      padding: 8px 8px;
+      @include border-radius(5px);
+      border: 1px solid transparent;
+
+      .img-container {
+        float: left;
+        padding-right: 4%;
+        width: 33.33%;
+
+        .responsivewrapper {
+          padding-bottom: 65%;
+        }
+      }
+      .info {
+        float: left;
+        width: 66.66%;
+
+        .item-title {
+          margin-bottom: 7px;
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .meta {
+          color: #b0b0b0;
+          font-weight: 300;
+          font-size: 12px;
+
+          span {
+            color: #ffffff;
+          }
+        }
+      }
+
+      &.active,
+      &:hover {
+        border-color: #2d2c2d;
+        background-color: #1d1c1d;
+      }
+      &.active {
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: -3px;
+          margin-top: -3px;
+          width: 6px;
+          height: 6px;
+          background-color: #ea4242;
+          @include border-radius(50%)
+        }
+      }
+    }
+
+    .viewport {
+      position: relative;
+      overflow: hidden;
+
+      ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        overflow: auto;
+        padding-left: 3px;
+      }
+    }
+  }
+  .responsivewrapper {
+    position: relative;
+    padding-bottom: 55%;
+    height: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  .video-container {
+    display: none;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .video-cover {
+    .video-play {
+      position: relative;
+      display: block;
+
+      .play {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        left: 50%;
+        margin: -43px 0 0 -43px;
+        padding: 8px 0;
+        width: 86px;
+        height: 86px;
+        font-size: 53px;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #48575d;
+        @include border-radius(50%);
+        background: rgba(0, 0, 0, 0.5) !important;
+      }
+    }
+  }
+
+  &.isPlaying {
+    .video-container {
+      display: block;
+    }
+    .video-cover {
+      display: none;
+    }
+  }
+  .video-next-prev {
+    @include clearfix();
+    clear: both;
+    padding: 13px 0 17px;
+    border-top: 2px solid #272728;
+
+    .nav {
+      position: relative;
+      width: 48.8%;
+      padding: 9px 30px;
+      font-size: 14px;
+      color: #b0b0b1;
+      text-transform: uppercase;
+      text-align: center;
+      border: 2px solid #272728;
+      @include border-radius(3px);
+
+      .bb-icon {
+        position: absolute;
+        top: 13px;
+      }
+
+      &.prev-page {
+        float: left;
+        .bb-icon {
+          left: 15px;
+        }
+      }
+      &.next-page {
+        float: right;
+        .bb-icon {
+          right: 15px;
+        }
+      }
+      &:hover {
+        border-color: #b0b0b1;
+      }
+    }
+  }
+
+  .share-button {
+    float: left;
+    margin-right: 5px;
+    padding: 11px 12px;
+    min-width: 215px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 23px;
+
+    .bb-icon {
+      font-size: 20px;
+      margin-right: 12px;
+    }
+
+    &.facebook {
+      background-color: #2d5f9a;
+    }
+    &.twitter {
+      background-color: #00c3f3;
+    }
+  }
+
+  .bb-post-share-box {
+    padding: 15px 0;
+  }
+  @media screen and (max-width: 900px) {
+    .video-stream_secondary,
+    .video-stream_main {
+      float: none;
+      width: 100%;
+    }
+    .video-stream_secondary {
+      .viewport {
+        display: none;
+      }
+    }
+
+  }
+}
+
+.desktop {
+  #video-stream {
+    ::-webkit-scrollbar-track {
+      background-color: #181718;
+      @include border-radius(0)
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+      background-color: #181718;
+      @include border-radius(0)
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #201f20;
+      @include border-radius(0)
+    }
+  }
+}

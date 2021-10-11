@@ -1,0 +1,20 @@
+#zombify-main-section {
+  &.zf-image {
+
+    .zf-start {
+      display: none;
+
+      &.zf-open {
+        display: block;
+
+        + .zf-after-start {
+          display: none;
+        }
+      }
+    }
+
+    .gif-video {
+      width: 100%;
+    }
+  }
+}

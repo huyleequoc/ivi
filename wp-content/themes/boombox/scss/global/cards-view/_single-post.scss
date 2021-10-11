@@ -1,0 +1,84 @@
+/* *** Cards View for Single post *** */
+
+.bb-cards-view {
+  .bb-post-nav .pg-item {
+    border: none;
+  }
+
+  .bb-post-single.style1,
+  .bb-post-single.style3,
+  .bb-post-single.style4,
+  .bb-post-single.style5,
+  .bb-post-single.style6 {
+    .s-post-thumbnail {
+      margin-left: -$card-big-pad;
+      margin-right: -$card-big-pad;
+    }
+  }
+
+  .bb-post-single.style1,
+  .bb-post-single.style3,
+  .bb-post-single.style5 {
+    .s-post-thumbnail {
+      img, video, .video-wrapper, .hy_plyr canvas,.bb-media-placeholder, .nsfw-post {
+        border-radius: 0;
+      }
+    }
+  }
+
+  .bb-post-single.style4,
+  .bb-post-single.style6 {
+    .s-post-thumbnail {
+      img, video, .video-wrapper, .hy_plyr canvas,.bb-media-placeholder, .nsfw-post {
+        @include clear-btm-border-radius();
+      }
+    }
+  }
+
+  .bb-post-single .s-post-inner,
+  .bb-post-single.style5 .site-main,
+  .bb-post-single.style6 .container-inner {
+    padding: 0;
+  }
+
+  .bb-post-single.style4,
+  .bb-post-single.style6 {
+    .s-post-thumbnail {
+      margin-top: -32px;
+    }
+    .bb-alnp-item {
+      .s-post-thumbnail {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-mb-full-w-max) {
+    .bb-post-single.style1 .s-post-main.bb-card-item,
+    .bb-post-single.style2 .s-post-main.bb-card-item,
+    .bb-post-single.style3 .s-post-main.bb-card-item,
+    .bb-post-single.style4 .s-post-main.bb-card-item,
+    .bb-post-single .single-middle-container .bb-card-item {
+      margin-left: -$container-pad-mobile;
+      margin-right: -$container-pad-mobile;
+      padding-left: $card-small-pad;
+      padding-right: $card-small-pad;
+      border-radius: 0;
+
+      .s-post-thumbnail {
+        margin-left: -$card-small-pad;
+        margin-right: -$card-small-pad;
+      }
+    }
+
+    .bb-post-single.style4 {
+      .s-post-thumbnail {
+        img, video, .video-wrapper, .hy_plyr canvas,.bb-media-placeholder, .nsfw-post {
+          border-radius: 0;
+        }
+      }
+    }
+
+  }
+
+}

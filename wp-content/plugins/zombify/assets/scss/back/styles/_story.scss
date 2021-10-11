@@ -1,0 +1,310 @@
+#zombify-main-section {
+  &.zf-story,
+  &.zombify-personality-quiz {
+
+    .zf-info-wrapper {
+      margin-bottom: 25px;
+    }
+    .zf-item-wrapper {
+      margin-bottom: 17px;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+
+      .zf-story_container {
+        .zombify_group {
+          .zf-components {
+            margin-top: 15px;
+          }
+        }
+      }
+
+      .zombify_group[data-zombify-group-name="results"],
+      .zombify_group[data-zombify-group-name="questions"],
+      .zombify_group[data-zombify-group-name="list"] {
+
+        .zf-inner-wrapper {
+          border: none;
+          background-color: #f9faf8;
+        }
+
+        .zf-sort-area {
+          .zf-up,
+          .zf-down {
+              display: block;
+            }
+        }
+
+        &:first-of-type {
+          .zf-sort-area {
+            .zf-up {
+              display: none;
+            }
+          }
+        }
+        &:last-of-type {
+          .zf-sort-area {
+            .zf-down {
+              display: none;
+            }
+          }
+        }
+
+        .zf-body {
+          .zf-index {
+            top: 75px;
+          }
+        }
+      }
+
+      .zombify_group[data-zombify-group-name="poll"] {
+        .zf-answers-box[data-format="3up"] .zf-add-answer-button {
+          height: 326px;
+        }
+      }
+
+      .zombify_group[data-zombify-group-name="trivia"] {
+        .zf-answers-box[data-format="3up"] .zf-add-answer-button {
+          height: 382px;
+        }
+      }
+    }
+    .zombify_group {
+      margin-bottom: 17px;
+
+      .zf-inner-wrapper {
+        padding-top: 40px;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+        background-color: #ffffff;
+      }
+    }
+    .zf-story_container {
+      margin-top: 25px;
+    }
+
+    .zf-components {
+      position: relative;
+      padding: 10px 50px;
+      min-height: 50px;
+      border: 2px dashed transparent;
+      border-radius: 5px;
+
+      .zf-components_wrapper {
+        text-align: center;
+        display: none;
+      }
+      .zf-add-component {
+        position: relative;
+        display: inline-block;
+        margin: 4px 4%;
+        padding: 0 0 0 30px;
+        color: $secondary-color;
+        font-size: 16px;
+        font-weight: 600;
+
+        i {
+          position: absolute;
+          left: 0;
+          top: 1px;
+          font-size: 20px;
+          font-weight: 400;
+        }
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      .zf-components_plus {
+        position: absolute;
+        top: 10px;
+        right: 13px;
+        padding: 6px 0;
+        margin: 0;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        background: $primary-color;
+        font-size: 10px;
+        color: #ffffff;
+        border-radius: 50%;
+        border: none;
+
+        .zf-icon-delete {
+          display: none;
+        }
+        .zf-icon-add {
+          display: block;
+        }
+      }
+
+      &.zf-open {
+        border-color: #cbc6cc;
+
+        .zf-components_plus {
+          background: #e2e0e2;
+          color: $secondary-color;
+
+          .zf-icon-delete {
+            display: block;
+          }
+          .zf-icon-add {
+            display: none;
+          }
+        }
+
+        .zf-components_wrapper {
+          display: block;
+        }
+      }
+    }
+
+    .zf-start {
+      display: none;
+      padding: 7% 10px;
+      text-align: center;
+      border: 1px solid #ebebeb;
+      border-radius: 4px;
+
+      &.zf-open {
+        display: block;
+      }
+
+      .zf-title {
+        font-size: 30px;
+        font-weight: 600;
+        color: $secondary-color;
+        margin-bottom: 50px;
+      }
+      .zf-add-component {
+        position: relative;
+        display: inline-block;
+        width: 115px;
+        margin: 0 1% 10px;
+        padding-left: 0;
+        color: #7f6f7f;
+        font-size: 16px;
+        font-weight: 600;
+
+        i {
+          position: relative;
+          display: inline-block;
+          top: inherit;
+          left: inherit;
+          width: 80px;
+          height: 80px;
+          margin-bottom: 15px;
+          padding: 14px 0;
+          color: #ffffff;
+          font-size: 50px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: $primary-color;
+          transition: all .15s ease-out;
+        }
+        .zf-text {
+          display: block;
+        }
+
+        &:hover {
+          i {
+            transform: translate(0px, -3px);
+          }
+        }
+      }
+    }
+
+    .zf-start.zf-open + .zf-after-start {
+      display: none;
+    }
+
+    .zombify_group_format[data-group='text'] {
+      .zf-inner-wrapper[data-type='text'] {
+        display: block;
+      }
+      .zf-type-wrapper i.zf-icon-text_story {
+        display: block;
+      }
+    }
+    .zombify_group_format[data-group='image'] {
+      .zf-inner-wrapper[data-type='image'] {
+        display: block;
+      }
+      .zf-type-wrapper i.zf-icon-image {
+        display: block;
+      }
+    }
+    .zombify_group_format[data-group='embed'] {
+      .zf-inner-wrapper[data-type='embed'] {
+        display: block;
+      }
+      .zf-type-wrapper i.zf-icon-embed {
+        display: block;
+      }
+    }
+    .zombify_group_format[data-group='link'] {
+      .zf-inner-wrapper[data-type='link'] {
+        display: block;
+      }
+      .zf-type-wrapper i.zf-icon-link {
+        display: block;
+      }
+    }
+    .zombify_group_format[data-group='poll'] {
+      .zf-inner-wrapper[data-type='poll'] {
+        display: block;
+
+        > .zf-body {
+          padding: 0;
+        }
+        .zf-answers-box[data-format="3up"] .zf-add-answer-button,
+        .zf-answers-box[data-format="2up"] .zf-add-answer-button {
+          height: 326px;
+        }
+      }
+      .zf-type-wrapper i.zf-icon-type-poll {
+        display: block;
+      }
+    }
+    .zf-personality_container,
+    .zf-trivia_container {
+      .zf-item-wrapper {
+        border: none;
+      }
+    }
+    .zf-poll_container {
+      margin-top: 10px;
+    }
+
+    .zf-video-player {
+      &.mejs-container {
+        .mejs-controls {
+          .mejs-time {
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+#zombify-main-section.zf-story {
+  .zf-item-wrapper {
+    .zf-sort-area {
+      top: 40px;
+    }
+  }
+}
+.zf-mobile {
+  #zombify-main-section.zf-story {
+    .zf-item-wrapper {
+      .zf-sort-area {
+        left: -10px;
+      }
+    }
+  }
+}
+
+/* #mainContainer {
+  background-color: #ffffde!important;
+} */

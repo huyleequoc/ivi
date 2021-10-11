@@ -1,0 +1,4163 @@
+# Copyright (C) 2021 boombox
+# This file is distributed under the same license as the boombox package.
+msgid ""
+msgstr ""
+"Project-Id-Version: boombox\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:25
+msgid "Oops"
+msgstr ""
+
+#: 404.php:30
+msgid "We couldn't find the page you are looking for."
+msgstr ""
+
+#: 404.php:31
+msgid "It may have expired, or there could be a typo. Maybe you can find what you need from our homepage."
+msgstr ""
+
+#: 404.php:33
+msgid "Return To Home"
+msgstr ""
+
+#: amp/author-expanded-info.php:33, includes/functions.php:3087
+msgid "Posted by"
+msgstr ""
+
+#: amp/footer.php:10, template-parts/footer/footer-bottom.php:53
+msgid "%1$s %2$s"
+msgstr ""
+
+#: amp/loop-item-grid.php:104, amp/navigation.php:35, amp/navigation.php:63, amp/post-meta-info.php:30, includes/functions.php:2979
+msgid "by"
+msgstr ""
+
+#: amp/menu.php:21
+msgid "Search..."
+msgstr ""
+
+#: amp/navigation.php:20, amp/next-prev-buttons.php:33, includes/front/functions.php:560, includes/front/functions.php:844, single-navigation.php:21, template-parts/single/components/navigation.php:31
+msgid "Previous Post"
+msgstr ""
+
+#: amp/navigation.php:47, amp/next-prev-buttons.php:34, includes/front/functions.php:559, includes/front/functions.php:845, includes/front/functions.php:854, single-navigation.php:48, template-parts/single/components/navigation.php:59
+msgid "Next Post"
+msgstr ""
+
+#: amp/next-prev-buttons.php:31, includes/front/functions.php:558, includes/front/functions.php:841
+msgid "Previous Page"
+msgstr ""
+
+#: amp/next-prev-buttons.php:32, includes/front/functions.php:557, includes/front/functions.php:842
+msgid "Next Page"
+msgstr ""
+
+#: buddypress/members/activate.php:44
+msgid "Your account was activated successfully! You can now <a href=\"%s\" class=\"js-authentication\">log in</a> with the username and password you provided when you signed up."
+msgstr ""
+
+#: buddypress/members/register.php:59
+msgid "Registering for this site is easy"
+msgstr ""
+
+#: buddypress/members/register.php:60
+msgid "Just fill in the fields below, and we'll get a new account set up for you in no time."
+msgstr ""
+
+#: buddypress/members/single/settings/general.php:22
+msgid "New Password <span>(leave blank for no change)</span>"
+msgstr ""
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:27
+msgctxt "comments title"
+msgid "One Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:56
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:57
+msgid "Technical Requirements"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/admin/activation/class-tgm-plugin-activation.php:337
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/admin/activation/class-tgm-plugin-activation.php:339
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:341
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:347
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:353
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:359
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:365
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:371
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:377
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:393, includes/admin/activation/class-tgm-plugin-activation.php:912, includes/admin/activation/class-tgm-plugin-activation.php:2624, includes/admin/activation/class-tgm-plugin-activation.php:3671
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:394, includes/admin/activation/class-tgm-plugin-activation.php:3250
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:395, includes/admin/activation/class-tgm-plugin-activation.php:3043
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: includes/admin/activation/class-tgm-plugin-activation.php:397
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/admin/activation/class-tgm-plugin-activation.php:399
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: includes/admin/activation/class-tgm-plugin-activation.php:401
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:403
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:1022
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:1022, includes/admin/activation/class-tgm-plugin-activation.php:1019
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:1019
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:1206, includes/admin/activation/class-tgm-plugin-activation.php:3039
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: includes/admin/activation/class-tgm-plugin-activation.php:2067
+msgid "TGMPA v%s"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: includes/admin/activation/class-tgm-plugin-activation.php:2427
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: includes/admin/activation/class-tgm-plugin-activation.php:2473
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/admin/activation/class-tgm-plugin-activation.php:2477
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/admin/activation/class-tgm-plugin-activation.php:2481
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/admin/activation/class-tgm-plugin-activation.php:2485
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2573
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2581
+msgid "Installed version:"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2589
+msgid "Minimum required version:"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2601
+msgid "Available version:"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2624
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2638
+msgid "Plugin"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2639
+msgid "Source"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2640, includes/admin/metaboxes/class-boombox-page-metaboxes.php:679, includes/customizer/sections/archive/strip.php:98, includes/customizer/sections/header/strip.php:93, includes/customizer/sections/single-post/strip.php:98
+msgid "Type"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2644, includes/admin/status/class-theme-status.php:395
+msgid "Version"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2645
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/admin/activation/class-tgm-plugin-activation.php:2699
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/admin/activation/class-tgm-plugin-activation.php:2705
+msgid "Activate %2$s"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2694
+msgid "Install %2$s"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2775
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2808
+msgid "Install"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2814
+msgid "Update"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2817
+msgid "Activate"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2848
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2891
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:2999
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:3025
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:3249
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: includes/admin/activation/class-tgm-plugin-activation.php:3592
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/admin/activation/class-tgm-plugin-activation.php:3594
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:3606
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/admin/activation/class-tgm-plugin-activation.php:3608
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:3608, includes/admin/activation/class-tgm-plugin-activation.php:3600
+msgid "Show Details"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:3608, includes/admin/activation/class-tgm-plugin-activation.php:3600
+msgid "Hide Details"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:3609
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/admin/activation/class-tgm-plugin-activation.php:3611
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:3598
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:3600
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:3601
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:3603
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/admin/activation/class-tgm-plugin-activation.php:3589
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:29
+msgid "AdSense Integration WP QUADS PRO"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:41
+msgid "BoomBox Theme Extensions"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:53
+msgid "Easy Social Share Buttons"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:65
+msgid "Gamify"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:77, includes/plugins/one-click-demo-import.php:192, includes/plugins/one-click-demo-import.php:197
+msgid "Zombify"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:89
+msgid "WPBakery Page Builder"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:112
+msgid "Envato Market"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:123
+msgid "AdSense Integration WP QUADS"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:129
+msgid "BuddyPress"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:135
+msgid "MailChimp for WordPress"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:141
+msgid "One Click Demo Import"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:147
+msgid "Wordpress Social Login"
+msgstr ""
+
+#: includes/admin/activation/plugins-activation.php:153, includes/plugins/fb_comments.php:73
+msgid "Facebook Comments"
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:89
+msgid "Boombox is registered !!!"
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:124
+msgid "Activate your Boombox Copy"
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:128
+msgid "Welcome and thank you for Choosing Boombox Theme! The Boombox theme need to be activated to enable all demos, features and auto updates. Please follow activation steps exactly."
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:131
+msgid "Activation process"
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:140
+msgid "<a href=\"%s\" class=\"g1-install-envato-market\">Activate the Envato Market</a> plugin."
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:138
+msgid "<a href=\"%s\" class=\"g1-install-envato-market\">Install the Envato Market</a> plugin."
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:144
+msgid "Installing the Envato Market plugin..."
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:147
+msgid "The Envato Market plugin ready to use. Go to next step."
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:150
+msgid "The Envato Market plugin installation failed."
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:151
+msgid "<a href=\"%s\" target=\"_blank\">See details</a>."
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:156
+msgid "Create Envato token <a href=\"%s\" target=\"_blank\">here</a>. You should be logged into Envato account where Boombox theme was purchased."
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:159
+msgid "Enter a token name, leave default permissions as it is, check \"I have read, understood and agree to the  Terms and Conditions\" and then click the \"Create Token\" button."
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:162
+msgid "Insert the token in the <a href=\"%s\" target=\"_blank\">Envato Market->Settings</a> under \"Global OAuth Personal Token\" and click on \"Save Changes\" button. Please note that \"Envato Market\" plugin must be activated first."
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options-registration.php:165
+msgid "After successful token verification Boombox theme will be activated and all the features will be unlocked, you can return to this page and reload it to check activation status. If activation failed, please make sure that you followed the steps above correctly."
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options.php:123
+msgid "Activation"
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options.php:125, includes/admin/activation/theme/class-theme-options.php:126
+msgid "Boombox Activation"
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options.php:186
+msgid "<strong>Please activate your copy of Boombox. <a href=\"%s\">Activate Now</a></strong>"
+msgstr ""
+
+#: includes/admin/activation/theme/class-theme-options.php:241
+msgid "Please register your copy of \"Boombox\" to unlock"
+msgstr ""
+
+#: includes/admin/dummy-data/mycred/data.php:843
+msgid "MyCRED Data Import"
+msgstr ""
+
+#: includes/admin/dummy-data/mycred/data.php:849
+msgid "Import MyCRED plugin dummy data"
+msgstr ""
+
+#: includes/admin/dummy-data/mycred/data.php:856
+msgid "Select content"
+msgstr ""
+
+#: includes/admin/dummy-data/mycred/data.php:862
+msgid "Hooks"
+msgstr ""
+
+#: includes/admin/dummy-data/mycred/data.php:868, includes/customizer/sections/extras/badges.php:41, includes/helpers/class-choices-helper.php:106, includes/helpers/class-choices-helper.php:161, includes/helpers/class-choices-helper.php:200, includes/helpers/class-choices-helper.php:220, includes/helpers/class-choices-helper.php:251
+msgid "Badges"
+msgstr ""
+
+#: includes/admin/dummy-data/mycred/data.php:874
+msgid "Ranks"
+msgstr ""
+
+#: includes/admin/dummy-data/mycred/data.php:883
+msgid "Remove existing"
+msgstr ""
+
+#: includes/admin/dummy-data/mycred/data.php:887
+msgid "Import Now"
+msgstr ""
+
+#: includes/admin/dummy-data/mycred/data.php:938
+msgid "Succesfully Imported"
+msgstr ""
+
+#: includes/admin/functions.php:16
+msgid "Real Views"
+msgstr ""
+
+#: includes/admin/metaboxes/aiom-custom-fields/icons-dropdown/field.php:58, includes/widgets/class-boombox-widget-sidebar-footer.php:157
+msgid "Select"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-attachment-metaboxes.php:82
+msgid "Boombox Attachment Advanced Fields"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-attachment-metaboxes.php:106
+msgid "Video URL ( mp4 )"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-attachment-metaboxes.php:112
+msgid "Image URL ( jpg )"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-attachment-metaboxes.php:133, includes/admin/metaboxes/class-boombox-post-metaboxes.php:302
+msgid "Regular Price"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-attachment-metaboxes.php:138, includes/admin/metaboxes/class-boombox-post-metaboxes.php:310
+msgid "Discount Price"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-attachment-metaboxes.php:143, includes/admin/metaboxes/class-boombox-post-metaboxes.php:318
+msgid "Affiliate Link"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:70
+msgid "Boombox Category Advanced Fields"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:88, includes/admin/metaboxes/class-boombox-post-metaboxes.php:381, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:91, includes/customizer/sections/mobile/global.php:41
+msgid "Global"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:96, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:99
+msgid "Badge Icon"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:103, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:106
+msgid "Custom Badge Icon"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:104, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:107
+msgid "Upload .svg, .png, .jpg with optimal size of 80x80px"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:111, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:114
+msgid "Badge Background Color"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:119
+msgid "Hide Featured Area"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:120
+msgid "Check to hide featured area for this category"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:128, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:123
+msgid "Hide Attached Posts Featured Media"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:129
+msgid "Check to hide featured media from the single article page of posts - attached to this category"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:138, includes/admin/metaboxes/class-boombox-page-metaboxes.php:487, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:132, includes/customizer/sections/archive/title-area.php:38
+msgid "Title Area"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:146, includes/admin/metaboxes/class-boombox-page-metaboxes.php:502, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:140, includes/customizer/sections/archive/title-area.php:77
+msgid "Style"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:147, includes/admin/metaboxes/class-boombox-category-metaboxes.php:155, includes/admin/metaboxes/class-boombox-post-metaboxes.php:141, includes/admin/metaboxes/class-boombox-post-metaboxes.php:336, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:141, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:149, includes/helpers/class-choices-helper.php:608, includes/helpers/class-choices-helper.php:902
+msgid "Inherit"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:154, includes/admin/metaboxes/class-boombox-page-metaboxes.php:517, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:148, includes/customizer/sections/archive/title-area.php:88
+msgid "Container Type"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:162, includes/admin/metaboxes/class-boombox-page-metaboxes.php:532, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:156, includes/customizer/sections/header/featured-labels.php:99, includes/customizer/sections/mobile/header.php:218
+msgid "Text Color"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:169, includes/admin/metaboxes/class-boombox-page-metaboxes.php:546, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:163, includes/customizer/sections/header/featured-labels.php:87, includes/customizer/sections/mobile/header.php:194
+msgid "Background Color"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:176, includes/admin/metaboxes/class-boombox-page-metaboxes.php:560, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:170, includes/customizer/sections/mobile/header.php:206
+msgid "Gradient Color"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:183, includes/admin/metaboxes/class-boombox-page-metaboxes.php:574, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:177
+msgid "Gradient Direction"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:191, includes/admin/metaboxes/class-boombox-page-metaboxes.php:589, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:185
+msgid "Background Image"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:198, includes/admin/metaboxes/class-boombox-page-metaboxes.php:603, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:192
+msgid "Background Image Size"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:206, includes/admin/metaboxes/class-boombox-page-metaboxes.php:618, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:200
+msgid "Background Image Position"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:214, includes/admin/metaboxes/class-boombox-page-metaboxes.php:633, includes/admin/metaboxes/class-boombox-tag-metaboxes.php:208
+msgid "Background Image Repeat"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:224, includes/admin/metaboxes/class-boombox-category-metaboxes.php:239, includes/admin/metaboxes/class-boombox-category-metaboxes.php:278, includes/customizer/sections/site-identity.php:40, includes/plugins/amp/amp.php:161
+msgid "Logo"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:231
+msgid "Upload separate logo for this category to overwrite main logo for single posts attached to this category."
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:248, includes/admin/metaboxes/class-boombox-category-metaboxes.php:287, includes/customizer/sections/site-identity.php:75, includes/plugins/amp/amp.php:172
+msgid "Logo HDPI"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:249, includes/admin/metaboxes/class-boombox-category-metaboxes.php:288, includes/customizer/sections/site-identity.php:76, includes/plugins/amp/amp.php:173
+msgid "An image for High DPI screen (like Retina) should be twice as big."
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:256, includes/admin/metaboxes/class-boombox-category-metaboxes.php:295, includes/customizer/sections/site-identity.php:49
+msgid "Logo Width"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:263, includes/admin/metaboxes/class-boombox-category-metaboxes.php:302, includes/customizer/sections/site-identity.php:62
+msgid "Logo Height"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-category-metaboxes.php:270, includes/customizer/sections/mobile/header.php:124
+msgid "Mobile Logo"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-menu-item-custom-fields.php:180
+msgid "Select icon"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-menu-item-custom-fields.php:198
+msgid "Select label"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-menu-item-custom-fields.php:214
+msgid "New"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-menu-item-custom-fields.php:215, includes/customizer/sections/extras/posts-ranking-system.php:196, includes/customizer/sections/extras/posts-ranking-system.php:205, includes/functions.php:1750, includes/widgets/class-boombox-widget-trending-posts.php:175
+msgid "Hot"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:114
+msgid "Boombox Page Advanced Fields"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:145, includes/admin/metaboxes/class-boombox-post-metaboxes.php:123, includes/admin/metaboxes/class-boombox-user-metaboxes.php:87, includes/customizer/sections/archive/main-posts.php:41, includes/customizer/sections/home/main-posts.php:41, includes/customizer/sections/single-post/general.php:41
+msgid "Main"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:153, includes/admin/metaboxes/class-boombox-post-metaboxes.php:167, includes/customizer/sections/archive/main-posts.php:80, includes/customizer/sections/home/main-posts.php:80, includes/customizer/sections/single-post/general.php:80, includes/plugins/woocommerce/customizer/customizer.php:94
+msgid "Sidebar Type"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:161, includes/admin/metaboxes/class-boombox-post-metaboxes.php:183, includes/customizer/sections/archive/main-posts.php:91, includes/customizer/sections/home/main-posts.php:91, includes/customizer/sections/single-post/general.php:91, includes/plugins/woocommerce/customizer/customizer.php:124, includes/plugins/woocommerce/customizer/customizer.php:175
+msgid "Sidebar Orientation"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:163, includes/admin/metaboxes/class-boombox-post-metaboxes.php:185, includes/customizer/sections/archive/main-posts.php:98, includes/customizer/sections/home/main-posts.php:98, includes/customizer/sections/single-post/general.php:98, includes/helpers/class-choices-helper.php:281, includes/helpers/class-choices-helper.php:846, includes/helpers/class-choices-helper.php:875, includes/plugins/woocommerce/customizer/customizer.php:130
+msgid "Right"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:164, includes/admin/metaboxes/class-boombox-post-metaboxes.php:186, includes/customizer/sections/archive/main-posts.php:99, includes/customizer/sections/home/main-posts.php:99, includes/customizer/sections/single-post/general.php:99, includes/helpers/class-choices-helper.php:280, includes/helpers/class-choices-helper.php:848, includes/helpers/class-choices-helper.php:874, includes/plugins/woocommerce/customizer/customizer.php:131
+msgid "Left"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:182, includes/plugins/woocommerce/customizer/customizer.php:151
+msgid "Primary Sidebar"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:197
+msgid "Secondary Sidebar"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:217, includes/customizer/sections/archive/featured-area.php:38, includes/customizer/sections/home/featured-area.php:41, includes/customizer/sections/mobile/global.php:97
+msgid "Featured Area"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:225, includes/customizer/sections/home/featured-area.php:80
+msgid "Area Type"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:233, includes/admin/metaboxes/class-boombox-page-metaboxes.php:391, includes/admin/metaboxes/class-boombox-page-metaboxes.php:666, includes/admin/metaboxes/class-boombox-post-metaboxes.php:139, includes/customizer/sections/archive/featured-area.php:71, includes/customizer/sections/archive/main-posts.php:75, includes/customizer/sections/archive/strip.php:86, includes/customizer/sections/header/layout.php:41, includes/customizer/sections/header/strip.php:88, includes/customizer/sections/home/featured-area.php:75, includes/customizer/sections/home/main-posts.php:75, includes/customizer/sections/single-post/general.php:75, includes/customizer/sections/single-post/strip.php:86, includes/plugins/visual-composer/elements/listing.php:179, includes/plugins/visual-composer/elements/listing.php:188
+msgid "Layout"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:246, includes/admin/metaboxes/class-boombox-page-metaboxes.php:739, includes/customizer/sections/archive/featured-area.php:86, includes/customizer/sections/archive/strip.php:170, includes/customizer/sections/header/strip.php:137, includes/customizer/sections/home/featured-area.php:91, includes/customizer/sections/single-post/strip.php:170
+msgid "Disable Gap Between Thumbnails"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:260, includes/admin/metaboxes/class-boombox-page-metaboxes.php:404, includes/customizer/sections/archive/featured-area.php:109, includes/customizer/sections/archive/main-posts.php:116, includes/customizer/sections/home/featured-area.php:114, includes/customizer/sections/home/main-posts.php:116, includes/customizer/sections/single-post/general.php:136, includes/customizer/sections/single-post/related-posts.php:141, includes/plugins/amp/amp.php:183, includes/plugins/visual-composer/elements/listing.php:174
+msgid "Hide Elements"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:275, includes/admin/metaboxes/class-boombox-page-metaboxes.php:440, includes/admin/metaboxes/class-boombox-page-metaboxes.php:753, includes/customizer/sections/archive/main-posts.php:147, includes/customizer/sections/footer/strip.php:88, includes/customizer/sections/header/strip.php:149, includes/customizer/sections/home/main-posts.php:147, includes/customizer/sections/single-post/strip.php:189, includes/plugins/visual-composer/elements/listing.php:99, includes/plugins/visual-composer/elements/listing.php:108, includes/plugins/visual-composer/elements/listing.php:117, includes/plugins/visual-composer/elements/listing.php:133, includes/plugins/visual-composer/elements/listing.php:149, includes/plugins/visual-composer/elements/listing.php:158, includes/plugins/visual-composer/elements/listing.php:167
+msgid "Posts Loop"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:288, includes/admin/metaboxes/class-boombox-page-metaboxes.php:766, includes/admin/metaboxes/class-boombox-page-metaboxes.php:863, includes/customizer/sections/archive/featured-area.php:142, includes/customizer/sections/archive/strip.php:201, includes/customizer/sections/footer/strip.php:100, includes/customizer/sections/header/strip.php:154, includes/customizer/sections/home/featured-area.php:147, includes/customizer/sections/single-post/strip.php:201
+msgid "Order Criteria"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:303, includes/admin/metaboxes/class-boombox-page-metaboxes.php:781, includes/admin/metaboxes/class-boombox-page-metaboxes.php:880, includes/customizer/sections/archive/featured-area.php:160, includes/customizer/sections/archive/strip.php:219, includes/customizer/sections/footer/strip.php:118, includes/customizer/sections/header/strip.php:165, includes/customizer/sections/home/featured-area.php:165, includes/customizer/sections/home/main-posts.php:163, includes/customizer/sections/single-post/strip.php:219
+msgid "Time Range"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:318, includes/admin/metaboxes/class-boombox-page-metaboxes.php:815, includes/admin/metaboxes/class-boombox-page-metaboxes.php:897, includes/customizer/sections/archive/strip.php:258, includes/customizer/sections/footer/strip.php:157, includes/customizer/sections/header/strip.php:190, includes/customizer/sections/home/featured-area.php:183, includes/customizer/sections/home/main-posts.php:174, includes/customizer/sections/single-post/strip.php:258
+msgid "Categories Filter"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:337, includes/admin/metaboxes/class-boombox-page-metaboxes.php:834, includes/admin/metaboxes/class-boombox-page-metaboxes.php:916, includes/customizer/sections/archive/strip.php:276, includes/customizer/sections/footer/strip.php:175, includes/customizer/sections/header/strip.php:201, includes/customizer/sections/home/featured-area.php:201, includes/customizer/sections/home/main-posts.php:185, includes/customizer/sections/single-post/strip.php:276
+msgid "Tags Filter"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:338, includes/admin/metaboxes/class-boombox-page-metaboxes.php:835, includes/admin/metaboxes/class-boombox-page-metaboxes.php:917, includes/customizer/sections/archive/strip.php:277, includes/customizer/sections/extras/badges.php:315, includes/customizer/sections/extras/badges.php:440, includes/customizer/sections/footer/strip.php:176, includes/customizer/sections/header/strip.php:202, includes/customizer/sections/home/featured-area.php:202, includes/customizer/sections/home/main-posts.php:186, includes/customizer/sections/single-post/strip.php:277, includes/widgets/class-boombox-widget-picked-posts.php:240
+msgid "Comma separated list of tags slugs"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:359, includes/customizer/sections/archive/featured-area.php:178, includes/customizer/sections/home/featured-area.php:218
+msgid "Exclude Featured Entries From Main Posts Loop"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:374
+msgid "Posts Listing"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:383, includes/customizer/sections/archive/main-posts.php:105, includes/plugins/visual-composer/elements/listing.php:94
+msgid "Listing Type"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:419, includes/customizer/sections/archive/main-posts.php:126, includes/customizer/sections/home/main-posts.php:126, includes/customizer/sections/single-post/general.php:172, includes/plugins/visual-composer/elements/listing.php:183
+msgid "Share Bar Elements"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:453, includes/customizer/sections/archive/main-posts.php:163, includes/customizer/sections/home/main-posts.php:195
+msgid "Pagination Type"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:468, includes/customizer/sections/archive/main-posts.php:174, includes/customizer/sections/home/main-posts.php:206
+msgid "Posts Per Page"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:495, includes/customizer/sections/archive/title-area.php:68
+msgid "Disable Title Area"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:650, includes/customizer/sections/archive/strip.php:41, includes/customizer/sections/footer/strip.php:41, includes/customizer/sections/header/strip.php:41, includes/customizer/sections/single-post/strip.php:41
+msgid "Posts Strip"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:658, includes/customizer/sections/archive/strip.php:72, includes/customizer/sections/single-post/strip.php:72
+msgid "Configuration"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:659, includes/customizer/sections/footer/design.php:188, includes/customizer/sections/header/design.php:238, includes/customizer/sections/header/design.php:253, includes/customizer/sections/header/layout.php:370, includes/customizer/sections/header/layout.php:385, includes/customizer/sections/header/layout.php:410, includes/customizer/sections/mobile/header.php:118, includes/customizer/sections/single-post/general.php:282, includes/customizer/sections/single-post/sponsored-articles.php:89, includes/helpers/class-choices-helper.php:507, includes/helpers/class-choices-helper.php:525, includes/helpers/class-choices-helper.php:566, includes/helpers/class-choices-helper.php:700, includes/helpers/class-choices-helper.php:830, includes/plugins/woocommerce/woocommerce.php:475
+msgid "None"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:694, includes/customizer/sections/archive/strip.php:116, includes/customizer/sections/header/layout.php:142, includes/customizer/sections/header/layout.php:223, includes/customizer/sections/header/strip.php:104, includes/customizer/sections/single-post/strip.php:116
+msgid "Width"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:709, includes/customizer/sections/archive/strip.php:134, includes/customizer/sections/header/strip.php:115, includes/customizer/sections/single-post/strip.php:134
+msgid "Size"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:724, includes/customizer/sections/archive/strip.php:152, includes/customizer/sections/header/strip.php:126, includes/customizer/sections/single-post/strip.php:152
+msgid "Titles Position"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:796, includes/customizer/sections/archive/strip.php:237, includes/customizer/sections/footer/strip.php:136, includes/customizer/sections/header/strip.php:176, includes/customizer/sections/single-post/strip.php:237
+msgid "Items Count"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:797, includes/customizer/sections/archive/strip.php:238, includes/customizer/sections/footer/strip.php:137, includes/customizer/sections/header/strip.php:177, includes/customizer/sections/single-post/strip.php:238
+msgid "Minimum count: 6. To show all items, please enter -1."
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-page-metaboxes.php:942
+msgid "Hide Filter"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:70, includes/admin/metaboxes/class-boombox-post-metaboxes.php:86
+msgid "Boombox Post Advanced Fields"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:102
+msgid "Post Gallery"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:131
+msgid "Hide Featured Media"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:142, includes/admin/metaboxes/class-boombox-post-metaboxes.php:337, includes/helpers/class-choices-helper.php:609, includes/helpers/class-choices-helper.php:903
+msgid "Custom"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:151, includes/customizer/sections/single-post/general.php:125
+msgid "Template"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:203
+msgid "Video URL"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:204
+msgid "Supported Videos: MP4, Youtube, Vimeo, Dailymotion, Vine, Odnoklassniki, Facebook, Instagram, Vidme, Vkontakte, Twitch, Coub, Twitter"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:214
+msgid "Source / Via"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:222
+msgid "Article Source"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:228
+msgid "Source URL"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:234
+msgid "Source Label"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:239
+msgid "Source Follow"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:241, includes/admin/metaboxes/class-boombox-post-metaboxes.php:276
+msgid "Follow"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:242, includes/admin/metaboxes/class-boombox-post-metaboxes.php:277
+msgid "No Follow"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:249, includes/admin/metaboxes/class-boombox-post-metaboxes.php:284
+msgid "Open in a new tab"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:257
+msgid "Article Via"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:263
+msgid "Via URL"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:269
+msgid "Via Label"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:274
+msgid "Via Follow"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:294, includes/plugins/one-click-demo-import.php:207
+msgid "Affiliate"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:326
+msgid "Use as post link"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:334
+msgid "Affiliate Button Text"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:389, includes/helpers/class-choices-helper.php:449
+msgid "Featured"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:397
+msgid "Featured On Front Page"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:406
+msgid "Keep Trending"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:415
+msgid "Keep Hot"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:424
+msgid "Keep Popular"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:433
+msgid "Visual Post"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:434
+msgid "Visual Post Works For Mixed List"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-post-metaboxes.php:460, includes/front/functions.php:923
+msgid "Gallery"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-tag-metaboxes.php:73
+msgid "Boombox Post Tag Advanced Fields"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-tag-metaboxes.php:124
+msgid "Check to hide featured media from the single article page of posts - attached to this tag"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-tag-metaboxes.php:218, includes/plugins/amp/amp.php:625
+msgid "AMP"
+msgstr ""
+
+#: includes/admin/metaboxes/class-boombox-user-metaboxes.php:70
+msgid "Boombox User Advanced Fields"
+msgstr ""
+
+#: includes/admin/metaboxes/class-menu-metaboxes.php:116, includes/functions.php:2373
+msgid "Log Out"
+msgstr ""
+
+#: includes/admin/metaboxes/class-menu-metaboxes.php:153
+msgid "Logged-Out"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:116, includes/admin/status/class-theme-status.php:139, includes/admin/status/class-theme-status.php:162, includes/plugins/buddypress.php:1679
+msgid "Invalid request."
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:112
+msgid "Post ranking system successfully restarted."
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:109, includes/admin/status/class-theme-status.php:132, includes/admin/status/class-theme-status.php:155
+msgid "Error processing the request. Please try again."
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:135
+msgid "Views ranking is reset successfully."
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:158
+msgid "Upvotes ranking is reset successfully."
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:184, includes/admin/status/class-theme-status.php:185, includes/admin/status/class-theme-status.php:386
+msgid "Boombox Status"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:390
+msgid "Theme"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:400
+msgid "Author URL"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:405
+msgid "Child theme"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:413
+msgid "See: <a href=\"%s\" target=\"_blank\">How to create a child theme</a>"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:420
+msgid "Parent theme version"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:425
+msgid "Parent theme author URL"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:437
+msgid "Template Overrides"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:438
+msgid "Current Version"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:439
+msgid "Core Version"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:469
+msgid "There are no overwrite templates."
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:481
+msgid "Post Ranking System"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:487
+msgid "Regenerate posts ranked lists (trending, hot, popular)."
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:497
+msgid "Regenerate"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:503
+msgid "Reset will affect current ranked lists (trending, hot, popular). After reset you need to regenerate the lists, or it will automatically regenerate within 24 hours. Posts total views and upvotes won't be affected."
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:509
+msgid "Reset views"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:519, includes/admin/status/class-theme-status.php:534
+msgid "Reset"
+msgstr ""
+
+#: includes/admin/status/class-theme-status.php:524
+msgid "Reset upvotes"
+msgstr ""
+
+#: includes/authentication/auth.php:31
+msgid "Facebook"
+msgstr ""
+
+#: includes/authentication/auth.php:37
+msgid "Google"
+msgstr ""
+
+#: includes/authentication/auth.php:42
+msgid "or"
+msgstr ""
+
+#: includes/authentication/auth.php:57
+msgid "Sending user info, please wait..."
+msgstr ""
+
+#: includes/authentication/auth.php:69
+msgid "Please fix all invalid fields."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:77
+msgid "Password strength"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:78
+msgid "Passwords don't match"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:123, includes/authentication/default/default-auth.php:113, includes/authentication/default/default-auth.php:183, includes/authentication/default/default-auth.php:173
+msgid "Invalid Captcha. Please, try again."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:140, includes/authentication/default/default-auth.php:472, includes/authentication/social/social-auth.php:216
+msgid "Login"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:199, includes/authentication/default/default-auth.php:200, includes/functions.php:5321, includes/functions.php:5322
+msgid "the"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:199, includes/functions.php:5321
+msgid "terms of use"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:200, includes/functions.php:5322
+msgid "privacy policy"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:202, includes/functions.php:5324
+msgid "and"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:210
+msgid "You must agree to %s before signing up"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:234
+msgid "Registration callback is not callable"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:229
+msgid "Callback did not return response"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:248
+msgid "You have successfully created your account! To begin using this site you will need to activate your account via the email we have just sent to your address."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:252, includes/authentication/social/social-auth.php:218
+msgid "Registration"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:300, includes/authentication/social/social-auth.php:221
+msgid " successful, redirecting..."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:291
+msgid "Wrong username or password."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:274
+msgid "There is no user registered with that username or email address."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:351
+msgid "Invalid username or e-mail address."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:347
+msgid "There is no user registered with that username."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:339
+msgid "There is no user registered with that email address."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:331
+msgid "Enter an username or e-mail address."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:383
+msgid "[%s] Password Reset"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:389
+msgid "Someone has requested a password reset for the following account:"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:391
+msgid "Username: %s"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:392
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:393
+msgid "To reset your password, visit the following address:"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:407
+msgid "Oops! Something went wrong while updating your account."
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:404
+msgid "Confirmation email is sent to your email address"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:442
+msgid "Invalid user"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:448
+msgid "Password is required"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:454
+msgid "Passwords do not match"
+msgstr ""
+
+#: includes/authentication/default/default-auth.php:497
+msgid "This email address is already registered."
+msgstr ""
+
+#: includes/authentication/social/social-auth.php:108
+msgid "Please wait..."
+msgstr ""
+
+#: includes/authentication/social/social-auth.php:109
+msgid "Login failed"
+msgstr ""
+
+#: includes/authentication/social/social-auth.php:208
+msgid "Failed to validate token"
+msgstr ""
+
+#: includes/authentication/social/social-auth.php:175
+msgid "Registering new users is currently not allowed."
+msgstr ""
+
+#: includes/authentication/social/social-auth.php:149
+msgid "Email missing"
+msgstr ""
+
+#: includes/authentication/social/social-auth.php:246
+msgid "Email already exists"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:41
+msgid "All Rights Reserved"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:122
+msgid "community"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:126, includes/functions.php:2358, includes/widgets/class-boombox-widget-create-post.php:121
+msgid "Create a post"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:340
+msgid "View Full Post"
+msgstr "Hiển thị nội dung"
+
+#: includes/customizer/class-boombox-customizer.php:352
+msgid "You may also like"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:354
+msgid "More From:"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:356
+msgid "DON'T MISS"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:377
+msgid "presented by"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:416, template-parts/popups/login-form.php:90
+msgid "log in"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:420, template-parts/popups/registration-form.php:94
+msgid "sign up"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:422
+msgid "forgot password"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:424
+msgid "reset password"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:564
+msgid "Check It Out"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:785
+msgid "Boombox is most powerful and flexible viral and buzz style WordPress theme. Flexible and fully customizable viral magazine theme combined with most powerful Viral content plugin with a ton of snacks and exclusive features and all that packed with dozens of powerful and popular plugins and with top-notch design."
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:814, includes/customizer/sections/mobile/header.php:41
+msgid "Header"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:815
+msgid "Boombox Header Settings"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:820
+msgid "Footer"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:821
+msgid "Boombox Footer Settings"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:826, includes/customizer/sections/extras/reading-time.php:102, includes/customizer/sections/header/featured-labels.php:78, includes/helpers/class-choices-helper.php:593, includes/helpers/template-helpers/class-breadcrumb-template-helper.php:45
+msgid "Home"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:827
+msgid "Boombox \"Home Page\" Settings"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:832, includes/customizer/sections/extras/breadcrumb.php:80, includes/customizer/sections/extras/reading-time.php:105, includes/customizer/sections/header/featured-labels.php:80, includes/helpers/class-choices-helper.php:595
+msgid "Single Post"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:833
+msgid "Boombox \"Single Post\" Settings"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:838, includes/customizer/sections/extras/breadcrumb.php:78, includes/customizer/sections/extras/reading-time.php:103, includes/customizer/sections/header/featured-labels.php:79, includes/helpers/class-choices-helper.php:594, includes/theme-setup.php:552
+msgid "Archive"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:839
+msgid "Boombox \"Archive Template\" Settings"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:844
+msgid "Mobile"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:845
+msgid "Boombox \"Mobile\" Settings"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:850
+msgid "Extras"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:851
+msgid "Boombox \"Extra\" Settings"
+msgstr ""
+
+#: includes/customizer/class-boombox-customizer.php:989
+msgid "Not a number"
+msgstr ""
+
+#: includes/customizer/sections/archive/featured-area.php:76
+msgid "Area type"
+msgstr ""
+
+#: includes/customizer/sections/archive/featured-area.php:130, includes/customizer/sections/archive/strip.php:189, includes/customizer/sections/home/featured-area.php:135
+msgid "Posts loop"
+msgstr ""
+
+#: includes/customizer/sections/archive/main-posts.php:152, includes/customizer/sections/home/main-posts.php:152
+msgid "Default Order"
+msgstr ""
+
+#: includes/customizer/sections/archive/main-posts.php:190, includes/customizer/sections/home/main-posts.php:222, includes/plugins/mailchimp-for-wp.php:91, includes/plugins/quick-adsense-reloaded.php:404, includes/plugins/woocommerce/woocommerce.php:951
+msgid "Injects"
+msgstr ""
+
+#: includes/customizer/sections/archive/title-area.php:99
+msgid "Default Background Image"
+msgstr ""
+
+#: includes/customizer/sections/archive/title-area.php:111
+msgid "Filters"
+msgstr ""
+
+#: includes/customizer/sections/archive/title-area.php:117, includes/customizer/sections/archive/title-area.php:130, includes/customizer/sections/extras/additional.php:79, includes/customizer/sections/extras/authentication.php:80, includes/customizer/sections/extras/authentication.php:125, includes/customizer/sections/extras/authentication.php:273, includes/customizer/sections/extras/authentication.php:293, includes/customizer/sections/extras/authentication.php:427, includes/customizer/sections/extras/badges.php:103, includes/customizer/sections/extras/badges.php:185, includes/customizer/sections/extras/badges.php:289, includes/customizer/sections/extras/badges.php:402, includes/customizer/sections/extras/badges.php:414, includes/customizer/sections/extras/gif-control.php:77, includes/customizer/sections/extras/nsfw.php:89, includes/customizer/sections/extras/posts-ranking-system.php:80, includes/customizer/sections/extras/posts-ranking-system.php:93, includes/customizer/sections/extras/posts-ranking-system.php:106, includes/customizer/sections/extras/posts-ranking-system.php:139, includes/customizer/sections/extras/posts-ranking-system.php:189, includes/customizer/sections/extras/posts-ranking-system.php:211, includes/customizer/sections/extras/posts-ranking-system.php:261, includes/customizer/sections/extras/posts-ranking-system.php:283, includes/customizer/sections/extras/posts-ranking-system.php:333, includes/customizer/sections/extras/posts-reaction-system.php:77, includes/customizer/sections/extras/posts-reaction-system.php:90, includes/customizer/sections/extras/reading-time.php:89, includes/customizer/sections/extras/video-control.php:78, includes/customizer/sections/extras/video-control.php:91, includes/customizer/sections/extras/video-control.php:156, includes/customizer/sections/footer/general.php:77, includes/customizer/sections/footer/general.php:90, includes/customizer/sections/footer/general.php:103, includes/customizer/sections/footer/strip.php:78, includes/customizer/sections/header/design.php:137, includes/customizer/sections/header/design.php:198, includes/customizer/sections/header/layout.php:117, includes/customizer/sections/header/layout.php:198, includes/customizer/sections/header/layout.php:522, includes/customizer/sections/mobile/global.php:77, includes/customizer/sections/mobile/global.php:90, includes/customizer/sections/mobile/global.php:103, includes/customizer/sections/mobile/global.php:116, includes/customizer/sections/mobile/header.php:248, includes/customizer/sections/single-post/general.php:118, includes/customizer/sections/single-post/general.php:152, includes/customizer/sections/single-post/general.php:165, includes/customizer/sections/single-post/general.php:266, includes/customizer/sections/single-post/general.php:294, includes/customizer/sections/single-post/general.php:307, includes/plugins/buddypress.php:1832
+msgid "On"
+msgstr ""
+
+#: includes/customizer/sections/archive/title-area.php:118, includes/customizer/sections/archive/title-area.php:131, includes/customizer/sections/extras/additional.php:80, includes/customizer/sections/extras/authentication.php:81, includes/customizer/sections/extras/authentication.php:126, includes/customizer/sections/extras/authentication.php:274, includes/customizer/sections/extras/authentication.php:294, includes/customizer/sections/extras/authentication.php:428, includes/customizer/sections/extras/badges.php:104, includes/customizer/sections/extras/badges.php:186, includes/customizer/sections/extras/badges.php:290, includes/customizer/sections/extras/badges.php:403, includes/customizer/sections/extras/badges.php:415, includes/customizer/sections/extras/gif-control.php:78, includes/customizer/sections/extras/nsfw.php:90, includes/customizer/sections/extras/posts-ranking-system.php:81, includes/customizer/sections/extras/posts-ranking-system.php:94, includes/customizer/sections/extras/posts-ranking-system.php:107, includes/customizer/sections/extras/posts-ranking-system.php:140, includes/customizer/sections/extras/posts-ranking-system.php:190, includes/customizer/sections/extras/posts-ranking-system.php:212, includes/customizer/sections/extras/posts-ranking-system.php:262, includes/customizer/sections/extras/posts-ranking-system.php:284, includes/customizer/sections/extras/posts-ranking-system.php:334, includes/customizer/sections/extras/posts-reaction-system.php:78, includes/customizer/sections/extras/posts-reaction-system.php:91, includes/customizer/sections/extras/reading-time.php:90, includes/customizer/sections/extras/video-control.php:79, includes/customizer/sections/extras/video-control.php:92, includes/customizer/sections/extras/video-control.php:157, includes/customizer/sections/footer/general.php:78, includes/customizer/sections/footer/general.php:91, includes/customizer/sections/footer/general.php:104, includes/customizer/sections/footer/strip.php:79, includes/customizer/sections/header/design.php:138, includes/customizer/sections/header/design.php:199, includes/customizer/sections/header/layout.php:118, includes/customizer/sections/header/layout.php:199, includes/customizer/sections/header/layout.php:523, includes/customizer/sections/mobile/global.php:78, includes/customizer/sections/mobile/global.php:91, includes/customizer/sections/mobile/global.php:104, includes/customizer/sections/mobile/global.php:117, includes/customizer/sections/mobile/header.php:249, includes/customizer/sections/single-post/general.php:119, includes/customizer/sections/single-post/general.php:153, includes/customizer/sections/single-post/general.php:166, includes/customizer/sections/single-post/general.php:267, includes/customizer/sections/single-post/general.php:295, includes/customizer/sections/single-post/general.php:308, includes/plugins/buddypress.php:1833
+msgid "Off"
+msgstr ""
+
+#: includes/customizer/sections/archive/title-area.php:124
+msgid "Badge"
+msgstr ""
+
+#: includes/customizer/sections/design.php:42
+msgid "Design"
+msgstr ""
+
+#: includes/customizer/sections/design.php:71
+msgid "Logo Font Family"
+msgstr ""
+
+#: includes/customizer/sections/design.php:80
+msgid "Primary Font Family"
+msgstr ""
+
+#: includes/customizer/sections/design.php:89
+msgid "Secondary Font Family"
+msgstr ""
+
+#: includes/customizer/sections/design.php:98
+msgid "Post Titles Font Family"
+msgstr ""
+
+#: includes/customizer/sections/design.php:107
+msgid "General Text Font Size (px)"
+msgstr ""
+
+#: includes/customizer/sections/design.php:120
+msgid "Single Post Heading Font Size (px)"
+msgstr ""
+
+#: includes/customizer/sections/design.php:133
+msgid "Widget Heading Font Size (px)"
+msgstr ""
+
+#: includes/customizer/sections/design.php:146
+msgid "Color Mode"
+msgstr ""
+
+#: includes/customizer/sections/design.php:147
+msgid "Is your site in light colors or in dark?"
+msgstr ""
+
+#: includes/customizer/sections/design.php:153
+msgid "Light"
+msgstr ""
+
+#: includes/customizer/sections/design.php:154
+msgid "Dark"
+msgstr ""
+
+#: includes/customizer/sections/design.php:160
+msgid "Background Style"
+msgstr ""
+
+#: includes/customizer/sections/design.php:167, includes/helpers/class-choices-helper.php:818
+msgid "Stretched"
+msgstr ""
+
+#: includes/customizer/sections/design.php:168, includes/customizer/sections/header/layout.php:150, includes/customizer/sections/header/layout.php:231, includes/helpers/class-choices-helper.php:646, includes/helpers/class-choices-helper.php:817
+msgid "Boxed"
+msgstr ""
+
+#: includes/customizer/sections/design.php:169
+msgid "Flat Cards"
+msgstr ""
+
+#: includes/customizer/sections/design.php:170
+msgid "Material Cards"
+msgstr ""
+
+#: includes/customizer/sections/design.php:176
+msgid "Body Background Color"
+msgstr ""
+
+#: includes/customizer/sections/design.php:188
+msgid "Body Background Image"
+msgstr ""
+
+#: includes/customizer/sections/design.php:197
+msgid "Body Background Image Type"
+msgstr ""
+
+#: includes/customizer/sections/design.php:204, includes/helpers/class-choices-helper.php:861
+msgid "Cover"
+msgstr ""
+
+#: includes/customizer/sections/design.php:205
+msgid "Repeat"
+msgstr ""
+
+#: includes/customizer/sections/design.php:211
+msgid "Body Background Link"
+msgstr ""
+
+#: includes/customizer/sections/design.php:220
+msgid "Content Background Color"
+msgstr ""
+
+#: includes/customizer/sections/design.php:232
+msgid "Primary Color"
+msgstr ""
+
+#: includes/customizer/sections/design.php:244
+msgid "Primary Text Color"
+msgstr ""
+
+#: includes/customizer/sections/design.php:256
+msgid "Base Text Color"
+msgstr ""
+
+#: includes/customizer/sections/design.php:268
+msgid "Secondary Text Color"
+msgstr ""
+
+#: includes/customizer/sections/design.php:280
+msgid "Heading Text Color"
+msgstr ""
+
+#: includes/customizer/sections/design.php:292
+msgid "Link Text Color"
+msgstr ""
+
+#: includes/customizer/sections/design.php:304
+msgid "Secondary Elements Background Color"
+msgstr ""
+
+#: includes/customizer/sections/design.php:316
+msgid "Secondary Elements Text Color"
+msgstr ""
+
+#: includes/customizer/sections/design.php:328
+msgid "Global Border Color"
+msgstr ""
+
+#: includes/customizer/sections/design.php:340
+msgid "Global Border Radius (px)"
+msgstr ""
+
+#: includes/customizer/sections/design.php:341, includes/customizer/sections/design.php:356, includes/customizer/sections/design.php:371, includes/customizer/sections/header/featured-labels.php:112
+msgid "A number between 0 and 100"
+msgstr ""
+
+#: includes/customizer/sections/design.php:355
+msgid "Inputs/Buttons Border Radius (px)"
+msgstr ""
+
+#: includes/customizer/sections/design.php:370
+msgid "Social Icons Border Radius (px)"
+msgstr ""
+
+#: includes/customizer/sections/extras/additional.php:42
+msgid "Additional"
+msgstr ""
+
+#: includes/customizer/sections/extras/additional.php:73
+msgid "\"Back To Top\" Button"
+msgstr ""
+
+#: includes/customizer/sections/extras/additional.php:87
+msgid "\"Affiliate Button Text\""
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:41, includes/helpers/class-choices-helper.php:787, includes/helpers/class-choices-helper.php:977
+msgid "Authentication"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:74
+msgid "Site Authentication"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:87
+msgid "Login Popup Heading"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:103
+msgid "Login Popup Text"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:119
+msgid "\"Remember Me\" On Login"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:132
+msgid "\"Sign Up\" Button URL"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:133
+msgid "Leave empty to use native registration."
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:149
+msgid "Registration Popup Heading"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:165
+msgid "Registration Popup Text"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:181
+msgid "Forgot Password Popup Heading"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:197
+msgid "Forgot Password Popup Text"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:213
+msgid "Reset Password Popup Heading"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:229
+msgid "Reset Password Popup Text"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:245
+msgid "\"Terms Of Use\" Page"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:256
+msgid "\"Privacy Policy\" Page"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:267
+msgid "Captcha On Login"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:287
+msgid "Captcha On Registration"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:307
+msgid "Captcha Type"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:325
+msgid "Google Recaptcha Site Key"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:346
+msgid "Google Recaptcha Secret Key"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:368
+msgid "Google Recaptcha V3 Site Key"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:391
+msgid "Google Recaptcha V3 Secret Key"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:416, includes/customizer/sections/extras/authentication.php:421
+msgid "Social Authentication"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:434
+msgid "Facebook App ID"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:450
+msgid "Google oauth Client ID"
+msgstr ""
+
+#: includes/customizer/sections/extras/authentication.php:466
+msgid "Google API Key"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:73
+msgid "Badges Positions On Post Thumbnail"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:80
+msgid "Outside Left"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:81
+msgid "Outside Right"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:82
+msgid "Inside Left"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:83
+msgid "Inside Right"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:92, includes/customizer/sections/extras/badges.php:97
+msgid "Reactions Badges"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:110
+msgid "Reactions Background Color"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:129
+msgid "Reactions Text Color"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:148
+msgid "Reactions Type"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:155
+msgid "Face"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:156
+msgid "Text"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:157
+msgid "Face-Text"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:158
+msgid "Text Angle"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:174, includes/customizer/sections/extras/badges.php:179
+msgid "Post Ranking System Badges"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:192
+msgid "Post Ranking System Background Color"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:212
+msgid "Post Ranking System Icon Color"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:232
+msgid "Post Ranking System Text Color"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:252
+msgid "Trending Icon"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:259
+msgid "Trending 1"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:260
+msgid "Trending 2"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:261
+msgid "Trending 3"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:262
+msgid "Trending V2"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:278, includes/customizer/sections/extras/badges.php:283
+msgid "Category & Tag Badges"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:296
+msgid "Show Badges For Categories"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:314
+msgid "Show Badges For Tags"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:331
+msgid "Category & Tag Badges Background Color"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:350
+msgid "Category & Tag Icon Color"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:369
+msgid "Category & Tag Text Color"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:391
+msgid "Post Formats"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:396
+msgid "Post Format Icons"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:408
+msgid "Post Format Icons On Strip"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:421
+msgid "Show Icons For Categories"
+msgstr ""
+
+#: includes/customizer/sections/extras/badges.php:439
+msgid "Show Icons For Tags"
+msgstr ""
+
+#: includes/customizer/sections/extras/breadcrumb.php:41
+msgid "Breadcrumb"
+msgstr ""
+
+#: includes/customizer/sections/extras/breadcrumb.php:71, includes/customizer/sections/extras/gdpr.php:72, includes/customizer/sections/extras/reading-time.php:96, includes/customizer/sections/header/featured-labels.php:72, includes/customizer/sections/header/strip.php:75
+msgid "Visibility"
+msgstr ""
+
+#: includes/customizer/sections/extras/breadcrumb.php:79, includes/customizer/sections/extras/reading-time.php:104, includes/customizer/sections/header/featured-labels.php:81, includes/helpers/class-choices-helper.php:596
+msgid "Page"
+msgstr ""
+
+#: includes/customizer/sections/extras/gdpr.php:41
+msgid "GDPR"
+msgstr ""
+
+#: includes/customizer/sections/extras/gdpr.php:82
+msgid "Cookie Consent Script"
+msgstr ""
+
+#: includes/customizer/sections/extras/gdpr.php:88
+msgid "You can generate consent script <a href=\"%s\" target=\"_blank\">here</a>"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:41
+msgid "Gif Control"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:71
+msgid "Direct Gif Sharing"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:84
+msgid "Animation Event"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:91
+msgid "Click"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:92
+msgid "Hover"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:93
+msgid "Scroll"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:102
+msgid "CloudConvert"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:107
+msgid "CloudConvert App Key"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:116
+msgid "Storage"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:123
+msgid "Local"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:124, includes/customizer/sections/extras/gif-control.php:133
+msgid "Amazon S3"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:145
+msgid "Access Key Id"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:161
+msgid "Secret Access Key"
+msgstr ""
+
+#: includes/customizer/sections/extras/gif-control.php:177
+msgid "Bucket Name"
+msgstr ""
+
+#: includes/customizer/sections/extras/image-sizes.php:41
+msgid "Image Sizes"
+msgstr ""
+
+#: includes/customizer/sections/extras/image-sizes.php:79
+msgid "Image sizes"
+msgstr ""
+
+#: includes/customizer/sections/extras/nsfw.php:41
+msgid "NSFW"
+msgstr ""
+
+#: includes/customizer/sections/extras/nsfw.php:72
+msgid "\"NSFW\" categories"
+msgstr ""
+
+#: includes/customizer/sections/extras/nsfw.php:83
+msgid "Users must to be logged in to view posts"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:41
+msgid "Posts Ranking System"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:74
+msgid "View Track"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:87
+msgid "Login Required For Points Voting"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:100
+msgid "Numeration badges"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:113
+msgid "Trending Conditions"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:124, includes/customizer/sections/extras/posts-ranking-system.php:133, includes/functions.php:1749, includes/widgets/class-boombox-widget-trending-posts.php:144, includes/widgets/class-boombox-widget-trending-posts.php:173
+msgid "Trending"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:128
+msgid "Time Range: Last 24 hours"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:146
+msgid "Trending page"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:157, includes/customizer/sections/extras/posts-ranking-system.php:229, includes/customizer/sections/extras/posts-ranking-system.php:301, includes/plugins/visual-composer/elements/listing.php:153
+msgid "Posts Count"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:170
+msgid "Minimal Trending Score"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:183
+msgid "Trending Badge"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:200
+msgid "Time Range: Last 7 days"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:218
+msgid "Hot page"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:242
+msgid "Minimal Hot Score"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:255
+msgid "Hot Badge"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:268, includes/customizer/sections/extras/posts-ranking-system.php:277, includes/functions.php:1751, includes/widgets/class-boombox-widget-trending-posts.php:177
+msgid "Popular"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:272
+msgid "Time Range: Last 30 days"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:290
+msgid "Popular page"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:314
+msgid "Minimal Popular Score"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:327
+msgid "Popular Badge"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:340
+msgid "Fake Views Count"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:353
+msgid "Fake Points Count"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:366
+msgid "Views Count Scale"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-ranking-system.php:379
+msgid "Views Count Style"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-reaction-system.php:41
+msgid "Posts Reaction System"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-reaction-system.php:71, includes/helpers/class-choices-helper.php:223, includes/helpers/class-choices-helper.php:737
+msgid "Reactions"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-reaction-system.php:84
+msgid "Login Required For Reactions Voting"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-reaction-system.php:104
+msgid "Reaction Award Minimal Score"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-reaction-system.php:124
+msgid "Reactions Maximal Count Per Vote"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-reaction-system.php:144
+msgid "Fake reaction count base"
+msgstr ""
+
+#: includes/customizer/sections/extras/posts-reaction-system.php:145
+msgid "Use 0 to not use the \"Fake reactions\" feature."
+msgstr ""
+
+#: includes/customizer/sections/extras/reading-time.php:40
+msgid "Reading Time"
+msgstr ""
+
+#: includes/customizer/sections/extras/reading-time.php:70
+msgid "Words Per Minute"
+msgstr ""
+
+#: includes/customizer/sections/extras/reading-time.php:83
+msgid "Include Images On Calculation"
+msgstr ""
+
+#: includes/customizer/sections/extras/video-control.php:41
+msgid "Video Control"
+msgstr ""
+
+#: includes/customizer/sections/extras/video-control.php:72
+msgid "Video/MP4/WebM On Post Listings"
+msgstr ""
+
+#: includes/customizer/sections/extras/video-control.php:85
+msgid "Embed Videos On Post Listings"
+msgstr ""
+
+#: includes/customizer/sections/extras/video-control.php:101
+msgid "Video/MP4/WebM"
+msgstr ""
+
+#: includes/customizer/sections/extras/video-control.php:106
+msgid "Player Controls"
+msgstr ""
+
+#: includes/customizer/sections/extras/video-control.php:117
+msgid "Autoplay"
+msgstr ""
+
+#: includes/customizer/sections/extras/video-control.php:128
+msgid "Sound Default State"
+msgstr ""
+
+#: includes/customizer/sections/extras/video-control.php:139
+msgid "Click Event Handler (after play)"
+msgstr ""
+
+#: includes/customizer/sections/extras/video-control.php:150
+msgid "Playback Loop"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:41, includes/customizer/sections/header/design.php:41
+msgid "Color & Style"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:71, includes/customizer/sections/header/design.php:83
+msgid "Top Background Color"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:83
+msgid "Top Primary Color"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:95
+msgid "Top Primary Text Color"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:107
+msgid "Top Heading Color"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:119, includes/customizer/sections/header/design.php:107
+msgid "Top Text Color"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:131
+msgid "Top Link Color"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:143, includes/customizer/sections/header/design.php:144
+msgid "Bottom Background Color"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:155, includes/customizer/sections/header/design.php:168
+msgid "Bottom Text Color"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:167, includes/customizer/sections/header/design.php:180
+msgid "Bottom Text Hover Color"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:179, includes/customizer/sections/header/design.php:244
+msgid "Pattern Position"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:186
+msgid "Top Footer"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:187
+msgid "Bottom Footer"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:194, includes/customizer/sections/header/design.php:259
+msgid "Pattern Type"
+msgstr ""
+
+#: includes/customizer/sections/footer/design.php:201, includes/customizer/sections/header/design.php:266
+msgid "Rags"
+msgstr ""
+
+#: includes/customizer/sections/footer/general.php:41
+msgid "General"
+msgstr ""
+
+#: includes/customizer/sections/footer/general.php:71
+msgid "Top Part"
+msgstr ""
+
+#: includes/customizer/sections/footer/general.php:84
+msgid "Bottom Part"
+msgstr ""
+
+#: includes/customizer/sections/footer/general.php:97
+msgid "Social Icons"
+msgstr ""
+
+#: includes/customizer/sections/footer/general.php:110
+msgid "Footer Text"
+msgstr ""
+
+#: includes/customizer/sections/footer/strip.php:72, includes/customizer/sections/mobile/global.php:71
+msgid "Strip"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:71
+msgid "Site Title Color"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:95
+msgid "Top Gradient Color"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:119
+msgid "Top Text Hover Color"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:131
+msgid "Include Top Layer in dark/light mode"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:156
+msgid "Bottom Gradient Color"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:192
+msgid "Include Bottom Layer in dark/light mode"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:205
+msgid "Button Background Color"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:217
+msgid "Button Text Color"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:229
+msgid "Shadow Position"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:236, includes/customizer/sections/header/design.php:251, includes/customizer/sections/header/layout.php:97, includes/customizer/sections/header/layout.php:107, includes/customizer/sections/header/layout.php:407
+msgid "Top Layer"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:237, includes/customizer/sections/header/design.php:252, includes/customizer/sections/header/layout.php:98, includes/customizer/sections/header/layout.php:188, includes/customizer/sections/header/layout.php:408
+msgid "Bottom Layer"
+msgstr ""
+
+#: includes/customizer/sections/header/design.php:267
+msgid "Clouds"
+msgstr ""
+
+#: includes/customizer/sections/header/featured-labels.php:42
+msgid "Featured Labels"
+msgstr ""
+
+#: includes/customizer/sections/header/featured-labels.php:111
+msgid "Border Radius (px)"
+msgstr ""
+
+#: includes/customizer/sections/header/featured-labels.php:126
+msgid "Hide Separator Line"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:90
+msgid "Logo Position"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:124, includes/customizer/sections/header/layout.php:205, includes/customizer/sections/mobile/header.php:82
+msgid "Composition"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:149, includes/customizer/sections/header/layout.php:230
+msgid "Full width"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:163, includes/customizer/sections/header/layout.php:244
+msgid "Height"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:170, includes/customizer/sections/header/layout.php:251, includes/helpers/class-choices-helper.php:621
+msgid "Small"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:171, includes/customizer/sections/header/layout.php:252
+msgid "Medium"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:172, includes/customizer/sections/header/layout.php:253
+msgid "Large"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:269
+msgid "Components Positions"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:274
+msgid "Top Layer Components"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:298, includes/customizer/sections/mobile/header.php:101
+msgid "Unused Components"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:329
+msgid "Bottom Layer Components"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:361
+msgid "Badges Menu Location"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:368, includes/plugins/quick-adsense-reloaded.php:123
+msgid "Inside Header"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:369
+msgid "Outside Header"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:376
+msgid "\"More\" Button"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:383
+msgid "After Top Menu"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:384
+msgid "After Bottom Menu"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:391
+msgid "Community Text"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:400, includes/customizer/sections/mobile/header.php:110
+msgid "Sticky"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:409, includes/customizer/sections/single-post/sponsored-articles.php:88, includes/widgets/class-boombox-widget-related-posts.php:189
+msgid "Both"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:416
+msgid "Sticky Type"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:423, includes/customizer/sections/mobile/header.php:116, includes/helpers/class-choices-helper.php:354
+msgid "Classic"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:424, includes/customizer/sections/mobile/header.php:117
+msgid "Smart"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:437
+msgid "Logo Margin Top (px)"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:450
+msgid "Logo Margin Bottom (px)"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:467
+msgid "Compose Button"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:477, includes/helpers/class-choices-helper.php:580
+msgid "Show"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:478, includes/helpers/class-choices-helper.php:581
+msgid "Hide"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:484
+msgid "\"Compose\" Button Text"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:500
+msgid "\"Compose\" Button Link"
+msgstr ""
+
+#: includes/customizer/sections/header/layout.php:516
+msgid "Plus Icon On Button"
+msgstr ""
+
+#: includes/customizer/sections/header/typography.php:41
+msgid "Typography"
+msgstr ""
+
+#: includes/customizer/sections/header/typography.php:72
+msgid "Top Menu Font"
+msgstr ""
+
+#: includes/customizer/sections/header/typography.php:98
+msgid "Bottom Menu Font"
+msgstr ""
+
+#: includes/customizer/sections/header/typography.php:124
+msgid "Sub Menu Font"
+msgstr ""
+
+#: includes/customizer/sections/home/main-posts.php:105
+msgid "Posts Listing Type"
+msgstr ""
+
+#: includes/customizer/sections/home/visual-composer.php:40
+msgid "Visual Composer Content"
+msgstr ""
+
+#: includes/customizer/sections/home/visual-composer.php:68
+msgid "This Section Placeholder"
+msgstr ""
+
+#: includes/customizer/sections/mobile/global.php:84
+msgid "Footer Strip"
+msgstr ""
+
+#: includes/customizer/sections/mobile/global.php:110
+msgid "Sidebar"
+msgstr ""
+
+#: includes/customizer/sections/mobile/header.php:92
+msgid "Components"
+msgstr ""
+
+#: includes/customizer/sections/mobile/header.php:133
+msgid "Mobile Logo Width"
+msgstr ""
+
+#: includes/customizer/sections/mobile/header.php:146
+msgid "Mobile Logo Height"
+msgstr ""
+
+#: includes/customizer/sections/mobile/header.php:159
+msgid "Mobile Logo Margin Top (px)"
+msgstr ""
+
+#: includes/customizer/sections/mobile/header.php:172
+msgid "Mobile Logo Margin Bottom (px)"
+msgstr ""
+
+#: includes/customizer/sections/mobile/header.php:185
+msgid "Mobile Logo HD"
+msgstr ""
+
+#: includes/customizer/sections/mobile/header.php:230
+msgid "Browser Address Bar Color"
+msgstr ""
+
+#: includes/customizer/sections/mobile/header.php:242
+msgid "Include Mobile Header in dark/light mode"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:112
+msgid "Featured Media"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:146
+msgid "Top Share Bar"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:159
+msgid "Bottom Share Bar"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:178, includes/helpers/class-choices-helper.php:107, includes/helpers/class-choices-helper.php:175
+msgid "Share Count"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:179, includes/helpers/class-choices-helper.php:176
+msgid "Comments"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:180, includes/helpers/class-choices-helper.php:177
+msgid "Points"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:186
+msgid "Sections"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:199
+msgid "Miscellaneous"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:204
+msgid "Show \"View Full Post\" Button If"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:214
+msgid "Button Text"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:231
+msgid "Pagination Style"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:238
+msgid "X / Y"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:239
+msgid "Numeric"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:240
+msgid "Single Next Button"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:246
+msgid "Posts Navigation Direction"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:253
+msgid "From Newest To Oldest"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:254
+msgid "From Oldest To Newest"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:260
+msgid "Next / Prev Post Buttons"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:273, includes/helpers/class-choices-helper.php:227
+msgid "Floating Navbar"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:280
+msgid "With Post Title"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:281
+msgid "With Share Bar"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:288
+msgid "Floating Navbar Next Button"
+msgstr ""
+
+#: includes/customizer/sections/single-post/general.php:301, includes/helpers/class-choices-helper.php:232
+msgid "Side Navigation"
+msgstr ""
+
+#: includes/customizer/sections/single-post/related-posts.php:41, includes/widgets/class-boombox-widget-related-posts.php:169
+msgid "Related Posts"
+msgstr ""
+
+#: includes/customizer/sections/single-post/related-posts.php:72
+msgid "\"Related Posts\" Per Page"
+msgstr ""
+
+#: includes/customizer/sections/single-post/related-posts.php:73, includes/customizer/sections/single-post/related-posts.php:96, includes/customizer/sections/single-post/related-posts.php:119
+msgid "To show all items, please enter -1."
+msgstr ""
+
+#: includes/customizer/sections/single-post/related-posts.php:86
+msgid "\"Related Posts\" Block Heading"
+msgstr ""
+
+#: includes/customizer/sections/single-post/related-posts.php:95
+msgid "\"More From\" Posts Per Page"
+msgstr ""
+
+#: includes/customizer/sections/single-post/related-posts.php:109
+msgid "\"More From\" Block Heading"
+msgstr ""
+
+#: includes/customizer/sections/single-post/related-posts.php:118
+msgid "\"Don't Miss\" Entries Per Page"
+msgstr ""
+
+#: includes/customizer/sections/single-post/related-posts.php:132
+msgid "\"Don't Miss\" Block Heading"
+msgstr ""
+
+#: includes/customizer/sections/single-post/sponsored-articles.php:41
+msgid "Sponsored Articles"
+msgstr ""
+
+#: includes/customizer/sections/single-post/sponsored-articles.php:70
+msgid "Label"
+msgstr ""
+
+#: includes/customizer/sections/single-post/sponsored-articles.php:79
+msgid "Position"
+msgstr ""
+
+#: includes/customizer/sections/single-post/sponsored-articles.php:86, includes/helpers/class-choices-helper.php:845
+msgid "Top"
+msgstr ""
+
+#: includes/customizer/sections/single-post/sponsored-articles.php:87, includes/helpers/class-choices-helper.php:847
+msgid "Bottom"
+msgstr ""
+
+#: includes/customizer/sections/site-identity.php:31
+msgid "Show Tagline"
+msgstr ""
+
+#: includes/customizer/sections/site-identity.php:85
+msgid "Small Logo"
+msgstr ""
+
+#: includes/customizer/sections/site-identity.php:94
+msgid "404 Page Image"
+msgstr ""
+
+#: includes/front/functions.php:552, includes/functions.php:3131
+msgid "Pages:"
+msgstr ""
+
+#: includes/front/functions.php:841, includes/front/functions.php:844, includes/front/functions.php:863, template-parts/pagination/pagination-next_prev.php:31, template-parts/pagination/pagination-next_prev.php:32, template-parts/pagination/pagination.php:27
+msgid "Previous"
+msgstr ""
+
+#: includes/front/functions.php:842, includes/front/functions.php:845, includes/front/functions.php:864, template-parts/pagination/pagination-next_prev.php:45, template-parts/pagination/pagination-next_prev.php:46, template-parts/pagination/pagination.php:28
+msgid "Next"
+msgstr ""
+
+#: includes/front/functions.php:872
+msgid "Post Pagination"
+msgstr ""
+
+#: includes/front/functions.php:934
+msgid "%s image"
+msgid_plural "%s images"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/functions.php:1454
+msgid "1 %s ago"
+msgstr ""
+
+#: includes/functions.php:2838, includes/plugins/amp/amp.php:520
+msgid "ago"
+msgstr ""
+
+#: includes/functions.php:3148
+msgid "Previous page"
+msgstr ""
+
+#: includes/functions.php:3150
+msgid "Next page"
+msgstr ""
+
+#: includes/functions.php:3152
+msgid "Previous post"
+msgstr ""
+
+#: includes/functions.php:3154
+msgid "Next post"
+msgstr ""
+
+#: includes/functions.php:3592
+msgid "Like it? Share with your friends!"
+msgstr ""
+
+#: includes/functions.php:3652
+msgid "comment"
+msgid_plural "comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/functions.php:3658
+msgid "share"
+msgid_plural "shares"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/functions.php:3664
+msgid "point"
+msgid_plural "points"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/functions.php:3740
+msgid "points"
+msgstr ""
+
+#: includes/functions.php:3821
+msgid "view"
+msgid_plural "views"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/functions.php:4130
+msgid "Not Safe For Work"
+msgstr ""
+
+#: includes/functions.php:4131
+msgid "Click to view this post."
+msgstr ""
+
+#: includes/functions.php:4760
+msgid "Post"
+msgstr ""
+
+#: includes/functions.php:4762
+msgid "Name *"
+msgstr ""
+
+#: includes/functions.php:4763
+msgid "Email *"
+msgstr ""
+
+#: includes/functions.php:4765
+msgid "You must be <a href=\"%s\" class=\"js-authentication\">logged in</a> to post a comment."
+msgstr ""
+
+#: includes/functions.php:4766
+msgid "Write a comment *"
+msgstr ""
+
+#: includes/functions.php:5294
+msgid "min"
+msgstr ""
+
+#: includes/functions.php:5331
+msgid "I have read and accepted %s"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:75
+msgid "None ( Show Page Content )"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:94
+msgid "-- None --"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:108, includes/helpers/class-choices-helper.php:150, includes/helpers/class-choices-helper.php:191
+msgid "Views Count"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:109, includes/helpers/class-choices-helper.php:151, includes/helpers/class-choices-helper.php:192
+msgid "Votes Count"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:110, includes/helpers/class-choices-helper.php:155
+msgid "Title"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:111, includes/helpers/class-choices-helper.php:158, includes/helpers/class-choices-helper.php:197, includes/helpers/class-choices-helper.php:214, includes/helpers/class-choices-helper.php:246
+msgid "Author"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:112, includes/helpers/class-choices-helper.php:159, includes/helpers/class-choices-helper.php:198, includes/helpers/class-choices-helper.php:215, includes/helpers/class-choices-helper.php:247
+msgid "Date"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:149, includes/helpers/class-choices-helper.php:190
+msgid "Shares Count"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:152, includes/helpers/class-choices-helper.php:193, includes/helpers/class-choices-helper.php:216, includes/helpers/class-choices-helper.php:248
+msgid "Categories"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:153, includes/helpers/class-choices-helper.php:221, includes/helpers/class-choices-helper.php:252
+msgid "Tags"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:154, includes/helpers/class-choices-helper.php:194, includes/helpers/class-choices-helper.php:218, includes/helpers/class-choices-helper.php:249
+msgid "Comments Count"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:156, includes/helpers/class-choices-helper.php:195, includes/helpers/class-choices-helper.php:217
+msgid "Media"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:157, includes/helpers/class-choices-helper.php:196, includes/helpers/class-choices-helper.php:213, includes/helpers/class-choices-helper.php:245
+msgid "Subtitle"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:160, includes/helpers/class-choices-helper.php:199
+msgid "Excerpt (for Classic Listing Types)"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:162, includes/helpers/class-choices-helper.php:201
+msgid "Post Type Badges"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:163
+msgid "Share Bar"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:219, includes/helpers/class-choices-helper.php:250
+msgid "Views"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:222, includes/helpers/class-choices-helper.php:738
+msgid "Author Info"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:224, includes/plugins/mailchimp-for-wp.php:260
+msgid "Subscribe Form"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:225, includes/helpers/class-choices-helper.php:740
+msgid "WP Navigation"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:226, includes/helpers/class-choices-helper.php:739
+msgid "WP Comments"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:228
+msgid "Top Sharebar"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:229
+msgid "Sticky Top Sharebar"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:230
+msgid "Bottom Sharebar"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:231
+msgid "Next / Prev Buttons"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:293, includes/theme-setup.php:522
+msgid "Default"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:294, includes/helpers/class-choices-helper.php:309, includes/theme-setup.php:527
+msgid "Page 1"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:295, includes/helpers/class-choices-helper.php:310, includes/theme-setup.php:532
+msgid "Page 2"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:296, includes/helpers/class-choices-helper.php:311, includes/theme-setup.php:537
+msgid "Page 3"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:308, includes/theme-setup.php:542
+msgid "Secondary"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:329
+msgid "Four Column"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:334
+msgid "Grid"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:339
+msgid "Grid 2:1"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:344
+msgid "List"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:349
+msgid "List 2 ( small list )"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:359
+msgid "Classic 2 ( fixed height )"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:364
+msgid "Stream ( gif's & memes )"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:369
+msgid "Mixed"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:374
+msgid "Masonry: Boxed"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:379
+msgid "Masonry: Stretched"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:448
+msgid "Recent"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:450
+msgid "Random"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:490
+msgid "Load More"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:491
+msgid "Infinite Scroll"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:492
+msgid "Infinite Scroll (first load via click)"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:493
+msgid "Numbering"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:494
+msgid "Next/Prev Buttons"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:565, includes/plugins/woocommerce/woocommerce.php:474
+msgid "Inject Into Posts List"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:579
+msgid "Customizer Global Value"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:622
+msgid "Big"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:634
+msgid "Inside"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:635
+msgid "Outside"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:647
+msgid "Full Width"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:659
+msgid "Scrollbox"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:660
+msgid "Slider"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:672
+msgid "Image ratio is 1:3"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:673
+msgid "Post has content"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:685
+msgid "Only mute"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:686
+msgid "Full controls"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:698
+msgid "On Scroll"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:699
+msgid "On Hover"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:712
+msgid "Muted"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:713
+msgid "With Sound"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:725
+msgid "Mute / Unmute"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:726
+msgid "Play / Pause"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:741
+msgid "\"Related Posts\" Section"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:742
+msgid "\"More From\" Section"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:743
+msgid "\"Don't Miss\" Section"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:755
+msgid "Left Sidebar"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:756
+msgid "Right Sidebar"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:757, includes/plugins/woocommerce/customizer/customizer.php:104
+msgid "No Sidebar"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:785, includes/helpers/class-choices-helper.php:975
+msgid "Search Icon"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:786, includes/helpers/class-choices-helper.php:976
+msgid "Social Icon"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:788
+msgid "Badges menu"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:789
+msgid "\"Compose\" Button"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:790, includes/helpers/class-choices-helper.php:978
+msgid "Burger Icon"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:791
+msgid "Color Mode Switcher"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:803
+msgid "Style 1"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:804
+msgid "Style 2"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:805
+msgid "Style 3"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:831
+msgid "Colour"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:832
+msgid "Gradient"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:833
+msgid "Image"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:860
+msgid "Auto"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:873
+msgid "Center"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:887
+msgid "No Repeat"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:888
+msgid "Repeat All"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:889
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:890
+msgid "Repeat Vertically"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:915
+msgid "Image Captcha"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:916
+msgid "Google Recaptcha"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:917
+msgid "Google Recaptcha V3"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:929
+msgid "Rounded"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:930
+msgid "Full"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:979
+msgid "Mode Switcher"
+msgstr ""
+
+#: includes/helpers/class-choices-helper.php:989
+msgid "Registration Popup Form"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:231
+msgid "Archives"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:226
+msgid "Archives: %s"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:222
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:220
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:218
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:216
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:214
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:212
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:210
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:208
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:206
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:203
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:200
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:197
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:194
+msgid "Author: %s"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:265
+msgid "Error 404"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-breadcrumb-template-helper.php:261
+msgid "Search results for"
+msgstr ""
+
+#: includes/helpers/template-helpers/class-title-template-helper.php:469
+msgid "Search Results for:"
+msgstr ""
+
+#: includes/migration/functions.php:33, includes/plugins/essb.php:213, includes/plugins/essb.php:226, includes/plugins/visual-composer/elements/listing.php:88
+msgid "Boombox"
+msgstr ""
+
+#: includes/migration/functions.php:55
+msgid "Could not implement migration - %d."
+msgstr ""
+
+#: includes/migration/functions.php:56
+msgid "Please contact support at %s"
+msgstr ""
+
+#: includes/plugins/amp/amp.php:162
+msgid "The logo should be a rectangle, not a square. The logo should fit in a 60px height and 600px width rectangle, and either be exactly 60px high (preferred), or exactly 600px wide. <a href=\"https://developers.google.com/search/docs/data-types/articles#logo-guidelines\" target=\"_blank\" rel=\"noopener\">read more</a>"
+msgstr ""
+
+#: includes/plugins/amp/amp.php:535
+msgid "View Full Version"
+msgstr ""
+
+#: includes/plugins/amp/amp.php:634, includes/plugins/amp/amp.php:658
+msgid "Disable Posts AMP Version"
+msgstr ""
+
+#: includes/plugins/amp/amp.php:635, includes/plugins/amp/amp.php:662
+msgid "Check to disable AMP version for posts in this term"
+msgstr ""
+
+#: includes/plugins/buddypress.php:289, template-parts/popups/login-form.php:76, template-parts/popups/registration-form.php:80
+msgid "Enter captcha"
+msgstr ""
+
+#: includes/plugins/buddypress.php:1573
+msgid "Password cannot be empty"
+msgstr ""
+
+#: includes/plugins/buddypress.php:1592
+msgid "Registration successful"
+msgstr ""
+
+#: includes/plugins/buddypress.php:1648
+msgid "If you have not received an email yet, <a href=\"#\" id=\"bb-bp-btn-resend\" data-id=\"%1$d\" data-token=\"%2$s\">click here to resend it</a>."
+msgstr ""
+
+#: includes/plugins/buddypress.php:1650
+msgid "Your account has not been activated. Check your email for the activation link. "
+msgstr ""
+
+#: includes/plugins/buddypress.php:1675
+msgid "Activation email resent! Please check your inbox or spam folder."
+msgstr ""
+
+#: includes/plugins/buddypress.php:1673
+msgid "Your account has already been activated."
+msgstr ""
+
+#: includes/plugins/buddypress.php:1712, includes/plugins/gamify.php:136
+msgid "Total Reads"
+msgstr ""
+
+#: includes/plugins/buddypress.php:1716
+msgid "Total Posts"
+msgstr ""
+
+#: includes/plugins/buddypress.php:1731
+msgid "Member since"
+msgstr ""
+
+#: includes/plugins/buddypress.php:1790
+msgid "More"
+msgstr ""
+
+#: includes/plugins/buddypress.php:1825
+msgid "BuddyPress Account Activation"
+msgstr ""
+
+#: includes/plugins/buddypress.php:1826
+msgid "Applies only on native registration form in popup"
+msgstr ""
+
+#: includes/plugins/essb.php:241
+msgid "Boombox Position"
+msgstr ""
+
+#: includes/plugins/essb.php:322
+msgid "\"ESSB\" Fake Share Count"
+msgstr ""
+
+#: includes/plugins/essb.php:556
+msgid "<p>Starting from v5.0 \"%1$s\" plugin doesn't support \"%2$s\" plugin. Please delete it from <a href=\"%3$s\">plugins</a>.</p><p>Now you can configure AMP share buttons in \"%1$s -> Where to Display -> AMP Sharing\" section. We strongly recommend do not activate \"%2$s\" plugin.</p>"
+msgstr ""
+
+#: includes/plugins/essb.php:574, includes/plugins/mashshare.php:184
+msgid "Most Shared"
+msgstr ""
+
+#: includes/plugins/mailchimp-for-wp.php:104, includes/plugins/mailchimp-for-wp.php:201
+msgid "Newsletter"
+msgstr ""
+
+#: includes/plugins/mailchimp-for-wp.php:120, includes/plugins/mailchimp-for-wp.php:211
+msgid "Inject Newsletter As Post"
+msgstr ""
+
+#: includes/plugins/mailchimp-for-wp.php:305
+msgid "Get The Newsletter"
+msgstr ""
+
+#: includes/plugins/mailchimp-for-wp.php:337
+msgid "LIKE WHAT YOU'RE READING?"
+msgstr ""
+
+#: includes/plugins/mailchimp-for-wp.php:338
+msgid "subscribe to our top stories"
+msgstr ""
+
+#: includes/plugins/mailchimp-for-wp.php:357
+msgid "Don't worry, we don't spam"
+msgstr ""
+
+#: includes/plugins/mycred/mycred.php:69
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: includes/plugins/mycred/mycred.php:95
+msgid "Total %s"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:94
+msgid "WP Reset"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:95
+msgid "WordPress Reset"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:96
+msgid "WordPress Database Reset"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:100
+msgid "If you want your demo to looked exactly like selected demo and to prevent conflicts with current content, we highly recommend importing demo data on a clean installation."
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:101
+msgid "We highly recommend to create backup of your site before database reset if you are working on your database. Please note that database reset means cleaning all content that you have in your WordPress and restore to WordPress defaults."
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:102
+msgid "Please feel free to use %1$s, %2$s or %3$s plugins to reset your WordPress site."
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:112
+msgid "Boombox Original"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:117
+msgid "Original"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:122, includes/plugins/one-click-demo-import.php:127
+msgid "Animatrix"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:132, includes/plugins/one-click-demo-import.php:137
+msgid "Another GAG"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:142
+msgid "Boombox Alternative"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:147
+msgid "Alternative"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:152, includes/plugins/one-click-demo-import.php:157
+msgid "Buzzy"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:162, includes/plugins/one-click-demo-import.php:167
+msgid "Pandaland"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:172, includes/plugins/one-click-demo-import.php:177
+msgid "Boommag"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:182
+msgid "Boombox Minimal"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:187
+msgid "Minimal"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:202
+msgid "Boombox Affiliate"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:212, includes/plugins/one-click-demo-import.php:217
+msgid "CatDog"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:222, includes/plugins/one-click-demo-import.php:227
+msgid "Sunshine"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:232, includes/plugins/one-click-demo-import.php:237
+msgid "Readly"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:242, includes/plugins/one-click-demo-import.php:247
+msgid "Dash"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:252, includes/plugins/one-click-demo-import.php:257
+msgid "GifDom"
+msgstr ""
+
+#: includes/plugins/one-click-demo-import.php:262, includes/plugins/one-click-demo-import.php:267
+msgid "Advertimer"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:127
+msgid "After Header"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:135
+msgid "Home: Before Header"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:139
+msgid "Home: Before Featured Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:143
+msgid "Home: After Featured Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:147
+msgid "Home: Before Content Theme Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:151
+msgid "Home: After Content Theme Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:155
+msgid "Home: Before Footer"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:163
+msgid "Archive: Before Header"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:167
+msgid "Archive: Before Featured Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:171
+msgid "Archive: After Featured Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:175
+msgid "Archive: Before Content Theme Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:179
+msgid "Archive: After Content Theme Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:183
+msgid "Archive: Before Footer"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:191
+msgid "Page: Before Header"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:195
+msgid "Page: Before Featured Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:199
+msgid "Page: After Featured Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:203
+msgid "Page: Before Content Theme Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:207
+msgid "Page: After Content Theme Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:211
+msgid "Page: Before Footer"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:219
+msgid "Single: Before Header"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:223
+msgid "Single: Before Content Theme Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:227
+msgid "Single: After \"Next/Prev\" Buttons"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:231
+msgid "Single: Before Navigation Area"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:235
+msgid "Single: After Comments Section"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:239
+msgid "Single: After \"Also Like\" Section"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:243
+msgid "Single: After \"More From\" Section"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:247
+msgid "Single: After \"Don't miss\" Section"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:251
+msgid "Single: Before Footer"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:259
+msgid "Instead of \"grid\" or \"three column\" listing post"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:263
+msgid "Instead of none grid listing post"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:271
+msgid "Gallery popup"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:279
+msgid "Sticky Bottom Area (Desktop)"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:283
+msgid "Sticky Bottom Area (Mobile)"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:417, includes/plugins/quick-adsense-reloaded.php:535
+msgid "Ad"
+msgstr ""
+
+#: includes/plugins/quick-adsense-reloaded.php:433, includes/plugins/quick-adsense-reloaded.php:545
+msgid "Inject Ad As Post"
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:85
+msgid "Boombox Listing"
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:98
+msgid "Choose listing type."
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:103
+msgid "Listing Condition"
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:107
+msgid "Choose listing condition."
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:112
+msgid "Listing Time Range"
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:116
+msgid "Choose listing time range."
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:121
+msgid "Listing Category"
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:124
+msgid "Choose listing category."
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:137
+msgid "Listing Tag"
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:140
+msgid "Choose listing tag."
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:157
+msgid "Choose posts count per page."
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:162
+msgid "Offset"
+msgstr ""
+
+#: includes/plugins/visual-composer/elements/listing.php:166
+msgid "Choose offset."
+msgstr ""
+
+#: includes/plugins/woocommerce/customizer/customizer.php:73
+msgid "Single Product"
+msgstr ""
+
+#: includes/plugins/woocommerce/customizer/customizer.php:95
+msgid "Choose sidebar type for single product."
+msgstr ""
+
+#: includes/plugins/woocommerce/customizer/customizer.php:100
+msgid "1 Sidebar - 1/3"
+msgstr ""
+
+#: includes/plugins/woocommerce/customizer/customizer.php:101
+msgid "1 Sidebar - 1/4"
+msgstr ""
+
+#: includes/plugins/woocommerce/customizer/customizer.php:102
+msgid "2 Sidebars - 1/4 - 1/4"
+msgstr ""
+
+#: includes/plugins/woocommerce/customizer/customizer.php:103
+msgid "2 Sidebars - Small/Big"
+msgstr ""
+
+#: includes/plugins/woocommerce/customizer/customizer.php:125, includes/plugins/woocommerce/customizer/customizer.php:152, includes/plugins/woocommerce/customizer/customizer.php:176
+msgid "Choose sidebar orientation for single product."
+msgstr ""
+
+#: includes/plugins/woocommerce/woocommerce.php:616, includes/plugins/woocommerce/woocommerce.php:637
+msgid "View your shopping cart"
+msgstr ""
+
+#: includes/plugins/woocommerce/woocommerce.php:682, includes/plugins/woocommerce/woocommerce.php:964
+msgid "Products"
+msgstr ""
+
+#: includes/plugins/woocommerce/woocommerce.php:692
+msgid "Inject # Product(s)"
+msgstr ""
+
+#: includes/plugins/woocommerce/woocommerce.php:711
+msgid "Inject Product(s) After Every # Post"
+msgstr ""
+
+#: includes/plugins/woocommerce/woocommerce.php:980
+msgid "Inject X product(s)"
+msgstr ""
+
+#: includes/plugins/woocommerce/woocommerce.php:1005
+msgid "After every X post(s)"
+msgstr ""
+
+#: includes/plugins/woocommerce/woocommerce.php:1092
+msgid "WooCommerce Cart Icon"
+msgstr ""
+
+#: includes/plugins/wpml.php:130
+msgid "WPML switcher"
+msgstr ""
+
+#: includes/plugins/wsl.php:79
+msgid "Boombox social icons"
+msgstr ""
+
+#: includes/rate-and-vote-restrictions/comment-count/comment-count.php:14
+msgid "Most Discussed"
+msgstr ""
+
+#: includes/rate-and-vote-restrictions/point-count/point-count.php:35
+msgid "Most Voted"
+msgstr ""
+
+#: includes/rate-and-vote-restrictions/rate/rate.php:14
+msgid "Last 24 hours"
+msgstr ""
+
+#: includes/rate-and-vote-restrictions/rate/rate.php:15
+msgid "Last 7 days"
+msgstr ""
+
+#: includes/rate-and-vote-restrictions/rate/rate.php:16
+msgid "Last 30 days"
+msgstr ""
+
+#: includes/rate-and-vote-restrictions/rate/rate.php:17
+msgid "All time"
+msgstr ""
+
+#: includes/rate-and-vote-restrictions/view-count/view-count.php:30
+msgid "Most Viewed"
+msgstr ""
+
+#: includes/theme-setup.php:121
+msgid "Top Header Menu"
+msgstr ""
+
+#: includes/theme-setup.php:122
+msgid "Bottom Header Menu"
+msgstr ""
+
+#: includes/theme-setup.php:123
+msgid "Profile Menu"
+msgstr ""
+
+#: includes/theme-setup.php:124
+msgid "Burger Menu 1"
+msgstr ""
+
+#: includes/theme-setup.php:125
+msgid "Burger Menu 2"
+msgstr ""
+
+#: includes/theme-setup.php:126
+msgid "Burger Menu 3"
+msgstr ""
+
+#: includes/theme-setup.php:127
+msgid "More Button Top Menu"
+msgstr ""
+
+#: includes/theme-setup.php:128
+msgid "More Button Badges Menu"
+msgstr ""
+
+#: includes/theme-setup.php:129
+msgid "More Button Bottom Menu"
+msgstr ""
+
+#: includes/theme-setup.php:130
+msgid "Badges Menu"
+msgstr ""
+
+#: includes/theme-setup.php:131
+msgid "Featured Labels Menu"
+msgstr ""
+
+#: includes/theme-setup.php:132
+msgid "Footer Menu"
+msgstr ""
+
+#: includes/theme-setup.php:524
+msgid "The widgets added here will appear on all the pages, except the post single and the page sidebar."
+msgstr ""
+
+#: includes/theme-setup.php:529, includes/theme-setup.php:534, includes/theme-setup.php:539
+msgid "Add widgets here to appear in your page sidebar."
+msgstr ""
+
+#: includes/theme-setup.php:544
+msgid "Add widgets here to appear with three column listing type."
+msgstr ""
+
+#: includes/theme-setup.php:547
+msgid "Post Single"
+msgstr ""
+
+#: includes/theme-setup.php:549, includes/theme-setup.php:554
+msgid "Add widgets here to appear in your post sidebar."
+msgstr ""
+
+#: includes/theme-setup.php:557
+msgid "Footer Left"
+msgstr ""
+
+#: includes/theme-setup.php:559
+msgid "Add widgets here to appear in your footer left section."
+msgstr ""
+
+#: includes/theme-setup.php:562
+msgid "Footer Middle"
+msgstr ""
+
+#: includes/theme-setup.php:564
+msgid "Add widgets here to appear in your footer middle section."
+msgstr ""
+
+#: includes/theme-setup.php:567
+msgid "Footer Right"
+msgstr ""
+
+#: includes/theme-setup.php:569
+msgid "Add widgets here to appear in your footer right section."
+msgstr ""
+
+#: includes/theme-setup.php:1646
+msgid "M"
+msgstr ""
+
+#: includes/theme-setup.php:1643
+msgid "k"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-create-post.php:31
+msgid "Adds the \"Create Post\" button."
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-create-post.php:34
+msgid "Boombox Create Post"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-create-post.php:119
+msgid "Unleash Your Creativity"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-create-post.php:120
+msgid "and share your story with us!"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-create-post.php:127, includes/widgets/class-boombox-widget-picked-posts.php:183, includes/widgets/class-boombox-widget-recent-posts.php:155, includes/widgets/class-boombox-widget-related-posts.php:178, includes/widgets/class-boombox-widget-sidebar-nav.php:156, includes/widgets/class-boombox-widget-trending-posts.php:153
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-create-post.php:134
+msgid "Subtitle:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-create-post.php:141
+msgid "Description:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-create-post.php:146
+msgid "Button Text:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-create-post.php:153
+msgid "Button Link:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-create-post.php:164
+msgid "Enable Plus Icon On Button"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-picked-posts.php:30
+msgid "Your Site&#8217;s Picked Posts."
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-picked-posts.php:33
+msgid "Boombox Picked Posts"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-picked-posts.php:168
+msgid "Recent Posts"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-picked-posts.php:191
+msgid "Condition:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-picked-posts.php:205
+msgid "Time Range:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-picked-posts.php:219
+msgid "Categories:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-picked-posts.php:238
+msgid "Tags:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-picked-posts.php:248, includes/widgets/class-boombox-widget-related-posts.php:198
+msgid "Numbered"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-picked-posts.php:253, includes/widgets/class-boombox-widget-recent-posts.php:162, includes/widgets/class-boombox-widget-related-posts.php:203, includes/widgets/class-boombox-widget-trending-posts.php:161
+msgid "Number of posts to show:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-picked-posts.php:264, includes/widgets/class-boombox-widget-recent-posts.php:172, includes/widgets/class-boombox-widget-related-posts.php:214, includes/widgets/class-boombox-widget-trending-posts.php:186
+msgid "Display post date?"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-picked-posts.php:272, includes/widgets/class-boombox-widget-recent-posts.php:179, includes/widgets/class-boombox-widget-related-posts.php:222, includes/widgets/class-boombox-widget-trending-posts.php:194
+msgid "Display post author?"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-recent-posts.php:31
+msgid "Your site&#8217;s most recent Posts."
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-recent-posts.php:34
+msgid "Boombox Recent Posts"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-related-posts.php:30
+msgid "Single Post&#8217;s Related Posts."
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-related-posts.php:33
+msgid "Boombox Related Posts"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-related-posts.php:185
+msgid "Restrict By:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-related-posts.php:187
+msgid "Category"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-related-posts.php:188
+msgid "Tag"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sidebar-footer.php:33
+msgid "Your site&#8217;s footer."
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sidebar-footer.php:36
+msgid "Boombox Sidebar Footer"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sidebar-footer.php:154
+msgid "Select Menu"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sidebar-footer.php:171
+msgid "Show Copyright Text"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sidebar-nav.php:31
+msgid "With this widget you can create a custom navigation for your sidebars"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sidebar-nav.php:34
+msgid "Boombox Sidebar Navigation"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sidebar-nav.php:149
+msgid "Sidebar Navigation"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sidebar-nav.php:167
+msgid "Navigation Title:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sidebar-nav.php:178
+msgid "Menu:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sidebar-nav.php:195
+msgid "There are no available menus"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sticky-sidebar.php:30
+msgid "WIth this widget you can define a place where sticky area starts"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sticky-sidebar.php:33
+msgid "Boombox Sticky Sidebar"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-sticky-sidebar.php:57
+msgid "All following widgets will be sticky."
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-trending-posts.php:30
+msgid "Your Site&#8217;s Trending Posts."
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-trending-posts.php:33
+msgid "Boombox Trending Posts"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-trending-posts.php:169
+msgid "Trending Type:"
+msgstr ""
+
+#: includes/widgets/class-boombox-widget-trending-posts.php:203
+msgid "Disable numeration badges"
+msgstr ""
+
+#: searchform.php:13
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:15
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: single-navigation.php:35, single-navigation.php:63
+msgid "By"
+msgstr ""
+
+#: technical-requirements.php:71
+msgid "Boombox requires PHP 5.4 or higher"
+msgstr ""
+
+#: technical-requirements.php:72
+msgid "Your Version %s"
+msgstr ""
+
+#: template-parts/content-none.php:17
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:27
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. "
+msgstr ""
+
+#: template-parts/content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/header/components/search.php:18
+msgid "Search and hit enter"
+msgstr ""
+
+#: template-parts/header/components/search.php:28
+msgid "Search"
+msgstr ""
+
+#: template-parts/header/navigation/burger-bottom.php:22
+msgid "sections"
+msgstr ""
+
+#: template-parts/pagination/pagination-infinite_scroll.php:20, template-parts/pagination/pagination-infinite_scroll_on_demand.php:20, template-parts/pagination/pagination-load_more.php:20
+msgid "Load more"
+msgstr ""
+
+#: template-parts/popups/forgot-password-form.php:39, template-parts/popups/login-form.php:54
+msgid "Your username or e-mail"
+msgstr ""
+
+#: template-parts/popups/forgot-password-form.php:42, template-parts/popups/reset-password-form.php:52
+msgid "reset"
+msgstr ""
+
+#: template-parts/popups/forgot-password-form.php:48, template-parts/popups/registration-form.php:101
+msgid "Back to "
+msgstr ""
+
+#: template-parts/popups/login-form.php:57, template-parts/popups/registration-form.php:62
+msgid "Your password"
+msgstr ""
+
+#: template-parts/popups/login-form.php:63
+msgid "Remember me"
+msgstr ""
+
+#: template-parts/popups/login-form.php:93
+msgid "Forgot password?"
+msgstr ""
+
+#: template-parts/popups/login-form.php:101
+msgid "Don't have an account?"
+msgstr ""
+
+#: template-parts/popups/registration-form.php:54
+msgid "Your e-mail address"
+msgstr ""
+
+#: template-parts/popups/registration-form.php:58
+msgid "Your username"
+msgstr ""
+
+#: template-parts/popups/reset-password-form.php:45
+msgid "New Password"
+msgstr ""
+
+#: template-parts/popups/reset-password-form.php:48
+msgid "Confirm Password"
+msgstr ""
+
+#: template-parts/single/components/media/attachment.php:37
+msgid "Your browser does not support the audio element."
+msgstr ""
+
+#: template-parts/single/components/media/attachment.php:30
+msgid "Your browser does not support HTML video."
+msgstr ""
+
+#: template-parts/single/components/reactions.php:29
+msgid "What's Your Reaction?"
+msgstr ""
+
+#: template-parts/single/components/source.php:18
+msgid "Source:"
+msgstr ""
+
+#: template-parts/single/components/source.php:24
+msgid "Via:"
+msgstr ""
+
+#: template-parts/single/components/source.php:41
+msgid "Via"
+msgstr ""
+
+#: woocommerce/cart/cart.php:153
+msgid "Discount Codes"
+msgstr ""
+
+#: woocommerce/cart/cart.php:154
+msgid "Enter your coupon code if you have one:"
+msgstr ""
+
+#: woocommerce/loop/pagination.php:39
+msgid "PREVIOUS"
+msgstr ""
+
+#: woocommerce/loop/pagination.php:40
+msgid "NEXT"
+msgstr ""

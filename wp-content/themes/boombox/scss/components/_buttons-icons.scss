@@ -1,0 +1,483 @@
+/* *** Buttons/ Icons *** */
+
+/* * General * */
+.bb-btn {
+  margin-bottom: 3px;
+  padding: 13px 35px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: #cdcdcd;
+  color: #ffffff;
+  transition: all 0.2s ease-out;
+  .bb-btn-primary {
+    color: $btn-color;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+  &.bb-btn-secondary {
+    color: #ffffff;
+    background-color: #cdcdcd;
+    border-color: #cdcdcd;
+  }
+  &.bb-btn-info {
+    color: $btn-color;
+    background-color: $info-color;
+    border-color: $info-color;
+  }
+  &.bb-btn-success {
+    color: $btn-color;
+    background-color: $success-color;
+    border-color: $success-color;
+  }
+  &.bb-btn-warning {
+    color: $btn-color;
+    background-color: $warning-color;
+    border-color: $warning-color;
+  }
+  &.bb-btn-danger {
+    color: $btn-color;
+    background-color: $danger-color;
+    border-color: $danger-color;
+  }
+  + .bb-btn {
+    margin-left: 5px;
+  }
+}
+.bb-btn {
+  @extend .hvr-box-shadow;
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.bb-btn.disabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+// Disabled state
+.bb-disabled {
+  a {
+    opacity: .3;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+// Button with Icon
+.bb-btn-icon {
+  display: inline-block;
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid transparent;
+  .bb-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &.btn-xs {
+    min-height: 40px;
+    font-size: 15px;
+    line-height: 18px;
+    &.icon-left {
+      padding: 11px 20px 11px 40px;
+      .bb-icon {
+        left: 20px;
+      }
+    }
+    &.icon-right {
+      padding: 11px 40px 11px 20px;
+      .bb-icon {
+        right: 20px;
+      }
+    }
+  }
+  &.btn-sm {
+    min-height: 48px;
+    font-size: 16px;
+    line-height: 19px;
+    &.icon-left {
+      padding: 13px 35px 13px 65px;
+      .bb-icon {
+        left: 25px;
+      }
+    }
+    &.icon-right {
+      padding: 13px 65px 13px 35px;
+      .bb-icon {
+        right: 25px;
+      }
+    }
+  }
+}
+
+// Download button
+.bb-btn-download {
+  .counter{
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+//// Remove all backgrounds
+.bb-btn-primary-outline {
+  color: $primary-color;
+  background-color: transparent ;
+  border-color: $primary-color;
+
+  &:hover {
+    color: $btn-color;
+    background-color: $primary-color;
+  }
+}
+.bb-btn-secondary-outline {
+  color: #cdcdcd;
+  background-color: transparent;
+  border-color: #cdcdcd;
+
+  &:hover {
+    color: $btn-color;
+    background-color: #cdcdcd;
+  }
+}
+.btn-info-outline {
+  color: $info-color;
+  background-color: transparent;
+  border-color: $info-color;
+
+  &:hover {
+    color: $btn-color;
+    background-color: $info-color;
+  }
+}
+.bb-btn-success-outline {
+  color: $success-color;
+  background-color: transparent;
+  border-color: $success-color;
+
+  &:hover {
+    color: $btn-color;
+    background-color: $success-color;
+  }
+}
+.bb-btn-warning-outline {
+  color: $warning-color;
+  background-color: transparent ;
+  border-color: $warning-color;
+
+  &:hover {
+    color: $btn-color;
+    background-color: $warning-color;
+  }
+}
+.bb-btn-danger-outline {
+  color: $danger-color;
+  background-color: transparent;
+  border-color: $danger-color;
+
+  &:hover {
+    color: $btn-color;
+    background-color: $danger-color;
+  }
+}
+
+// Close Button
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+.bb-btn-close, #buddypress  #register-page .clear-value, #buddypress .field-visibility-settings-close {
+  &:before {
+    font-family: $icon-font-family;
+    content: "\f00d";
+    font-size: 15px;
+    position: relative;
+    top: 1px;
+  }
+}
+.bb-btn-close.clr-danger {
+  color: $danger-color;
+}
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.bb-btn-link {
+  font-weight: normal;
+  color: $link-color;
+  border-radius: 0;
+  background-color: transparent;
+
+  &,
+  &:active,
+  &.active,
+  &:disabled {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+    box-shadow: none;
+  }
+}
+
+// Circle Button
+.bb-btn-circle {
+  display: inline-block;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  box-shadow: none;
+  text-align: center;
+  border-radius: 50%;
+  .bb-icon {
+    vertical-align: middle;
+  }
+  &.btn-sm {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    .bb-icon {
+      line-height: 36px;
+    }
+  }
+  &.btn-lg {
+    width: 76px;
+    height: 76px;
+    font-size: 25px;
+    .bb-icon {
+      line-height: 76px;
+    }
+  }
+}
+
+//
+// Button Sizes
+//
+.btn-group-lg>.btn, .bb-btn-lg {
+  padding: 20px 40px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.btn-group-sm>.btn, .bb-btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.btn-group-xs>.btn, .btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+//
+// Block button
+//
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+//
+// Load More Buttons
+//
+#main div.more-load-button:last-child,
+.more-load-button {
+  margin-bottom: $mb-md;
+}
+.more-load-button {
+  clear: both;
+  position: relative;
+  min-height: 2px;
+  text-align: center;
+
+  button {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    padding: 7px 15px;
+    width: 220px;
+    max-width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: transparent;
+    border: 5px solid #ececec;
+
+    .bb-icon {
+      display: none;
+    }
+  }
+
+  &.loading {
+    button {
+      .text {
+        display: none;
+      }
+      .bb-icon {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.spinner-pulse, .woocommerce .blockUI.blockOverlay:before, .woocommerce .loader:before {
+  width: 22px;
+  height: 22px;
+  margin: 0 auto;
+  border: 3px solid;
+  border-radius: 50%;
+  border-color: rgb(255,255,255);
+  animation: cssload-scale 1035ms infinite linear;
+  -o-animation: cssload-scale 1035ms infinite linear;
+  -ms-animation: cssload-scale 1035ms infinite linear;
+  -webkit-animation: cssload-scale 1035ms infinite linear;
+  -moz-animation: cssload-scale 1035ms infinite linear;
+
+  &:before {
+    content: none;
+  }
+}
+
+@keyframes cssload-scale {
+  0% { transform: scale(0); transform: scale(0); }
+  90% { transform: scale(0.7); transform: scale(0.7); }
+  100% { transform: scale(1); transform: scale(1); }
+}
+
+@-o-keyframes cssload-scale {
+  0% { -o-transform: scale(0); transform: scale(0); }
+  90% { -o-transform: scale(0.7); transform: scale(0.7); }
+  100% { -o-transform: scale(1); transform: scale(1); }
+}
+
+@-ms-keyframes cssload-scale {
+  0% { -ms-transform: scale(0); transform: scale(0); }
+  90% { -ms-transform: scale(0.7); transform: scale(0.7); }
+  100% { -ms-transform: scale(1); transform: scale(1); }
+}
+
+@-webkit-keyframes cssload-scale {
+  0% { -webkit-transform: scale(0); transform: scale(0); }
+  90% { -webkit-transform: scale(0.7); transform: scale(0.7); }
+  100% { -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@-moz-keyframes cssload-scale {
+  0% { -moz-transform: scale(0); transform: scale(0); }
+  90% { -moz-transform: scale(0.7); transform: scale(0.7); }
+  100% { -moz-transform: scale(1); transform: scale(1); }
+}
+
+//.spinner-pulse {
+//  display: inline-block;
+//  -webkit-animation: anim-rotate 1s infinite steps(8);
+//  animation: anim-rotate  1s infinite steps(8);
+//}
+@-webkit-keyframes anim-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes anim-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* * More link * */
+.more-link {
+  clear: both;
+  display: block;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* * Icon with Count Label * */
+.bb-icn-count {
+  line-height: 1;
+  position: relative;
+  .icn-link {
+    color: inherit;
+    font-size: 21px;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    &.has-count {
+      padding-right: 10px;
+    }
+  }
+  .count {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 20px;
+    height: 20px;
+    min-width: 20px;
+    padding: 0 3px;
+    display: block;
+    top: -3px;
+    right: 0;
+    position: absolute;
+    background-color: #f43547;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.1);
+    @include border-radius(13px);
+  }
+  &.size-xs {
+    .count {
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      min-width: 15px;
+      font-size: 10px;
+      top: 3px;
+    }
+    .icn-link {
+      &.has-count {
+        padding-right: 7px;
+      }
+    }
+  }
+}

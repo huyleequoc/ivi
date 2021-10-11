@@ -1,0 +1,198 @@
+/* *** Post Video Gif Functionality *** */
+
+/* Video wrapper for post list */
+.post-thumbnail {
+  canvas {
+    display: block;
+    width: 100%
+  }
+  video,
+  iframe {
+    float: left;
+  }
+
+  .video-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+    video {
+      opacity: 0;
+      float: left;
+    }
+    img {
+      width: 100%;
+      float: left;
+    }
+
+    .badge-duration {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      @include border-radius(12px);
+      padding: 2px 8px;
+      font-size: 14px;
+      color: #fff;
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    &.play {
+      video {
+        opacity: 1;
+      }
+      .btn-play {
+        display: none;
+      }
+      .btn-volume {
+        display: block;
+      }
+    }
+
+    .btn-play {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      margin: -40px 0 0 -40px;
+    }
+
+    .btn-volume {
+      position: absolute;
+      z-index: 2;
+      display: none;
+      bottom: 20px;
+      left: 20px;
+      cursor: pointer;
+    }
+
+    &.no-thumbnail {
+      video {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* No Video option for post list */
+.no-video {
+  .post-thumbnail {
+    .video-wrapper {
+      background-image: none !important;
+
+      video {
+        display: block;
+        opacity: 1;
+      }
+      .btn-play {
+        display: none;
+      }
+    }
+  }
+  video.gif-video {
+    display: none;
+  }
+}
+
+/* Gif/Video wrapper */
+.gif-video-wrapper {
+  @include clearfix();
+  cursor: pointer;
+  &.play {
+    &:after {
+      content: none !important;
+    }
+  }
+}
+
+.bb-media-playable .post .post-thumbnail,
+.zf-post-list .zf-post-thumbnail,
+.bb-post-single .s-post-content,
+.bb-post-single .post-thumbnail {
+  .gif-video-wrapper,
+  .hy_plyr {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: 'gif';
+    }
+
+    &.play {
+      &:before {
+        content: none;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+
+.bb-post-single .post-thumbnail{
+    canvas, video, img {
+      width: 100%;
+    }
+}
+
+.bb-post-single .s-post-content {
+  .gif-video {
+    width: 100%;
+    height: auto;
+  }
+  .hy_plyr {
+    canvas, img {
+      margin: 0;
+      width:100%;
+      height: auto;
+    }
+  }
+}
+/* Buttons Styling */
+.mejs-overlay-button {
+  &:before {
+    position: absolute;
+    line-height: 36px;
+    top: 50%;
+    left: 50%;
+    margin: -18px 0 0 -12px;
+    font-family: $icon-font-family;
+    content: "\e95c";
+  }
+}
+.bb-media-playable .post .post-thumbnail .gif-video-wrapper:before,
+.bb-media-playable .post .post-thumbnail .hy_plyr:before,
+.zf-post-list .zf-post-thumbnail .gif-video-wrapper:before,
+.zf-post-list .zf-post-thumbnail .hy_plyr:before,
+.bb-post-single .s-post-content .gif-video-wrapper:before,
+.bb-post-single .s-post-content .hy_plyr:before,
+.bb-post-single .post-thumbnail .gif-video-wrapper:before,
+.bb-post-single .post-thumbnail .hy_plyr:before,
+.mejs-overlay-button {
+  width: 76px;
+  height: 76px;
+  font-size: 25px;
+  line-height: 76px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  margin: -38px 0 0 -38px;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  @include border-radius(50%);
+}

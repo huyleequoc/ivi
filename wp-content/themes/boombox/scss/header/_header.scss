@@ -1,0 +1,618 @@
+/* *** Header General Styles & Components *** */
+
+// *** Header Variables ***
+//$h-drop-down-shadow : -1px 6px 22.8px 1.2px rgba(42, 42, 42, 0.35);
+$h-shadow : -1px 1px 1px 0px rgba(42, 42, 42, 0.27);
+$large-header-size : 40px;
+$large-header-font-size : 25px;
+$medium-header-size : 32px;
+$medium-header-font-size : 23px;
+$small-header-size : 24px;
+$small-header-font-size : 21px;
+
+$dropdown-arrow-size:6px;
+
+/* * Header General * */
+.bb-header {
+  //margin-bottom: $mb-md;
+}
+.bb-show-desktop-header, .bb-show-mobile-header {
+  position: relative;
+  z-index: 50;
+  //margin-bottom: $mb-md;
+}
+
+/* Header Display in Mobile and Desktop */
+.bb-show-desktop-header {
+  display: none;
+}
+.bb-show-mobile-header {
+  display: block;
+}
+
+/* * Header Components * */
+
+/* Branding */
+.branding {
+  z-index: 2;
+
+  a {
+    display: inline;
+    color: inherit;
+    max-width: 100%;
+  }
+  .site-title {
+    margin: 0;
+    font-size: 25px;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    @include clearfix();
+  }
+  .site-description {
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+    font-style: italic;
+    line-height: 1.1em;
+  }
+  img {
+    float: left;
+    border-radius: 0 !important;
+    font-size: 1px; //it fix firefox issue, when page is loading alt text view ugly
+  }
+ @media screen and (min-width: $screen-xs-min) {
+   .site-title {
+      font-size: 32px;
+    }
+  }
+}
+
+/* Community */
+.bb-community {
+  display: table-cell;
+  vertical-align: middle;
+
+  .logo {
+    display: inline-block;
+    width: 50px;
+  }
+  .text {
+    display: inline-block;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.header-desktop {
+  .branding {
+    margin-right: 25px;
+  }
+  .logo-center {
+    .branding {
+      display: inline-block;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+}
+
+/* Header advertisement */
+.header-desktop {
+  .bb-advertisement {
+    margin-bottom: 0;
+    .quads-location {
+      margin: 10px 0 !important;
+    }
+  }
+}
+
+/* Header Icons */
+.bb-header-icon {
+  display: inline-block;
+  font-size: 0 !important; //for vertical align
+  color: inherit;
+  text-align: center;
+  vertical-align: middle;
+  height: $large-header-size;
+  line-height: $large-header-size;
+  border-radius: 50%;
+
+  i {
+    display: inline-block;
+    font-size: $large-header-font-size;
+    font-weight: normal;
+    vertical-align: middle;
+    width: $large-header-font-size;
+  }
+  img {
+    vertical-align: middle;
+    display: inline-block;
+    width: $large-header-size;
+    height: $large-header-size;
+    border-radius: 50%;
+  }
+
+  &.logged-in-user {
+    width: $large-header-size;
+  }
+}
+
+// Icons in Small & Middle header
+.medium {
+  .bb-header-icon {
+    i {
+      width: $medium-header-font-size;
+      font-size: $medium-header-font-size;
+    }
+    img {
+      width: $medium-header-size;
+      height: $medium-header-size;
+    }
+    &.logged-in-user {
+      width: $medium-header-size;
+    }
+  }
+}
+.small {
+  .bb-header-icon {
+    i {
+      width: $small-header-font-size;
+      font-size: $small-header-font-size;
+    }
+    img {
+      width: $small-header-size;
+      height: $small-header-size;
+    }
+    &.logged-in-user {
+      width: $small-header-size;
+    }
+  }
+  .bb-icn-count {
+    @extend .bb-icn-count.size-xs;
+  }
+}
+
+/* Header toggle */
+.bb-toggle .toggle-content.bb-header-dropdown {
+  transform: translate(-50%,20px);
+  left: 50%;
+  width: auto;
+  @include clearfix();
+  padding: 13px;
+  transition: all .3s ease;
+  box-shadow: $main-box-shadow;
+
+  &:before {
+    position: absolute;
+    top: -6px;
+    right: 50%;
+    margin-right: -6px;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 $dropdown-arrow-size $dropdown-arrow-size $dropdown-arrow-size;
+    border-color: transparent transparent #ffffff transparent;
+  }
+
+  &.active {
+    transform: translate(-50%,0);
+  }
+}
+
+/* Header Search */
+.bb-header-search {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+
+  &.bb-toggle .toggle-content.bb-header-dropdown {
+    width: 320px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -3px;
+
+    input {
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      width: 100px;
+      min-width: 100px;
+      text-align: left;
+      padding: 8px 12px;
+      height: 34px;
+    }
+    button {
+      height: 34px;
+      min-width: 90px;
+      line-height: 34px;
+      font-size: 14px;
+      padding: 0 10px;
+    }
+    input,
+    button {
+      margin: 0 3px;
+    }
+  }
+
+  @media (max-width: $screen-md-max) {
+    &.bb-toggle .toggle-content.bb-header-dropdown {
+      width: 250px;
+    }
+    form {
+
+      input {
+        margin-bottom: 10px;
+      }
+      input,
+      button {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: $screen-xs-min) {
+    &.bb-toggle .toggle-content.bb-header-dropdown {
+      width: 215px;
+    }
+  }
+}
+
+/* Header share */
+.bb-header-share {
+  display: inline-block;
+
+  .bb-header-dropdown {
+    padding: 10px 7px;
+  }
+  .social.circle ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+
+    li {
+      display: block;
+      float: none;
+      list-style: none;
+      margin: 0 0 10px;
+
+      &:last-child {
+        margin: 0;
+      }
+      a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+/* Header account */
+.create-post {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: $large-header-size;
+  vertical-align: middle;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+
+  @extend .hvr-box-shadow;
+
+  .bb-icon {
+    margin-right: 5px;
+  }
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+// Create Button in Small & Middle header
+.medium {
+  .create-post {
+    line-height: $medium-header-size;
+    font-size: 14px;
+  }
+}
+.small {
+  .create-post {
+    line-height: $small-header-size;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+
+/* Header badges */
+.header-item.bb-badge-list {
+  .bb-badge {
+    margin-bottom: 0;
+  }
+}
+// Badges in Small & Middle header
+.small {
+  .header-item.bb-badge-list {
+    .circle {
+      width: $small-header-size;
+      height: $small-header-size;
+      i {
+        font-size: 18px;
+        line-height: $small-header-size;
+      }
+    }
+  }
+}
+
+/* Header authentication */
+.bb-header-user-box {
+  position: relative;
+  display: inline-block;
+  font-size: 21px;
+  color: inherit;
+  text-align: center;
+  line-height: 1;
+  vertical-align: middle;
+
+  .menu.bb-header-dropdown {
+    width: 210px;
+
+    ul {
+      display: block;
+      margin: 0;
+      list-style: none;
+
+      li {
+        position: relative;
+        display: block;
+        float: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+          position: relative;
+          display: block;
+          font-size: 13px;
+          line-height: 17px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: inherit;
+          text-align: left;
+          padding: 10px 15px 10px 15px;
+
+          i {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+  }
+
+  &.pos-left,
+  &.pos-right {
+    @media (min-width: $screen-mb-custom-max) {
+      &:hover {
+        .toggle-content.bb-header-dropdown {
+          opacity: 1;
+          visibility: visible;
+          transform: translate(0, 0) !important;
+        }
+      }
+    }
+  }
+}
+
+/* Header notifications */
+.user-notifications {
+
+  .menu.bb-header-dropdown {
+    width: 210px;
+
+    ul {
+      display: block;
+      margin: 0;
+      list-style: none;
+
+      li {
+        position: relative;
+        display: block;
+        float: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+          position: relative;
+          display: block;
+          font-size: 13px;
+          line-height: 1.2em;
+          font-weight: 500;
+          color: inherit;
+          text-align: left;
+          padding: 10px 15px 10px 15px;
+
+          i {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+  }
+  &.pos-left,
+  &.pos-right {
+    @media (min-width: $screen-mb-custom-max) {
+      &:hover {
+        .toggle-content.bb-header-dropdown {
+          opacity: 1;
+          visibility: visible;
+          transform: translate(0, 0) !important;
+        }
+      }
+    }
+  }
+}
+
+/*  Header Languages */
+.header-item.boombox-wpml-language-switcher {
+  float: none;
+}
+
+/* Header Components Dropdown alignment overwriting deepens their position */
+.user-notifications,
+.bb-header-user-box,
+.bb-header-search {
+
+  &.pos-left {
+    &.bb-toggle .toggle-content.bb-header-dropdown {
+      left: -50%;
+      transform: translate(0,20px);
+
+      &:before {
+        margin-right: 0;
+      }
+      &.active {
+        transform: translate(0,0);
+      }
+    }
+  }
+  &.pos-right {
+    &.bb-toggle .toggle-content.bb-header-dropdown {
+      left: auto;
+      right: -50%;
+      transform: translate(0,20px);
+
+      &:before {
+        margin-right: 0;
+      }
+      &.active {
+        transform: translate(0,0);
+      }
+    }
+  }
+}
+
+.large {
+  .user-notifications,
+  .bb-header-search {
+    &.pos-left {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          right: auto;
+          left: $large-header-font-size -$dropdown-arrow-size;
+        }
+      }
+    }
+    &.pos-right {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          left: auto;
+          right: $large-header-font-size -$dropdown-arrow-size;
+        }
+      }
+    }
+  }
+  .bb-header-user-box {
+    &.pos-left {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          right: auto;
+          left: $large-header-size -$dropdown-arrow-size;
+        }
+      }
+    }
+    &.pos-right {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          left: auto;
+          right: $large-header-size -$dropdown-arrow-size;
+        }
+      }
+    }
+  }
+}
+.medium {
+  .user-notifications,
+  .bb-header-search {
+    &.pos-left {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          right: auto;
+          left: $medium-header-font-size -$dropdown-arrow-size;
+        }
+      }
+    }
+    &.pos-right {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          left: auto;
+          right: $medium-header-font-size -$dropdown-arrow-size;
+        }
+      }
+    }
+  }
+  .bb-header-user-box {
+    &.pos-left {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          right: auto;
+          left: $medium-header-size -$dropdown-arrow-size;
+        }
+      }
+    }
+    &.pos-right {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          left: auto;
+          right: $medium-header-size -$dropdown-arrow-size;
+        }
+      }
+    }
+  }
+}
+.small {
+  .user-notifications,
+  .bb-header-search {
+    &.pos-left {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          right: auto;
+          left: $small-header-font-size -$dropdown-arrow-size;
+        }
+      }
+    }
+    &.pos-right {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          left: auto;
+          right: $small-header-font-size -$dropdown-arrow-size;
+        }
+      }
+    }
+  }
+  .bb-header-user-box {
+    &.pos-left {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          right: auto;
+          left: $small-header-size -$dropdown-arrow-size;
+        }
+      }
+    }
+    &.pos-right {
+      &.bb-toggle .toggle-content.bb-header-dropdown {
+        &:before {
+          left: auto;
+          right: $small-header-size -$dropdown-arrow-size;
+        }
+      }
+    }
+  }
+}

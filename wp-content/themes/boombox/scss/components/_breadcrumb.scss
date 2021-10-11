@@ -1,0 +1,48 @@
+/* *** Breadcrumb *** */
+
+.bb-breadcrumb {
+  ol {
+    list-style: none;
+    margin: 0;
+    font-size: 13px;
+  }
+  li {
+    &, a {
+      display: inline;
+    }
+    a, > span {
+      line-height: 20px;
+    }
+    a {
+      > span {
+        line-height: 1em;
+      }
+    }
+    a, span, .bb-icon {
+      vertical-align: middle;
+    }
+  }
+ .ordinal-item {
+    text-transform: uppercase;
+    font-weight: 600;
+    &:hover {
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+  // This is added in empty a to fix style alignment issue
+  .last-item {
+    cursor: default;
+    pointer-events: none;
+  }
+  .sep-icon {
+    margin: 0 8px;
+    font-weight: 600;
+    opacity: 0.6;
+    font-size: 20px;
+  }
+  .root-icon {
+    margin-right: 1px;
+  }
+}

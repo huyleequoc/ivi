@@ -1,0 +1,23 @@
+/* *** Bordered Block *** */
+
+.bb-bordered-block,
+.woocommerce form.checkout_coupon, .woocommerce-cart table.cart td.actions .coupon, .woocommerce form.login,
+.wp-activate-container{
+  position: relative;
+  z-index: 10;
+  padding: 25px 37px;
+  clear: both;
+  display: block;
+  border: none;
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 5px solid #ececec;
+    @include  border-radius(6px);
+  }
+}

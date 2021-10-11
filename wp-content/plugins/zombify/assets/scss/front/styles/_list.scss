@@ -1,0 +1,321 @@
+/**
+ * 1.0 - List
+ */
+
+#zombify-main-section-front {
+  .zf-list {
+    clear: both;
+
+    ol.zf-structure-list {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      > li {
+        display: block;
+      }
+    }
+    .zf-list_item {
+      margin-bottom: 20px;
+
+      &.zf-single {
+        padding: 0;
+      }
+
+      .zf-list_header {
+        position: relative;
+        padding-bottom: 20px;
+
+        .zf-list_title {
+          &:hover {
+            a {
+              color: $primary-color;
+            }
+          }
+        }
+        .zf-number {
+          color: $primary-color;
+          font-weight: 600;
+        }
+      }
+      .zf-list_media {
+        hr {
+          display: none;
+          clear: both;
+          margin: 0;
+          padding: 0;
+          height: 1px;
+          border-bottom: 1px solid #e2e2e2;
+        }
+        .zf-figcaption {
+
+          + hr {
+            display: block;
+          }
+        }
+      }
+      .zf-buy-button {
+        position: relative;
+        float: right;
+        max-width: 50%;
+        margin: 5px 0;
+        padding: 3px 13px 3px 35px;
+        font-size: 12px;
+        color: #0f0d0e;
+        font-weight: 600;
+        border-radius: 3px;
+        text-transform: uppercase;
+        line-height: 1.5;
+
+        .zf-icon {
+          position: absolute;
+          top: 6px;
+          left: 13px;
+        }
+
+        &:hover {
+          background-color: #353432;
+          color: #ffffff;
+        }
+
+        + hr {
+          display: block;
+        }
+      }
+    }
+    .zf-item_meta {
+      clear: both;
+      @include clearfix();
+      padding: 10px 0;
+
+      .zf-author,
+      .zf-item-vote-box {
+        float: left;
+        width: 50%;
+      }
+      .zf-author {
+        @include clearfix();
+        .zf-author_avatar {
+          float: left;
+          a {
+            display: inline-block;
+          }
+          img {
+            width: 40px;
+            margin-right: 12px;
+            border-radius: 50%;
+          }
+        }
+      }
+      .zf-author_info {
+        float: left;
+        padding: 2px 0 0;
+
+        a {
+          color: inherit
+        }
+
+        .zf-author_name {
+          margin-bottom: 3px;
+          font-size: 16px;
+          line-height: 1em;
+          color: #0f0d0e;
+          font-weight: 500;
+        }
+        .zf-posted-on {
+          font-size: 12px;
+          color: #989898;
+          font-weight: 400;
+        }
+
+      }
+
+      .zf-item-vote-box {
+        text-align: right;
+
+        .zf-item-vote {
+          position: relative;
+          display: inline-block;
+          padding: 0 35px;
+          text-align: center;
+
+          &.zf-loading {
+            .zf-vote_count {
+              i {
+                display: block;
+                margin-top: 6px;
+
+              }
+              .zf-vote_number {
+                display: none;
+              }
+            }
+          }
+        }
+        .zf-vote_number {
+          margin: 0 10px;
+        }
+        .zf-vote_count {
+          display: inline-block;
+          min-width: 50px;
+          font-size: 30px;
+          line-height: 35px;
+          color: #0f0d0e;
+
+          i {
+            display: none;
+          }
+        }
+
+        .zf-vote_btn {
+          position: absolute;
+          top: 0;
+          width: 35px;
+          height: 35px;
+          line-height: 35px;
+          color: #757575;
+          font-size: 24px;
+          vertical-align: middle;
+          text-align: center;
+          border-radius: 50%;
+          background-color: transparent;
+          padding: 0;
+          margin: 0%;
+          border: 1px solid #e4e0e4;
+
+          &.zf-vote_up {
+            left: 0;
+
+            &.zf-voted,
+            &:hover {
+              color: $primary-color;
+            }
+          }
+          &.zf-vote_down {
+            right: 0;
+
+            &.zf-voted,
+            &:hover {
+              color: $danger-color;
+            }
+          }
+        }
+      }
+    }
+    &.zf-numbered {
+      .zf-list_item {
+        .zf-list_header {
+          @include clearfix();
+
+          .zf-list_title {
+            position: relative;
+            margin: 0;
+            padding-left: 1.5em;
+            min-height: 33px;
+          }
+
+          .zf-number {
+            position: absolute;
+            left: 0;
+            top: 1px;
+            font-size: inherit;
+          }
+        }
+      }
+    }
+
+    .zf-next-prev-pagination {
+      clear: both;
+      display: block;
+      @include clearfix();
+      line-height: 1em;
+
+      .zf-nav {
+        position: relative;
+        display: inline-block;
+        width: 37.5%;
+        padding: 16px 5%;
+        background-color: $primary-color;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 5px;
+
+        &:hover {
+          box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.18)
+        }
+
+        .zf-icon {
+          position: absolute;
+          top: 12px;
+          font-size: 20px;
+        }
+
+        &.zf-prev {
+          float: left;
+
+          .zf-icon {
+            left: 9%;
+          }
+        }
+        &.zf-next {
+          float: right;
+
+          .zf-icon {
+            right: 9%;
+          }
+        }
+      }
+      .zf-pages {
+        float: left;
+        width: 25%;
+        padding: 10px 5px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 1em;
+      }
+    }
+    .zf-view-full-list {
+      clear: both;
+      padding: 5px 0 0;
+      line-height: 1em;
+      a {
+        font-size: 12px;
+        font-weight: bold;
+        color: #9a9a9a;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .zf-structure-list {
+      margin-left: 0;
+      list-style: none;
+    }
+  }
+
+  &.zf-screen-xs {
+    .zf-list {
+      .zf-next-prev-pagination {
+        .zf-nav {
+          &.zf-prev,
+          &.zf-next {
+            float: none;
+            width: 100%;
+          }
+        }
+        .zf-pages {
+          float: none;
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+

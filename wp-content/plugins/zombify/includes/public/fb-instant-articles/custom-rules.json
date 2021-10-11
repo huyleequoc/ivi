@@ -1,0 +1,116 @@
+{"rules":
+[
+  {"class": "PassThroughRule","selector": ".zombify-main-section-front"},
+  {"class": "PassThroughRule","selector": ".zombify-main-section"},
+  {"class": "PassThroughRule","selector": ".zf-container"},
+  {"class": "IgnoreRule","selector": ".zf-quiz"},
+  {"class": "IgnoreRule","selector": ".zf-poll"},
+  {"class": "IgnoreRule","selector": ".zf-author_avatar"},
+  {"class": "ItalicRule","selector": ".zf-author_name"},
+  {"class": "ParagraphRule","selector": ".zf-author_info"},
+  {"class": "PassThroughRule","selector": ".zf-item_meta"},
+  {"class": "IgnoreRule","selector": ".zf-item-vote-box"},
+  {"class": "PassThroughRule","selector": ".zf-story"},
+  {"class": "PassThroughRule","selector": ".zf-story_item"},
+  {"class": "PassThroughRule","selector": ".zf_description"},
+  {"class": "ParagraphRule","selector": ".zf-story_item .zf-link"},
+  {"class": "PassThroughRule","selector": ".zf-list_description"},
+  {"class": "PassThroughRule","selector": ".zf-list_header"},
+  {"class": "BoldRule","selector": ".zf-number"},
+  {"class": "PassThroughRule","selector": ".zf-image_description"},
+  {"class": "PassThroughRule","selector": "div.zf-image"},
+  {"class": "BoldRule","selector": ".zf-buy-button span"},
+  {"class": "PassThroughRule","selector": ".zf-list"},
+  {"class": "IgnoreRule","selector": ".wp-audio-shortcode"},
+  {"class": "IgnoreRule","selector": ".zf-audio-wrapper"},
+  {"class": "PassThroughRule","selector": ".zf-audio"},
+  {"class": "PassThroughRule","selector": "u"},
+  {"class": "PassThroughRule","selector": "s"},
+  {"class": "IgnoreRule","selector" : "ul > li > ul > li"},
+  {"class": "IgnoreRule","selector" : "ul > li > ul"},
+  {"class": "IgnoreRule","selector" : "ol > li > ol > li"},
+  {"class": "IgnoreRule","selector" : "ol > li > ol"},
+  {"class": "IgnoreRule","selector" : "hr"},
+  {"class": "ParagraphRule","selector" : "address"},
+  {"class": "ParagraphRule","selector" : "dd"},
+  {"class": "ParagraphRule","selector" : "dt"},
+  {"class": "PassThroughRule","selector" : "dl"},
+  {"class": "PassThroughRule","selector" : "abbr"},
+  {"class": "ItalicRule","selector" : "ins"},
+  {"class": "BoldRule","selector" : "code"},
+  {"class": "BoldRule","selector" : "kbd"},
+  {"class": "ParagraphRule","selector" : "pre"},
+  {"class": "PassThroughRule","selector" : "q"},
+  {"class": "PassThroughRule","selector" : "sub"},
+  {"class": "PassThroughRule","selector" : "sup"},
+  {"class": "PassThroughRule","selector" : "var"},
+  {"class": "ItalicRule","selector" : "time"},
+  {"class": "VideoRule","selector" : ".zf-video-wrapper",
+               "containsChild": "video",
+               "properties" : {
+                   "video.url" : {
+                      "type" : "string",
+                      "selector" : "video",
+                      "attribute": "src"
+                    }
+                }
+            },
+ {"class": "VideoRule","selector" : ".gif-video-wrapper",
+               "containsChild": "video",
+               "properties" : {
+                   "video.url" : {
+                      "type" : "string",
+                       "selector" : "source",
+                       "attribute": "src"
+                    }
+                }
+            },
+  {"class": "PassThroughRule","selector": ".zf-gif-video"},
+  {"class": "ParagraphRule","selector": ".zf-gif-video figcaption"},
+  {"class": "PassThroughRule","selector": ".zf-video_description"},
+  {"class": "PassThroughRule","selector": ".boombox-responsive-embed"},
+  {"class": "PassThroughRule","selector": ".zf-video_media"},
+  {"class": "PassThroughRule","selector": ".zf-video"},
+  {"class": "PassThroughRule","selector": ".zf-embedded-url"},
+  {"class": "PassThroughRule","selector": "a[data-pin-do='embedPin']"},
+  {"class": "PassThroughRule","selector": ".zf-embed-cont"},
+  {"class": "PassThroughRule","selector": "div.zf-google-plus-cont"},
+  {"class": "PassThroughRule","selector": ".zf-embed"},
+  {"class": "ParagraphRule","selector": ".zf-embed figcaption"},
+  {"class": "PassThroughRule","selector": ".mejs-inner"},
+  {"class": "PassThroughRule","selector": ".mejs-mediaelement"},
+  {"class": "PassThroughRule","selector": "ol.zf-structure-list"},
+  {"class": "PassThroughRule","selector": "li.zf-list_item"},
+  {"class": "IgnoreRule","selector": ".zf-edit-button"},
+  {"class": "IgnoreRule","selector": ".zf-upload-content"},
+  {"class": "IgnoreRule","selector": ".zf-comments"},
+  {
+                "class": "RelatedArticlesRule",
+                "selector" : "ul.op-related-articles",
+                "properties" : {
+                    "related.title" : {
+                        "type" : "string",
+                        "selector" : "ul.op-related-articles",
+                        "attribute": "title"
+                    }
+                }
+            },
+            {
+                "class": "RelatedItemRule",
+                "selector" : "li",
+                "properties" : {
+                    "related.sponsored" : {
+                        "type" : "exists",
+                        "selector" : "li",
+                        "attribute": "data-sponsored"
+                    },
+                    "related.url" : {
+                        "type" : "string",
+                        "selector" : "a",
+                        "attribute": "href"
+                    }
+                }
+            }
+  
+]
+}

@@ -1,0 +1,201 @@
+/**
+  Theme Day Mode Styles
+**/
+$bb-mode-base-color: #000000 !important;
+$bb-mode-secondary-color: #a3a3a3 !important;
+$bb-mode-bg-color: #ffffff  !important;
+$bb-mode-bg-secondary-color: #dddddd !important;
+$bb-mode-border-color: #ececec !important;
+
+/** Theme switcher **/
+.boombox-theme-light,
+.boombox-theme-dark {
+  .bb-mode-switcher {
+    .bb-day-mode-icon {
+      transform: translate(-50% , -200%);
+    }
+    .bb-night-mode-icon {
+      transform: translate(-50% , -50%);
+    }
+  }
+}
+
+
+/** Base text color **/
+body, html, .widget_recent_comments .recentcomments .comment-author-link, .widget_recent_comments .recentcomments a, .bb-header.header-desktop .main-navigation .sub-menu, .bb-header-dropdown.toggle-content, .comment-respond input[type=text], .comment-respond textarea, .featured-strip .slick-dots li button:before, .more-load-button button, .comment-vote .count, .bb-mobile-navigation .bb-header-search .search-submit, #comments .comment .comment-body .comment-content small .dropdown-toggle, .byline a, .byline .author-name, .bb-featured-strip .bb-arrow-next, .bb-featured-strip .bb-arrow-prev, .bb-price-block, .bb-price-block > .amount, .bb-price-block ins .amount, .bb-dropdown .dropdown-content a, .bb-author-vcard .auth-references a, .light-modal, .bb-author-vcard-mini .auth-url, .bb-post-gallery-content .bb-gl-meta .bb-gl-pagination b, .bb-post-gallery-content.bb-mode-slide .bb-mode-switcher[data-mode=slide], .bb-post-gallery-content.bb-mode-grid .bb-mode-switcher[data-mode=grid],
+#comments .vcard .fn, .bb-fixed-pagination .page .pg-title, .more_items_x legend, .more_items legend, .more_items_glow, h1, h2, h3, h4, h5, h6,
+
+.bb-fixed-pagination .page .pg-arrow,.bb-post-share-box .post-meta,.captcha-container input,.form-captcha .refresh-captcha,#comments .pingback .comment-body .comment-reply-link, #comments .comment .comment-body .comment-reply-link,.bb-reaction-box .reaction-item .reaction-vote-btn,.bb-reaction-box .reaction-item .reaction-bar,.bb-btn,.comment-respond form,
+.bb-wp-pagination span.current, .bb-wp-pagination a.page-numbers:not(.next):not(.prev):hover,
+.navigation.pagination span.current, .navigation.pagination a.page-numbers:not(.next):not(.prev):hover,
+.widget_bb-side-navigation .sub-menu .menu-item.menu-item-icon .bb-icon,
+.widget_sidebar_footer,
+.bb-author-vcard .header-info a,.bb-author-vcard .auth-name,
+.bb-dropdown .dropdown-content li.active,
+.bb-source-via .s-v-link,.bb-reading-time,
+.bb-featured-menu .has-transparency li a,
+
+  /** Woocommerce **/
+.woocommerce, .woocommerce .variations label, .woocommerce-checkout ul.payment_methods label,
+.woocommerce .widget .buttons a:nth-child(1), .woocommerce .widget .buttons a:nth-child(1):focus, .woocommerce .widget .buttons a:nth-child(1):hover,
+.woocommerce .widget .price_slider_amount .button, .woocommerce .widget .price_slider_amount .button:focus, .woocommerce .widget .price_slider_amount .button:hover,
+.woocommerce div.product .woocommerce-variation-price ins .amount, .woocommerce div.product .woocommerce-variation-price span.price>.amount,
+.woocommerce div.product p.price,
+.woocommerce-account .woocommerce-MyAccount-content .woocommerce-Address-title .edit, .woocommerce-account .woocommerce-MyAccount-content p a, .woocommerce-account .woocommerce-MyAccount-content table a, .woocommerce-account .woocommerce-MyAccount-navigation a,
+.woocommerce .product-name a,
+.woocommerce .shop_table .shipping-calculator-button, .woocommerce .shop_table .shipping-calculator-button,
+.woocommerce ul.cart_list li a, .woocommerce ul.product_list_widget li a,
+.woocommerce .star-rating span,
+.widget_layered_nav a, .widget_layered_nav a:focus, .widget_layered_nav a:hover,
+.widget_product_categories a, .widget_product_categories a:focus, .widget_product_categories a:hover,
+.woocommerce.widget ul li.chosen a, .woocommerce .widget ul li.chosen a,
+.woocommerce #reviews #comments ol.commentlist li .meta strong,
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger,
+
+  /** Buddypress **/
+#buddypress table th, #buddypress .item-header a, #buddypress .activity-header a, #buddypress .acomment-header a, #buddypress #invite-list label, #buddypress .standard-form label, #buddypress .standard-form legend, #buddypress .standard-form span.label, #buddypress .messages-notices .thread-from a, #buddypress .messages-notices .thread-info a, #buddypress #item-header-content .group-name, #buddypress #item-header-content .member-name, #buddypress .message-metadata a,
+.buddypress.widget .item-title, .buddypress.widget .item-options a.selected, .buddypress.widget .item-options a:hover, .header .account-box .notifications-list.menu ul li a, #buddypress ul.button-nav li a, #buddypress #object-nav li.current>a, #buddypress #object-nav li.selected>a, #buddypress #object-nav li:hover>a, #buddypress #object-nav li:hover>span, #buddypress .bbp-main-nav li.current>a, #buddypress .bbp-main-nav li.selected>a, #buddypress .bbp-main-nav li:hover>a, #buddypress .bbp-main-nav li:hover>span, #buddypress #subnav li>a, #buddypress table td a, #buddypress .pagination-links a, #buddypress .pagination-links span, #buddypress .pagination a, #buddypress .pagination span, .gfy-bp-component .pagination a, .gfy-bp-component .pagination span, .gfy-bp-component .pagination span.dots, #buddypress #latest-update,#bbpress-forums .bbp-forum-title, #bbpress-forums .bbp-topic-title, #bbp-search-results .bbp-header, #bbpress-forums li.bbp-header ul.forum-titles, #bbpress-forums ul.bbp-replies .bbp-header, #bbpress-forums ul.bbp-replies .bbp-footer, #bbpress-forums fieldset.bbp-form legend,.widget_gfy_leaderboard .leaderboard-item, .widget_gfy-featured-author .gfy-name,.gfy-popup-body,.bp-login-widget-user-link a{
+  color: $bb-mode-base-color;
+}
+.captcha-container input,
+.bb-tabs .tabs-menu li.active, .bb-tabs .tabs-menu li.active {
+  border-color: $bb-mode-base-color;
+}
+
+#buddypress #object-nav ul li:before,
+#buddypress .bbp-main-nav ul li:before {
+  background-color: $bb-mode-base-color;
+}
+
+/** Secondary text color **/
+s, strike, del, label, #comments .pingback .comment-body .comment-content, #comments .comment .comment-body .comment-content, #TB_ajaxWindowTitle, .bb-affiliate-content .price .old-price, .bb-header-navigation .more-navigation .sections-header, .bb-mobile-navigation .more-menu .more-menu-body .sections-header, .bb-post-share-box .bb-post-rating .count .text:after, .inline-popup .intro, .comment-vote a .bb-icon, .authentication .intro, .widget_recent_comments .recentcomments, .post-types .item .bb-icon, .bb-post-rating a, .post-thumbnail .thumbnail-caption, table thead th, table tfoot th, .bb-post-share-box .mobile-info, .widget_create_post .text, .widget_footer .text, .bb-author-vcard .author-info, .bb-author-vcard .auth-byline, .wp-caption .wp-caption-text, .wp-caption-dd, #comments .comments-title span, #comments .comment-notes, #comments .comment-metadata, .short-info .create-post .text, .bb-cat-links, .widget_bb-side-navigation .menu-item.menu-item-has-children .dropdown-toggle, .bb-post-meta .post-comments, .entry-sub-title, .bb-page-header .page-subtitle, .widget_bb-side-navigation .bb-widget-title, .bb-price-block .old-price, .bb-price-block del .amount, .widget_recent_comments .recentcomments, .bb-post-gallery-content .bb-gl-mode-switcher, .bb-author-vcard-mini .auth-byline, .bb-author-vcard-mini .auth-posted-on, .bb-author-vcard-mini .auth-title, .s-post-meta .post-comments, .bb-sec-label, .bb-breadcrumb.clr-style1, .bb-breadcrumb.clr-style1 a,
+
+  /**WOO**/
+.woocommerce .woocommerce-result-count, .woocommerce a.added_to_cart, .woocommerce table.shop_table .product-name p, .woocommerce .coupon span, .woocommerce .checkout_coupon span,
+.woocommerce .cart_totals table.shop_table_responsive tbody tr.cart-subtotal td:before,
+.woocommerce .create-account p, .woocommerce .woocommerce form.checkout_coupon span, .woocommerce form.login p,
+.product_list_widget li .quantity .amount,
+.widget_shopping_cart .total .txt, .widget_rating_filter ul li a, .widget_layered_nav .count, .product_list_widget .reviewer,
+.woocommerce .widget ul li.chosen a:before, .woocommerce.widget ul li.chosen a:before,
+.woocommerce div.product .woocommerce-review-link, .woocommerce .woocommerce-tabs .star-rating span, .woocommerce .reset_variations, .woocommerce div.product .stock,
+.woocommerce #reviews #comments ol.commentlist li .meta time, .woocommerce div.product #tab-description p, .woocommerce div.product #reviews .woocommerce-noreviews,
+.woocommerce div.product p.stars a.active, .woocommerce div.product p.stars a:hover, .woocommerce div.product p.stars a:focus, .woocommerce p.stars.selected a:not(.active):before,
+.woocommerce p.stars.selected a.active:before, .woocommerce p.stars:hover a:before,
+#order_review #payment .payment_box,
+.widget_product_categories .post_count,.widget_shopping_cart .cart_list li a.remove, .woocommerce a.remove{
+  color: $bb-mode-secondary-color;
+}
+
+::-webkit-input-placeholder {
+  color: $bb-mode-secondary-color;
+}
+
+:-moz-placeholder {
+  color: $bb-mode-secondary-color;
+}
+
+:-ms-input-placeholder {
+  color: $bb-mode-secondary-color;
+}
+
+/** Main Background color **/
+html,body:not(.with-background-media), .bb-post-gallery-content .bb-gl-header,select, .bb-form-block input, .bb-form-block select, .bb-form-block textarea,
+.bb-author-vcard .author,#buddypress #object-nav .sub-menu-inner, #buddypress .bbp-main-nav .sub-menu-inner,span#subscription-toggle, #bbpress-forums .quicktags-toolbar, #bbpress-forums li.bbp-header, #bbpress-forums div.bbp-forum-header, #bbpress-forums div.bbp-topic-header, #bbpress-forums div.bbp-reply-header, #bbpress-forums div.even, #bbpress-forums ul.even, span#favorite-toggle, #bbpress-forums div.odd, #bbpress-forums ul.odd, #bbpress-forums li.bbp-header, #bbpress-forums li.bbp-footer,#buddypress .field-visibility-settings, table.bbp-table-responsive tbody tr:nth-child(2n+1), #buddypress .acomment-bubble, #buddypress .activity-bubble, #buddypress .item-bubble, #buddypress #latest-update, #buddypress #group-create-tabs li a, #buddypress #group-create-tabs li span, #buddypress #create-group-form #header-cover-image,.widget_gfy_leaderboard .leaderboard-item, .gfy-bp-achievements .achievements-wrapper .col, .gfy-featured-author-content, .gfy-popup-body .gfy-body {
+  background-color: $bb-mode-bg-secondary-color;
+}
+
+/** Secondary Background color **/
+.page-wrapper, #main, .bb-cards-view .bb-card-item, .bb-cards-view .widget_mc4wp_form_widget:after, .bb-cards-view .widget_create_post:after, .light-modal .modal-body, .light-modal, .bb-toggle .bb-header-dropdown.toggle-content, .bb-header.header-desktop .main-navigation .sub-menu, .bb-post-share-box .post-share-count, .bb-post-rating a, .comment-respond input[type=text], .comment-respond textarea, .comment-respond #commentform textarea#comment, .bb-fixed-pagination .page, .bb-fixed-pagination .pg-content, .bb-floating-navbar .floating-navbar-inner, .bb-featured-strip .bb-arrow-next, .bb-featured-strip .bb-arrow-prev, .bb-mobile-navigation, .mejs-container, .bb-post-gallery-content, .bb-dropdown .dropdown-toggle, .bb-dropdown .dropdown-content, .bb-stretched-view .bb-post-single.style5 .site-main, .bb-stretched-view .bb-post-single.style6 .container-inner, .bb-boxed-view .bb-post-single.style5 .site-main, .bb-boxed-view .bb-post-single.style6 .container-inner, .bb-advertisement.bb-sticky-bottom-area .bb-sticky-btm-el,.gfy-popup-body, .gfy-popup-body .gfy-badge-title, .widget_gfy-featured-author .gfy-count-list .gfy-item{
+  background-color: $bb-mode-bg-color;
+  border-color: $bb-mode-bg-color;
+}
+
+.bb-fixed-pagination .page .pg-arrow,
+.captcha-container,.comment-respond form,
+.bb-post-share-box .post-meta,
+table tbody tr:nth-child(2n+1) th,
+table tbody tr:nth-child(2n+1) td,
+.bb-reaction-box .reaction-item .reaction-bar,
+.bb-reaction-box .reaction-item .reaction-vote-btn,
+.widget_bb-side-navigation .sub-menu .menu-item.menu-item-icon .bb-icon,
+#comments .pingback .comment-body .comment-reply-link, #comments .comment .comment-body .comment-reply-link,.bb-btn,
+.widget_sidebar_footer,
+.bb-form-block,
+.bb-author-vcard header,.bb-post-gallery-content .bb-gl-image-text,
+.bb-wp-pagination span.current, .bb-wp-pagination a.page-numbers:not(.next):not(.prev):hover,
+.navigation.pagination span.current, .navigation.pagination a.page-numbers:not(.next):not(.prev):hover,
+.bb-dropdown .dropdown-content li.active,
+.bb-post-gallery-content .bb-gl-image-text,
+.bb-media-placeholder:before,
+.bb-source-via .s-v-itm,
+.bb-tabs .tabs-content,.bb-reading-time,
+
+  /**Woo**/
+.woocommerce .cart-totals-col .cart_totals .shipping-calculator-form, .woocommerce-page .cart-totals-col .cart_totals .shipping-calculator-form,
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger,
+.bb-cards-view.woocommerce.single-product div.product, .bb-cards-view.woocommerce .products .product,.woocommerce .cart-totals-col .cart_totals, .woocommerce-page .cart-totals-col .cart_totals, #order_review .woocommerce-checkout-review-order-table tfoot,
+.woocommerce-page .shop_table.order_details tfoot,
+#order_review #payment .payment_box,
+.woocommerce .widget .buttons a:nth-child(1), .woocommerce .widget .buttons a:nth-child(1):focus, .woocommerce .widget .buttons a:nth-child(1):hover,
+.woocommerce .widget .price_slider_amount .button, .woocommerce .widget .price_slider_amount .button:focus, .woocommerce .widget .price_slider_amount .button:hover,
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce div.product table.shop_attributes  {
+  background-color: $bb-mode-bg-secondary-color;
+}
+
+@media screen and (max-width: 768px){
+  .woocommerce table.shop_table_responsive.cart tbody tr.cart_item td.product-remove,
+  .woocommerce-page table.shop_table_responsive.cart tbody tr.cart_item td.product-remove {
+    background-color: $bb-mode-bg-secondary-color;
+  }
+}
+
+.bb-header-navigation .main-navigation .sub-menu:before, .bb-toggle .toggle-content.bb-header-dropdown:before {
+  border-color: transparent transparent $bb-mode-bg-secondary-color;
+}
+
+@media screen and (max-width: 768px) {
+  .woocommerce table.shop_table_responsive.cart tbody tr.cart_item:nth-child(2n) td,
+  .woocommerce-page table.shop_table_responsive.cart tbody tr.cart_item:nth-child(2n) td {
+    background-color: $bb-mode-bg-secondary-color;
+  }
+}
+
+/** Card view **/
+.bb-cards-view {
+  #comments .comment .comment-body .comment-reply-link, #comments .pingback .comment-body .comment-reply-link, #order_review #payment .payment_box, #order_review .woocommerce-checkout-review-order-table tfoot, .bb-author-vcard header, .bb-btn, &.woocommerce .products .product, &.woocommerce.single-product div.product, .bb-dropdown .dropdown-content li.active, .bb-fixed-pagination .page .pg-arrow, .bb-form-block, .bb-media-placeholder:before, .bb-post-gallery-content .bb-gl-image-text, .bb-post-share-box .post-meta, .bb-reaction-box .reaction-item .reaction-bar, .bb-reaction-box .reaction-item .reaction-vote-btn, .bb-reading-time, .bb-source-via .s-v-itm, .bb-tabs .tabs-content, .bb-wp-pagination a.page-numbers:not(.next):not(.prev):hover, .bb-wp-pagination span.current, .captcha-container, .comment-respond form, .navigation.pagination a.page-numbers:not(.next):not(.prev):hover, .navigation.pagination span.current, .widget_bb-side-navigation .sub-menu .menu-item.menu-item-icon .bb-icon, .widget_sidebar_footer, .woocommerce .cart-totals-col .cart_totals, .woocommerce .cart-totals-col .cart_totals .shipping-calculator-form, .woocommerce .widget .buttons a:nth-child(1), .woocommerce .widget .buttons a:nth-child(1):focus, .woocommerce .widget .buttons a:nth-child(1):hover, .woocommerce .widget .price_slider_amount .button, .woocommerce .widget .price_slider_amount .button:focus, .woocommerce .widget .price_slider_amount .button:hover, .woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce div.product div.images .woocommerce-product-gallery__trigger, .woocommerce div.product table.shop_attributes, .woocommerce-page .cart-totals-col .cart_totals, .woocommerce-page .cart-totals-col .cart_totals .shipping-calculator-form, .woocommerce-page .shop_table.order_details tfoot, table tbody tr:nth-child(2n+1) td, table tbody tr:nth-child(2n+1) th {
+    background-color: $bb-mode-bg-color;
+  }
+}
+
+
+/**Header Bg color **/
+.bb-header.header-desktop .top-header.include-in-color-mode {
+  background: #c3c3c3;
+  color: #1f1f1f;
+}
+.bb-header.header-desktop .bottom-header.include-in-color-mode {
+  background: #fff;
+  color: #1f1f1f;
+}
+.bb-header.header-mobile.include-in-color-mode .header-row {
+  background: #fff;
+  color: #1f1f1f;
+}
+
+/** Border color **/
+.bb-page-header .container-bg, .bb-page-header.boxed.has-bg .container-bg, .bb-header-navigation .main-navigation .sub-menu, .bb-header-navigation .more-navigation .more-menu-header, .bb-header-navigation .more-navigation .more-menu-footer, .bb-mobile-navigation .more-menu .bb-badge-list, .bb-mobile-navigation .main-navigation, .bb-mobile-navigation .more-menu-body, .spinner-pulse, .bb-border-thumb, #comments .pingback, #comments .comment, .more-load-button button, .bb-post-rating .count .bb-icon, .quiz_row, .bb-post-collection .post-items .post-item .post-author-meta, .post-grid .page .post-author-meta, .post-list .post .post-author-meta, .post-list .page .post-author-meta, .post-list.standard .post footer, .post-list.standard .entry-sub-title, .more-load-button:before, .bb-mobile-navigation .bb-header-search form, #TB_window .shares, .wp-playlist, .boombox-comments .tabs-content, .post-types .item, .bb-page-header .bb-trending-navigation, .widget_mc4wp_form_widget:after, .widget_create_post:after, .bb-post-rating .inner, .bb-post-rating .point-btn, .widget_bb-side-navigation .menu-item.menu-item-has-children>a, .bb-author-vcard .author, #comments .comment-list, #comments .pingback .children .comment, #comments .comment .children .comment, .widget_social, .widget_subscribe, .bb-post-nav .pg-item, .bb-post-nav .page, .bb-tags a, .tagcloud a, .bb-next-prev-pagination, .widget_tag_cloud .tagcloud a, select, textarea, input[type="tel"], input[type="text"], input[type="number"], input[type="date"], input[type="time"], input[type="url"], input[type="email"], input[type="search"], input[type="password"], .bb-featured-menu:before, .select2-container--default .select2-selection--single, .select2-container--default .select2-search--dropdown .select2-search__field, .select2-dropdown, .bb-bordered-block:after, .bb-dropdown .dropdown-toggle, .bb-dropdown .dropdown-content, .bb-dropdown .dropdown-content li, .bb-post-gallery-content .bb-gl-mode-switcher, .bb-post-gallery-content .bb-gl-mode-switcher .bb-mode-switcher:first-child, .bb-tabs.tabs-horizontal .tabs-menu, .mixed-list .post-item-classic footer,
+  /**WOO**/
+.woocommerce table.shop_table td, .woocommerce table.shop_table tbody th, .woocommerce-cart .cart-collaterals .cart_totals tr th,
+.woocommerce table.shop_table_responsive.cart tbody tr.cart_item, .woocommerce-page table.shop_table_responsive.cart tbody tr.cart_item,
+.woocommerce form .form-row.woocommerce-validated .select2-container,
+#order_review .woocommerce-checkout-review-order-table, #order_review #payment ul.payment_methods, .woocommerce-page .shop_table.customer_details,
+.woocommerce div.product form.cart .variations-wrapper, .woocommerce div.product #comments .comment_container, .woocommerce table.shop_attributes td, .woocommerce table.shop_attributes th,
+.woocommerce div.product .woocommerce-tabs,
+.woocommerce ul.cart_list li dl, .woocommerce ul.product_list_widget li dl,.woocommerce .blockUI.blockOverlay:before, .woocommerce .loader:before {
+  border-color: $bb-mode-border-color;
+}
+
+hr, .bb-brand-block .brand-content:before {
+  background-color: $bb-mode-border-color;
+}

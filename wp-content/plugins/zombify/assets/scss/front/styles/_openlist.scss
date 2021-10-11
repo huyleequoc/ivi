@@ -1,0 +1,111 @@
+/**
+ * 1.0 - Open List
+ */
+
+#zombify-main-section-front {
+  .zf-list.zf-open_list {
+    clear: both;
+
+    .zf-list_item {
+      .zf-list_media {
+        margin-bottom: 0px;
+      }
+      .zf-list_description {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &.zf-screen-xs {
+    .zf-list {
+      .zf-item_meta {
+        .zf-author,
+        .zf-item-vote-box {
+          float: none;
+          width: 100%;
+        }
+        .zf-item-vote-box {
+          padding-top: 15px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+// Upload Content
+#zombify-main-section {
+
+  &.zf-front-submission{
+    margin-bottom: 30px;
+    min-height: auto;
+}
+
+  .zf-upload-content {
+    clear: both;
+    margin: 0 0 30px;
+    .zf-head {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      .zf-icon {
+        display: inline-block;
+        margin-right: 15px;
+      }
+
+    }
+    .zf-body {
+      position: relative;
+      padding: 18px 40px;
+      background-color: #f7f7f7;
+
+      .zf-login-popup {
+        position: absolute;
+        z-index: 5;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+    }
+    .zf-button {
+      float: right;
+    }
+    .zf-uploader {
+      .zf-label {
+        .zf-label_text {
+          background-color: transparent !important;
+          font-size: 18px;
+          font-weight: bold;
+          color: #7f6f7f;
+          margin-top: 0;
+          padding: 24px 0 0;
+        }
+        .zf-icon {
+          width: 60px;
+          height: 60px;
+          margin: 0 auto;
+          padding: 9px 0;
+          text-align: center;
+          font-size: 23px;
+          color: #ffffff;
+          background-color: $primary-color;
+          border-radius: 50%;
+        }
+      }
+    }
+    .zf-checkbox-format .zf-toggle {
+      background-color: transparent;
+    }
+    .zf-checkbox-format input:checked+.zf-toggle {
+      background-color: #ffffff;
+      color: $secondary-color;
+      box-shadow: 1px 2px 9px rgb( 235, 235, 235 );
+    }
+  }
+}
+
+

@@ -1,0 +1,54 @@
+/**
+ * 1.0 - Cols
+ */
+
+#zombify-main-section-front {
+  .zf-quiz_answer{
+    &.zf-3up {
+      .zf-answer-item {
+        float: left;
+        width: 32%;
+        margin: 0 1.99% 15px 0;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+        &:nth-child(3n+1) {
+          clear: both;
+        }
+      }
+    }
+    &.zf-2up {
+      .zf-answer-item {
+        float: left;
+        width: 49%;
+        margin: 0 2% 15px 0;
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+        &:nth-child(2n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+  &.zf-screen-sm {}
+  &.zf-screen-xs {
+    .zf-quiz_answer.zf-3up,
+    .zf-quiz_answer.zf-2up {
+      .zf-answer-item {
+        width: 100%;
+        margin: 0 0 15px 0;
+        float: none;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

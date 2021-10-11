@@ -1,0 +1,249 @@
+/* *** Badges *** */
+
+// Badge Sizes
+$badge-sm: 40px;
+$badge-sm-font-size: 26px;
+$badge-md: 48px;
+$badge-md-font-size: 28px;
+$badge-lg: 80px;
+$badge-lg-font-size: 53px;
+
+/* General Badges */
+.bb-badge {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+  .circle {
+    display: inline-block;
+    text-align: center;
+    width: $badge-sm;
+    height: $badge-sm;
+    font-size: 0;
+    vertical-align: middle;
+    border-radius: 50%;
+    box-shadow: $badge-box-shadow;
+    i {
+      font-size: $badge-sm-font-size;
+      line-height: $badge-sm;
+      vertical-align: middle;
+    }
+    img {
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+  .text {
+    display: none;
+    font-size: 8px;
+    line-height: 9px;
+    color: #1f1f1f;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
+.bb-badge {
+  &.badge-sm, &{
+    .circle {
+      width: $badge-sm;
+      height: $badge-sm;
+      i {
+        font-size: $badge-sm-font-size;
+        line-height: $badge-sm;
+      }
+    }
+  }
+  &.badge-md {
+    .circle {
+      width: $badge-md;
+      height: $badge-md;
+      i {
+        font-size: $badge-md-font-size;
+        line-height: $badge-md;
+      }
+    }
+  }
+  &.badge-lg {
+    .circle {
+      width: $badge-lg;
+      height: $badge-lg;
+      i {
+        font-size: $badge-lg-font-size;
+        line-height: $badge-lg;
+      }
+    }
+  }
+}
+
+.no-touchevents .bb-badge:hover,
+.touchevents .bb-badge:focus,
+.touchevents .bb-badge:active {
+  transform: translate(0px, -3px);
+}
+.bb-badge-list {
+  position: relative;
+  ul {
+    list-style: none;
+    margin: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+  }
+  .bb-badge {
+    margin: 0 3px 5px;
+    vertical-align: top;
+  }
+}
+
+.badge-face-text {
+  .bb-badge {
+    .text {
+      display: none
+    }
+  }
+  .bb-top-badge-list .bb-badge,
+    .bb-header .badge {
+      .circle {
+        margin-bottom: 5px
+      }
+      .text {
+        display: block;
+      }
+    }
+    .more-menu {
+      .circle {
+        margin-bottom: 0
+      }
+      .badge {
+        .text {
+          display: none
+        }
+      }
+    }
+}
+
+.badge-text,
+.badge-text-angle,
+.no-svg .badge-face,
+.no-svg .badge-face-text {
+  .bb-badge {
+    text-align: center;
+    .circle {
+      margin-bottom: 0 !important;
+
+      img, i {
+        display: none
+      }
+    }
+    .text {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      height: 99.9%;
+      min-width: 100%;
+      font-size: 11px;
+      line-height: 40px;
+    }
+  }
+  .bb-header .large,
+  .bb-top-badge-list {
+    .bb-badge-list {
+      .bb-badge {
+        .text {
+          font-size: 11px;
+          line-height: $badge-md;
+        }
+      }
+    }
+  }
+}
+
+.badge-text-angle {
+  .bb-badge {
+    .text {
+      transform: rotate(-30deg);
+    }
+  }
+}
+
+.badge-text,
+.badge-text-angle,
+.no-svg .badge-face,
+.no-svg .badge-face-text {
+  .bb-badge {
+    &.trending {
+      .circle {
+        i {
+          display: inline-block;
+        }
+      }
+      .text {
+        display: none
+      }
+    }
+  }
+}
+
+
+.bb-header {
+  .large {
+    .bb-badge-list {
+      .bb-badge {
+
+        .circle {
+          width: $badge-md;
+          height: $badge-md;
+          line-height: $badge-md;
+        }
+        .text {
+          font-size: 11px;
+          line-height: 1em;
+        }
+      }
+      .circle {
+        i {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+/* Top Badges */
+.bb-top-badge-list {
+  margin-bottom: $mb-md;
+  text-align: center;
+  .bb-badge-list {
+    .bb-badge {
+      margin: 0 5px 0;
+
+      .circle {
+        width: $badge-md;
+        height: $badge-md;
+        line-height: $badge-md;
+      }
+      .text {
+        font-size: 11px;
+        line-height: 1em;
+        font-weight: 600;
+      }
+    }
+    .circle {
+      i {
+        font-size: 28px;
+      }
+    }
+  }
+
+  &.bb-scroll-area {
+    .bb-badge-list {
+
+      ul {
+        padding-top: 3px; // for :hover animation
+        padding-bottom: 10px; //for scroll
+      }
+    }
+  }
+}

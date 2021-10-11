@@ -1,0 +1,109 @@
+/* *** Desktop Header Options *** */
+
+// Options set on Header
+.bb-header.header-desktop {
+
+  .affix {
+    .top-header,
+    .bottom-header {
+      box-shadow: $h-shadow;
+    }
+  }
+  &.top-bg {
+    .bottom-header {
+      &.large,
+      &.medium,
+      &.small {
+        padding-top: 25px;
+        padding-top: 1.5vw;
+      }
+    }
+
+    &.no-bottom {
+      padding-bottom: 25px;
+      padding-bottom: 1.5vw;
+    }
+  }
+  &.bottom-bg {
+    padding-bottom: 25px;
+    padding-bottom: 1.5vw;
+  }
+  &.top-shadow {
+    .top-header {
+      z-index: 3;
+      box-shadow: $h-shadow ;
+    }
+  }
+  &.bottom-shadow {
+    .top-header {
+      z-index: 2
+    }
+    .bottom-header {
+      z-index: 0;
+      box-shadow: $h-shadow ;
+    }
+  }
+}
+
+// Options set on Top/Bottom Header
+.bb-header.header-desktop {
+
+  .top-header,
+  .bottom-header {
+    background-color: #ffffff;
+    color: #000;
+
+    &.boxed {
+      .container {
+        width: 1200px;
+      }
+    }
+    &.small {
+      .container {
+        height: 40px;
+
+        img {
+          max-height: 40px;
+          width: auto;
+        }
+      }
+    }
+    &.medium {
+      .container {
+        min-height: 50px;
+      }
+    }
+    &.large {
+      .container {
+        min-height: 58px;
+      }
+    }
+    &.logo-center {
+      .m-1 {
+        text-align: center;
+        flex-grow: 1;
+        -webkit-flex-grow: 1;
+        -moz-flex-grow: 1;
+      }
+    }
+
+    .pattern {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 99%;
+      overflow: hidden;
+      z-index: 1;
+      svg {
+        position: relative;
+        float: left;
+        width: 100.6%;
+        left: -0.3%;
+        right: -0.3%;
+        > * {
+          width: 100%
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/**
+ * 1.0 - image
+ */
+
+#zombify-main-section-front {
+  .zf-before-after-slider {
+    position: relative;
+    clear: both;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    @include clearfix();
+
+    .zf-after,
+    .zf-before {
+      @include clearfix();
+      max-width: 100%;
+      overflow: hidden;
+
+      img {
+        float: left;
+        border-radius: 0 !important;
+        max-width: inherit;
+        max-height: inherit;
+      }
+    }
+    .zf-before {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      border-right: 2px solid #000000;
+    }
+
+    .zf-hint {
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      top:50%;
+      padding: 10px;
+      background-color: $primary-color;
+      color: #ffffff;
+      transform: translate(-50%,-50%);
+    }
+    &:hover {
+      cursor: move;
+    }
+  }
+}
+

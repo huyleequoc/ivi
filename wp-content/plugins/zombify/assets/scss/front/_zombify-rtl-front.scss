@@ -1,0 +1,342 @@
+/* Adds support for languages written in a Right To Left (RTL) direction. */
+/**
+ * 1.0 Global
+ */
+#zombify-main-section-front {
+  direction: rtl;
+  text-align: right;
+
+  * {
+    letter-spacing: 0 !important;
+  }
+
+  //text align left
+  .zf-text-left {
+    text-align: right;
+  }
+  //text align right
+  .zf-text-right {
+    text-align: left;
+  }
+  //element float left
+  .zf-float-left {
+    float: right;
+  }
+  //element float right
+  .zf-float-right {
+    float: left;
+  }
+
+  // edit button
+  .zf-edit-button {
+    padding: 7px 33px 7px 10px;
+    .zf-icon {
+      left: inherit;
+      right: 10px;
+    }
+  }
+  // share box
+  .zf-share_box .zf-share {
+    padding: 13px 35px 13px 10px;
+    i {
+      left: inherit;
+      right: 13px;
+    }
+  }
+
+  // numbered listings, poll & quiz
+  .zf-quiz.zf-numbered .zf-quiz_question .zf-quiz_header,
+  .zf-poll.zf-numbered .zf-quiz_question .zf-quiz_header,
+  .zf-list.zf-numbered .zf-list_item .zf-list_header  {
+    .zf-quiz_title,
+    .zf-list_title {
+      padding-left: 0;
+      padding-right: 1.5em;
+
+      .zf-number {
+        left: inherit;
+        right: 0;
+      }
+    }
+  }
+
+  .zf-list .zf-list_item .zf-buy-button {
+    float: left;
+    padding: 3px 35px 3px 15px;
+
+    .zf-icon {
+      left: inherit;
+      right: 13px;
+    }
+  }
+
+  // grid
+  .zf-quiz_answer,
+  .zf-quiz_answer {
+
+    &.zf-2up .zf-answer-item {
+      float: right;
+      margin: 0 0 15px 2%;
+
+      &:nth-child(2n) {
+        margin-left: 0;
+      }
+    }
+    &.zf-3up .zf-answer-item {
+      float: right;
+      margin: 0 0 15px 1.99%;
+
+      &:nth-child(3n) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  // quiz results
+  .zf-quiz .zf-quiz_results .zf-result_header {
+    .zf-result_title {
+      float: right;
+    }
+    .zf-result_date {
+      float: left;
+    }
+  }
+
+  //poll
+  .zf-poll {
+    .zf-quiz_answer.zf-text .zf-answer {
+      padding-right: 14px;
+      padding-left: 80px;
+
+      .zf-poll-stat_count {
+        right: inherit;
+        left: 0;
+      }
+
+      .zf-poll-stat {
+        left: inherit;
+        right: 0;
+      }
+    }
+    .zf-poll_total {
+      text-align: left;
+    }
+  }
+
+  // quiz
+  .zf-quiz {
+    .zf-quiz_answer.zf-text .zf-answer {
+      padding-left: 14px;
+      padding-right: 60px;
+
+      .zf-checkbox-wrp {
+        left: inherit;
+        right: 12px;
+      }
+    }
+    .zf-quiz_answer .zf-answer_media {
+      .zf-answer_credit {
+        right: inherit;
+        left: 0;
+      }
+      .zf-checkbox-wrp {
+        border-color: transparent;
+      }
+    }
+
+    //reveal answer
+    .zf-quiz_reveal {
+      .zf-reveal_body .zf-reveal_media {
+        float: right;
+        padding-right: 0;
+        padding-left: 5%;
+      }
+      .zf-reveal_body .zf-reveal_media+.zf-reveal_content {
+        float: right;
+      }
+      .zf-reveal_header .zf-answer_response {
+        text-align: right;
+
+        .zf-icon-check {
+          text-align: right;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  // list
+  .zf-list {
+    .zf-item_meta {
+      .zf-author,
+      .zf-author .zf-author_avatar,
+      .zf-item-vote-box,
+      .zf-author_info {
+        float: right;
+      }
+      .zf-item-vote-box {
+        text-align: left;
+      }
+      .zf-author .zf-author_avatar img {
+        margin-right: 0;
+        margin-left: 12px;
+      }
+    }
+
+    .zf-next-prev-pagination {
+      .zf-nav.zf-prev {
+        float: right;
+
+        .zf-icon {
+          left: inherit;
+          right: 9%;
+
+          &:before {
+            content: "\f101";
+          }
+        }
+
+      }
+      .zf-nav.zf-next {
+         float: left;
+
+        .zf-icon {
+          right: inherit;
+          left: 9%;
+
+          &:before {
+            content: "\f100";
+          }
+        }
+
+       }
+    }
+  }
+
+  // comments
+  .zf-comments {
+    .comment {
+      .comment-body {
+        padding-left:5px;
+        padding-right: 60px;
+
+        .comment-author .avatar {
+          left: inherit;
+          right: 0;
+        }
+        .comment-metadata {
+          margin-left: 0;
+          margin-right: 10px;
+        }
+      }
+      .comment {
+        padding-left: 0;
+        padding-right: 60px;
+      }
+    }
+    .zf-comment-form-author,
+    .zf-comment-form-comment {
+      float: right;
+    }
+    .zf-comment-form-email,
+    .form-submit {
+      float: left;
+    }
+    input[type=text],
+    textarea {
+      text-align: right;
+    }
+  }
+
+  .zombify-comments {
+    .zf-tabs-menu li .zf-count {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+    .zf-comments-filter {
+      float: left;
+    }
+  }
+
+  .zf-comment-vote {
+    margin-left: 0;
+    margin-right: 20px;
+    a .zf-count {
+      margin-left: 0;
+      margin-right: 3px;
+    }
+    a:first-child+a {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+
+  //tabs
+  .zf-tabs-horizontal .zf-tabs-menu li {
+    float: right;
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+
+
+  //Rtl responsive
+  &.zf-submission {
+    .zf-post {
+      .zf-status {
+        left: inherit;
+        right: 18px;
+      }
+      .zf-actions {
+        right: inherit;
+        left: 18px;
+      }
+    }
+    @media screen and (max-width: 767px)  {
+      .zf-post {
+        .zf-actions {
+          .zf-actions_dropdown {
+            left: -45px;
+            right: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Create page
+
+.zf-create-box {
+  &[data-count='11'],
+  &[data-count='12'],
+  &[data-count='13'],
+  &[data-count='14'] {
+    .zf-item{
+      text-align: right;
+      .zf-wrapper {
+        padding: 20px 100px 20px 3.5%;
+      }
+      .zf-icon {
+        left: inherit;
+        right: 10px;
+      }
+    }
+  }
+}
+//text align left
+.zf-text-left {
+  text-align: right;
+}
+//text align right
+.zf-text-right {
+  text-align: left;
+}
+//element float left
+.zf-float-left {
+  float: right;
+}
+//element float right
+.zf-float-right {
+  float: left;
+}

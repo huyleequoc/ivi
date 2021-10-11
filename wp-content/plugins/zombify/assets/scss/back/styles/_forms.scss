@@ -1,0 +1,956 @@
+/**
+ * 4.0 - Forms
+ */
+#zombify-main-section {
+  button[type="submit"],
+  input[type="submit"] {
+    padding: 14px 35px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0 none;
+    font-family: inherit;
+  }
+
+  select,
+  textarea,
+  input[type='tel'],
+  input[type='text'],
+  input[type='number'],
+  input[type='date'],
+  input[type='time'],
+  input[type='url'],
+  input[type='email'],
+  input[type='search'],
+  input[type='password'] {
+    display: block;
+    width: 100%;
+    height: 50px;
+    min-height: inherit;
+    min-width: inherit;
+    margin: 0;
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 16px;
+    color: #000000;
+    line-height: 25px;
+    border: 1px solid $secondary-light-color;
+    background-color: #ffffff;
+    font-family: $base-font-family;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: all .1s ease-out;
+
+    &:focus {
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  textarea {
+    padding: 10px 10px;
+    height: 80px;
+    line-height: 18px;
+    resize: none;
+  }
+  select {
+    color: $secondary-color;
+  }
+  input[type=checkbox],
+  input[type=radio] {
+    margin: 4px 0 0;
+    padding: 0;
+    margin-top: 1px \9;
+    line-height: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .zf-error {
+    input, select, textarea, .zf-uploader, .zf-multiple-select .zf-select_header {
+      border-color: #e45050;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #e45050;
+    }
+    ::-moz-placeholder {
+      color: #e45050;
+    }
+    :-moz-placeholder {
+      color: #e45050;
+    }
+    :-ms-input-placeholder {
+      color: #e45050;
+    }
+  }
+  .zf-help {
+    display: block;
+    padding: 5px 0;
+    font-size: 12px;
+    color: #e45050;
+  }
+
+  .zf-multiple-select {
+    position: relative;
+    width: 100%;
+    line-height: 1em;
+
+    .zf-select_header {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 50px;
+      padding: 10px 20px 10px 10px;
+      text-align: left;
+      font-size: 16px;
+      color: #7f6f7f;
+      line-height: 25px;
+      border: 1px solid #e4e0e4;
+      background-color: #fff;
+      font-family: $base-font-family;
+      font-weight: 400;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:after {
+        content: "\e932";
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        font-size: 15px;
+        font-family: $icon-font;
+      }
+      .zf-selected {
+        display: block;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .zf-select_dropdown {
+      position: absolute;
+      z-index: 5;
+      display: none;
+      top: 55px;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 12px 10px;
+      list-style: none;
+      max-height: 300px;
+      overflow: auto;
+      border-radius: 4px;
+      background-color: #ffffff;
+      border: 1px solid #e4e0e4;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+      li {
+        position: relative;
+        display: block;
+        list-style: none;
+
+        border-top: 1px solid #ebebeb;
+
+        &:first-child {
+          border-top: none;
+        }
+        .zf-subcategory {
+          margin: 0 0 0 15px;
+
+          li {
+            border-top: none;
+          }
+          label {
+            border-top: 1px dashed #ebebeb;
+          }
+        }
+
+        label {
+          position: relative;
+          display: block;
+          padding: 8px 35px 8px 15px;
+          margin: 0;
+          font-size: 16px;
+          line-height: 1em;
+          cursor: pointer;
+        }
+        input {
+          position: absolute;
+          opacity: 0;
+        }
+
+        .zf-check-toggle {
+          position: absolute;
+          right: 13px;
+          top:50%;
+          color: $secondary-color;
+          margin-top: -9px;
+          font-size: 19px;
+        }
+
+        input[type=checkbox]:checked + .zf-check-toggle:before {
+          content: "\f00c";
+          font-family: $icon-font;
+        }
+
+        &.zf-subcategory {
+          padding-left: 35px;
+        }
+      }
+    }
+
+    &.zf-active {
+      .zf-select_dropdown {
+        display: block;
+      }
+    }
+  }
+
+  .zf-hidden-field {
+    display: none
+  }
+
+  .zf-answers-box {
+    .zf-form-group {
+      position: relative;
+    }
+    .zf-help {
+      position: absolute;
+      bottom: -6px;
+      left: 11px;
+    }
+  }
+
+  .zf-uploader {
+    position: relative;
+    min-height: 250px;
+    text-align: center;
+    border: 2px dashed $secondary-color;
+    border-radius: 4px;
+    cursor: pointer;
+
+    .zf-label {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      transform: translate(0, -50%);
+
+      .zf-icon {
+        display: block;
+        font-size: 40px;
+        line-height: 40px;
+        color: $secondary-color;
+      }
+
+      .zf-label_text {
+        display: inline-block;
+        margin: 28px 0 0;
+        padding: 18px 30px;
+        font-size: 16px;
+        line-height: 19px;
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 3px;
+      }
+      .zf_or {
+        display: block;
+        padding: 15px 0;
+        font-size: 16px;
+        line-height: 18px;
+        color: #cbc7cc;
+      }
+      .zf-get_url {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .zf-get-url-popup {
+      display: none;
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      background-color: #ffffff;
+
+      .zf-popup-close {
+        position: absolute;
+        z-index: 5;
+        top: 10px;
+        right: 10px;
+        margin: 0;
+        width: 30px;
+        height: 30px;
+        line-height: 31px;
+        vertical-align: middle;
+        text-align: center;
+        background: rgba(0, 0, 0, .5);
+        font-size: 10px;
+        color: #fff;
+        border-radius: 50%;
+      }
+
+      .zf-popup_body {
+        padding: 14% 30px 0;
+      }
+      .zf-form-group-popup {
+        position: relative;
+        padding: 4px;
+        border: 1px solid #ebebeb;
+        border-radius: 4px;
+        @include clearfix();
+      }
+
+      input {
+        border: none;
+        width: 78%;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .zf-submit_url,
+      .zf-start-submit_url,
+      .zf-start-submit_url_video {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        padding: 12px 40px;
+        text-transform: none;
+      }
+
+      &.zf-open {
+        display: block;
+      }
+    }
+
+    .zf-image-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      cursor: pointer;
+      overflow: hidden;
+
+      input {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+
+      img {
+        position: relative;
+        min-width: 100%;
+      }
+
+      video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .zf-extensions {
+        position: absolute;
+        left: 25px;
+        top: 21px;
+
+        span {
+          color: #998e99;
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: bold;
+          border: 1px solid #ecebed;
+          padding: 0 4px;
+          border-radius: 3px;
+        }
+      }
+    }
+    .zf-remove-media {
+      display: none;
+      position: absolute;
+      z-index: 5;
+      top: 15px;
+      right: 15px;
+      padding: 7px 0;
+      margin: 0;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      background: #fafafa;
+      font-size: 10px;
+      color: #7f6f7f;
+      border-radius: 50%;
+      border: none;
+      box-shadow: -1px 1px 2px rgba(119, 119, 119, 0.6);
+
+      &.zf-remove-media-trash {
+        top: 10px;
+        right: 10px;
+        width: 37px;
+        height: 37px;
+      }
+
+      .zf-icon-trash {
+        font-size: 22px;
+      }
+    }
+    .zf-remove-media:hover {
+      background: #d2d0d0;
+    }
+    .gif-video-wrapper {
+      display: none;
+    }
+    &.zf-uploader-uploaded {
+      height: auto !important;
+      border: none;
+
+      .zf-remove-media {
+        display: none;
+      }
+      .zf-label {
+        display: none;
+      }
+      .zf-image-label  {
+        position: relative;
+        min-height: 70px;
+
+        &:not(.zf-video-label):before {
+          position: absolute;
+          z-index: 3;
+          top: 50%;
+          left: 50%;
+          margin: -20px 0 0 -20px;
+          font-size: 40px;
+          line-height: 40px;
+          content: "\e907";
+          color: #ffffff;
+          opacity: 0;
+          font-family: $icon-font;
+        }
+        &:not(.zf-video-label):after {
+          content: '';
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          background: rgba(0, 0, 0, 0.5);
+        }
+        &:not(.zf-video-label):hover {
+          &:before,
+          &:after {
+            opacity: 1;
+          }
+        }
+
+      }
+      .zf-extensions {
+        display: none;
+      }
+      .gif-video-wrapper {
+        display: block;
+      }
+    }
+
+    &.zf-uploader-uploaded:hover {
+      .zf-remove-media {
+        display: block;
+      }
+    }
+
+    .zf-preview-video-block {
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      z-index: 10;
+      background: rgba(58,58,58,.9);
+      border-radius: 4px;
+      cursor: initial;
+
+      .zf-progress-cancel-btn {
+        margin-top: 36px;
+      }
+
+      .zf-progressbar-container {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+      }
+    }
+
+	&.zf-featured-image {
+      height: 200px;
+      max-height: 200px;
+      min-height: auto;
+
+      .zf-label .zf-label_text {
+        margin-top: 5px;
+        background-color: transparent;
+        color: $secondary-color;
+        font-size: 20px;
+      }
+
+      &.zf-uploader-uploaded {
+        height: 200px !important;
+
+        .zf-image-label {
+          position: absolute;
+          top:50%;
+          max-height: 100%;
+          overflow: hidden;
+          transform: translate(0,-50%);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  &.zf-screen-xs {
+    .zf-uploader {
+      .zf-extensions {
+        left: 10px;
+        top: 10px;
+      }
+        .zf-get-url-popup {
+        button,
+        input {
+          width: 100%;
+        }
+        button  {
+          position: relative;
+          right: inherit;
+          top:inherit;
+        }
+
+      }
+    }
+    .zf-media-uploader {
+      .zf-embed-formats {
+        i {
+          width: 33px;
+        }
+      }
+    }
+  }
+
+  .zf-file-info {
+    text-align: center;
+    color: #7f6f7f;
+    margin-top: 5px;
+  }
+
+  .zf-video-player-preview {
+    display: none;
+  }
+
+  .zf-media-uploader {
+    .zf-media-type {
+      margin-bottom: 12px;
+
+      @extend .clearfix;
+    }
+    .zf-checkbox-format {
+      float: left;
+      width: 45%;
+      margin-bottom: 0;
+
+      .zf-toggle {
+        display: block;
+        padding: 11px 10px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        text-align: center;
+
+        .zf-text {
+          display: inline-block;
+          line-height: 25px;
+          vertical-align: top;
+        }
+
+        .zf-icon {
+          position: static;
+          margin-right: 15px;
+          font-size: 25px;
+        }
+      }
+    }
+
+    .zf-embed {
+      padding: 20px 35px 16px;
+      background-color: #e8e7e7;
+
+      textarea {
+        height: 70px;
+      }
+
+      .zf-note {
+        font-size: 12px;
+        line-height: 22px;
+        color: #998e99;
+      }
+    }
+    ._or {
+      float: left;
+      display: inline-block;
+      width: 10%;
+      padding: 14px 0;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 600;
+      text-align: center;
+      color: #998e99;
+    }
+
+    .zf-embed-formats {
+      clear: both;
+      margin: 15px 0 0;
+
+      i {
+        display: inline-block;
+        width: 38px;
+        font-size: 18px;
+        color: #7f6f7f;
+        line-height: 30px;
+      }
+    }
+
+    &[data-format="image"] {
+      .zombify_medatype_embed {
+        display: none;
+      }
+    }
+    &[data-format="embed"] {
+      .zombify_medatype_image {
+        display: none;
+      }
+    }
+  }
+
+  .zf-form-group {
+    &[data-zombify-fieldgroup-path="results/image"],
+    &[data-zombify-fieldgroup-path="questions/after_answer_image"],
+    &[data-zombify-fieldgroup-path="questions/answers/image"],
+    &[data-zombify-fieldgroup-path="story/personality/questions/answers/image"],
+    &[data-zombify-fieldgroup-path="story/personality/results/image"],
+    &[data-zombify-fieldgroup-path="story/trivia/questions/answers/image"],
+    &[data-zombify-fieldgroup-path="story/trivia/results/image"],
+    &[data-zombify-fieldgroup-path="story/trivia/questions/after_answer_image"],
+    &[data-zombify-fieldgroup-path="story/poll/questions/answers/image"] {
+      .zf-uploader {
+        height: 130px;
+        min-height: auto;
+
+        .zf-label .zf_or,
+        .zf-label .zf-get_url,
+        .zf-label .zf-label_text {
+          display: none;
+        }
+      }
+    }
+    &[data-zombify-fieldgroup-path="questions/answers/image"],
+    &[data-zombify-fieldgroup-path="story/personality/questions/answers/image"],
+    &[data-zombify-fieldgroup-path="story/poll/questions/answers/image"] {
+      .zf-uploader {
+        &.zf-uploader-uploaded {
+          height: 130px !important;
+          .zf-remove-media {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  &.zombify-trivia-quiz {
+    .zf-form-group {
+      &[data-zombify-fieldgroup-path="questions/answers/image"] {
+        .zf-uploader {
+          &.zf-uploader-uploaded {
+            height: 130px !important;
+            .zf-remove-media {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+    .zf-answers-box{
+      &[data-format="3up"],
+      &[data-format="2up"] {
+        .zf-add-answer-button {
+          height: 382px;
+        }
+      }
+    }
+  }
+
+  &.zf-poll {
+    .zf-form-group {
+      &[data-zombify-fieldgroup-path="questions/answers/image"] {
+        .zf-uploader {
+          &.zf-uploader-uploaded {
+            height: 130px !important;
+            .zf-remove-media {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+    .zf-answers-box{
+      &[data-format="3up"],
+      &[data-format="2up"] {
+        .zf-add-answer-button {
+          height: 324px;
+        }
+      }
+    }
+  }
+
+  &.zf-story {
+    .zf-form-group {
+      &[data-zombify-fieldgroup-path="story/trivia/questions/answers/image"] {
+        .zf-uploader {
+          &.zf-uploader-uploaded {
+            height: 130px !important;
+            .zf-remove-media {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .zf-form-group label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #353535;
+    font-family: $base-font-family;
+  }
+
+  .zf-form-group {
+    clear: both;
+    margin-bottom: 20px;
+
+    &.zf-ui-checkbox {
+      label {
+        display: inline-block;
+
+        &:first-child {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+  .zf-checkbox-inline,
+  .zf-radio-inline {
+    position: relative;
+    margin: 0;
+    padding-left: 30px;
+    line-height: 20px;
+    display: block;
+
+    label {
+      margin: 0;
+      font-weight: 400;
+      font-size: 16px;
+      color: #998e99;
+      cursor: pointer;
+    }
+
+    input {
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+    }
+  }
+
+  .zf-checkbox-format {
+    position: relative;
+    display: inline-block !important;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    margin: 0;
+
+    .zf-toggle {
+      position: relative;
+      display: inline-block;
+      padding: 7px 15px 7px 40px;
+      color: $secondary-color;
+      font-size: 12px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      cursor: pointer;
+
+      .zf-icon {
+        position: absolute;
+        top: 5px;
+        left: 9px;
+        font-size: 20px;
+      }
+    }
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+
+      &:checked + .zf-toggle {
+        background-color: $secondary-color;
+        color: #ffffff;
+      }
+    }
+  }
+  .zf-checkbox-format + .zf-checkbox-format {
+    margin-left: 3px;
+  }
+  .zf-checkbox-currect {
+    position: relative;
+    display: block;
+    border-radius: 5px;
+    margin: 0;
+
+    .zf-toggle {
+      position: relative;
+      display: inline-block;
+      padding: 16px 15px 16px 48px;
+      color: $secondary-color;
+      font-size: 17px;
+      background-color: #ffffff;
+      cursor: pointer;
+
+      .zf-icon {
+        position: absolute;
+        top: 50%;
+        left: 9px;
+        margin-top: -10px;
+        width: 20px;
+        height: 20px;
+        background-color: #f7f7f5;
+        border-radius: 50%;
+        border: 1px solid #ebebeb;
+      }
+    }
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+
+      &:checked + .zf-toggle .zf-icon {
+        background-color: $primary-color;
+        border-color: $primary-color;
+      }
+    }
+  }
+
+  .zombify_group[data-zombify-group-name="results"],
+  .zombify_group[data-zombify-group-name="answers"],
+  .zf-form-group[data-zombify-fieldgroup-path="questions/after_answer_image"],
+  .zf-form-group[data-zombify-fieldgroup-path="story/trivia/questions/after_answer_image"] {
+    .zf-uploader {
+      .zf-image-label {
+        .zf-extensions {
+          left: 5px;
+          top: 5px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .zf-remove-media {
+        top: 8px;
+        right: 8px;
+        width: 25px;
+        height: 25px;
+        padding: 4px 0;
+
+        .zf-icon-trash {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .zf-result-range {
+    input {
+      float: left;
+      width: 30%;
+      display: inline-block;
+    }
+    .zf_to {
+      float: left;
+      text-align: center;
+      padding: 13px 20px;
+      font-weight: bold;
+      color: $secondary-color;
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    color: #acacac;
+  }
+  ::-moz-placeholder {
+    color: #acacac;
+  }
+  /* Firefox 19+ */
+  :-moz-placeholder {
+    color: #acacac;
+  }
+  /* Firefox 18- */
+  :-ms-input-placeholder {
+    color: #acacac;
+  }
+
+  .zf-uploader{
+    &.zf-uploader-uploaded {
+      &.zf-uploader-on-progress:hover {
+        .zf-remove-media {
+          display: none;
+        }
+      }
+      &.zf-uploader-on-progress {
+        .zf-image-label:not(.zf-video-label):hover {
+          &:after,
+          &:before {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

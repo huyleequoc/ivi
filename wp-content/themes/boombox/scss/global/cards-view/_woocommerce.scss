@@ -1,0 +1,72 @@
+/* *** Cards View for Woocommerce pages*** */
+
+.bb-cards-view {
+
+  &.woocommerce {
+    .products {
+      .product {
+        background-color: #fff;
+        padding-left: $card-big-pad;
+        padding-right: $card-big-pad;
+        padding-bottom: $card-small-pad;
+
+        .bb-media-placeholder {
+          margin-left: -$card-big-pad;
+          margin-right: -$card-big-pad;
+          width: auto;
+          border-radius: 0;
+        }
+        a.woocommerce-loop-product__link:first-child {
+          display: block;
+          margin-left: -$card-big-pad;
+          margin-right: -$card-big-pad;
+
+          img {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+
+    &.single-product {
+      div.product {
+        background-color: #fff;
+        padding: $card-big-pad;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-mb-full-w-max) {
+
+    &.woocommerce {
+      .products {
+        .product {
+          padding-left: $card-small-pad;
+          padding-right: $card-small-pad;
+
+          .bb-media-placeholder {
+            margin-left: -$card-small-pad;
+            margin-right: -$card-small-pad;
+          }
+          a.woocommerce-loop-product__link:first-child {
+            display: block;
+            margin-left: -$card-small-pad;
+            margin-right: -$card-small-pad;
+
+          }
+        }
+      }
+
+      &.single-product {
+        div.product {
+          margin-left: -$container-pad-mobile;
+          margin-right: -$container-pad-mobile;
+          border-radius: 0 !important;
+          width: auto;
+          padding: $card-small-pad;
+        }
+      }
+    }
+  }
+
+}

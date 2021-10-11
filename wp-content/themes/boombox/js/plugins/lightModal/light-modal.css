@@ -1,0 +1,108 @@
+/* General */
+.light-modal,.light-modal *, .light-modal:before, .light-modal:after, .light-modal *:before, .light-modal *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Modal Background */
+.light-modal-bg {
+    display: none;
+    background-color: #fff;
+}
+
+/* Modal Content */
+.light-modal {
+    display: none;
+    position: fixed;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: #000;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    overflow-y: auto;
+}
+.light-modal, .light-modal .modal-body  {
+	background-color: #fff;
+}
+.light-modal .modal-body {
+	display: inline-block;
+	width: 100%;
+    padding: 40px 15px 15px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+       -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Close Button */
+.light-modal .modal-close {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 27px;
+    height: 27px;
+    background-color: #ffe400;
+    text-align: center;
+    line-height: 28px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #1f1f1f;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Background Lock */
+.light-modal-lock, .light-modal-lock body {
+    overflow: hidden;
+    /* NOTE: Comment / 1 / row if you wish modal to keep it's scroll position when opened.
+     This needs to be tested in Iphone6 and other devices to make sure that background is not scrolled with content */
+    /*height: 100%; !*1*!*/
+}
+.light-modal-lock .scrollbar-fix {
+    margin-right: 17px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 701px) {
+    .light-modal-bg {
+        background-color: rgba(31,31,31,.9);
+        overflow-y: scroll;
+    }
+	.light-modal .modal-body {
+		-webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+    }
+    .light-modal {
+		background: transparent;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) translateZ(0);
+           -moz-transform: translate(-50%, -50%) translateZ(0);
+                transform: translate(-50%, -50%) translateZ(0);
+        width:  550px;
+        max-height: 93%;
+        height: auto;
+    }
+    .light-modal-bg {
+        position: fixed;
+        overflow: auto;
+        z-index: 995;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+

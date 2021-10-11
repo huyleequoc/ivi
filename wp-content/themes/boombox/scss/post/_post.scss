@@ -1,0 +1,62 @@
+/* *** Post General Styles Common for Listing Post and Single Post *** */
+
+/* * General * */
+.post {
+  position: relative;
+  &.no-thumbnail {
+    .post-thumbnail {
+      float: none !important;
+      padding-top: 30px;
+
+      .post-meta {
+        bottom: 0 !important;
+      }
+    }
+  }
+}
+
+/* * Sticky Post * */
+.sticky {
+  .post-thumbnail {
+    &:after {
+      content: "\f02e";
+      font-family: $icon-font-family;
+      font-size: 24px;
+      line-height: 24px;
+      position: absolute;
+      top: -1px;
+      right: 15px;
+    }
+  }
+}
+
+
+/* * Post Thumbnail * */
+.post-thumbnail {
+  position: relative;
+  display: block;
+  min-height: 30px;
+
+  img {
+    width: 100%;
+  }
+  canvas {
+    display: block;
+    width: 100%
+  }
+  video,
+  iframe {
+    float: left;
+  }
+  video {
+    width: 100%;
+    max-width: 100%;
+  }
+  .thumbnail-caption {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 0;
+  }
+}
+
+

@@ -1,0 +1,60 @@
+/* *** 404 page *** */
+
+.error404 {
+  .page-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+section.error-404 {
+  position: relative;
+  width: 1040px;
+  padding: 0 20px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  .bb-page-header {
+    margin: 55px 0 50px;
+    padding: 0;
+    width: 100%;
+    border: 0 none;
+    .page-title {
+      text-align: left;
+      text-transform: none;
+      font-size: 70px;
+      line-height: 70px;
+    }
+  }
+  .img-col {
+    margin: 40px 0;
+  }
+  .text {
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #2a2b35;
+    font-family: $heading-font-family;
+    text-transform: uppercase;
+  }
+  .btn-back {
+    .bb-icon {
+      transition: left 0.2s ease-out;
+    }
+    &:hover {
+      .bb-icon {
+        left: 15px;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-md-min) {
+    margin-top: 3.125rem;
+    .bb-page-header .page-title {
+      font-size: 120px;
+      line-height: 120px;
+    }
+    .img-col {
+      margin: 0;
+    }
+  }
+}

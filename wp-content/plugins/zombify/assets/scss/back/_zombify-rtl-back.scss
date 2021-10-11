@@ -1,0 +1,401 @@
+/* Adds support for languages written in a Right To Left (RTL) direction. */
+/**
+ * 1.0 Global
+ */
+#zombify-main-section {
+  direction: rtl;
+  text-align: right;
+
+  * {
+    letter-spacing: 0 !important;
+  }
+
+  //text align left
+  .zf-text-left {
+    text-align: right;
+  }
+  //text align right
+  .zf-text-right {
+    text-align: left;
+  }
+  //element float left
+  .zf-float-left {
+    float: right;
+  }
+  //element float right
+  .zf-float-right {
+    float: left;
+  }
+  #zf-main {
+    float: right;
+  }
+  #zf-options-section {
+    float: left;
+    .zf-head {
+      padding: 30px 30px 25px 70px;
+      .zf-icon {
+        right: inherit;
+        left: 30px;
+      }
+    }
+  }
+
+  /**
+ * 2.0 Forms
+ */
+  input[type=search],
+  input[type=password],
+  input[type=tel],
+  input[type=text],
+  input[type=number],
+  input[type=date],
+  input[type=time],
+  input[type=url],
+  input[type=email],
+  select,
+  textarea {
+    text-align: right;
+  }
+
+  .zf-checkbox-inline,
+  .zf-radio-inline {
+    padding-left: 0;
+    padding-right: 30px;
+
+    input {
+      left: inherit;
+      right: 0;
+    }
+  }
+  .tag-editor li {
+    float: right;
+  }
+  //Media uploader
+  .zf-uploader {
+    .zf-get-url-popup .zf-start-submit_url,
+    .zf-get-url-popup .zf-submit_url {
+      right: inherit;
+      left: 4px;
+    }
+    .zf-get-url-popup {
+      input {
+        float: right;
+      }
+      .zf-popup-close {
+        right: inherit;
+        left: 10px;
+      }
+    }
+    .zf-remove-media.zf-remove-media-trash {
+      right: inherit;
+      left: 10px;
+    }
+    .zf-image-label .zf-extensions {
+      left: initial;
+      right: 25px;
+    }
+  }
+  .zf-media-uploader {
+
+    .zf-checkbox-format,
+    ._or {
+      float: right;
+    }
+    .zf-checkbox-format {
+
+      .zf-toggle {
+        padding: 7px 40px 7px 15px;
+      }
+
+      .zf-toggle .zf-icon {
+        margin-right: 0;
+        margin-left: 15px;
+      }
+      & +.zf-checkbox-format {
+        margin-left: 0;
+        margin-right: 3px;
+      }
+    }
+
+    .zf-embed-formats i {
+      text-align: right;
+    }
+  }
+
+  .zf-form-group.zf-ui-checkbox label:first-child {
+    margin-right: 0;
+    margin-left: 25px;
+  }
+  .zf-checkbox-format {
+    .zf-toggle {
+      padding: 7px 40px 7px 15px;
+
+      .zf-icon {
+        left: inherit;
+        right: 9px;
+      }
+    }
+    &+.zf-checkbox-format {
+    margin-left: 0;
+    margin-right: 3px;
+  }
+  }
+
+  //boxes
+  .zf-item-wrapper {
+    .zf-type-wrapper {
+      left: inherit;
+      right: 9px;
+    }
+    .zf-remove {
+      right: inherit;
+      left: 13px;
+    }
+    .zf-body {
+      padding: 20px 40px;
+      overflow: hidden;
+
+      &.zf-numeric {
+        .zf-form-group[data-zombify-fieldgroup-path="questions/question"],
+        .zf-form-group[data-zombify-fieldgroup-path="list/title"],
+        .zf-form-group[data-zombify-fieldgroup-path="story/personality/questions/question"],
+        .zf-form-group[data-zombify-fieldgroup-path="story/trivia/questions/question"],
+        .zf-form-group[data-zombify-fieldgroup-path="story/story_list/list/title"],
+        .zf-form-group[data-zombify-fieldgroup-path="countdown/title"],
+        .zf-form-group[data-zombify-fieldgroup-path="story/story_countdown/list/title"]{
+          padding-left: 0;
+          padding-right: 50px;
+        }
+      }
+    }
+    .zf-sort-area {
+      left: inherit;
+      right: -30px;
+
+      button {
+        &.zf-up {
+          border-top-left-radius: 0;
+          border-top-right-radius: 5px;
+        }
+        &.zf-down {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .zf-answers-box {
+    &[data-format="3up"] {
+
+        .zombify_group {
+          float: right;
+          margin: 0 0 15px 3%;
+        }
+        .zf-add-answer-button {
+          float: right;
+        }
+
+      .zombify_group:nth-child(3n) {
+          margin-left: 0;
+        }
+      }
+
+    &[data-format="2up"] {
+
+      .zombify_group {
+        float: right;
+        margin: 0 0 15px 3%;
+      }
+
+      .zf-add-answer-button {
+        float: right;
+      }
+      .zombify_group:nth-child(2n) {
+        margin-left: 0;
+      }
+    }
+
+    .zf-answer-item {
+      .zf-remove {
+        right: inherit;
+        left: 5px;
+      }
+    }
+    &[data-format=text],
+    &[data-format=input] {
+      .zf-remove {
+        right: inherit;
+        left: -33px;
+      }
+    }
+  }
+  .zf-checkbox-currect {
+    .zf-toggle {
+      padding: 16px 48px 16px 15px;
+
+      .zf-icon {
+        left: inherit;
+        right: 9px;
+      }
+    }
+  }
+
+  //Story
+  &.zf-story {
+    .zf-components {
+      .zf-components_plus {
+        right: inherit;
+        left: 13px;
+      }
+      .zf-add-component {
+        padding-left: 0;
+        padding-right: 30px;
+
+        i {
+          left: inherit;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  //Meme
+  &.zf-meme {
+
+    .zf-options {
+      padding-left: 0;
+      padding-right: 45px;
+
+      .zf-options_toggle {
+        left: inherit;
+        right: 0;
+      }
+      ul li {
+        float: right;
+        border-right: 0;
+        border-left: 1px solid #d4d4d4;
+
+        .zf-label {
+          float: right;
+          margin-right: 0;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    &.zf-screen-sm {
+      .ui-draggable.zf-top-drag .zf-options,
+      .ui-draggable.zf-bottom-drag .zf-options {
+        left: inherit;
+        right: 0;
+      }
+
+      .zf-options ul li .zf-option {
+        float: right;
+      }
+    }
+    &.zf-screen-xs {
+      .ui-draggable.zf-top-drag .zf-options,
+      .ui-draggable.zf-bottom-drag .zf-options {
+        left: inherit;
+        right: 0;
+      }
+
+      .zf-options ul li .zf-option {
+        float: right;
+      }
+    }
+  }
+
+  #zf-options-section .zf-post-schedule .zf-save-timestamp {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  // option panel multiple select
+  .zf-multiple-select {
+    .zf-select_header{
+      text-align: right;
+      &:after {
+        right: inherit;
+        left: 8px;
+      }
+    }
+    .zf-select_dropdown {
+      label {
+        padding: 8px 15px 8px 35px;
+
+        .zf-check-toggle {
+          right: inherit;
+          left: 13px;
+        }
+      }
+      li .zf-subcategory {
+       margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  //preface
+  .zf-info-wrapper {
+    .zf-preface-excerpt-cont {
+      .zf-form-group[data-zombify-fieldgroup-path=use_preface],
+      .zf-form-group[data-zombify-fieldgroup-path=use_excerpt] {
+        float: right;
+        margin-right: 0;
+        margin-left: 40px;
+      }
+    }
+  }
+  //Rtl responsive
+  &.zf-screen-xs {
+
+    .zf-media-uploader {
+      .zf-checkbox-format .zf-toggle .zf-icon {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .zf-col-lg-1, .zf-col-lg-2, .zf-col-lg-3, .zf-col-lg-4 {
+    float: right;
+  }
+}
+
+.zf-mobile {
+  #zombify-main-section {
+    .zf-item-wrapper {
+      .zf-sort-area {
+        left: inherit;
+        right: -18px;
+      }
+    }
+    &.zf-story {
+      .zf-item-wrapper {
+        .zf-sort-area {
+          left: inherit;
+          right: -10px;
+        }
+      }
+    }
+  }
+}
+//text align left
+.zf-text-left {
+  text-align: right;
+}
+//text align right
+.zf-text-right {
+  text-align: left;
+}
+//element float left
+.zf-float-left {
+  float: right;
+}
+//element float right
+.zf-float-right {
+  float: left;
+}

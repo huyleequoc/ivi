@@ -1,0 +1,397 @@
+/* Adds support for languages written in a Right To Left (RTL) direction. */
+
+
+/**
+ * 1.0 Global
+ */
+
+#zombify-main-section,
+#zombify-main-section-front {
+    direction: rtl;
+    text-align: right;
+}
+#zombify-main-section,
+#zombify-main-section-front * {
+    letter-spacing: 0 !important;
+}
+#zombify-main-section #zf-options-section {
+    float: left;
+}
+#zombify-main-section #zf-main {
+    float: right;
+}
+#zombify-main-section #zf-options-section .zf-head {
+    padding: 30px 30px 25px 70px;
+}
+#zombify-main-section #zf-options-section .zf-head .zf-icon {
+    right: inherit;
+    left: 30px;
+}
+/**
+ * 2.0 Forms
+ */
+#zombify-main-section input[type=search], #zombify-main-section input[type=password], #zombify-main-section input[type=tel], #zombify-main-section input[type=text], #zombify-main-section input[type=number], #zombify-main-section input[type=date], #zombify-main-section input[type=time], #zombify-main-section input[type=url], #zombify-main-section input[type=email], #zombify-main-section select, #zombify-main-section textarea {
+    text-align: right;
+}
+
+#zombify-main-section .zf-form-group label {
+    text-align: right;
+}
+#zombify-main-section .zf-checkbox-inline, #zombify-main-section .zf-radio-inline {
+    padding-left: 0;
+    padding-right: 30px;
+}
+#zombify-main-section .zf-checkbox-inline input[type=checkbox], #zombify-main-section .zf-checkbox-inline input[type=radio], #zombify-main-section .zf-radio-inline input[type=checkbox], #zombify-main-section .zf-radio-inline input[type=radio] {
+    left: inherit;
+    right: 0;
+}
+.tag-editor li {
+    float: right;
+}
+#zombify-main-section .zf-uploader .zf-get-url-popup input {
+    float: right;
+}
+#zombify-main-section .zf-uploader .zf-get-url-popup .zf-start-submit_url, #zombify-main-section .zf-uploader .zf-get-url-popup .zf-submit_url {
+    right: inherit;
+    left: 4px;
+}
+#zombify-main-section .zf-media-uploader .zf-checkbox-format,
+#zombify-main-section .zf-media-uploader ._or,
+#zombify-main-section .zf-media-uploader .zf-checkbox-format {
+    float: right;
+}
+#zombify-main-section.zf-screen-xs .zf-media-uploader .zf-checkbox-format .zf-toggle .zf-icon {
+    margin-left: 0;
+}
+#zombify-main-section .zf-uploader .zf-remove-media {
+    right: inherit;
+    left: -12px;
+}
+#zombify-main-section .zf-item-wrapper .zf-type-wrapper {
+    left: inherit;
+    right: 9px;
+}
+#zombify-main-section .zf-item-wrapper .zf-remove {
+    right: inherit;
+    left: 13px;
+}
+#zombify-main-section.zf-list .zf-form-group[data-zombify-fieldgroup-path="list/title"],
+#zombify-main-section.zf-quiz .zf-form-group[data-zombify-fieldgroup-path="questions/question"] {
+    padding-left: 0;
+    padding-right: 50px;
+}
+#zombify-main-section .zf-media-uploader .zf-checkbox-format .zf-toggle .zf-icon {
+    margin-right: 0;
+    margin-left: 15px;
+}
+#zombify-main-section .zf-form-group.zf-ui-checkbox label:first-child {
+    margin-right: 0;
+    margin-left: 25px;
+}
+#zombify-main-section .zf-checkbox-format+.zf-checkbox-format {
+    margin-left: 0;
+    margin-right: 3px;
+}
+#zombify-main-section .zf-checkbox-format .zf-toggle {
+    padding: 7px 40px 7px 15px;
+}
+#zombify-main-section .zf-checkbox-format .zf-toggle .zf-icon {
+    left: inherit;
+    right: 9px;
+}
+#zombify-main-section .zf-answers-box[data-format="3up"] .zombify_group {
+    float: right;
+    margin: 0 0 15px 3%;
+}
+#zombify-main-section .zf-answers-box[data-format="3up"] .zombify_group:nth-child(3n) {
+    margin-left: 0;
+}
+#zombify-main-section .zf-answers-box[data-format="2up"] .zombify_group {
+    float: right;
+    margin: 0 0 15px 3%;
+}
+#zombify-main-section .zf-answers-box[data-format="2up"] .zombify_group:nth-child(2n) {
+    margin-left: 0;
+}
+#zombify-main-section .zf-answers-box .zf-answer-item .zf-remove {
+    right: inherit;
+    left: 5px;
+}
+#zombify-main-section .zf-checkbox-currect .zf-toggle {
+    padding: 16px 48px 16px 15px;
+}
+#zombify-main-section .zf-checkbox-currect .zf-toggle .zf-icon {
+    left: inherit;
+    right: 9px;
+}
+#zombify-main-section .zf-media-uploader .zf-embed-formats i {
+    text-align: right;
+}
+#zombify-main-section.zf-story .zf-components .zf-components_plus {
+    right: inherit;
+    left: 13px;
+}
+#zombify-main-section.zf-meme .zf-options {
+    padding-left: 0;
+    padding-right: 45px;
+}
+#zombify-main-section.zf-meme .zf-options .zf-options_toggle {
+    left: inherit;
+    right: 0;
+}
+#zombify-main-section.zf-meme .zf-options ul li {
+    float: right;
+    border-right: 0;
+    border-left: 1px solid #d4d4d4;
+}
+#zombify-main-section.zf-meme .zf-options ul li .zf-label {
+    float: right;
+    margin-right: 0;
+    margin-left: 5px;
+}
+#zombify-main-section.zf-meme.zf-screen-sm .ui-draggable.zf-top-drag .zf-options,
+#zombify-main-section.zf-meme.zf-screen-sm .ui-draggable.zf-bottom-drag .zf-options,
+#zombify-main-section.zf-meme.zf-screen-xs .ui-draggable.zf-top-drag .zf-options,
+#zombify-main-section.zf-meme.zf-screen-xs .ui-draggable.zf-bottom-drag .zf-options {
+    left: inherit;
+    right: 0;
+}
+#zombify-main-section.zf-meme.zf-screen-sm .zf-options ul li .zf-option,
+#zombify-main-section.zf-meme.zf-screen-xs .zf-options ul li .zf-option {
+    float: right;
+}
+@media (min-width: 900px) {
+    .zf-col-lg-1, .zf-col-lg-2, .zf-col-lg-3, .zf-col-lg-4 {
+        float: right;
+    }
+}
+
+#zf-fixed-bottom-pane {
+    text-align: left;
+}
+#zf-fixed-bottom-pane .zombify_save {
+    float: right;
+}
+
+/**
+ * 2.0 Front
+ */
+#zombify-main-section-front .zf-edit-button {
+    padding: 7px 33px 7px 10px;
+}
+#zombify-main-section-front .zf-share_box .zf-share {
+    padding: 13px 35px 13px 10px;
+}
+#zombify-main-section-front .zf-share_box .zf-share i {
+    left: inherit;
+    right: 13px;
+}
+#zombify-main-section-front .zf-edit-button .zf-icon {
+    left: inherit;
+    right: 10px;
+}
+#zombify-main-section-front .zf-quiz.zf-numbered .zf-quiz_question .zf-quiz_header .zf-number,
+#zombify-main-section-front .zf-list.zf-numbered .zf-list_item .zf-list_header .zf-number {
+    left: inherit;
+    right: 0;
+}
+#zombify-main-section-front .zf-quiz.zf-numbered .zf-quiz_question .zf-quiz_header .zf-quiz_title,
+#zombify-main-section-front .zf-list.zf-numbered .zf-list_item .zf-list_header .zf-list_title {
+    padding-left: 0;
+    padding-right: 1.5em;
+}
+#zombify-main-section-front .zf-list .zf-list_item .zf-buy-button {
+    float: left;
+    padding: 3px 35px 3px 15px;
+}
+#zombify-main-section-front .zf-list .zf-list_item .zf-buy-button .zf-icon {
+    left: inherit;
+    right: 13px;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_answer.zf-2up .zf-answer-item,
+#zombify-main-section-front .zf-poll .zf-quiz_answer.zf-2up .zf-answer-item {
+    float: right;
+    margin: 0 0 20px 2%;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_answer.zf-2up .zf-answer-item:nth-child(2n),
+#zombify-main-section-front .zf-poll .zf-quiz_answer.zf-2up .zf-answer-item:nth-child(2n) {
+    margin-left: 0;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_answer.zf-3up .zf-answer-item,
+#zombify-main-section-front .zf-poll .zf-quiz_answer.zf-3up .zf-answer-item {
+    float: right;
+    margin: 0 0 20px 1.99%;
+}
+#zombify-main-section-front.zf-screen-sm .zf-quiz_answer.zf-3up .zf-answer-item {
+    margin: 0 0 20px 2%;
+}
+#zombify-main-section-front.zf-screen-sm .zf-quiz_answer.zf-3up .zf-answer-item:nth-child(2n) {
+    margin-left: 0;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_answer.zf-3up .zf-answer-item:nth-child(3n),
+#zombify-main-section-front .zf-poll .zf-quiz_answer.zf-3up .zf-answer-item:nth-child(3n) {
+    margin-left: 0;
+}
+#zombify-main-section-front.zf-screen-sm .zf-quiz_answer.zf-3up .zf-answer-item:nth-child(3n) {
+    margin-right: 0;
+    margin-left: 2%;
+}
+#zombify-main-section-front.zf-screen-xs .zf-quiz_answer.zf-2up .zf-answer-item, #zombify-main-section-front.zf-screen-xs .zf-quiz_answer.zf-3up .zf-answer-item {
+    margin:  0 0 15px;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_results .zf-result_header .zf-result_title {
+    float: right;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_results .zf-result_header .zf-result_date {
+    float: left;
+}
+#zombify-main-section-front .zf-poll .zf-quiz_answer.zf-text .zf-answer {
+    padding-right: 14px;
+    padding-left: 80px;
+}
+#zombify-main-section-front .zf-poll .zf-quiz_answer.zf-text .zf-answer .zf-poll-stat_count {
+    right: inherit;
+    left: 0;
+}
+#zombify-main-section-front .zf-poll .zf-quiz_answer.zf-text .zf-answer .zf-poll-stat {
+    left: inherit;
+    right: 0;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_answer.zf-text .zf-answer {
+    padding-left: 14px;
+    padding-right: 60px;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_answer.zf-text .zf-answer .zf-checkbox-wrp {
+    left: inherit;
+    right: 12px;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_answer .zf-answer_media .zf-answer_credit {
+    right: inherit;
+    left: 0;
+}
+#zombify-main-section-front .zf-list .zf-item_meta .zf-author, #zombify-main-section-front .zf-list .zf-item_meta .zf-item-vote-box {
+    float: right;
+}
+#zombify-main-section-front .zf-list .zf-item_meta .zf-item-vote-box {
+    text-align: left;
+}
+#zombify-main-section-front .zf-list .zf-item_meta .zf-author_info,
+#zombify-main-section-front .zf-list .zf-item_meta .zf-author .zf-author_avatar {
+    float: right;
+}
+#zombify-main-section-front .zf-list .zf-item_meta .zf-author .zf-author_avatar img {
+    margin-right: 0;
+    margin-left: 12px;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_reveal .zf-reveal_body .zf-reveal_media {
+    float: right;
+    padding-right: 0;
+    padding-left: 5%;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_reveal .zf-reveal_body .zf-reveal_media+.zf-reveal_content {
+    float: right;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_reveal .zf-reveal_header .zf-answer_response {
+    text-align: right;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_reveal .zf-reveal_header .zf-answer_response .zf-icon-check {
+    text-align: right;
+    margin-left: 10px;
+}
+#zombify-main-section-front .zf-quiz .zf-quiz_answer .zf-answer_media .zf-checkbox-wrp {
+    border-color: transparent;
+}
+
+#zombify-main-section-front .zf-comments .comment .comment-body {
+    padding-left:5px;
+    padding-right: 60px;
+}
+#zombify-main-section-front .zf-comments .comment .comment-body .comment-author .avatar {
+    left: inherit;
+    right: 0;
+}
+#zombify-main-section-front .zf-comments .comment .comment {
+    padding-left: 0;
+    padding-right: 60px;
+}
+#zombify-main-section-front .zf-comments .comment .comment-body .comment-metadata {
+    margin-left: 0;
+    margin-right: 10px;
+}
+#zombify-main-section-front .zf-comments .zf-comment-form-author,
+#zombify-main-section-front .zf-comments .zf-comment-form-comment {
+    float: right;
+}
+#zombify-main-section-front .zf-tabs-horizontal .zf-tabs-menu li {
+    float: right;
+    margin-right: 0;
+    margin-left: 15px;
+}
+#zombify-main-section-front .zf-comment-vote a:first-child+a {
+    margin-left: 0;
+    margin-right: 10px;
+}
+#zombify-main-section-front .zf-comment-vote a .zf-count {
+    margin-left: 0;
+    margin-right: 3px;
+}
+#zombify-main-section-front .zf-comment-vote, #zombify-main-section-front .zombify-comments .zf-tabs-menu li .zf-count {
+    margin-left: 0;
+    margin-right: 20px;
+}
+#zombify-main-section-front .zombify-comments .zf-comments-filter,
+#zombify-main-section-front .zf-comments .zf-comment-form-email,
+#zombify-main-section-front .zf-comments .form-submit {
+    float: left;
+}
+#zombify-main-section-front .zf-comments input[type=text], #zombify-main-section-front .zf-comments textarea {
+    text-align: right;
+}
+#zombify-main-section-front .zf-list .zf-next-prev-pagination .zf-nav.zf-prev {
+    float: right;
+}
+#zombify-main-section-front .zf-list .zf-next-prev-pagination .zf-nav.zf-next {
+    float: left;
+}
+#zombify-main-section-front .zf-list .zf-next-prev-pagination .zf-nav.zf-next .zf-icon {
+    right: inherit;
+    left: 9%;
+}
+#zombify-main-section-front .zf-list .zf-next-prev-pagination .zf-nav.zf-next .zf-icon:before {
+    content: "\f100";
+}
+#zombify-main-section-front .zf-list .zf-next-prev-pagination .zf-nav.zf-prev .zf-icon {
+    left: inherit;
+    right: 9%;
+}
+#zombify-main-section-front .zf-list .zf-next-prev-pagination .zf-nav.zf-prev .zf-icon:before {
+    content: "\f101";
+}
+#zombify-main-section .zf-multiple-select .zf-select_header {
+    padding-right: 10px;
+    padding-left: 20px;
+    text-align: right;
+}
+#zombify-main-section .zf-multiple-select .zf-select_header:after {
+    right: inherit;
+    left: 8px;
+}
+#zombify-main-section .zf-multiple-select .zf-select_dropdown li {
+    padding-right: 15px;
+    padding-left: 35px;
+}
+#zombify-main-section .zf-multiple-select .zf-select_dropdown li .zf-check-toggle {
+    right: inherit;
+    left: 13px;
+}
+
+#zombify-main-section .zf-multiple-select .zf-select_dropdown li.zf-subcategory {
+    padding-left: 0;
+    padding-right: 35px;
+}
+#zombify-main-section .zf-info-wrapper .zf-preface-excerpt-cont .zf-form-group[data-zombify-fieldgroup-path=use_preface],
+#zombify-main-section .zf-info-wrapper .zf-preface-excerpt-cont .zf-form-group[data-zombify-fieldgroup-path=use_excerpt] {
+    float: right;
+    margin-right: 0;
+    margin-left: 40px;
+}

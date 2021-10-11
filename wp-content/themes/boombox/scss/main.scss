@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/**
+ * Table of Contents:
+ *
+ * 1.0  - UI icon fonts
+ * 2.0  - Helpers
+ * 3.0  - Base - includes reset, elements, editor styles
+ * 4.0  - Components - includes building blocks of the site
+ * 5.0  - Layout - includes layout elements: footer, containers, spacing, grid etc.
+ * 6.0  - Post - includes post listing functionality
+ * 7.0  - Post Single - includes post single functionality
+ * 8.0  - Header - includes header, navigation and header specific components
+ * 9.0  - Featured - includes featured components: featured area, featured strip etc.
+ * 10.0  - Plugins/ Widgets - includes external plugins/widgets styling by Boombox or Boombox default plugins' styling
+ * 11.0 - Pages - includes pages' styling
+ * 12.0 - Modules - includes different modules: media playing functionality etc.
+ * 13.0 - Global - includes options, functionality that are applied globally
+ */
+
+/**
+ * 1.0  - UI icon fonts
+ */
+// Includes style */
+@import "icon-fonts/all-fonts";
+
+/**
+ * 2.0  - Helpers
+ */
+// Includes mixins, variables, functions, helper classes */
+@import "helpers/all-helpers";
+
+/**
+ * 3.0  - Base - includes reset, elements, editor styles
+ */
+@import "base/all-base";
+
+/**
+ * 4.0  - Components - includes building blocks of the site
+ */
+@import "components/all-components";
+
+/**
+ * 5.0  - Layout - includes layout elements: footer, containers, spacing, grid etc.
+ */
+@import "layout/all-layout";
+
+/**
+ * 6.0  - Post - includes post listing functionality
+ */
+@import "post/all-post";
+
+/**
+ * 7.0  - Post Single - includes post single functionality
+ */
+@import "post-single/all-post-single";
+
+/**
+ * 8.0  - Header - includes header, navigation and header specific components
+ */
+@import "header/all-header";
+
+/**
+ * 9.0  - Featured - includes featured components: featured area, featured strip etc.
+ */
+@import "featured/all-featured";
+
+/**
+ * 10.0  - Plugins/ Widgets - includes external plugins/widgets styling by Boombox or Boombox default plugins' styling
+ */
+@import "widgets-plugins/all-widgets-plugins";
+
+/**
+ * 11.0  - Pages - includes pages' styling
+ */
+@import "pages/_all-pages";
+
+/**
+ * 12.0 - Modules - includes different modules: media playing functionality etc.
+ */
+@import "modules/all-modules";
+
+/**
+ * 13.0 - Global - includes options, functionality that are applied globally
+ */
+@import "global/all-global";
+
+/**
+ * 14.0 - Theme Mode
+ */
+@import "theme-mode/all-theme-mode"; 
+
+///**
+// * 14.0 - Vendor - includes vendor styles not changed by Boombox: for ex. icommon styles
+// */
+//@import "vendor/all-vendor";

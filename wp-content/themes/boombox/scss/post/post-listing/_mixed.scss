@@ -1,0 +1,112 @@
+/* *** Post List *** */
+
+.mixed-list {
+  .post-item {
+    margin-bottom: $mb-md;
+  }
+
+  .post-item-list {
+      margin-bottom: 20px;
+      @include clearfix();
+
+      .post {
+        @include clearfix();
+      }
+
+      .post-thumbnail {
+        float: left;
+        width: 35%;
+
+        .bb-badge-list {
+          .bb-badge {
+            float: left;
+
+            &:nth-child(3) {
+              display: none;
+            }
+          }
+        }
+      }
+      .content {
+        padding: 0 0 0 20px;
+        float: left;
+        width: 65%;
+      }
+    .avatar {
+      width: 33px;
+    }
+    .entry-header h2 {
+      font-size: 18px;
+    }
+    }
+  .post-item-classic {
+    padding-bottom: 20px;
+
+    .content {
+      padding-top: 16px;
+    }
+    .post-author-meta {
+      border-top: none;
+    }
+
+    .bb-cat-links {
+      font-size: 12px;
+    }
+    &.newsletter-box,
+    &.bb-advertisement {
+      border-bottom: none;
+    }
+
+    .entry-sub-title {
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      font-size: 18px;
+    }
+    .post .byline {
+
+      .url {
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+
+    footer {
+      border-bottom: 1px solid #f2f2f2;
+    }
+
+    @media screen and (min-width: $screen-mb-boxed) {
+      .entry-header {
+        margin-bottom: 10px;
+        h2 {
+          font-size: 30px;
+          line-height: 1em;
+          margin-bottom: 10px;
+        }
+      }
+      .type-product .entry-header h2 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: $screen-mb-full-w-max) {
+  .mixed-list {
+      .post-item-list {
+        .post-thumbnail {
+          width :40% !important;
+        }
+        .content {
+          width: 60%;
+          padding: 12px 16px 0;
+        }
+        .entry-sub-title,
+        .post-author-meta {
+          display: none;
+        }
+      }
+  }
+}
+
+
+
+

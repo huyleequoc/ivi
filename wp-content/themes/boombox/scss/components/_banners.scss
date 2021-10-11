@@ -1,0 +1,96 @@
+/* *** Banners *** */
+
+/* WP Quads plugin */
+.quads-location {
+  margin: $mb-md 0!important;
+  padding: 0;
+  &:first-child {
+    margin-top: 0!important;
+  }
+}
+
+/* WP Quads plugin integration in Boombox */
+#main > .bb-advertisement.container {
+  margin-bottom: 0;
+}
+.bb-advertisement {
+  clear: both;
+  display: block;
+  text-align: center;
+  @include clearfix();
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    @include border-radius(0)
+  }
+  .message {
+    position: absolute;
+    padding: 30px 20px 30px 50px;
+    background-color: lighten($info-color, 30%);
+    border: 1px solid lighten($info-color, 10%);
+    color: $info-color;
+    text-align: left;
+
+    &:before {
+      content: "\f05a";
+      position: absolute;
+      top: 32px;
+      left: 16px;
+      font-size: 25px;
+      line-height: 25px;
+      font-family: $icon-font-family;
+    }
+  }
+  .quads-location {
+    margin: 0 0 $mb-md !important;
+  }
+  &.bb-before-header {
+    .quads-location {
+      margin: $mb-md !important;
+    }
+  }
+  &.bb-after-f-area {
+    .quads-location {
+      margin: 20px 0 0!important;
+    }
+  }
+  &.bb-before-cnt-area {
+    .quads-location {
+      margin: 0 0 50px 0!important;
+    }
+  }
+  &:last-child {
+    .quads-location {
+      margin-bottom: 0!important;
+    }
+  }
+  &.post-item {
+    .quads-location {
+      margin: 0!important;
+    }
+  }
+
+  // Position: Sticky to Bottom Area
+  &.bb-sticky-bottom-area {
+    .quads-location {
+      margin: 0!important;
+    }
+  }
+
+}
+.post-grid {
+  .bb-advertisement {
+    clear: none;
+  }
+}
+
+
+/* */
+[class^="widget_adswidget"], [class*=" widget_adswidget"] {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+

@@ -1,0 +1,33 @@
+#zombify-main-section-front {
+
+  .zf-animated {
+    animation-duration: .8s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes zf-cssload-scale {
+    0% { transform: scale(0); transform: scale(0); }
+    90% { transform: scale(0.7); transform: scale(0.7); }
+    100% { transform: scale(1); transform: scale(1); }
+  }
+
+  @keyframes zf-scale {
+    0% { -transform: scale(0,0); }
+    100%   { transform: scale(1,1); }
+  }
+
+  @keyframes zf-shake {
+    0% {transform: translate(7px, 0); }
+    50% {transform: translate(-7px, 0);}
+    100% {transform: translate(0, 0);}
+  }
+
+  .zf-shake {
+    -webkit-animation: zf-shake 150ms 2 linear;
+    animation: zf-shake 150ms 2 linear;
+  }
+  .zf-scale {
+    -webkit-animation: zf-scale 150ms 2 linear;
+    animation: zf-scale 150ms 2 linear;
+  }
+}

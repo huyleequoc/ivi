@@ -1,0 +1,62 @@
+/* Post Listing Item */
+
+.bb-post {
+  /* Entry Header */
+  .entry-header {
+    position: relative;
+    z-index: 5;
+
+    h1 {
+      margin: 0 0 5px;
+    }
+    h2 {
+      margin: 0 0 5px;
+      font-size: 23px;
+    }
+    h3 {
+      margin: 0 0 5px;
+      font-size: 18px;
+    }
+    .entry-sub-title {
+      margin: 0 0 10px;
+      font-size: 15px;
+      line-height: 1.25em;
+      font-weight: 500;
+    }
+    .bb-cat-links {
+      margin-right: 5px;
+    }
+  }
+
+  /* Entry Footer */
+  .entry-footer {
+    clear: both;
+    hr {
+      margin: 10px 0 15px
+    }
+  }
+
+  /* Post Number */
+  .post-number {
+    position: absolute;
+    left: 10px;
+    top: -9px;
+    z-index: 3;
+    display: inline-block;
+    margin-bottom: 6px;
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 600;
+
+    @include border-radius(50%);
+    @include box-shadow(1px, 2px, 2px, rgba(0, 0, 0, 0.18));
+  }
+
+  .widget_mc4wp_form_widget {
+    margin-bottom: 0;
+  }
+}

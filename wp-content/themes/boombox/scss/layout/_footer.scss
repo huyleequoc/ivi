@@ -1,0 +1,168 @@
+/* *** Footer *** */
+
+#footer {
+  position: relative;
+  z-index: 5;
+  clear: both;
+  display: block;
+  margin: 20px 0 0;
+
+  .footer-top {
+    padding: 50px 0 0;
+  }
+  .footer-bottom {
+    position: relative;
+    clear: both;
+    display: block;
+    padding: 19px 0;
+    font-size: 14px;
+    line-height: 18px;
+
+    ul {
+      margin: 0;
+    }
+
+    #top {
+      display: inline-block;
+      margin: 10px 0;
+      font-size: 30px;
+      line-height: 35px;
+      color: #000000;
+      font-family: $subtext-font-family;
+
+    }
+    .social-footer {
+      float: left;
+      max-width: 40%;
+    }
+    .copy-right {
+      float: right;
+      max-width: 20%;
+      line-height: 23px;
+    }
+  }
+
+  &.top-bg {
+    margin-top: 25px;
+    margin-top: 1.5vw;
+
+    .pattern {
+      position: absolute;
+      z-index: 0;
+      display: block;
+      max-height: 50px;
+      left: 0;
+      bottom: 100%;
+      margin-bottom: -2px;
+      width: 100%;
+      //@include transform(translate(0, -98%));
+      overflow: hidden;
+
+      svg {
+        position: relative;
+        float: left;
+        width: 100.6%;
+        left: -0.3%;
+        right: -0.3%;
+        > * {
+          width: 100%
+        }
+      }
+    }
+  }
+  &.bottom-bg {
+    margin-top: 25px;
+    margin-top: 1.5vw;
+
+    .pattern {
+      position: absolute;
+      z-index: 0;
+      display: block;
+      max-height: 50px;
+      left: 0;
+      bottom: 100%;
+      margin-bottom: -2px;
+      width: 100%;
+      //@include transform(translate(0, -98%));
+      overflow: hidden;
+
+      svg {
+        position: relative;
+        float: left;
+        width: 100.6%;
+        left: -0.3%;
+        right: -0.3%;
+        > * {
+          width: 100%
+        }
+      }
+    }
+  }
+  .pattern {
+    display: none;
+  }
+  @media screen and (max-width: $screen-sm-max) {
+    .footer-bottom {
+      .footer-nav,
+      .social-footer,
+      .copy-right {
+        max-width: initial;
+        float: none;
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+}
+
+.footer-nav {
+  display: block;
+  margin-right: 30px;
+  float: left;
+  max-width: 40%;
+
+  nav {
+    ul {
+      display: block;
+      list-style: none;
+      overflow: hidden;
+
+      li {
+        float: left;
+        margin-right: 17px;
+        list-style: none;
+
+        .sub-menu {
+          display: none
+        }
+
+        a {
+          color: inherit;
+          font-size: 13px;
+          line-height: 23px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+
+.go-top {
+  position: fixed;
+  z-index: 50;
+  display: none;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  &.show {
+    display: inline-block;
+  }
+}

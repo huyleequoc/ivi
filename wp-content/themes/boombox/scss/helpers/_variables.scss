@@ -1,0 +1,123 @@
+/// Global Variables
+
+
+// Grid System
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+// Media queries main breakpoints
+$screen-ss: 320px !default;
+$screen-ss-min: $screen-ss !default;
+$screen-s-phone: $screen-ss-min !default;
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+$screen-phone: $screen-xs-min !default;
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+$screen-tablet: $screen-sm-min !default;
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+$screen-desktop: $screen-md-min !default;
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+$screen-exra-lg: 1600px !default;
+$screen-exra-lg-min: $screen-exra-lg !default;
+$screen-lg-desktop: $screen-lg-min !default;
+$screen-ss-max: ($screen-xs-min - 1) !default;
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+$screen-exra-lg-max: ($screen-exra-lg-min - 1) !default;
+
+// Boxed and Full Width View Breakspoints
+$screen-mb-boxed: 701px; // the point after which boxed view starts
+$screen-mb-full-w-max: ($screen-mb-boxed - 1); // the point where full width on mobile ends
+
+// Custom Breakpoint for Mobile
+$screen-mb-custom: 601px;
+$screen-mb-custom-max: ($screen-mb-custom - 1);
+
+// Custom Breakpoint for Tablet
+$screen-tablet-custom: 901px;
+$screen-tablet-custom-max: ($screen-tablet-custom - 1);
+
+// Containers sizes
+$container : 1200px;
+$container-inner : 760px;
+
+$main : 65.7%;
+$sidebar: 31.5%;
+
+// Spacing
+$container-padding: 20px;
+$container-pad-mobile: 10px;
+
+$mb-xs: 10px;
+$mb-sm: 1.5625rem; // 25px
+$mb-md: 1.875rem; // 30px
+$mb-lg: 2.5rem; // 40px
+$mb-xl: 3.125rem; // 50px
+$mb-par: 1.25rem; // 20px
+
+// Base Params
+$mobile-font-size : 13px;
+$mobile-line-height : 1.4;
+$base-font-size : 16px;
+$base-line-height : 1.5;
+$base-font-family : 'Cabin', sans-serif;
+$heading-font-family : 'Rammetto One', cursive;
+$subtext-font-family:  'Rammetto One', cursive;
+//$icon-font:
+$icon-font-family:'ui-icomoon';
+
+// Headings
+$h1-font-size : 2.2rem; // 35px
+$h2-font-size : 1.875rem; // 30px
+$h3-font-size : 1.625rem; // 26px
+$h4-font-size : 1.5rem; // 24px
+$h5-font-size : 1.35rem; // 24px
+$h6-font-size : 1.25rem; // 20px
+
+// Fonts
+$heading : $heading-font-family;
+$sub-heading: $base-font-family;
+$text-font:  $base-font-family;
+
+
+//Box Shadow
+$btn-hover-shadow : -3px 3px 8px 0px rgba(21, 21, 24, 0.34);
+$main-box-shadow: -1px 6px 22.8px 1.2px rgba(42, 42, 42, 0.35);
+$badge-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.18);
+
+// primary color
+$primary-color : #fdc316;
+
+// heading color
+$heading-color : #000000; // h1,h2 ...
+
+// text color
+$text-color:  #1f1f1f; // base site color (body)
+
+// alerts (buttons) colors
+$success-color : #5cb85c;
+$info-color : #5bc0de;
+$warning-color : #f0ad4e;
+$danger-color : #d9534f;
+
+// link color
+$link-color: $primary-color;
+
+// btn color
+$btn-color: #ffffff; // btn`s color
+
+// extra color (using for components,secondary texts)
+$gray : #828282; // components default color (btn,hr,line types), small, city,placeholder
+
+// secondary colors
+$sec-bg-clr: #ddd;
+
+// overlay colors
+$overlay-txt-clr: #fff;
+$overlay-sec-txt-clr-dark: #a3a3a3;
+$overlay-sec-txt-clr-light: #fafafa;
+$overlay-txt-shadow: 1px 1px 2px rgba(0,0,0,.3);

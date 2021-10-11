@@ -1,0 +1,90 @@
+/* *** Sticky Functionality *** */
+
+/* BB Sticky */
+.bb-sticky {
+  .bb-sticky-el {
+    position: static;
+    //left: 0;
+    top: 0;
+  }
+  &.pos-animate {
+    .bb-sticky-el {
+      position: relative;
+      top: 0!important;
+    }
+  }
+  &.no-affix {
+    .bb-sticky-el {
+      position: relative;
+      transform: translateY(-100%);
+    }
+  }
+  &.affix {
+    .bb-sticky-el {
+      position: fixed;
+      transform: translate3d(0,0,0);
+      -webkit-font-smoothing: antialiased;
+      z-index: 1100;
+    }
+    &.animated {
+      .bb-sticky-el {
+        transition: .3s all;
+      }
+    }
+  }
+}
+
+/* BB Sticky Bottom Functionality */
+.bb-sticky-btm {
+  > div {
+    opacity: 0;
+    transition: ease all 0.3s;
+  }
+  > .bb-sticky-btm-el {
+    opacity: 1;
+  }
+  .sticky-btm-close {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 27px;
+    height: 27px;
+    background-color: $primary-color;
+    text-align: center;
+    line-height: 28px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: $text-color;
+    border-radius: 3px;
+    font-size: 0;
+    font-weight: 700;
+    &:before {
+      font-family: $icon-font-family;
+      content: "\e980";
+      line-height: 27px;
+      font-size: 14px;
+
+    }
+  }
+}
+.no-touchevents {
+  .bb-sticky-btm {
+    .sticky-btm-close {
+      opacity: 0;
+    }
+    &:hover {
+      .sticky-btm-close {
+        opacity: 1;
+      }
+    }
+  }
+}
+.bb-sticky-btm-el {
+  opacity: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3000;
+  width: 100%;
+}

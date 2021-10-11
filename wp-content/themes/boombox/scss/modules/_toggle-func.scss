@@ -1,0 +1,21 @@
+/* *** Toggle Functionality *** */
+
+/* BB Toggle */
+.bb-toggle {
+  position: relative;
+  .toggle-content {
+    background-color: #fff;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    @include  transition(all .3s ease-out);
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

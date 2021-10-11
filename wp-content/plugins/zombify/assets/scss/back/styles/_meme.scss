@@ -1,0 +1,401 @@
+#zombify-main-section {
+  &.zf-meme {
+
+    .zf-start {
+      display: none;
+
+      &.zf-open {
+        display: block;
+
+        + .zf-after-start {
+          display: none;
+        }
+      }
+    }
+
+    #zf-memecanvas {
+      width: 100%;
+    }
+    #zf-memecontainer {
+      position: relative;
+      img {
+        position: absolute;
+        z-index: -1;
+        top:0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+      }
+      canvas {
+        position: relative;
+        z-index: 1;
+      }
+    }
+    #zf-meme {
+      &.zf-create {
+        #zf-memecontainer {
+          display: none;
+        }
+        .zf-media-uploader {
+          display: block;
+        }
+      }
+      .zf-media-uploader {
+        display: none;
+      }
+    }
+
+    .zf-options {
+      display: block;
+      min-height: 40px;
+      width: 750px;
+      padding-left: 45px;
+
+      .zf-options_toggle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        padding: 6px 5px;
+        background: rgba(255,255,255,1);
+        color: #000;
+        font-size: 22px;
+        text-align: center;
+      }
+
+      ul {
+        @include clearfix();
+        display: none;
+        width: 100%;
+        margin: 0;
+        list-style: none;
+        padding: 5px 5px;
+        background: rgba(255,255,255,1);
+        li {
+          @include clearfix();
+          float: left;
+          margin: 0;
+          padding: 0 10px;
+          list-style: none;
+          vertical-align: top;
+          border-right: 1px solid #d4d4d4;
+
+          .zf-label {
+            float: left;
+            margin-right: 5px;
+            padding: 5px 0;
+            color: #000000;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          .zf-option {
+            float: left;
+          }
+
+          &.zf-optTop,
+          &.zf-optLeft {
+            display: none;
+          }
+        }
+      }
+      select {
+        padding: 2px 0;
+        height: 25px;
+        line-height: 22px;
+        min-width: 50px;
+        font-size: 13px;
+        background-color: #fff;
+        color: #000;
+        border: none;
+      }
+      input {
+        padding: 3px;
+        margin: 5px 0;
+        width: 50px;
+        height: 20px;
+        min-height: inherit;
+        min-width: inherit;
+        font-size: 10px;
+      }
+
+      &.zf-open {
+        ul {
+          display: block;
+        }
+      }
+    }
+    .ui-draggable {
+      position: absolute !important;
+      z-index: 5;
+      height: 60px;
+      border-radius: 5px;
+      border: 2px dashed #fff;
+      //background: rgba(255,255,255,0.5);
+
+      textarea {
+        display: none;
+        position: absolute;
+        z-index: 0;
+        top:1.15em;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 0;
+        font-size: 50px;
+        line-height: 1em;
+        color: transparent !important;
+        background: transparent !important;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        resize: none;
+        overflow: hidden;
+        text-transform: uppercase;
+        opacity: 0;
+
+        &:focus {
+          box-shadow: none;
+          color: transparent !important;
+          background: transparent !important;
+        }
+      }
+      ::-webkit-input-placeholder {
+        color: transparent !important;
+      }
+      ::-moz-placeholder {
+        color: transparent !important;
+      }
+      :-ms-input-placeholder {
+        color: transparent !important;
+      }
+      :-moz-placeholder {
+        color: transparent !important;
+      }
+
+      .zf-drag {
+        cursor: move;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        // z-index: 3;
+        bottom: 0;
+        right: 0;
+      }
+
+      .zf-options {
+        display: none;
+      }
+      &.zf-topIndex {
+        z-index: 10;
+
+        .zf-options {
+          display: block;
+        }
+      }
+      &.zf-top-drag {
+        .zf-options {
+          position: absolute;
+          left: 0;
+          top:110%;
+        }
+        .zf-colorPicker .zf-color_popup {
+          left: 0;
+          top:100%;
+          z-index: 1;
+        }
+      }
+      &.zf-bottom-drag {
+        .zf-options {
+          position: absolute;
+          left: 0;
+          bottom:110%;
+        }
+        .zf-colorPicker .zf-color_popup {
+          left: 0;
+          bottom:100%;
+          z-index: 1;
+        }
+      }
+
+    }
+    .ui-resizable-handle {
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border: 1px solid #ffffff;
+      position: absolute;
+    }
+    .ui-resizable-n {
+      left: 50%;
+      margin-left: -5px;
+      top: -6px;
+      cursor: n-resize;
+    }
+    .ui-resizable-s {
+      left: 50%;
+      margin-left: -5px;
+      bottom: -6px;
+      cursor: s-resize;
+    }
+    .ui-resizable-sw {
+      left: -6px;
+      bottom: -6px;
+      cursor: sw-resize;
+    }
+    .ui-resizable-nw {
+      left: -6px;
+      top: -6px;
+      cursor: nw-resize;
+    }
+    .ui-resizable-ne {
+      right: -6px;
+      top: -6px;
+      cursor: ne-resize;
+    }
+    .ui-resizable-se {
+      right: -6px;
+      bottom: -6px;
+      cursor: se-resize;
+    }
+
+    .zf-colorPicker {
+      @include clearfix();
+      position: relative;
+      padding: 5px 0;
+
+      .zf-current_color {
+        float: left;
+        width: 30px;
+        height: 20px;
+        border: 1px solid #cccccc;
+        cursor: pointer;
+
+      }
+      .zf-color_popup {
+        display: none;
+        margin: 0;
+        position: absolute;
+        //top: 100%;
+        width: 220px;
+        padding: 10px 8px 8px 8px;
+        border: 1px solid #bbb;
+        border-radius: 3px;
+        background-color: #fff;
+        @include clearfix();
+
+        .zf-color {
+          position: relative;
+          float: left;
+          font: 0/0 a;
+          width: 12.66%;
+          padding-top: 11.00%;
+          margin: 2% 2%;
+          outline: 1px solid #bbb;
+          border: 2px solid #fff;
+          border-radius: 3px;
+          cursor: pointer;
+          overflow: hidden;
+        }
+      }
+      &.zf-active {
+        .zf-color_popup {
+          display: block;
+        }
+      }
+    }
+
+    &.zf-screen-sm {
+      .zf-options {
+        width: 285px;
+
+        ul {
+          li {
+            width: 100%;
+            border: none;
+          }
+        }
+      }
+
+      .zf-bottom-drag {
+        .zf-options_toggle {
+          top: inherit;
+          bottom: 0;
+        }
+      }
+    }
+    &.zf-screen-xs {
+      .zf-options {
+        width: 285px;
+
+        ul {
+          li {
+            width: 100%;
+            border: none;
+          }
+        }
+      }
+
+      .zf-bottom-drag {
+        .zf-options_toggle {
+          top: inherit;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.zf-mobile {
+  #zombify-main-section{
+    &.zf-meme {
+      .zf-options {
+        padding-left: 0;
+        max-width: 100%;
+
+        .zf-options_toggle {
+          display: none;
+        }
+         ul {
+           display: block;
+           padding: 5px 0;
+
+           li {
+             &.zf-optTop,
+             &.zf-optLeft {
+               display: inline-block;
+             }
+
+             &.zf-optStroke {
+               .zf-colorPicker {
+                 .zf-color_popup {
+                   /* left: inherit;
+                   right: 0; */
+                 }
+               }
+             }
+           }
+         }
+      }
+      .zf-colorPicker {
+        .zf-color_popup {
+          top: 100%;
+          z-index: 1;
+          left: 0;
+        }
+      }
+      .zf-drag-area {
+        &.zf-top-drag {
+          .zf-colorPicker {
+            .zf-color_popup {
+              top:inherit;
+              bottom: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

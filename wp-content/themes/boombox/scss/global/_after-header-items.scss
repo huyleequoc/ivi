@@ -1,0 +1,59 @@
+/* *** After Header Items Styling *** */
+
+// *** General Cases ***
+.bb-show-mobile-header, .bb-show-desktop-header, .bb-el-before-main-cnt {
+  & + #main > .bb-advertisement:first-child {
+    .quads-location {
+      margin: $mb-md 0!important;
+    }
+  }
+  & + #main > .bb-top-badge-list,
+  & + #main > .bb-featured-area.item-1-newsletter {
+    &:first-child {
+      margin-top: $mb-md;
+    }
+  }
+
+  & + #main > .bb-featured-area {
+    &:first-child {
+      margin-top: $container-padding;
+    }
+  }
+
+  & + #main > .bb-featured-strip.bb-stretched-full,
+  & + #main > .bb-featured-area.stretched.badges-off {
+    &:first-child {
+      margin-top: 4px;
+    }
+  }
+  & + #main > .bb-featured-strip.bb-stretched-full.no-gap,
+  & + #main > .bb-featured-area.stretched.no-gap.badges-off {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+// *** Specific Cases ***
+.with-background-media, .bb-boxed-view {
+  .bb-show-mobile-header, .bb-show-desktop-header {
+    & + #main > .bb-page-header.boxed.has-bg,
+    & + #main > .bb-featured-strip {
+      margin-top: $container-padding;
+    }
+  }
+}
+.badges-inside-left, .badges-inside-right {
+  .bb-show-mobile-header, .bb-show-desktop-header, .bb-floating-navbar {
+    & + #main > .bb-featured-area.stretched {
+      &:first-child {
+        margin-top: 4px;
+      }
+    }
+    & + #main > .bb-featured-area.stretched.no-gap {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

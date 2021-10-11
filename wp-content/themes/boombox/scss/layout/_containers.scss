@@ -1,0 +1,129 @@
+/* *** Containers *** */
+
+.page-wrapper {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+#main {
+  position: relative;
+  min-height: 800px;
+  //width: $container;
+  max-width: 100%;
+  margin: 0 auto 50px;
+  z-index: 5;
+  clear: both;
+}
+
+/* General containers */
+.container, .page-activate-signup #signup-content, .container-fluid {
+  @extend .clearfix;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-pad-mobile;
+  padding-right: $container-pad-mobile;
+}
+.container, .page-activate-signup #signup-content {
+  width: $container;
+  max-width: 100%;
+}
+.container-fluid {
+  width: 100%;
+  &.no-gutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Container with background image */
+.with-background-media {
+  .page-wrapper {
+    background-color: transparent !important;
+  }
+  #main {
+    width: 1200px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 50px;
+      z-index: 0;
+      background-color: inherit;
+    }
+    &:before {
+      bottom: 100%;
+    }
+    &:after {
+      top: 100%;
+    }
+  }
+  .background-image {
+    display: block;
+  }
+}
+.background-image {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-position: center top;
+
+  .link {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Mce full screen container */
+.mce-fullscreen #background-image,
+.mce-fullscreen #wpadminbar {
+  display: none;
+}
+.mce-fullscreen  .page-wrapper {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: $screen-lg-min) {
+  .container, .page-activate-signup #signup-content {
+    width: $screen-md;
+  }
+
+  .bb-stretched-view,
+  .bb-boxed-view {
+    #background-image {
+      display: none;
+    }
+  }
+
+}
+@media screen and (min-width: $screen-mb-boxed) {
+  .container, .page-activate-signup #signup-content {
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+  }
+}
+@media screen and (min-width: $screen-mb-boxed) {
+
+}
+@media screen and (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+  #main {
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: $screen-ss-max) {
+  #main {
+    min-height: 350px;
+  }
+}
+
+

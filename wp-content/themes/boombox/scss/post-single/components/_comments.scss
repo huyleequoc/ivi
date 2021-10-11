@@ -1,0 +1,335 @@
+/* *** Post Single Comments *** */
+
+/* Booombox Comments */
+#comments {
+  clear: both;
+
+  a:hover {
+    text-decoration: underline;
+  }
+  .wp-social-login-widget {
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .comments-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    span {
+      display: inline-block;
+      margin-left: 10px;
+      font-weight: 400;
+    }
+  }
+  .comment-reply-title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .comment-reply-title {
+    margin-bottom: 5px;
+
+    #cancel-comment-reply-link {
+      display: block;
+      font-size: 11px;
+      line-height: 1em;
+      vertical-align: top;
+      text-transform: lowercase ;
+    }
+  }
+  .comment-list {
+    display: block;
+    list-style: none;
+    margin: 0 0 30px;
+    border-bottom: 1px solid #f4f3f3;
+
+  }
+  .comment-reply-login {
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  .pingback,
+  .comment {
+    position: relative;
+    display: block;
+    list-style: none;
+    //      padding: 30px 5px 20px 5px;
+    border-top: 1px solid #f4f3f3;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    .comment-form {
+      margin-bottom: 10px;
+    }
+    .comment-meta {
+      padding-top: 7px;
+      line-height: 1em;
+    }
+    .comment-body {
+      position: relative;
+      display: block;
+      list-style: none;
+      line-height: 1em;
+      padding: 10px 5px 10px 60px;
+
+      .comment-author {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 600;
+
+        .avatar {
+          position: absolute;
+          width: 40px;
+          top: 15px;
+          left: 0px;
+          @include border-radius(50%);
+        }
+        b {
+          font-weight: 500;
+        }
+      }
+      .comment-metadata {
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 12px;
+        line-height: 18px;
+
+        a {
+          color: inherit
+        }
+      }
+      .comment-content {
+        padding-top: 5px;
+        font-size: 14px;
+        line-height: 1.2em;
+
+        p {
+          margin-bottom: 5px
+        }
+        small a {
+          color: #1f1f1f;
+        }
+      }
+      .reply {
+        display: inline-block;
+      }
+      .comment-reply-link {
+        display: inline-block;
+        padding: 1px 10px;
+        font-size: 10px;
+        line-height: 13px;
+        font-weight: 600;
+        color: #ffffff;
+        text-transform: uppercase;
+        vertical-align: top;
+        background-color: #cdcdcd;
+      }
+    }
+    .children {
+      margin: 0;
+      padding-left: 60px;
+
+      .comment {
+        border-top: 1px solid #f4f3f3;
+
+        .comment-body {
+          padding-left: 50px;
+          .comment-author .avatar {
+            width: 30px;
+          }
+        }
+      }
+
+      .children {
+        padding-left: 50px;
+        .children {
+          padding-right: 0;
+          padding-left: 0
+        }
+      }
+    }
+  }
+  .bypostauthor > .comment-body .vcard .fn {
+    color: $primary-color;
+    * {
+      color: inherit;
+    }
+  }
+  .nav-links {
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    .nav-previous {
+      float: left;
+    }
+    .nav-next {
+      float: right;
+    }
+    a {
+      background-color: #ffe400;
+      color: #000000;
+      padding: 0 3px;
+    }
+  }
+  .comment-subscription-form {
+    clear: both;
+  }
+}
+.comment-respond {
+  .comment-reply-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  form {
+    @include clearfix();
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+  }
+  .logged-in-as, .comment-notes {
+    margin-bottom: 5px;
+    font-size: 13px;
+
+    a {
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .form-submit {
+    margin-bottom: 0;
+
+    .submit-button {
+      min-width: inherit;
+      width: 100%;
+      padding: 0 5px;
+      margin: auto;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      height: 35px;
+      line-height: 35px;
+      min-height: inherit;
+      text-align: center !important;
+      border-radius: 3px;
+      border: none;
+    }
+  }
+  /* #commentform is used in woocommerce plugin */
+  .form-submit .submit-button, #commentform input#submit, #commentform input#submit:hover {
+    color: #fff;
+    background-color: #353432;
+  }
+  input[type=text], textarea,
+  #commentform textarea#comment {
+    padding: 0 20px;
+    height: 35px;
+    line-height: 33px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400;
+    color: #9a9a9a;
+    background-color: #fff;
+    //border: 1px solid #e2e2e2;
+    border-width: 1px;
+    border-radius: 3px;
+  }
+  #commentform textarea#comment,
+  textarea {
+    padding: 7px 20px;
+    resize: vertical;
+    line-height: 1.2em;
+  }
+}
+.comment-vote {
+  display: inline-block;
+  margin-left: 20px;
+
+  a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1em;
+    vertical-align: top;
+
+    .bb-icon {
+      display: inline-block;
+      @include transition(all 0.2s ease-out);
+    }
+
+    .count {
+      display: inline-block;
+      margin-left: 3px;
+      font-size: 11px;
+      vertical-align: top;
+    }
+    &:first-child + a {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      .bb-icon {
+        @include transform(translate(0px, -3px));
+      }
+    }
+  }
+}
+.comments-area {
+  margin-bottom: 30px;
+
+  .emoji_row {
+    margin-bottom: 30px;
+  }
+}
+
+// Selected according to Zombify breakpoint */
+@media (min-width: 551px + $container-padding * 2) {
+  .comment-respond .comment-form-comment {
+    float: left;
+    width: 74%;
+  }
+  .comment-respond .form-submit {
+    float: right;
+    width: 25%;
+  }
+}
+@media screen and (max-width: $screen-xs-max) {
+  #comments .comment {
+    .children .children,
+    .children {
+      padding-left: 10px;
+    }
+  }
+}
+
+/* Booombox Comments New Version */
+.boombox-comments {
+  .comments-filter {
+    float: right;
+    margin-bottom: -15px;
+
+    select {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      padding: 3px 5px;
+    }
+  }
+}
+@media (max-width: $screen-sm-min){
+  .boombox-comments .comments-filter {
+    float: none;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,336 @@
+/**
+ * 7.0 - Components
+ */
+
+/**
+ * 7.1 - Buttons
+ */
+#zombify-main-section {
+  .zf-button {
+    margin: 0;
+    padding: 14px 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 22px;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: $base-font-family;
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: 3px;
+
+    + .zf-button {
+      margin-left: 3px;
+    }
+
+    i {
+      margin-right: 14px;
+      vertical-align: middle;
+      font-size: 23px;
+    }
+    &.zf-icon {
+      position: relative;
+      padding-left: 65px;
+
+      i {
+        position: absolute;
+        top: 13px;
+        left: 20px;
+      }
+    }
+    &.zf-outline {
+      background-color: transparent;
+      color: #484848;
+      border-color: #f7f7f5;
+    }
+    &.btn-default {
+      color: #ffffff;
+      background-color: #cdcdcd;
+      border-color: #cdcdcd;
+    }
+    &.btn-info {
+      color: $btn-color;
+      background-color: $info-color;
+      border-color: $info-color;
+    }
+    &.btn-success {
+      color: $btn-color;
+      background-color: $success-color;
+      border-color: $success-color;
+    }
+    &.btn-warning {
+      color: $btn-color;
+      background-color: $warning-color;
+      border-color: $warning-color;
+    }
+    &.btn-danger {
+      color: $btn-color;
+      background-color: $danger-color;
+      border-color: $danger-color;
+    }
+  }
+
+  .zf-add-button {
+    clear: both;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: $base-font-family;
+    font-weight: 600;
+    color: $secondary-color;
+    text-transform: uppercase ;
+    background-color: $secondary-light-color;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $secondary-color;
+    }
+
+    &[data-zombify-position="first"] {
+      margin-bottom: 20px;
+    }
+  }
+
+  // Future-proof disabling of clicks on `<a>` elements
+  .zf-button.disabled {
+    pointer-events: none;
+  }
+
+
+  /**
+   * 7.2 - Alerts
+   */
+  .zf-alert {
+    position: relative;
+    clear: both;
+    display: block;
+    padding: 10px 15px 10px 50px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    background-color: lighten($warning-color, 30%);
+    color: $warning-color;
+    border-radius: 4px;
+
+    .zf-close {
+      position: relative;
+      top: -2px;
+      right: -21px;
+      line-height: 20px;
+      float: right;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 20px;
+      color: #000000;
+      text-shadow: 0 1px 0 #ffffff;
+      opacity: 0.2;
+      filter: alpha(opacity=20);
+
+      &:hover, &:focus {
+        color: #000000;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+      }
+    }
+
+    .zf-icon {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      font-size: 17px;
+      font-weight: 600;
+      border-radius: 50%;
+      background-color: #e45050;
+      color: #ffffff;
+      font-style: inherit;
+      text-align: center;
+    }
+
+    a {
+      color: inherit;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    &.zf-alert-error {
+      background-color: #fbecef;
+      color: #998e99;
+    }
+    &.alert-success {
+      background-color: lighten($success-color, 30%);
+      border: 1px solid lighten($success-color, 10%);
+      color: $success-color;
+    }
+    &.zf-alert-info {
+      background-color: lighten($info-color, 30%);
+      border: 1px solid lighten($info-color, 10%);
+      color: $info-color;
+    }
+  }
+
+
+  /**
+   * 7.8 - Tooltips
+   */
+  .zf-tooltip {
+    position: relative;
+    border-bottom: 1px solid $gray;
+    cursor: pointer;
+
+    &:before {
+      content: attr(title);
+      position: absolute;
+      margin-bottom: 10px;
+      padding: 3px 8px;
+      bottom: 100%;
+      left: 50%;
+      font-size: 0.8em;
+      color: #ffffff;
+      background-color: $primary-color;
+      white-space: nowrap;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-top-color: $primary-color;
+      border-width: 5px;
+      margin-left: -5px;
+    }
+    &:before, &:after {
+      opacity: 0;
+      filter: alpha(opacity=0);
+      visibility: hidden;
+      -webkit-transition: all ease-out 0.1s;
+      -moz-transition: all ease-out 0.1s;
+      -ms-transition: all ease-out 0.1s;
+      -o-transition: all ease-out 0.1s;
+      transition: all ease-out 0.1s;
+    }
+
+    &:hover:before, &:hover:after {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      visibility: visible;
+    }
+  }
+
+  .zf-tabs {
+    margin-bottom: 25px;
+  }
+
+  .zf-tabs-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      border-style: solid;
+      border-color: transparent;
+      a {
+        color: inherit;
+        font-size: 14px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 20px;
+        display: block;
+      }
+    }
+  }
+
+  .zf-tab-content {
+    display: none;
+  }
+
+  /* Tabs Horizontal */
+  .zf-tabs-horizontal {
+    .zf-tabs-menu {
+      @include clearfix();
+      li {
+        float: left;
+        border-width: 2px 2px 0 2px;
+        margin-right: 5px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        &.zf-active a {
+          bottom: -2px;
+        }
+
+      }
+    }
+    .zf-tabs-content {
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+  }
+
+
+  .zf-progressbar {
+    width: 80%;
+    background: rgba(117, 117, 117, 0.7);
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+
+    .zf-progressbar-active {
+      height: 10px;
+      background-color: $primary-color;
+      border-radius: 10px;
+    }
+  }
+
+  .zf-progress-cancel-btn {
+    display: inline-block;
+    background: none;
+    border: 2px solid rgba(117,117,117,.7);
+    color: #bebfbf;
+    font-size: 15px;
+    text-transform: initial;
+    padding: 4px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .zf-progress-cancel-btn:hover {
+    background: rgba(117,117,117,.5);
+  }
+
+  .zombify_embed_margin {
+    margin-bottom: 20px;
+  }
+
+  .zf-hide-delete-icon {
+    display: none;
+  }
+
+  .zf-embed {
+    blockquote:before {
+      content: none;
+    }
+  }
+}
