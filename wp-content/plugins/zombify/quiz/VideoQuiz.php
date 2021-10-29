@@ -40,7 +40,7 @@ if( !class_exists("Zombify_VideoQuiz") ) {
                 "title" => [
                     "type" => "field",
                     "name" => "title",
-                    "label" => __("Title", "zombify"),
+                    "label" => __("Tê điều", "zombify"),
                     "field_type" => "text",
                     "rules" => [
                         "required",
@@ -61,35 +61,35 @@ if( !class_exists("Zombify_VideoQuiz") ) {
                 "use_preface" => [
                     "type" => "field",
                     "name" => "use_preface",
-                    "label" => __("Add preface", "zombify"),
+                    "label" => __("Thêm lời nói đầu", "zombify"),
                     "field_type" => "checkbox",
                     "field_visibility" => ( isset( zombify()->post_main_fields[ $this->slug ]["preface"] ) ? zombify()->post_main_fields[ $this->slug ]["preface"] : 'show' )
                 ],
                 "preface_description" => [
                     "type" => "field",
                     "name" => "preface_description",
-                    "label" => __("Type something here", "zombify"),
+                    "label" => __("Nhập một cái gì đó ở đây", "zombify"),
                     "field_type" => "textarea",
                     "field_visibility" => ( isset( zombify()->post_main_fields[ $this->slug ]["preface"] ) ? zombify()->post_main_fields[ $this->slug ]["preface"] : 'show' )
                 ],
                 "use_excerpt" => [
                     "type" => "field",
                     "name" => "use_excerpt",
-                    "label" => __("Add excerpt", "zombify"),
+                    "label" => __("Thêm đoạn trích", "zombify"),
                     "field_type" => "checkbox",
                     "field_visibility" => ( isset( zombify()->post_main_fields[ $this->slug ]["excerpt"] ) ? zombify()->post_main_fields[ $this->slug ]["excerpt"] : 'show' )
                 ],
                 "excerpt_description" => [
                     "type" => "field",
                     "name" => "excerpt_description",
-                    "label" => __("Type excerpt here", "zombify"),
+                    "label" => __("Gõ đoạn trích vào đây", "zombify"),
                     "field_type" => "textarea",
                     "field_visibility" => ( isset( zombify()->post_main_fields[ $this->slug ]["excerpt"] ) ? zombify()->post_main_fields[ $this->slug ]["excerpt"] : 'show' )
                 ],
                 "description" => [
                     "type" => "field",
                     "name" => "description",
-                    "label" => __("Description", "zombify"),
+                    "label" => __("Mô tả", "zombify"),
                     "field_type" => "textarea",
                     "field_visibility" => ( isset( zombify()->post_main_fields[ $this->slug ]["description"] ) ? zombify()->post_main_fields[ $this->slug ]["description"] : 'show' )
                 ],

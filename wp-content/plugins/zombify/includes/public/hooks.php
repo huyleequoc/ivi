@@ -104,35 +104,35 @@ function zombify_enqueue_scripts() {
 	$is_openlist     = $is_zombify_post && $zombify_post_type_meta === 'openlist';
 	$is_rankedlist   = $is_zombify_post && $zombify_post_type_meta === 'rankedlist';
 	$is_list_item    = $post && $post->post_type == 'list_item';
-	$text_on_meme    = esc_html__( "Start Typing Here", 'zombify' );
+	$text_on_meme    = esc_html__( "Thêm nội dung", 'zombify' );
 
 	$translatable = array(
-		"invalid_file_extension"  => esc_html__( "Invalid file extension. Valid extensions are:", "zombify" ),
-		"invalid_file_size"       => esc_html__( "File is too large. Maximum allowed file size is:", "zombify" ),
+		"invalid_file_extension"  => esc_html__( "Sai định dạnh file. Định dạng chuẩn :", "zombify" ),
+		"invalid_file_size"       => esc_html__( "Dung lượng file quá lớn. Dung lượng tối đa:", "zombify" ),
 		"mb"                      => esc_html__( "MB", "zombify" ),
-		"error_saving_post"       => esc_html__( "There was an error while saving the post. Please try again.", "zombify" ),
-		"processing_files"        => esc_html__( "Processing files ...", "zombify" ),
-		"uploading_files"         => esc_html__( "Uploading files", "zombify" ),
-		"preview_alert"           => esc_html__( "Please save the post first!", "zombify" ),
+		"error_saving_post"       => esc_html__( "Có lỗi trong quá trình lưu. Thử lại.", "zombify" ),
+		"processing_files"        => esc_html__( "Đang xử lý ...", "zombify" ),
+		"uploading_files"         => esc_html__( "Đang tải lên ...", "zombify" ),
+		"preview_alert"           => esc_html__( "Lưu bài!", "zombify" ),
 		"meme"                    => array(
 			"top_text"    => $text_on_meme,
 			"bottom_text" => $text_on_meme
 		),
-		"incorrect_file_upload"   => esc_html__( "File was not uploaded successfully.", "zombify" ),
-		"confirm_discard_virtual" => esc_html__( "Are you sure? Data will be lost.", "zombify" ),
-		"unknown_error"           => esc_html__( "Unknown error", "zombify" ),
+		"incorrect_file_upload"   => esc_html__( "Tải tệp lên thất bại.", "zombify" ),
+		"confirm_discard_virtual" => esc_html__( "Bạn chắc chắn thoát? Dữ liệu sẽ bị mất.", "zombify" ),
+		"unknown_error"           => esc_html__( "Lỗi không xác định", "zombify" ),
 		"publish_button"          => array(
-			"publish"  => esc_html__( "Publish", "zombify" ),
-			"schedule" => esc_html__( "Schedule", "zombify" )
+			"publish"  => esc_html__( "Tải lên", "zombify" ),
+			"schedule" => esc_html__( "Lên lịch", "zombify" )
 		),
 		"schedule_immediately"    => esc_html__( "immediately", "zombify" ),
 		"schedule_stamp"          => array(
-			"schedule_for" => esc_html__( "Schedule for:", "zombify" ),
-			"published_on" => esc_html__( "Published on:", "zombify" ),
-			"publish_on"   => esc_html__( "Publish on:", "zombify" ),
+			"schedule_for" => esc_html__( "Lên lịch cho:", "zombify" ),
+			"published_on" => esc_html__( "Đã tải lên lúc:", "zombify" ),
+			"publish_on"   => esc_html__( "Tải lên lúc:", "zombify" ),
 			"date_format"  => __( '%1$s %2$s, %3$s @ %4$s:%5$s' )
 		),
-        "saved" => esc_html__( "Saved", "zombify" )
+        "saved" => esc_html__( "Đã lưu", "zombify" )
 	);
 
 	$zf_editor_settings       = apply_filters( 'zf-editor-settings', $zf_config['zf_editor'] );
@@ -151,7 +151,7 @@ function zombify_enqueue_scripts() {
 	);
 
 	$zf_max_upload_size    = zf_max_upload_size();
-	$zf_max_upload_message = esc_html__( "File is too large. Maximum size is ", "zombify" ) . round( ( $zf_max_upload_size > 0 ? $zf_max_upload_size / 1024 / 1024 : 0 ), 2 ) . esc_html__( "MB", "zombify" );
+	$zf_max_upload_message = esc_html__( "FDung lượng file quá lớn. Dung lượng tối đa: ", "zombify" ) . round( ( $zf_max_upload_size > 0 ? $zf_max_upload_size / 1024 / 1024 : 0 ), 2 ) . esc_html__( "MB", "zombify" );
 
 	wp_enqueue_script( 'zombify-main-js', zombify()->assets_url . 'js/minify/zombify-main-scripts.min.js', array( 'jquery' ), zombify()->get_plugin_data()->version );
 
@@ -219,7 +219,7 @@ function zombify_enqueue_scripts() {
 			'translatable'  => $translatable,
 			'ajaxurl'       => admin_url( 'admin-ajax.php' ),
 			'post_id'       => $post_id,
-			'fetching_text' => esc_html__( "Fetching preview", "zombify" )
+			'fetching_text' => esc_html__( "Đang tải bản xem trước", "zombify" )
 		) );
 
 	}
@@ -558,8 +558,8 @@ if ( ! function_exists( "zombify_custom_post_types" ) ) {
 		register_post_type( 'list_item',
 			array(
 				'labels'      => array(
-					'name'          => esc_html__( 'List Items', 'zombify' ),
-					'singular_name' => esc_html__( 'List Items', 'zombify' ),
+					'name'          => esc_html__( 'Danh sách', 'zombify' ),
+					'singular_name' => esc_html__( 'Danh sách', 'zombify' ),
 				),
 				'public'      => true,
 				'has_archive' => true,
@@ -613,13 +613,13 @@ if ( ! function_exists( "zombify_toolbar_link" ) ) {
 
 			$args = array(
 				'id' => 'zombify-edit-post',
-				'title' => esc_html__( 'Edit With Zombify', 'zombify' ),
+				'title' => esc_html__( 'Sửa với Zombify', 'zombify' ),
 				'href' => add_query_arg( array(
 					'action'  => 'update',
 					'post_id' => $post->post_type == 'list_item' ? $post->post_parent : get_the_ID()
 				), get_permalink( zf_get_option( "zombify_post_create_page" ) ) ),
 				'meta' => array(
-					'title' => esc_html__( 'Edit With Zombify', 'zombify' ),
+					'title' => esc_html__( 'Sửa với Zombify', 'zombify' ),
 				)
 			);
 
@@ -722,18 +722,18 @@ if ( ! function_exists( 'zombify_render_flash_popup' ) ) {
 		$post = get_post( $post_id );
 		$popup_class = 'zombify-submit-popup zf-open';
 		if( 'pending' == $status ) {
-			$title = __( 'Thank You for Your Submission!', 'zombify' );
-			$content = __( "Your item is awaiting moderation. You'll be notified as soon as your submission is approved.", 'zombify' );
+			$title = __( 'Cảm ơn đã đóng góp!', 'zombify' );
+			$content = __( "Sản phẩm của bạn đang chờ kiểm duyệt. Bạn sẽ được thông báo ngay sau khi nội dung gửi của bạn được chấp thuận.", 'zombify' );
 			$buttons = array( 'share' => false, 'create' => true );
 		} elseif( 'publish' == $status ) {
 			$popup_class .= ' zombify-congrads-popup';
-			$title = esc_html__( 'Congratulations!', 'zombify' );
-			$content = sprintf( '%1$s<br>%2$s', esc_html__( 'Your item is now published.', 'zombify' ), esc_html__( "Don't forget to share it with your friends.", 'zombify' ) );
+			$title = esc_html__( 'Chúc mừng!', 'zombify' );
+			$content = sprintf( '%1$s<br>%2$s', esc_html__( 'Mục của bạn hiện đã được xuất bản.', 'zombify' ), esc_html__( "Đừng quên chia sẻ nó với bạn bè của bạn.", 'zombify' ) );
 			$buttons = array( 'share' => true, 'create' => false );
 		} elseif( 'future' == $status ) {
 			$popup_class .= ' zombify-congrads-popup';
-			$title = esc_html__( 'Congratulations!', 'zombify' );
-			$content = apply_filters( 'zf-publish-popup-content', sprintf( esc_html__( 'Your item is successfully scheduled for: %s.', 'zombify' ), '<br/><strong>' . date_i18n( __( 'M j, Y @ H:i' ), strtotime( $post->post_date ) ) . '</strong>' ) );
+			$title = esc_html__( 'Chúc mừng!', 'zombify' );
+			$content = apply_filters( 'zf-publish-popup-content', sprintf( esc_html__( 'Mục của bạn đã được lên lịch thành công cho: %s.', 'zombify' ), '<br/><strong>' . date_i18n( __( 'M j, Y @ H:i' ), strtotime( $post->post_date ) ) . '</strong>' ) );
 			$buttons = array( 'share' => true, 'create' => false );
 		}
 
@@ -761,7 +761,7 @@ if ( ! function_exists( 'zombify_render_flash_popup' ) ) {
 						<?php if( $buttons[ 'share' ] || $buttons[ 'create' ] ) { ?>
 							<div class="zf-btn-group">
 								<?php if ( $buttons['share'] && defined( 'BOOMBOX_THEME_PATH' ) ) { ?>
-									<div class="zf-share_text"><?php esc_html_e( "Share", "zombify" ); ?></div>
+									<div class="zf-share_text"><?php esc_html_e( "Chia sẻ", "zombify" ); ?></div>
 									<div class="zf-share_box">
 
 										<?php
@@ -795,7 +795,7 @@ if ( ! function_exists( 'zombify_render_flash_popup' ) ) {
 								if ( $buttons['create'] ) { ?>
 									<a class="zf-btn zf-create"
 									   href="<?php echo esc_url( get_permalink( zf_get_option( 'zombify_frontend_page' ) ) ); ?>"><i
-												class="zf-icon zf-icon-add"></i><?php esc_html_e( 'Create One More', 'zombify' ); ?>
+												class="zf-icon zf-icon-add"></i><?php esc_html_e( 'Tạo thêm', 'zombify' ); ?>
 									</a>
 								<?php } ?>
 
@@ -911,7 +911,7 @@ if ( ! function_exists( 'zombify_render_popups' ) ) {
             <div class="zombify-popup_body">
                 <a class="zf-popup_close" href="#"><i class="zf-icon zf-icon-delete"></i></a>
                 <div class="zf-content">
-                    <div class="zf-head">' . esc_html__( 'Choose A Format', 'zombify' ) . '</div>
+                    <div class="zf-head">' . esc_html__( 'Chọn một định dạng', 'zombify' ) . '</div>
                     <div class="zf-create-box" data-count="' . count( $zombify_active_formats ) . '">';
 
 		foreach ( $post_types as $post_type_data ) {
@@ -1248,7 +1248,7 @@ if ( ! function_exists( "zombify_get_post_comments" ) ) {
 					'callback'          => null,
 					'end-callback'      => null,
 					'type'              => 'all',
-					'reply_text'        => esc_html__( 'Reply', 'zombify' ),
+					'reply_text'        => esc_html__( 'Trả lời', 'zombify' ),
 					'page'              => (int) $_POST["page"] - 1,
 					'per_page'          => 5,
 					'avatar_size'       => 32,

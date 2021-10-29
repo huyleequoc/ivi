@@ -30,7 +30,7 @@ if( !class_exists("Zombify_StoryQuiz") ) {
         public $slug = 'story';
 
         public function getAliasGroups($filtered = true){
-	
+
 	        $zf_config = zombify()->get_config();
             $zombify_story_format_order = [];
 
@@ -85,7 +85,7 @@ if( !class_exists("Zombify_StoryQuiz") ) {
                 "title" => [
                     "type" => "field",
                     "name" => "title",
-                    "label" => __("Title", "zombify"),
+                    "label" => __("Tê điều", "zombify"),
                     "field_type" => "text",
                     "rules" => [
                         "required",
@@ -94,7 +94,7 @@ if( !class_exists("Zombify_StoryQuiz") ) {
                 "image" => [
                     "type" => "field",
                     "name" => "image",
-                    "label" => __("Add Thumbnail", "zombify"),
+                    "label" => __("Thêm hình thu nhỏ", "zombify"),
                     "field_type" => "file",
                     "rules" => [
                         "extensions" => "png, jpg, gif, jpeg",
@@ -105,35 +105,35 @@ if( !class_exists("Zombify_StoryQuiz") ) {
                 "use_preface" => [
                     "type" => "field",
                     "name" => "use_preface",
-                    "label" => __("Add preface", "zombify"),
+                    "label" => __("Thêm lời nói đầu", "zombify"),
                     "field_type" => "checkbox",
                     "field_visibility" => ( isset( zombify()->post_main_fields[ $this->slug ]["preface"] ) ? zombify()->post_main_fields[ $this->slug ]["preface"] : 'show' )
                 ],
                 "preface_description" => [
                     "type" => "field",
                     "name" => "preface_description",
-                    "label" => __("Type something here", "zombify"),
+                    "label" => __("Nhập một cái gì đó ở đây", "zombify"),
                     "field_type" => "textarea",
                     "field_visibility" => ( isset( zombify()->post_main_fields[ $this->slug ]["preface"] ) ? zombify()->post_main_fields[ $this->slug ]["preface"] : 'show' )
                 ],
                 "use_excerpt" => [
                     "type" => "field",
                     "name" => "use_excerpt",
-                    "label" => __("Add excerpt", "zombify"),
+                    "label" => __("Thêm đoạn trích", "zombify"),
                     "field_type" => "checkbox",
                     "field_visibility" => ( isset( zombify()->post_main_fields[ $this->slug ]["excerpt"] ) ? zombify()->post_main_fields[ $this->slug ]["excerpt"] : 'show' )
                 ],
                 "excerpt_description" => [
                     "type" => "field",
                     "name" => "excerpt_description",
-                    "label" => __("Type excerpt here", "zombify"),
+                    "label" => __("Gõ đoạn trích vào đây", "zombify"),
                     "field_type" => "textarea",
                     "field_visibility" => ( isset( zombify()->post_main_fields[ $this->slug ]["excerpt"] ) ? zombify()->post_main_fields[ $this->slug ]["excerpt"] : 'show' )
                 ],
                 "description" => [
                     "type" => "field",
                     "name" => "description",
-                    "label" => __("Description", "zombify"),
+                    "label" => __("Mô tả", "zombify"),
                     "field_type" => "textarea",
                     "field_visibility" => ( isset( zombify()->post_main_fields[ $this->slug ]["description"] ) ? zombify()->post_main_fields[ $this->slug ]["description"] : 'show' )
                 ],
@@ -148,13 +148,13 @@ if( !class_exists("Zombify_StoryQuiz") ) {
                                 "text_title" => [
                                     "type" => "field",
                                     "name" => "text_title",
-                                    "label" => __("Paragraph Title", "zombify"),
+                                    "label" => __("Tiêu đề đoạn văn", "zombify"),
                                     "field_type" => "text",
                                 ],
                                 "text_description" => [
                                     "type" => "field",
                                     "name" => "text_description",
-                                    "label" => __("Description", "zombify"),
+                                    "label" => __("Mô tả", "zombify"),
                                     "field_type" => "textarea",
                                 ],
                             ]
@@ -167,13 +167,13 @@ if( !class_exists("Zombify_StoryQuiz") ) {
                                 "image_title" => [
                                     "type" => "field",
                                     "name" => "image_title",
-                                    "label" => __("Image Title", "zombify"),
+                                    "label" => __("Tê điều ảnh", "zombify"),
                                     "field_type" => "text",
                                 ],
                                 "image_caption" => [
                                     "type" => "field",
                                     "name" => "image_caption",
-                                    "label" => __("Description", "zombify"),
+                                    "label" => __("Mô tả", "zombify"),
                                     "field_type" => "textarea",
                                 ],
                                 "image_image" => [
@@ -221,19 +221,19 @@ if( !class_exists("Zombify_StoryQuiz") ) {
                                 "link_headline" => [
                                     "type" => "field",
                                     "name" => "link_headline",
-                                    "label" => __("Paragraph Title", "zombify"),
+                                    "label" => __("Tê điều đoạn", "zombify"),
                                     "field_type" => "text",
                                 ],
                                 "link_description" => [
                                     "type" => "field",
                                     "name" => "link_description",
-                                    "label" => __("Description", "zombify"),
+                                    "label" => __("Mô tả", "zombify"),
                                     "field_type" => "textarea",
                                 ],
                                 "link_link" => [
                                     "type" => "field",
                                     "name" => "link_link",
-                                    "label" => __("Place Link Here", "zombify"),
+                                    "label" => __("Dán link ở đây", "zombify"),
                                     "field_type" => "url",
                                     "rules" => [
                                         "url" => "1"
@@ -249,7 +249,7 @@ if( !class_exists("Zombify_StoryQuiz") ) {
                                 "embed_title" => [
                                     "type" => "field",
                                     "name" => "embed_title",
-                                    "label" => __("Embed Title", "zombify"),
+                                    "label" => __("Tiêu đề nhúng", "zombify"),
                                     "field_type" => "text",
                                 ],
                                 "embed_url" => [
@@ -280,7 +280,7 @@ if( !class_exists("Zombify_StoryQuiz") ) {
                                 "embed_description" => [
                                     "type" => "field",
                                     "name" => "embed_description",
-                                    "label" => __("Description", "zombify"),
+                                    "label" => __("Mô tả", "zombify"),
                                     "field_type" => "textarea",
                                 ],
                                 "embed_credit" => [
@@ -373,7 +373,7 @@ if( !class_exists("Zombify_StoryQuiz") ) {
                                 ],
                             ]
                         ],
-						
+
                         "story_countdown" => [
                             "type" => "group",
                             "name" => "story_countdown",
@@ -386,7 +386,7 @@ if( !class_exists("Zombify_StoryQuiz") ) {
                                 ],
                             ]
                         ],
-						
+
                         "audio" => [
                             "type" => "group",
                             "name" => "audio",
@@ -433,7 +433,7 @@ if( !class_exists("Zombify_StoryQuiz") ) {
             ];
 
         }
-		
+
 		//to handle gif,video subtypes Featured Media
 		public function updateFeaturedMedia( $data, $post_id, $attachment_id = null, $media_data = array() ){
 			$zf_config = zombify()->get_config();
@@ -465,7 +465,7 @@ if( !class_exists("Zombify_StoryQuiz") ) {
 					return parent::updateFeaturedMedia($data, $post_id, null, $media_data);
 				}
 			}
-			
+
 			parent::updateFeaturedMedia($data, $post_id, $attachment_id, $media_data);
 		}
 

@@ -6,10 +6,10 @@
 
     switch ($action) {
         case "create":
-            ?><h2 class="zf-global-title"><?php printf( esc_html__("Create %s", "zombify"), $zf_config['zf_post_types']['meme']['name'] ); ?></h2><?php
+            ?><h2 class="zf-global-title"><?php printf( esc_html__("Tạo %s", "zombify"), $zf_config['zf_post_types']['meme']['name'] ); ?></h2><?php
             break;
         case "update":
-            ?><h2 class="zf-global-title"><?php printf( esc_html__("Update %s", "zombify"), $zf_config['zf_post_types']['meme']['name'] ); ?></h2><?php
+            ?><h2 class="zf-global-title"><?php printf( esc_html__("Cập nhật %s", "zombify"), $zf_config['zf_post_types']['meme']['name'] ); ?></h2><?php
             break;
     }
 
@@ -32,10 +32,10 @@
 
                                 <div class="zf-label">
                                     <i class="zf-icon zf-icon-type-meme"></i>
-                                    <span class="zf-label_text"><?php esc_html_e( 'Browse Image', 'zombify' ); ?></span>
+                                    <span class="zf-label_text"><?php esc_html_e( 'Chọn ảnh', 'zombify' ); ?></span>
                                     <?php if( !$disable_meme_templates ) { ?>
                                         <span class="zf_or "><?php esc_html_e( 'or', 'zombify' ); ?></span>
-                                        <a class="zf-meme-popup-btn" href="#"><?php esc_html_e( 'Choose a popular meme template', 'zombify' ); ?></a>
+                                        <a class="zf-meme-popup-btn" href="#"><?php esc_html_e( 'Chọn mẫu phổ biến', 'zombify' ); ?></a>
                                     <?php } ?>
                                 </div>
                             </label>
@@ -275,7 +275,7 @@
                                 </div>
                             </div>
                             <canvas id="zf-memecanvas">
-                                <?php esc_html_e( 'Sorry, but your browser not support', 'zombify' ); ?>
+                                <?php esc_html_e( 'Trình duyệt không cho phép', 'zombify' ); ?>
                             </canvas>
                             <div class="zf-drag-area zf-bottom-drag" data-rel="2">
                                 <div class="zf-drag" id="zf-drag-2"></div>

@@ -3,7 +3,7 @@ $zf_config = [
 	'zf_post_types' => [
 		"personality" => array(
             'name'          => esc_html__("Personality quiz", "zombify"),
-            'description'   => esc_html__("Series of questions that intends to reveal something about the personality", "zombify"),
+            'description'   => esc_html__("Một loạt câu hỏi có ý định tiết lộ điều gì đó về tính cách", "zombify"),
             'order'         => 1,
             'excerpt'       => 0,
             'preface'       => 0,
@@ -11,7 +11,7 @@ $zf_config = [
         ),
         "trivia" => array(
             'name'          => esc_html__("Trivia quiz", "zombify"),
-            'description'   => esc_html__("Series of questions with right and wrong answers that intends to check knowledge", "zombify"),
+            'description'   => esc_html__("Loạt câu hỏi có đáp án đúng sai có ý kiểm tra kiến thức", "zombify"),
             'order'         => 2,
             'excerpt'       => 0,
             'preface'       => 0,
@@ -19,7 +19,7 @@ $zf_config = [
         ),
         "poll" => array(
             'name'          => esc_html__("Poll", "zombify"),
-            'description'   => esc_html__("Voting to make decisions or determine opinions", "zombify"),
+            'description'   => esc_html__("Bỏ phiếu để đưa ra quyết định hoặc xác định ý kiến", "zombify"),
             'order'         => 3,
             'excerpt'       => 0,
             'preface'       => 0,
@@ -27,7 +27,7 @@ $zf_config = [
         ),
         "story" => array(
             'name'          => esc_html__("Story", "zombify"),
-            'description'   => esc_html__("Formatted Text with Embeds and Visuals", "zombify"),
+            'description'   => esc_html__("Văn bản được định dạng với Nhúng và Hình ảnh", "zombify"),
             'order'         => 4,
             'excerpt'       => 0,
             'preface'       => 0,
@@ -35,7 +35,7 @@ $zf_config = [
         ),
         "list" => array(
             'name'          => esc_html__("List", "zombify"),
-            'description'   => esc_html__("The Classic Internet Listicles", "zombify"),
+            'description'   => esc_html__("Danh sách Internet cổ điển", "zombify"),
             'order'         => 5,
             'excerpt'       => 0,
             'preface'       => 0,
@@ -43,7 +43,7 @@ $zf_config = [
         ),
 		"countdown" => array(
             'name'          => esc_html__("Countdown", "zombify"),
-            'description'   => esc_html__("The Classic Internet Countdowns", "zombify"),
+            'description'   => esc_html__("Đếm ngược Internet cổ điển", "zombify"),
             'order'         => 6,
             'excerpt'       => 0,
             'preface'       => 0,
@@ -51,7 +51,7 @@ $zf_config = [
         ),
         "openlist" => array(
             'name'          => esc_html__("Open List", "zombify"),
-            'description'   => esc_html__("Submit your own item and vote up for the best submission", "zombify"),
+            'description'   => esc_html__("Gửi mục của riêng bạn và bình chọn cho bài gửi tốt nhất", "zombify"),
             'order'         => 7,
             'excerpt'       => 0,
             'preface'       => 0,
@@ -59,7 +59,7 @@ $zf_config = [
         ),
         "rankedlist" => array(
             'name'          => esc_html__("Ranked List", "zombify"),
-            'description'   => esc_html__("Upvote or downvote to decide the best list item", "zombify"),
+            'description'   => esc_html__("Ủng hộ hoặc phản đối để quyết định mục danh sách tốt nhất", "zombify"),
             'order'         => 8,
             'excerpt'       => 0,
             'preface'       => 0,
@@ -67,7 +67,7 @@ $zf_config = [
         ),
         "meme" => array(
             'name'          => esc_html__("Meme", "zombify"),
-            'description'   => esc_html__("Upload your own images to make custom memes", "zombify"),
+            'description'   => esc_html__("Tải lên hình ảnh của riêng bạn để tạo meme tùy chỉnh", "zombify"),
             'order'         => 9,
             'excerpt'       => 1,
             'preface'       => 1,

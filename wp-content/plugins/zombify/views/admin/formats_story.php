@@ -1,4 +1,4 @@
-<h2><?php esc_html_e( 'Story format', 'zombify' ); ?></h2>
+<h2><?php esc_html_e( 'Dịnh dạng chuyện', 'zombify' ); ?></h2>
 
 <form method="post" action="options.php">
 
@@ -9,9 +9,9 @@
         <tbody>
         <tr>
             <th scope="row">
-                <?php esc_html_e( 'Active Components', 'zombify' ); ?>
+                <?php esc_html_e( 'Các thành phần hoạt động', 'zombify' ); ?>
                 <br>
-                <span style="font-weight: normal">(<?php esc_html_e( 'drag to reorder', 'zombify' ); ?>)</span>
+                <span style="font-weight: normal">(<?php esc_html_e( 'kéo để sắp xếp lại', 'zombify' ); ?>)</span>
             </th>
             <td>
                 <div id="sortable">
@@ -54,7 +54,7 @@
     <input type="hidden" name="page_options" value="zombify_story_formats" />
 
     <p class="submit">
-        <input type="submit" class="button-primary" value="<?php esc_html_e( 'Save Changes', 'zombify' ); ?>" />
+        <input type="submit" class="button-primary" value="<?php esc_html_e( 'Lưu thay đổi', 'zombify' ); ?>" />
     </p>
 
 </form>

@@ -1,6 +1,6 @@
 <div id="zf-options-section" class="zf-options-section">
 	<div class="zf-head">
-		<?php esc_html_e( "Additional Information", "zombify" ); ?>
+		<?php esc_html_e( "Thông tin thêm", "zombify" ); ?>
 		<i class="zf-icon zf-icon-settings"></i>
 	</div>
 	<div class="zf-body">
@@ -40,7 +40,7 @@
 			}
 			?>
 			<div class="zf-multiple-select">
-				<div class="zf-select_header" data-label="<?php esc_attr_e( "Choose a category", "zombify" ); ?>">
+				<div class="zf-select_header" data-label="<?php esc_attr_e( "Chọn chuyên mục", "zombify" ); ?>">
 					<span class="zf-selected"></span>
 				</div>
 				<ul class="zf-structure-list zf-select_dropdown">
@@ -108,10 +108,10 @@
 
 			$tags = array_diff( $tags, $predef_post_tags );
 			?>
-			<textarea id="tag-editor" name="zombify_options[tags]" data-count-limit="<?php echo $zf_tags_limit; ?>" placeholder="<?php echo esc_attr_e( "Enter tags ...", "zombify" ); ?>"><?php echo implode( ", ", $tags ); ?></textarea>
-			<span class="zf-tags-limit"><?php printf( esc_html__( " max. %s tags allowed", "zombify" ), $zf_tags_limit ); ?></span>
+			<textarea id="tag-editor" name="zombify_options[tags]" data-count-limit="<?php echo $zf_tags_limit; ?>" placeholder="<?php echo esc_attr_e( "Thêm thẻ ...", "zombify" ); ?>"><?php echo implode( ", ", $tags ); ?></textarea>
+			<span class="zf-tags-limit"><?php printf( esc_html__( " Tối đa %s thẻ", "zombify" ), $zf_tags_limit ); ?></span>
 			<?php if ( ! zf_validate_option( $this, 'tags' ) ) {
-				echo '<span class="zf-help">' . __( "The field is required", "zombify" ) . '</span>';
+				echo '<span class="zf-help">' . __( "Trường bắt buộc", "zombify" ) . '</span>';
 			} ?>
 		</div>
 		<?php
@@ -135,7 +135,7 @@
 				}
 				?>
 				<input type="number" value="<?php echo $items_per_page; ?>" name="zombify_options[items_per_page]"
-					   placeholder="<?php echo esc_attr_e( "Items per page", "zombify" ); ?>">
+					   placeholder="<?php echo esc_attr_e( "Sản phẩm mỗi trang", "zombify" ); ?>">
 				<?php if ( ! zf_validate_option( $this, 'items_per_page' ) ) {
 					echo '<span class="zf-help">' . __( "The field is required", "zombify" ) . '</span>';
 				} ?>
