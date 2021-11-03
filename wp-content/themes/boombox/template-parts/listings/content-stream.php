@@ -59,6 +59,9 @@ if ( $show_media ) {
 			'template'     => 'listing',
 			'listing_type' => $listing_type
 		) );
+		if (strlen($post_thumbnail_html) == 0) {
+			$post_thumbnail_html = '<img src="https://ivi.vn/wp-content/uploads/2021/11/default-image.jpg" />';
+		}
 		$boombox_post_thumbnail = boombox_do_post_thumbnail_wrap( $post_thumbnail_html, $url, $target, $rel );
 		$media_html             = $boombox_post_thumbnail['before'] . $post_thumbnail_html . $boombox_post_thumbnail['after'];
 		$is_media_playable      = $boombox_post_thumbnail['is_playable'];
