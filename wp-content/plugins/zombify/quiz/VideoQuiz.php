@@ -52,7 +52,6 @@ if( !class_exists("Zombify_VideoQuiz") ) {
                     "label" => __("Add Thumbnail", "zombify"),
                     "field_type" => "file",
                     "rules" => [
-                        "required",
                         "extensions" => "png, jpg, gif, jpeg",
                         "maxSize" => zf_max_upload_size() / 1024
                     ],
