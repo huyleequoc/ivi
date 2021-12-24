@@ -1,0 +1,15 @@
+/*
+Theme Name: Boombox Child Theme
+Theme URI: http://boombox.px-lab.com
+Template: boombox
+Author: Px-Lab
+Author URI: https://px-lab.com
+Description: Boombox is most powerful and flexible viral and buzz style WordPress theme. Flexible and fully customizable viral magazine theme combined with most powerful Viral content plugin with a ton of snacks and exclusive features and all that packed with dozens of powerful and popular plugins and with top-notch design
+Version: 1.0.0
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-colors, custom-header, custom-background, full-width-template,custom-menu, editor-style, featured-images, featured-image-header, post-formats, sticky-post, theme-options, translation-ready
+Text Domain: boombox
+*/
+
+/*************** Add your custom css here  ***************/

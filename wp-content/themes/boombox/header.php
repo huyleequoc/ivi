@@ -18,6 +18,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!DOCTYPE HTML>
 <html <?php language_attributes(); ?>>
 	<head>
+		<!-- Global site tag (gtag.js) - Google Ads: 834436602 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-834436602"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-834436602');
+</script>
+		<!-- Event snippet for Website traffic conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-834436602/Ki1NCMz-5YgDEPr78Y0D'});
+</script>
+		<script data-ad-client="ca-pub-7710159499485408" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QX3VRN4Z5"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'G-9QX3VRN4Z5');
+			</script>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>

@@ -13,3 +13,25 @@ Text Domain: boombox
 */
 
 /*************** Add your custom css here  ***************/
+
+
+/**
+  NhaTrangNet custom child style
+**/
+form.bb-all-categories .form-group {
+	padding:  0.5rem 0;
+}
+form.bb-all-categories .form-check-label{
+	display: inline;
+	color: #0493ff;
+}
+ul.user-world li a {
+	display: flex;
+}
+ul.user-world li a span.icon svg {
+	width:  20px;
+	margin-right: 0.5rem;
+}
+ul.user-world li a span.icon.love svg {
+	fill: red;
+}
